@@ -69,21 +69,50 @@ a:hover {
   align-items: center
 }
 
+/* Chips: readable in dark UI */
 .chip {
-  border: 1px solid #4a5470;
-  border-radius: 999px;
-  padding: 6px 10px;
-  font: 600 13px/1 system-ui;
-  color: var(--fg-dim);
+  appearance: none;
+  border: 1px solid #56608a;
+  background: #242a46;
+  /* muted dark, not white */
+  color: var(--fg);
+  padding: 6px 12px;
+  border-radius: 18px;
+  font: 600 13px system-ui;
   cursor: pointer;
-  user-select: none
+  transition: background .15s ease, color .15s ease, border-color .15s ease, transform .02s;
+}
+
+.chip:hover {
+  border-color: #6b76a8;
 }
 
 .chip[aria-pressed="true"] {
   background: var(--accent);
-  border-color: transparent;
-  color: #0b0f1d
+  /* filled accent when active */
+  color: #0b1025;
+  /* high contrast on accent */
+  border-color: var(--accent);
 }
+
+.chip:active {
+  transform: translateY(1px);
+}
+
+/* Popover cosmetics (keeps text readable) */
+.popover {
+  background: #151a31;
+  color: var(--fg);
+}
+
+.popover label {
+  color: var(--fg);
+}
+
+.popover input[type="checkbox"] {
+  accent-color: var(--accent);
+}
+
 
 .iconbtn {
   background: transparent;

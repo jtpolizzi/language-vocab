@@ -24,7 +24,7 @@ export function mountWordList(container) {
 
   cols.forEach(c => {
     const th = document.createElement('th');
-    th.dataset.key = c.key;                 // <-- used by CSS min-width rules
+    th.dataset.key = c.key;
 
     const label = document.createElement('span');
     label.textContent = c.label;
@@ -35,7 +35,8 @@ export function mountWordList(container) {
     th.append(label, arrow);
     th.onclick = () => {
       const nextDir = (State.sort.key === c.key && State.sort.dir === 'asc') ? 'desc' : 'asc';
-      State.set('sort', { key: c.key, dir: nextDir });
+      State.set('order', []);                         // <-- clear Shuffle order
+      State.set('sort', { key: c.key, dir: nextDir }); //     then apply sort
     };
 
     trh.appendChild(th);
@@ -47,20 +48,10 @@ export function mountWordList(container) {
   table.appendChild(tbody);
   container.appendChild(table);
 
-  // --- compute sticky offset so header is sticky from the very first row ---
-  // function setStickyOffset() {
-  //   const appHeader = document.querySelector('.app-header');
-  //   const topPanel = document.getElementById('topbar');   // your filters bar container
-  //   const a = appHeader ? appHeader.offsetHeight : 0;
-  //   const b = topPanel ? topPanel.offsetHeight : 0;
-  //   const offset = a + b; // total pixels above the table
-  //   document.documentElement.style.setProperty('--sticky-offset', `${offset}px`);
-  // }
-
-  // --- compute sticky offset so header is directly under the app header ---
+  // sticky offset (under app header)
   function setStickyOffset() {
     const appHeader = document.querySelector('.app-header');
-    const offset = appHeader ? appHeader.offsetHeight : 0;   // <-- only app header
+    const offset = appHeader ? appHeader.offsetHeight : 0;
     document.documentElement.style.setProperty('--sticky-offset', `${offset}px`);
   }
   setStickyOffset();
@@ -90,10 +81,19 @@ export function mountWordList(container) {
 
   function render() {
     const filtered = applyFilters(State.words);
-    const sorted = sortWords(filtered);
-    tbody.innerHTML = '';
 
-    for (const w of sorted) {
+    // Respect State.order if present so Shuffle affects Word List
+    let rows;
+    if (State.order && State.order.length) {
+      const byId = new Map(filtered.map(w => [w.id, w]));
+      rows = State.order.map(id => byId.get(id)).filter(Boolean);
+      if (!rows.length) rows = sortWords(filtered);
+    } else {
+      rows = sortWords(filtered);
+    }
+
+    tbody.innerHTML = '';
+    for (const w of rows) {
       const tr = document.createElement('tr');
       tr.appendChild(tdStar(w.id));
       tr.appendChild(tdWeight(w.id));
@@ -107,7 +107,7 @@ export function mountWordList(container) {
 
     updateHeaderIndicators();
     applyColumnVisibility(table);
-    setStickyOffset(); // recalc in case the top bar height changed (chips wrap, etc.)
+    setStickyOffset();
   }
 
   render();
@@ -123,10 +123,10 @@ function tdText(text) {
 
 function tdTags(tags) {
   const td = document.createElement('td');
-  td.textContent = fmtTagsComma(tags);
+  td.textContent = fmt(tags);
   return td;
 
-  function fmtTagsComma(s) {
+  function fmt(s) {
     if (!s) return '';
     return String(s)
       .split(/[|,;]+|\s+/g)
