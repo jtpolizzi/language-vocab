@@ -180,7 +180,13 @@ a:hover {
 table {
   width: 100%;
   border-collapse: separate;
-  border-spacing: 0 6px
+  /* keep your spacing */
+  border-spacing: 0 6px;
+
+  /* 👇 add these lines for sticky header reliability */
+  position: relative;
+  z-index: 1;
+  /* ensure thead stays above rows */
 }
 
 thead th {
@@ -213,6 +219,50 @@ tbody tr td:last-child {
 .hide {
   display: none !important
 }
+
+/* Word List: sticky header (apply to THEAD, not TH) */
+thead {
+  position: sticky;
+  top: var(--sticky-offset, 0px);
+  /* right under the app header */
+  z-index: 6;
+  background: #121631;
+  /* solid background for the whole band */
+  box-shadow: 0 1px 0 0 var(--line) inset;
+}
+
+/* THs act like normal table cells; keep text inline with arrow */
+thead th {
+  white-space: nowrap;
+  text-align: center;
+  padding: 10px 8px;
+}
+
+thead th .sort-arrow {
+  display: inline-block;
+  margin-left: 6px;
+  font-size: 12px;
+  opacity: 0.95;
+  vertical-align: middle;
+}
+
+/* Active column highlight + prevent wrap on narrow ones */
+thead th.sorted {
+  color: var(--fg);
+}
+
+thead th[data-key="cefr"] {
+  min-width: 84px;
+}
+
+thead th[data-key="pos"] {
+  min-width: 72px;
+}
+
+thead th[data-key="tags"] {
+  min-width: 120px;
+}
+
 
 /* Flashcards */
 .card {
