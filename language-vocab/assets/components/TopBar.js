@@ -1,5 +1,6 @@
 // assets/components/TopBar.js
 import { applyFilters, shuffledIds, sortWords, State, subscribe } from '../state.js';
+import { openSettingsModal } from './SettingsModal.js';
 
 export function mountTopBar(container) {
   container.innerHTML = '';
@@ -18,11 +19,12 @@ export function mountTopBar(container) {
   });
   row.appendChild(only);
 
-  // Shuffle (stay on current view)
+  // Shuffle (stay on current view) + clear sort indicators
   const sh = chip('Shuffle', false, () => {
     const filtered = applyFilters(State.words);
     const sorted = sortWords(filtered);
     State.set('order', shuffledIds(sorted));
+    State.set('sort', { key: '', dir: 'asc' }); // ← clear sort UI after shuffle
   });
   row.appendChild(sh);
 
@@ -35,11 +37,19 @@ export function mountTopBar(container) {
   const sp = document.createElement('span'); sp.className = 'spacer';
   row.appendChild(sp);
 
-  // Result count
+  // Results count
   const resultCount = document.createElement('span');
   resultCount.className = 'countpill';
-  Object.assign(resultCount.style, { opacity: .85, fontWeight: '700' });
+  Object.assign(resultCount.style, { opacity: .85, fontWeight: '700', marginRight: '8px' });
   row.appendChild(resultCount);
+
+  // Gear (Settings)
+  const gear = document.createElement('button');
+  gear.className = 'chip';
+  gear.title = 'Settings';
+  gear.textContent = '⚙︎';
+  gear.onclick = () => openSettingsModal();
+  row.appendChild(gear);
 
   // Search
   const search = document.createElement('input');
@@ -64,12 +74,12 @@ export function mountTopBar(container) {
   panel.appendChild(row);
   container.appendChild(panel);
 
-  // ---- Filters popover ----
+  // ---- Filters popover (unchanged from your working version) ----
   let pop = null;
   function toggleFilters(e) {
     e?.stopPropagation();
     if (pop) { closePop(); return; }
-    pop = buildFiltersPopover();            // returns an element with _unsub
+    pop = buildFiltersPopover();
     panel.appendChild(pop);
     positionPopover(pop, filtersChip);
     setTimeout(() => window.addEventListener('click', onDocClick), 0);
@@ -80,7 +90,7 @@ export function mountTopBar(container) {
     closePop();
   }
   function closePop() {
-    if (pop?._unsub) pop._unsub();          // ⬅️ unsubscribe local watcher
+    if (pop?._unsub) pop._unsub();
     pop?.remove(); pop = null;
     window.removeEventListener('click', onDocClick);
   }
@@ -97,9 +107,7 @@ export function mountTopBar(container) {
     el.addEventListener('click', (e) => e.stopPropagation());
 
     const grid = document.createElement('div');
-    Object.assign(grid.style, {
-      display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '12px'
-    });
+    Object.assign(grid.style, { display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '12px' });
 
     const { posValues, cefrValues, tagValues } = collectFacetValues(State.words);
 
@@ -113,7 +121,7 @@ export function mountTopBar(container) {
       State.set('filters', { ...State.filters, tags: next });
     }));
 
-    // --- Weight row (buttons) with live UI refresh ---
+    // Weight row (buttons) with live UI refresh
     const weightWrap = document.createElement('div');
     weightWrap.style.gridColumn = '1 / -1';
     const wTitle = document.createElement('div');
@@ -123,8 +131,6 @@ export function mountTopBar(container) {
     Object.assign(wRow.style, { display: 'flex', gap: '8px', flexWrap: 'wrap' });
 
     const weightBtns = [];
-    const makePressed = (n) => (State.filters.weight || [0, 1, 2, 3, 4]).includes(n);
-
     const refreshWeightBtns = () => {
       const set = new Set(State.filters.weight || [0, 1, 2, 3, 4]);
       weightBtns.forEach(btn => {
@@ -132,13 +138,12 @@ export function mountTopBar(container) {
         btn.setAttribute('aria-pressed', String(set.has(n)));
       });
     };
-
     for (let n = 0; n <= 4; n++) {
-      const b = chip('W' + n, makePressed(n), () => {
+      const b = chip('W' + n, false, () => {
         const set = new Set(State.filters.weight || [0, 1, 2, 3, 4]);
         set.has(n) ? set.delete(n) : set.add(n);
         State.set('filters', { ...State.filters, weight: [...set].sort((a, b) => a - b) });
-        refreshWeightBtns();                // ⬅️ immediate visual update
+        refreshWeightBtns();
       });
       b.dataset.weight = String(n);
       weightBtns.push(b);
@@ -168,13 +173,10 @@ export function mountTopBar(container) {
     footer.append(clear, close);
     el.appendChild(footer);
 
-    // also keep them in sync if filters change elsewhere while popover is open
-    el._unsub = subscribe(refreshWeightBtns);
+    el._unsub = subscribe(() => refreshWeightBtns());
     refreshWeightBtns();
-
     return el;
 
-    // helpers
     function sectionChecks(title, values = [], selected = [], onChange) {
       const wrap = document.createElement('div');
       const h = document.createElement('div');
@@ -189,9 +191,7 @@ export function mountTopBar(container) {
       const selLower = (selected || []).map(s => s.toLowerCase());
       (values || []).forEach(v => {
         const lab = document.createElement('label');
-        lab.style.display = 'flex';
-        lab.style.alignItems = 'center';
-        lab.style.gap = '8px';
+        lab.style.display = 'flex'; lab.style.alignItems = 'center'; lab.style.gap = '8px';
         const cb = document.createElement('input');
         cb.type = 'checkbox';
         cb.checked = selLower.includes(v.toLowerCase());
@@ -200,12 +200,10 @@ export function mountTopBar(container) {
           if (cb.checked) set.add(v.toLowerCase()); else set.delete(v.toLowerCase());
           onChange([...set]);
         };
-        const span = document.createElement('span');
-        span.textContent = v;
+        const span = document.createElement('span'); span.textContent = v;
         lab.append(cb, span);
         box.appendChild(lab);
       });
-
       wrap.appendChild(box);
       return wrap;
     }
@@ -239,7 +237,7 @@ export function mountTopBar(container) {
     return filterCount > 0;
   }
 
-  // global subscribe for top bar UI
+  // Subscribe to keep UI in sync
   const unsub = subscribe(() => {
     only.setAttribute('aria-pressed', String(!!State.filters.starred));
     if (document.activeElement !== search) search.value = State.filters.search || '';

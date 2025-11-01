@@ -73,6 +73,7 @@ export function mountWordList(container) {
       th.classList.remove('sorted', 'asc', 'desc');
       arrow.textContent = '';
     });
+    if (!key) return; // ← nothing highlighted if sort cleared (e.g., after Shuffle)
     const h = headerEls.get(key);
     if (!h) return;
     h.th.classList.add('sorted', dir);
