@@ -1,0 +1,86 @@
+# QA Summary — POS Review and Correction (A1/A2)
+
+- **Rows analyzed**: 2195
+- **Blank POS before → after**: 545 → 0
+- **Total corrections/assignments made**: 676
+
+## POS distribution before
+- noun: 598
+- UNKNOWN: 545
+- verb: 382
+- adj: 238
+- phrase: 213
+- pron: 58
+- adv: 51
+- num: 25
+- det: 22
+- prep: 21
+- interj: 15
+- conj: 15
+- connector: 12
+
+## POS distribution after
+- noun: 1079
+- verb: 364
+- adj: 269
+- phrase: 221
+- adv: 102
+- pron: 62
+- num: 25
+- det: 21
+- prep: 17
+- connector: 13
+- interj: 11
+- conj: 11
+
+## Sample of changes (first 50)
+- abril:  → noun
+- abuela:  → noun
+- agosto:  → noun
+- ahora:  → adv
+- alta:  → noun
+- amarilla:  → noun
+- americana:  → noun
+- animal:  → noun
+- apartamento: noun → adv
+- auto:  → noun
+- ayer: adv → verb
+- baja:  → adj
+- blanca:  → noun
+- bonita:  → noun
+- buena:  → adj
+- buenas noches: interj → phrase
+- buenas tardes: interj → phrase
+- buenos:  → adj
+- buenos días: interj → phrase
+- celular: noun → verb
+- cuándo:  → noun
+- cuánta:  → noun
+- cuántas:  → noun
+- cómo:  → noun
+- de nada: phrase → interj
+- desayuno: noun → adj
+- diciembre:  → noun
+- dinero:  → noun
+- dólar:  → verb
+- enero:  → noun
+- enfermera:  → noun
+- euro:  → noun
+- fea:  → adj
+- febrero:  → noun
+- gato:  → noun
+- hermana:  → noun
+- hija:  → noun
+- igualmente:  → adv
+- julio:  → noun
+- junio:  → noun
+- lo siento: interj → phrase
+- mal: adv → adj
+- mala:  → adj
+- marzo:  → noun
+- mayo:  → noun
+- mujer: noun → verb
+- médica:  → noun
+- negra:  → noun
+- niña:  → noun
+- noviembre:  → noun

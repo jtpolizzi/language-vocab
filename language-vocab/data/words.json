@@ -1,0 +1,30 @@
+[
+  {
+    "Spanish": "aun cuando",
+    "English": "even when",
+    "POS": "conj",
+    "CEFR": "B1",
+    "Tags": "glue,time"
+  },
+  {
+    "Spanish": "sin embargo",
+    "English": "however",
+    "POS": "adv",
+    "CEFR": "B1",
+    "Tags": "glue,discourse"
+  },
+  {
+    "Spanish": "rápido",
+    "English": "fast",
+    "POS": "adj",
+    "CEFR": "A2",
+    "Tags": ""
+  },
+  {
+    "Spanish": "comer",
+    "English": "to eat",
+    "POS": "verb",
+    "CEFR": "A1",
+    "Tags": ""
+  }
+]

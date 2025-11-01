@@ -1,0 +1,61 @@
+# Diff Report — Functional Tags Added (A1–B2)
+
+- **Total entries with new tags**: 924
+- MWU: 807
+- glue: 229
+- comparison: 69
+- time: 52
+- discourse: 27
+- reflexive: 10
+
+## Sample Additions (first 50)
+- a (prep): +glue
+- a veces (phrase): +time
+- agradecer (verb): +comparison
+- bajo (prep): +glue
+- buenas tardes (phrase): +glue
+- buenos días (phrase): +glue
+- canadiense (pron): +reflexive
+- con (prep): +glue
+- con permiso (interj): +MWU
+- cuando (conj): +glue
+- de (prep): +glue
+- ella (pron): +time
+- ellos (pron): +time
+- en (prep): +glue
+- ese (det): +reflexive
+- estados unidos (phrase): +MWU
+- estadounidense (pron): +reflexive
+- hasta mañana (phrase): +glue
+- lo siento (phrase): +glue
+- más o menos (phrase): +comparison, glue
+- nevar (verb): +time
+- nos vemos (phrase): +MWU
+- nosotros (pron): +time
+- nunca (adv): +time
+- o (conj): +glue
+- para (prep): +glue
+- por (prep): +glue
+- que (conj): +comparison, glue
+- ser de (phrase): +MWU
+- si (conj): +glue
+- siempre (adv): +time
+- sin (prep): +glue
+- sobre (prep): +glue
+- tiempo libre (phrase): +MWU
+- todos los días (phrase): +MWU
+- venir de (phrase): +MWU
+- y (conj): +glue
+- ¿cómo está usted? (phrase): +MWU, glue
+- ¿cómo estás? (phrase): +MWU
+- ¿por qué? (phrase): +MWU
+- ¿qué tal? (phrase): +MWU
+- él (pron): +time
+- además (connector): +discourse, glue
+- así que (connector): +comparison, glue
+- contra (prep): +glue
+- desde (prep): +glue
+- durante (prep): +glue
+- entonces (adv): +time
+- entre (prep): +glue
+- hacia (prep): +glue

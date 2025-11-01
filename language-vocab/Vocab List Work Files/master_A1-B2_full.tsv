@@ -1,0 +1,5056 @@
+spanish	english	pos	cefr	tags
+a	to, at	prep	A1.1	
+a veces	sometimes	phrase	A1.1	MWU
+abajo	down	adv	A1.1	
+abajo	downstairs	verb	A1.1	home
+abogado	lawyer	noun	A1.1	education
+abril	April	noun	A1.1	
+abrir	to open	verb	A1.1	tech
+abuela	grandmother	noun	A1.1	society
+abuelo	grandfather, grandmother	noun	A1.1	society
+aburrido	bored, boring	adj	A1.1	education|health|media
+adentro	inside	adv	A1.1	home
+adiós	goodbye	interj	A1.1	society
+afuera	outside	adv	A1.1	home
+agosto	August	noun	A1.1	
+agradecer	to thank	verb	A1.1	society
+agua	water	noun	A1.1	food|nature
+ahora	now	adv	A1.1	time
+ahí	there	adv	A1.1	
+alemana	German - nationality	noun	A1.1	
+Alemania	Germany	noun	A1.1	countries
+alemán	German - language, German	pron	A1.1	countries
+allá	over there	adv	A1.1	
+allí	there	adv	A1.1	
+almuerzo	lunch	noun	A1.1	food
+alta	tall	noun	A1.1	
+alto	tall	adj	A1.1	health
+amar	to love	verb	A1.1	society
+amarilla	yellow	noun	A1.1	
+amarillo	yellow	adj	A1.1	colors
+americana	American	noun	A1.1	
+animal	animal	noun	A1.1	nature
+antes	before	adv	A1.1	time
+apartamento	apartment	adv	A1.1	home
+apellido	surname, last name	noun	A1.1	
+aquí	here	adv	A1.1	
+Argentina	Argentina	noun	A1.1	countries
+argentino	Argentinian	pron	A1.1	countries
+arriba	up	adv	A1.1	
+arriba	upstairs	verb	A1.1	home
+asustado	scared	adj	A1.1	health
+auto	car, court order	noun	A1.1	
+autobús	bus	noun	A1.1	travel
+avión	airplane	noun	A1.1	nature|travel
+ayer	yesterday	verb	A1.1	time
+ayudar	to help	verb	A1.1	society|work
+azul	blue	adj	A1.1	colors
+año	year	noun	A1.1	health|time
+años	years	noun	A1.1	
+baile	dance	noun	A1.1	media
+baja	short	adj	A1.1	
+bajar	to get off, to go down	verb	A1.1	travel
+bajo	under, short	prep	A1.1	health
+banco	bank	noun	A1.1	finance|work
+bañarse	to bathe	verb	A1.1	home|reflexive
+baño	bathroom	noun	A1.1	home
+beber	to drink	verb	A1.1	food
+bebé	baby	noun	A1.1	society
+bicicleta	bicycle	noun	A1.1	travel
+bien	well, fine	adv	A1.1	society
+blanca	white	noun	A1.1	
+blanco	white	adj	A1.1	colors
+boleto	ticket	noun	A1.1	travel
+bolígrafo	pen	noun	A1.1	education
+bonita	pretty	noun	A1.1	
+bonito	pretty	adj	A1.1	health
+Brasil	Brazil	noun	A1.1	countries
+brasileño	Brazilian	pron	A1.1	countries
+brillar	to shine	verb	A1.1	nature
+buena	good	adj	A1.1	
+buenas noches	good night, good evening, night	phrase	A1.1	MWU|society
+buenas tardes	good afternoon	phrase	A1.1	MWU|society|time
+bueno	good	adj	A1.1	education|food
+buenos	good	adj	A1.1	
+buenos días	good morning	phrase	A1.1	MWU|society
+básquetbol	basketball	noun	A1.1	media|sports
+café	coffee, brown	adj	A1.1	colors
+café	coffee, café	noun	A1.1	food
+caliente	hot	adj	A1.1	food|nature
+calle	street	noun	A1.1	nature
+calor	heat	noun	A1.1	nature
+cama	bed	noun	A1.1	home
+caminar	to walk	verb	A1.1	media|travel
+camiseta	t-shirt	noun	A1.1	
+camión	truck	noun	A1.1	travel
+canadiense	Canadian	pron	A1.1	countries
+Canadá	Canada	noun	A1.1	countries
+carne	meat	noun	A1.1	food
+carro	car	noun	A1.1	travel
+casa	house	noun	A1.1	home
+casado	married	adj	A1.1	society
+catorce	fourteen	num	A1.1	
+celular	mobile phone, cell phone	verb	A1.1	tech
+cena	dinner	noun	A1.1	food
+centro	center, downtown	noun	A1.1	
+cerca	near, close	adv	A1.1	health
+cero	zero	num	A1.1	
+cerrar	to close	verb	A1.1	tech
+cerveza	beer	noun	A1.1	food
+China	China	noun	A1.1	countries
+chino	Chinese	pron	A1.1	countries
+cien	one hundred	num	A1.1	
+cinco	five	num	A1.1	
+cincuenta	fifty	num	A1.1	
+cinturón	belt	noun	A1.1	
+ciudad	city	noun	A1.1	
+clima	climate	noun	A1.1	nature
+cocina	kitchen, stove	noun	A1.1	food|home
+cocinero	cook, chef	noun	A1.1	education|food
+color	color	noun	A1.1	colors
+comenzar	to begin	verb	A1.1	
+comer	to eat	verb	A1.1	food
+comida	food, meal	noun	A1.1	food
+compañero	coworker	noun	A1.1	education|work
+comprar	to buy	verb	A1.1	work
+computadora	computer	noun	A1.1	home|tech|work
+con	with	prep	A1.1	
+con permiso	excuse me (to pass)	interj	A1.1	society
+conversar	to converse	verb	A1.1	society
+correo electrónico	email	phrase	A1.1	MWU|tech|work
+corto	short	adj	A1.1	travel
+cuaderno	notebook	noun	A1.1	education
+cuando	when	conj	A1.1	
+cuarenta	forty	num	A1.1	
+cuatro	four	num	A1.1	
+cuello	neck	noun	A1.1	health
+cuerpo	body	noun	A1.1	health
+cuidar	to take care of	verb	A1.1	society
+cumpleaños	birthday	noun	A1.1	
+cumplir	to turn (age)	verb	A1.1	
+cuándo	when	noun	A1.1	nature
+cuánta	how much	noun	A1.1	
+cuántas	how many	noun	A1.1	
+cómo	how	noun	A1.1	
+cómodo	comfortable	adj	A1.1	home|travel
+dar	to give	verb	A1.1	
+de	of, from	prep	A1.1	
+de nada	you're welcome	interj	A1.1	MWU|society
+delgado	thin	adj	A1.1	health
+delicioso	delicious	adj	A1.1	food
+demasiado	too much, too many	adv	A1.1	
+dentro	inside	adv	A1.1	
+departamento	apartment	adv	A1.1	home
+deporte	sport	noun	A1.1	media
+derecha	right	adv	A1.1	
+desayuno	breakfast	adj	A1.1	food
+descansar	to rest	verb	A1.1	health|media
+despedirse	to say goodbye	verb	A1.1	reflexive|society
+despertarse	to wake up	verb	A1.1	home|reflexive
+después	after	adv	A1.1	time
+diciembre	December	noun	A1.1	
+diez	ten	num	A1.1	
+difícil	difficult, hard	adj	A1.1	education|tech
+dinero	money	noun	A1.1	finance
+dirección	address	noun	A1.1	
+directamente	directly	adv	A1.1	travel
+disculpa	excuse me (informal)	interj	A1.1	society
+disculpe	excuse me (formal)	interj	A1.1	society
+diversión	fun	noun	A1.1	media
+divertido	fun, funny	adj	A1.1	media|travel
+divorciado	divorced	adj	A1.1	society
+doce	twelve	num	A1.1	
+doctor	doctor	noun	A1.1	education|health
+doler	to hurt	verb	A1.1	health
+domingo	Sunday	noun	A1.1	time
+dos	two	num	A1.1	
+dulce	sweet	adj	A1.1	food
+durar	to last	verb	A1.1	time
+día	day	noun	A1.1	time
+dólar	dollar	verb	A1.1	finance
+dónde	where	adv	A1.1	
+edad	age	noun	A1.1	
+el	the - masculine, the (masculine), the one who, that, which	det	A1.1	philosophy
+elegante	elegant	adj	A1.1	media
+ella	she, her (after preposition)	pron	A1.1	
+ellas	they	pron	A1.1	
+ellos	they, them (after preposition)	pron	A1.1	
+email	email	noun	A1.1	tech
+emocionado	excited	adj	A1.1	health
+emocionante	exciting	adj	A1.1	media|travel
+empezar	to start	verb	A1.1	time|work
+empleo	job	noun	A1.1	education|work
+en	in, on, at	prep	A1.1	
+enero	January	noun	A1.1	
+enfermera	nurse	noun	A1.1	
+enfermero	nurse	noun	A1.1	education|health
+entrar	to enter	verb	A1.1	
+escribir	to write	verb	A1.1	education|media
+escuchar	to listen	verb	A1.1	education|media
+escuela	school	noun	A1.1	education|work
+ese	that	det	A1.1	
+esos	those	det	A1.1	
+España	Spain	noun	A1.1	countries|health
+español	Spanish - language, Spanish	pron	A1.1	countries
+española	Spanish - nationality	noun	A1.1	
+esperar	to wait, to hope	verb	A1.1	time
+esposo	husband, wife	noun	A1.1	society
+Estados Unidos	United States	phrase	A1.1	countries
+estadounidense	American (US)	pron	A1.1	countries
+estar	to be - location, condition, to be (temporary, location), to be (location)	verb	A1.1	
+este	this	det	A1.1	
+estos	these	det	A1.1	
+estudiante	student	noun	A1.1	education
+estudiar	to study	verb	A1.1	education|philosophy|tech
+estufa	stove	noun	A1.1	home
+euro	euro	noun	A1.1	finance
+familia	family	noun	A1.1	society
+fea	ugly	adj	A1.1	
+febrero	February	noun	A1.1	
+feo	ugly	adj	A1.1	health|media
+francesa	French - nationality	noun	A1.1	
+Francia	France	noun	A1.1	countries
+francés	French - language, French	pron	A1.1	countries
+frecuentemente	frequently	adv	A1.1	media|time
+fresco	fresh, cool	adj	A1.1	food|nature
+fruta	fruit	noun	A1.1	food
+frío	cold	adj	A1.1	food|nature
+fuera	outside	adv	A1.1	
+fácil	easy	adj	A1.1	education|tech
+fútbol	soccer	noun	A1.1	media
+gato	cat	noun	A1.1	
+gordo	fat	adj	A1.1	health
+gracias	thank you	interj	A1.1	comparison|society
+grande	big, large	adj	A1.1	home
+gris	gray	adj	A1.1	colors
+guapo	handsome, beautiful	adj	A1.1	health
+guitarra	guitar	noun	A1.1	media
+gustar	to like	verb	A1.1	
+hablar	to speak, to talk	verb	A1.1	education|society
+hacer	to do, make, to make	verb	A1.1	food|work
+hamburguesa	hamburger	noun	A1.1	food
+hasta luego	see you later	phrase	A1.1	MWU|society|time
+hasta mañana	see you tomorrow	phrase	A1.1	MWU|society|time
+hermana	sister	noun	A1.1	society
+hermano	brother, sister	noun	A1.1	society
+hija	daughter	noun	A1.1	society
+hijo	son, daughter	noun	A1.1	society
+hogar	home	verb	A1.1	home
+hola	hello	interj	A1.1	society
+hombre	man	noun	A1.1	
+hora	hour, time	noun	A1.1	time
+hospital	hospital	noun	A1.1	health|work
+hoy	today	adv	A1.1	time
+huevos	eggs	noun	A1.1	food
+igualmente	likewise	adv	A1.1	
+importante	important	adj	A1.1	education
+ingeniero	engineer	noun	A1.1	education
+Inglaterra	England	noun	A1.1	countries
+inglesa	English - nationality	noun	A1.1	
+inglés	English - language, English	pron	A1.1	countries
+interesante	interesting	adj	A1.1	education|media|travel
+internet	internet	noun	A1.1	tech
+ir	to go	verb	A1.1	media|travel
+Italia	Italy	noun	A1.1	countries
+italiana	Italian - nationality	noun	A1.1	
+italiano	Italian - language, Italian	pron	A1.1	countries
+izquierda	left	adv	A1.1	
+japonés	Japanese	pron	A1.1	countries
+Japón	Japan	noun	A1.1	countries
+jardín	garden	noun	A1.1	home|nature
+jefe	boss	noun	A1.1	education|work
+joven	young	adj	A1.1	health
+juego	game	noun	A1.1	media
+jueves	Thursday	noun	A1.1	time
+jugar	to play	verb	A1.1	media
+jugo	juice	noun	A1.1	food
+julio	July	noun	A1.1	
+junio	June	noun	A1.1	
+la	the - feminine, the (feminine), her, it (feminine)	det	A1.1	
+largo	long	adj	A1.1	travel
+las	the - feminine plural, the (feminine plural), them (feminine)	det	A1.1	
+lavar	to wash	verb	A1.1	food|home
+le	to him, to her	pron	A1.1	
+leche	milk	noun	A1.1	food
+leer	to read	verb	A1.1	education|media
+lejos	far	adv	A1.1	
+lentamente	slowly	adv	A1.1	health|travel
+lento	slowly, slow	adj	A1.1	food|tech|time|travel
+les	to them	pron	A1.1	
+levantarse	to get up	verb	A1.1	home|reflexive
+libro	book	noun	A1.1	education|media
+limpiar	to clean	verb	A1.1	home
+limpio	clean	adj	A1.1	home
+llamarse	to be called, to be named	verb	A1.1	reflexive
+llegar	to arrive	verb	A1.1	food|time|travel
+llover	to rain	verb	A1.1	nature
+lluvioso	rainy	adj	A1.1	nature
+lo siento	I'm sorry	phrase	A1.1	MWU
+los	the - masculine plural, the (masculine plural), them (masculine), which (plural)	det	A1.1	philosophy
+lugar	place	verb	A1.1	
+lunes	Monday	noun	A1.1	time
+lápiz	pencil	noun	A1.1	education
+madre	mother	noun	A1.1	society
+madrugada	early morning, dawn	adv	A1.1	time
+maestro	teacher	noun	A1.1	education
+mal	badly, bad, poorly	adj	A1.1	society
+mala	bad	adj	A1.1	
+maleta	suitcase	noun	A1.1	travel
+malo	bad	adj	A1.1	education|food
+mamá	mom	noun	A1.1	society
+manejar	to drive	verb	A1.1	travel
+manzana	apple	noun	A1.1	food
+martes	Tuesday	noun	A1.1	time
+marzo	March	noun	A1.1	
+mayo	May	noun	A1.1	
+mañana	tomorrow	adv	A1.1	time
+mañana	morning	noun	A1.1	time
+medianoche	midnight	noun	A1.1	time
+mediodía	noon	noun	A1.1	time
+menos	less	verb	A1.1	comparison
+mes	month	noun	A1.1	time
+mesa	table	noun	A1.1	education|food|home
+mesero	waiter, waitress	noun	A1.1	education|food
+metro	subway	noun	A1.1	travel
+mexicano	Mexican	pron	A1.1	countries
+mi	my	pron	A1.1	
+minuto	minute	noun	A1.1	time
+mirar	to look, to watch	verb	A1.1	media
+miércoles	Wednesday	noun	A1.1	time
+momento	moment	noun	A1.1	time
+morado	purple	adj	A1.1	colors
+muchas gracias	thank you very much	phrase	A1.1	MWU|comparison
+mucho	a lot, much	verb	A1.1	food
+mucho gusto	nice to meet you	phrase	A1.1	MWU|work
+mujer	woman	verb	A1.1	
+muy	very	verb	A1.1	
+más	more	verb	A1.1	comparison
+más o menos	more or less, so-so	phrase	A1.1	MWU|society
+médica	doctor	noun	A1.1	
+México	Mexico	noun	A1.1	countries
+música	music	noun	A1.1	education|media
+nacer	to be born	verb	A1.1	countries
+naranja	orange	adj	A1.1	colors
+naranja	orange	noun	A1.1	food
+negra	black	noun	A1.1	
+negro	black	adj	A1.1	colors
+nevar	to snow	verb	A1.1	nature
+niña	girl	noun	A1.1	
+niño	boy, child	noun	A1.1	society
+no	no, not	verb	A1.1	
+noche	night	noun	A1.1	time
+nombre	name	noun	A1.1	
+normalmente	normally	adv	A1.1	media|time
+nos vemos	see you	phrase	A1.1	society
+nosotras	we	pron	A1.1	
+nosotros	we, us (after preposition)	pron	A1.1	
+noventa	ninety	num	A1.1	
+noviembre	November	noun	A1.1	
+novio	boyfriend, girlfriend	noun	A1.1	society
+nublado	cloudy	adj	A1.1	nature
+nuestra	our	noun	A1.1	
+nuestro	our	det	A1.1	
+nueva	new	adj	A1.1	
+nueve	nine	num	A1.1	
+nuevo	new	adj	A1.1	tech
+nunca	never	adv	A1.1	
+número	number	noun	A1.1	
+o	or	conj	A1.1	
+ochenta	eighty	num	A1.1	
+ocho	eight	num	A1.1	
+octubre	October	noun	A1.1	
+odiar	to hate	verb	A1.1	health
+oficina	office	noun	A1.1	education|work
+ojos	eyes	noun	A1.1	health
+once	eleven	num	A1.1	
+padre	father	noun	A1.1	society
+pagar	to pay	verb	A1.1	food
+pan	bread	noun	A1.1	food
+papá	dad	noun	A1.1	society
+para	for, to	prep	A1.1	
+parecer	to seem, to appear	verb	A1.1	colors
+parque	park	noun	A1.1	nature
+partir	to depart	verb	A1.1	travel
+pasaporte	passport	noun	A1.1	travel
+pasar	to spend (time), to pass	verb	A1.1	time
+país	country	noun	A1.1	countries|society|travel
+pelo	hair	noun	A1.1	health
+película	movie, film	noun	A1.1	media
+pequeña	small	adj	A1.1	
+pequeño	small, little	adj	A1.1	home
+perderse	to get lost	verb	A1.1	reflexive
+perdón	excuse me, sorry, pardon, forgiveness	interj	A1.1	health|society
+pero	but	conj	A1.1	discourse|glue
+perro	dog	noun	A1.1	
+persona	person	noun	A1.1	
+pescado	fish	noun	A1.1	food|nature
+piano	piano	noun	A1.1	media
+pizza	pizza	noun	A1.1	food
+pluma	pen	noun	A1.1	education
+plátano	banana	noun	A1.1	food
+poco	a little, little, few	verb	A1.1	food
+poder	to be able to, can, power	verb	A1.1	society|work
+por	by, for, through	prep	A1.1	
+por favor	please	interj	A1.1	MWU|society
+por qué	why	phrase	A1.1	MWU
+porque	because	conj	A1.1	discourse|glue
+preguntar	to ask	verb	A1.1	society
+primo	cousin	noun	A1.1	society
+privado	private	adj	A1.1	society
+profesor	teacher, professor	noun	A1.1	education
+profesora	teacher	noun	A1.1	education
+pueblo	town, people	noun	A1.1	society
+puerta	door	noun	A1.1	home
+puntual	punctual	adj	A1.1	time|work
+público	public, audience	adj	A1.1	society
+que	that, which, who	conj	A1.1	
+querer	to want, to love	verb	A1.1	society
+quince	fifteen	num	A1.1	
+quién	who	noun	A1.1	
+qué	what	noun	A1.1	
+radio	radio	noun	A1.1	media|tech
+recibir	to receive	verb	A1.1	tech|work
+refresco	soft drink, soda	noun	A1.1	food
+regular	okay, regular, average	verb	A1.1	education|society
+responder	to answer	verb	A1.1	society
+restaurante	restaurant	noun	A1.1	food|work
+rico	delicious, rich	adj	A1.1	food
+roja	red	noun	A1.1	
+rojo	red	adj	A1.1	colors
+rosa	pink	adj	A1.1	colors
+rápidamente	quickly	adv	A1.1	health|travel
+rápido	quickly	adv	A1.1	food
+rápido	fast, quick	adj	A1.1	tech|time|travel
+sabroso	tasty	adj	A1.1	food
+salado	salty	adj	A1.1	food
+salir	to leave	verb	A1.1	time|travel
+salud	health	noun	A1.1	health
+saludar	to greet	verb	A1.1	society
+sano	healthy	adj	A1.1	health
+segundo	second	noun	A1.1	time
+seis	six	num	A1.1	
+semana	week	noun	A1.1	time
+septiembre	September	noun	A1.1	
+ser	to be - essential nature, to be (permanent), being	verb	A1.1	nature|philosophy
+ser de	to be from	phrase	A1.1	countries
+sesenta	sixty	num	A1.1	
+setenta	seventy	num	A1.1	
+si	if	conj	A1.1	
+siempre	always	adv	A1.1	
+siete	seven	num	A1.1	
+silla	chair	noun	A1.1	education|health|home
+sin	without	prep	A1.1	
+sobre	about, on, over	prep	A1.1	
+soleado	sunny	adj	A1.1	nature
+soltero	single	adj	A1.1	society
+sopa	soup	noun	A1.1	food
+soplar	to blow (wind)	verb	A1.1	nature
+su	his, her, your formal, its, your (formal)	det	A1.1	
+subir	to get on, to go up, to upload	verb	A1.1	tech|travel
+sucio	dirty	adj	A1.1	home
+supermercado	supermarket	adv	A1.1	
+supermercado	supermarket	noun	A1.1	
+suéter	sweater	verb	A1.1	
+sábado	Saturday	noun	A1.1	time
+sí	yes	pron	A1.1	
+también	also	adv	A1.1	
+tardar	to take time	verb	A1.1	time
+tarde	late, afternoon	adv	A1.1	time
+tele	television, TV	noun	A1.1	
+televisión	television	noun	A1.1	home|media|tech
+teléfono	telephone	noun	A1.1	home|tech
+temprano	early	adv	A1.1	health|time
+tener	to have	verb	A1.1	
+tenis	tennis	noun	A1.1	media|sports
+terminar	to end, to finish	verb	A1.1	time|work
+tiempo	weather, time	noun	A1.1	nature|philosophy|time
+tiempo libre	free time	phrase	A1.1	media
+tienda	store, shop	noun	A1.1	work
+todos los días	every day	phrase	A1.1	media
+tomar	to drink, to take	verb	A1.1	food
+trabajar	to work	verb	A1.1	education|work
+trabajo	work, job, assignment	noun	A1.1	education|work
+transporte	transportation	noun	A1.1	travel
+trece	thirteen	num	A1.1	
+treinta	thirty	num	A1.1	
+tren	train	noun	A1.1	travel
+tres	three	num	A1.1	
+tu	your - informal, your (informal)	pron	A1.1	
+té	tea	noun	A1.1	food
+tío	uncle, aunt	noun	A1.1	society
+tú	you - informal, you (informal)	pron	A1.1	
+un	a, an - masculine, an (masculine)	det	A1.1	
+una	a, an - feminine, an (feminine)	det	A1.1	
+unas	some - feminine	det	A1.1	
+universidad	university	noun	A1.1	education|work
+uno	one	num	A1.1	
+unos	some - masculine	det	A1.1	
+usar	to wear, to use	verb	A1.1	tech
+usted	you - formal, you (formal)	pron	A1.1	
+ustedes	you all - Latin America	pron	A1.1	
+vacaciones	vacation	noun	A1.1	travel|work
+veinte	twenty	num	A1.1	
+vendedor	salesperson	noun	A1.1	education|work
+vender	to sell	verb	A1.1	work
+venir	to come	verb	A1.1	travel
+venir de	to come from	phrase	A1.1	countries
+ventana	window	noun	A1.1	home
+ver	to see, to watch	verb	A1.1	media
+verde	green	adj	A1.1	colors
+verse	to look (appear)	verb	A1.1	colors|reflexive
+viaje	trip	noun	A1.1	travel
+vieja	old	adj	A1.1	
+viejo	old	adj	A1.1	health|tech
+viernes	Friday	noun	A1.1	time
+vino	wine	noun	A1.1	food
+vivir	to live, experience	verb	A1.1	health|home
+volar	to fly	verb	A1.1	travel
+vosotras	you all - Spain	pron	A1.1	health
+vuestra	your - plural Spain	noun	A1.1	health
+y	and	conj	A1.1	
+yo	I	pron	A1.1	
+¿cuál?	which?	pron	A1.1	
+¿cuándo?	when?	pron	A1.1	
+¿cuánto	how much?	pron	A1.1	
+¿cuántos	how many?	pron	A1.1	
+¿Cómo está usted?	how are you? (formal)	phrase	A1.1	society
+¿Cómo estás?	how are you?	phrase	A1.1	society
+¿cómo?	how?	pron	A1.1	
+¿dónde?	where?	adv	A1.1	
+¿por qué?	why?	phrase	A1.1	
+¿quién?	who?	pron	A1.1	
+¿Qué tal?	how's it going?	phrase	A1.1	society
+¿qué?	what?	pron	A1.1	
+él	he, him (after preposition)	pron	A1.1	
+a través	through	phrase	A1.2	MWU
+abrigo	coat	noun	A1.2	
+aceite	oil	noun	A1.2	food
+acostarse	to go to bed	verb	A1.2	home|reflexive
+además	furthermore, besides, moreover	connector	A1.2	
+aeropuerto	airport	noun	A1.2	travel
+afeitarse	to shave	verb	A1.2	reflexive
+afición	hobby, passion	noun	A1.2	
+al lado	next to	phrase	A1.2	MWU
+alfombra	rug, carpet	noun	A1.2	
+algo	something	pron	A1.2	
+alguien	someone	pron	A1.2	
+almohada	pillow	noun	A1.2	home
+almorzar	to have lunch	verb	A1.2	food
+alquiler	rent	verb	A1.2	home
+alrededor	around	noun	A1.2	
+anteayer	day before yesterday	verb	A1.2	time
+aquella	that over there	adv	A1.2	
+aquellas	those over there	adv	A1.2	
+armario	closet, wardrobe	noun	A1.2	home
+arroz	rice	noun	A1.2	food
+ascensor	elevator	noun	A1.2	home
+así	like this, in this way	noun	A1.2	
+así que	so, therefore	connector	A1.2	MWU|discourse
+aunque	although, even though	conj	A1.2	discourse|glue|philosophy
+avenida	avenue	noun	A1.2	
+avergonzado	embarrassed	adj	A1.2	
+azúcar	sugar	verb	A1.2	food
+bailar	to dance	verb	A1.2	media
+balcón	balcony	noun	A1.2	home
+barato	cheap	adj	A1.2	finance|travel
+barco	boat	noun	A1.2	travel
+bastante	quite, enough	verb	A1.2	
+bañera	bathtub	noun	A1.2	
+biblioteca	library	noun	A1.2	education
+boca	mouth	noun	A1.2	health
+bolso	purse, bag	noun	A1.2	
+brazo	arm	noun	A1.2	health
+bufanda	scarf	noun	A1.2	
+buscar	to look for, to search	verb	A1.2	tech
+cabello	hair	noun	A1.2	health
+cabeza	head	noun	A1.2	health
+cada	each	noun	A1.2	
+cajón	drawer	noun	A1.2	home
+calcetines	socks	noun	A1.2	
+camisa	shirt	noun	A1.2	
+campo	countryside	noun	A1.2	travel
+cansado	tired	adj	A1.2	health
+cantar	to sing	verb	A1.2	media
+cara	face	noun	A1.2	health
+carnicería	butcher shop	noun	A1.2	
+caro	expensive	adj	A1.2	finance|travel
+cartera	wallet	noun	A1.2	home
+casi	almost	adv	A1.2	
+cebolla	onion	noun	A1.2	food
+cenar	to have dinner	verb	A1.2	food
+centro comercial	shopping mall	phrase	A1.2	MWU
+cepillarse	to brush	verb	A1.2	home|reflexive
+cerradura	lock	noun	A1.2	home
+chaqueta	jacket	noun	A1.2	
+chocolate	chocolate	adv	A1.2	time
+cierto	true, certain	adj	A1.2	
+cine	cinema, movie theater	noun	A1.2	media
+cocinar	to cook	verb	A1.2	food|home|media
+comedor	dining room	noun	A1.2	home|travel
+complicado	complicated	adj	A1.2	education|philosophy|tech
+común	common	noun	A1.2	
+concierto	concert	noun	A1.2	media
+conductor	driver	noun	A1.2	travel
+conmigo	with me	pron	A1.2	
+conocer	to know, be familiar with, to know (people, places), to meet, to get to know	verb	A1.2	society|time|travel
+consigo	with oneself, with himself, herself	pron	A1.2	
+contento	content, happy	adj	A1.2	
+contigo	with you	pron	A1.2	
+contra	against	prep	A1.2	
+correcto	correct	adj	A1.2	
+correos	post office	noun	A1.2	work
+correr	to run	verb	A1.2	media|sports|travel
+cortina	curtain	noun	A1.2	home
+costar	to cost	verb	A1.2	
+cuadro	painting	noun	A1.2	health
+cualquiera	any	noun	A1.2	
+cuenta	bill, check	noun	A1.2	food
+cuidado	care, careful	noun	A1.2	
+debajo	underneath	noun	A1.2	
+deber	should, must, duty	verb	A1.2	
+decir	to say, tell, to tell	verb	A1.2	
+dedo	finger	noun	A1.2	health
+delante	in front	noun	A1.2	
+desayunar	to have breakfast	verb	A1.2	food
+descuento	discount	noun	A1.2	finance
+desde	from, since	prep	A1.2	time
+despertar	se) (to wake up	verb	A1.2	
+detrás	behind	noun	A1.2	
+devolver	to return	verb	A1.2	
+dibujar	to draw	verb	A1.2	education|media
+diferente	different	adj	A1.2	home
+dijo	said	noun	A1.2	
+dolor	pain	noun	A1.2	health
+dormir	to sleep	verb	A1.2	health
+dormitorio	bedroom	noun	A1.2	home
+ducha	shower	noun	A1.2	media
+ducharse	to shower	verb	A1.2	home|media|reflexive
+durante	during	prep	A1.2	time
+encima	on top, on top of that	noun	A1.2	philosophy
+encontrar	to find	verb	A1.2	tech
+enfermo	sick	adj	A1.2	health
+enfrente	opposite	noun	A1.2	
+enojado	angry	adj	A1.2	health
+ensalada	salad	noun	A1.2	food
+entonces	then	adv	A1.2	nature
+entre	between, among	prep	A1.2	
+equipaje	luggage	noun	A1.2	travel
+esa	that	det	A1.2	
+esas	those	det	A1.2	
+escalera	stairs	noun	A1.2	home
+espalda	back	noun	A1.2	health
+especial	special	noun	A1.2	
+espejo	mirror	noun	A1.2	
+esquina	corner	noun	A1.2	
+esta	this	det	A1.2	
+estación	season, station	noun	A1.2	media|nature|travel
+estación de autobuses	bus station	phrase	A1.2	MWU|travel
+estación de tren	train station	phrase	A1.2	MWU|travel
+estantería	bookshelf	noun	A1.2	
+estas	these	det	A1.2	
+estómago	stomach	noun	A1.2	health
+excepto	except	noun	A1.2	
+exposición	exhibition	noun	A1.2	media
+extraño	strange	noun	A1.2	
+falda	skirt	noun	A1.2	
+falso	false	adj	A1.2	
+farmacia	pharmacy	noun	A1.2	health
+feliz	happy	adj	A1.2	health
+fiebre	fever	noun	A1.2	health
+fotografía	photography	adj	A1.2	
+fue	was, went	noun	A1.2	
+gafas	glasses	noun	A1.2	
+galleta	cookie, biscuit	noun	A1.2	food
+garaje	garage	noun	A1.2	home
+gastar	to spend	verb	A1.2	
+grifo	faucet, tap	noun	A1.2	
+guantes	gloves	noun	A1.2	
+hacia	toward	prep	A1.2	
+hasta	until, to	prep	A1.2	time
+hay	there is, there are	adv	A1.2	
+helado	ice cream	noun	A1.2	food
+hizo	did, made	noun	A1.2	
+horario	schedule	noun	A1.2	travel|work
+horno	oven	noun	A1.2	food|home
+huevo	egg	noun	A1.2	food
+iglesia	church	noun	A1.2	
+igual...que	equal...to	phrase	A1.2	
+imposible	impossible	adj	A1.2	
+incorrecto	incorrect	adj	A1.2	
+interesado	interested	noun	A1.2	finance
+invierno	winter	noun	A1.2	
+inútil	useless	adj	A1.2	
+lavadora	washing machine	noun	A1.2	home
+lavarse	to wash oneself	verb	A1.2	reflexive
+lavavajillas	dishwasher	noun	A1.2	home
+lechuga	lettuce	noun	A1.2	food
+librería	bookstore	noun	A1.2	
+llave	key	noun	A1.2	home|travel
+llaves	keys	noun	A1.2	home
+llegada	arrival	noun	A1.2	travel
+llevar	to wear, carry, take, to carry	verb	A1.2	health
+lluvia	rain	noun	A1.2	nature
+lo	him, it - masculine, it (masculine)	pron	A1.2	
+luego	later, then	adv	A1.2	nature|time
+lámpara	lamp	noun	A1.2	home
+mano	hand	noun	A1.2	health
+manta	blanket	noun	A1.2	home
+maquillarse	to put on makeup	verb	A1.2	reflexive
+mayor	older, bigger	adj	A1.2	society
+me	me	pron	A1.2	
+medicina	medicine	noun	A1.2	health
+mejor	better, best	adj	A1.2	
+menor	younger, smaller	adj	A1.2	society
+menos...que	less...than	phrase	A1.2	comparison
+menú	menu	noun	A1.2	food
+mercado	market	noun	A1.2	
+microondas	microwave	noun	A1.2	food|home
+mientras	while	conj	A1.2	time
+montaña	mountain	noun	A1.2	nature
+motocicleta	motorcycle	noun	A1.2	travel
+museo	museum	noun	A1.2	media
+más...que	more...than	phrase	A1.2	comparison
+nada	nothing	pron	A1.2	
+nadar	to swim	verb	A1.2	media
+nadie	no one, nobody	pron	A1.2	
+nariz	nose	noun	A1.2	health
+necesario	necessary	adj	A1.2	
+nervioso	nervous	adj	A1.2	health
+nieve	snow	adv	A1.2	nature|time
+normal	normal	noun	A1.2	
+nos	us	pron	A1.2	
+nube	cloud	noun	A1.2	nature
+número de talla	size number	phrase	A1.2	MWU
+ocupado	busy	noun	A1.2	
+oferta	offer, sale, supply	noun	A1.2	finance
+ojo	eye	noun	A1.2	health
+oreja	ear	noun	A1.2	health
+orgulloso	proud	adj	A1.2	
+os	you all - Spain object	pron	A1.2	health
+otoño	autumn, fall	noun	A1.2	
+oír	to hear	verb	A1.2	health|media
+panadería	bakery	noun	A1.2	
+pantalones	pants, trousers	noun	A1.2	tech
+papa	potato	noun	A1.2	food
+paraguas	umbrella	noun	A1.2	
+parecido	similar	adj	A1.2	
+pared	wall	noun	A1.2	home
+pasado mañana	day after tomorrow	phrase	A1.2	MWU|time
+pasajero	passenger	noun	A1.2	travel
+pasta	pasta	noun	A1.2	food
+pedir	to order, ask for	verb	A1.2	food
+peinarse	to comb one's hair	verb	A1.2	health|reflexive
+peligro	danger	noun	A1.2	
+peor	worse, worst	adj	A1.2	
+perfecto	perfect	adj	A1.2	education
+permitido	allowed	noun	A1.2	
+pie	foot	noun	A1.2	health
+piel	skin	noun	A1.2	health
+pierna	leg	noun	A1.2	health
+pintar	to paint	verb	A1.2	health|media
+piso	floor, apartment	adv	A1.2	home
+playa	beach	noun	A1.2	nature
+plaza	square	noun	A1.2	
+pollo	chicken	noun	A1.2	food
+poner	to put, place	verb	A1.2	
+ponerse	to put on [clothing], to put on	verb	A1.2	reflexive
+por supuesto	of course	phrase	A1.2	MWU|education|philosophy
+posible	possible	adj	A1.2	
+postre	dessert	noun	A1.2	food
+precio	price	noun	A1.2	food
+preocupado	worried	adj	A1.2	health
+primavera	spring	noun	A1.2	
+probar	to try, test, to taste, se) (to try on, to prove, to test	verb	A1.2	education|food|philosophy|tech
+prohibido	forbidden	noun	A1.2	
+pronto	soon	adv	A1.2	time
+propietario	owner	noun	A1.2	home
+propina	tip	noun	A1.2	food
+puente	bridge	noun	A1.2	
+puesto que	since, given that	phrase	A1.2	MWU|philosophy|time
+queso	cheese	noun	A1.2	food
+quitarse	to take off [clothing], to take off	verb	A1.2	reflexive
+raro	rare, strange	noun	A1.2	
+receta	prescription, recipe	noun	A1.2	health
+refrigerador	refrigerator	noun	A1.2	food|home
+reloj	watch, clock	noun	A1.2	home
+reserva	reservation, reserve	noun	A1.2	food
+resfriado	cold	adj	A1.2	health
+ropa	clothing	noun	A1.2	
+saber	to know, knowledge, to know (facts)	verb	A1.2	philosophy|time
+sal	salt	noun	A1.2	food
+sala	living room	noun	A1.2	home
+salida	exit, departure	noun	A1.2	travel
+seguro	sure, confident	adj	A1.2	
+según	according to	prep	A1.2	philosophy
+semáforo	traffic light	noun	A1.2	
+sentir	to feel, regret	verb	A1.2	health
+servir	to serve	verb	A1.2	food|society|work
+sillón	armchair	noun	A1.2	home
+simple	simple	adj	A1.2	education|philosophy|tech
+sofá	sofa	noun	A1.2	home
+sol	sun	noun	A1.2	nature
+solamente	only	adv	A1.2	
+sombrero	hat	noun	A1.2	
+sopa	soup	adv	A1.2	food
+sorprendido	surprised	adj	A1.2	
+tal como	just as	phrase	A1.2	MWU|philosophy
+tal vez	perhaps, maybe	phrase	A1.2	MWU|philosophy
+tampoco	neither, not either	verb	A1.2	
+tan...como	as...as	phrase	A1.2	comparison
+tanto como	as much as	phrase	A1.2	MWU
+taxi	taxi	noun	A1.2	travel
+te	you - informal object, you	pron	A1.2	
+teatro	theater	noun	A1.2	media
+techo	ceiling	noun	A1.2	home
+televisor	TV set	noun	A1.2	
+tener que	to have to	phrase	A1.2	MWU
+tocar	to play, touch, to play (instrument)	verb	A1.2	media
+todavía	still, yet	adv	A1.2	time
+todavía no	not yet	phrase	A1.2	MWU|time
+tomate	tomato	noun	A1.2	food
+traer	to bring	verb	A1.2	food
+tranquilo	calm	adj	A1.2	health
+triste	sad	adj	A1.2	health|media
+tuvo	had	noun	A1.2	
+típico	typical	noun	A1.2	
+varias	several	noun	A1.2	
+vecino	neighbor	noun	A1.2	home
+verano	summer	noun	A1.2	
+verdura	vegetable	noun	A1.2	food
+vestido	dress	noun	A1.2	
+vestirse	to get dressed	verb	A1.2	home|reflexive
+viento	wind	noun	A1.2	nature
+vio	saw	noun	A1.2	
+ya	already, now	adj	A1.2	time
+ya no	not anymore, no longer	phrase	A1.2	MWU|time
+zanahoria	carrot	noun	A1.2	food
+zapatos	shoes	noun	A1.2	
+útil	useful	adj	A1.2	education|tech
+a pesar de	despite, in spite of	connector	A2.1	MWU|discourse
+a través de	through	phrase	A2.1	philosophy
+abordar	to board, to approach	verb	A2.1	education|travel
+aburrimiento	boredom	noun	A2.1	
+aburrirse	to be bored	verb	A2.1	reflexive
+acabar de	to have just	phrase	A2.1	philosophy
+academia	academy	noun	A2.1	education|media
+acampar	to camp	verb	A2.1	
+acceso	access	noun	A2.1	tech
+actor	actor, actress	noun	A2.1	media
+actriz	actor, actress	noun	A2.1	media
+actuar	to act	verb	A2.1	media
+además de	besides, in addition to	phrase	A2.1	
+aderezo	dressing	noun	A2.1	food
+adjunto	attachment	noun	A2.1	tech
+admirar	to admire	verb	A2.1	health|media
+aduana	customs	noun	A2.1	travel
+aficionada	fan	noun	A2.1	sports
+agencia de viajes	travel agency	phrase	A2.1	travel
+agradecido	grateful	adj	A2.1	
+agrio	sour	adj	A2.1	food
+agudo	acute	adj	A2.1	health
+aire	air	noun	A2.1	nature
+ajedrez	chess	noun	A2.1	sports
+ajo	garlic	noun	A2.1	food
+al lado de	next to, beside	phrase	A2.1	
+albergue	hostel	noun	A2.1	travel
+alegrarse	to be glad	verb	A2.1	reflexive
+alegría	joy, happiness	noun	A2.1	
+alguno	some, any	pron	A2.1	
+aliviado	relieved	adj	A2.1	
+aliviar	to relieve	verb	A2.1	
+aliviarse	to feel relief	verb	A2.1	reflexive
+alivio	relief	noun	A2.1	
+alojamiento	accommodation	noun	A2.1	travel
+alrededor de	around	phrase	A2.1	
+altavoces	speakers	noun	A2.1	tech
+altura	height	noun	A2.1	
+alumna	student, pupil	adv	A2.1	education
+alérgico	allergic	adj	A2.1	health
+amargo	bitter	adj	A2.1	food
+ambicioso	ambitious	adj	A2.1	work
+ambulancia	ambulance	noun	A2.1	health
+amiga	friend	noun	A2.1	society
+amistad	friendship	noun	A2.1	society
+amor	love	noun	A2.1	
+analizar	to analyze	verb	A2.1	education|philosophy|tech
+anchura	width	noun	A2.1	
+andén	platform	noun	A2.1	travel
+anfitriona	host	noun	A2.1	society
+animación	animation	noun	A2.1	media
+animar	to cheer, encourage	verb	A2.1	
+ansioso	anxious	adj	A2.1	
+anteriormente	previously	adv	A2.1	time
+antes de	before	phrase	A2.1	
+antipático	unfriendly	adj	A2.1	
+anulado	cancelled	noun	A2.1	travel
+apagar	to turn off	verb	A2.1	tech
+apenas	barely, hardly	verb	A2.1	time
+apio	celery	noun	A2.1	food
+aplaudir	to applaud	verb	A2.1	media|sports
+aplicación	application, app	noun	A2.1	tech|work
+aprender	to learn	verb	A2.1	education|health
+aprendizaje	learning	noun	A2.1	education
+aprobar	to pass	verb	A2.1	education
+archivo	file	noun	A2.1	tech|work
+arte	art	noun	A2.1	education|media
+artes marciales	martial arts	phrase	A2.1	MWU|media
+artista	artist	noun	A2.1	media
+artístico	artistic	adj	A2.1	media
+asar	to roast, grill	verb	A2.1	food
+asignatura	subject	noun	A2.1	education
+asistente	assistant	noun	A2.1	work
+asistir	to attend, to assist	verb	A2.1	education|media|society
+asombrado	amazed	adj	A2.1	
+asustarse	to get scared	verb	A2.1	reflexive
+atender	to attend to	verb	A2.1	work
+aterrador	terrifying	adj	A2.1	media
+aterrizar	to land	verb	A2.1	travel
+atlas	atlas	noun	A2.1	education
+atletismo	athletics	noun	A2.1	sports
+auditorio	auditorium	noun	A2.1	education|media
+audífonos	headphones	noun	A2.1	tech
+aula	classroom	noun	A2.1	education
+aumento	raise	noun	A2.1	work
+autora	author	noun	A2.1	media
+avanzado	advanced	adj	A2.1	education|philosophy|tech
+aventurero	adventurous	adj	A2.1	travel
+aún	still, even	adv	A2.1	time
+ballet	ballet	noun	A2.1	media
+banda sonora	soundtrack	phrase	A2.1	media
+batidora	mixer	noun	A2.1	food
+batir	to beat	verb	A2.1	food
+bebida	drink	noun	A2.1	food
+beca	scholarship	noun	A2.1	education
+bienestar	well-being	verb	A2.1	health
+billar	billiards	verb	A2.1	food
+biología	biology	noun	A2.1	education|tech
+blog	blog	noun	A2.1	tech
+boda	wedding	noun	A2.1	society
+bolos	bowling	noun	A2.1	sports
+borrador	eraser	noun	A2.1	education
+borrar	to delete, erase	verb	A2.1	tech
+bosque	forest	noun	A2.1	nature
+boxeo	boxing	noun	A2.1	sports
+bricolaje	DIY, home improvement	noun	A2.1	home
+brócoli	broccoli	noun	A2.1	food
+bucear	to dive, snorkel	verb	A2.1	
+buceo	diving	noun	A2.1	sports
+básico	basic	adj	A2.1	education|philosophy
+béisbol	baseball	noun	A2.1	media|sports
+caballo	horse	noun	A2.1	nature
+caer	to fall	verb	A2.1	
+cafetera	coffee maker	noun	A2.1	food
+cafetería	cafeteria	noun	A2.1	education
+calculadora	calculator	noun	A2.1	education
+calcular	to calculate	verb	A2.1	education|philosophy|tech
+calentar	to heat	verb	A2.1	food
+calificación	grade	noun	A2.1	education
+calificado	qualified	adj	A2.1	work
+calificar	to grade	verb	A2.1	education
+cama doble	double bed	phrase	A2.1	MWU|travel
+cama individual	single bed	phrase	A2.1	MWU|travel
+cambio	exchange, change	noun	A2.1	philosophy
+campeona	champion	noun	A2.1	
+campeonato	championship	noun	A2.1	sports
+camping	campsite	noun	A2.1	
+cancelar	to cancel	verb	A2.1	travel
+canción	song	noun	A2.1	media
+canotaje	canoeing	noun	A2.1	sports
+capacitación	training	noun	A2.1	work
+capítulo	chapter	noun	A2.1	media
+carpeta	folder	adj	A2.1	education|work
+carrera	career	noun	A2.1	work
+carácter	character	verb	A2.1	health
+casada	married	noun	A2.1	society
+caza	hunting	noun	A2.1	sports
+cazar	to hunt	verb	A2.1	
+cazuela	casserole	noun	A2.1	food
+celebración	celebration	noun	A2.1	
+celos	jealousy	noun	A2.1	
+celoso	jealous	adj	A2.1	
+centímetro	centimeter	noun	A2.1	
+cerca de	near, close to	phrase	A2.1	
+cerdo	pig	noun	A2.1	nature
+certificado	certificate	noun	A2.1	education
+chat	chat	noun	A2.1	tech
+chatear	to chat	verb	A2.1	tech
+chef	chef	noun	A2.1	food
+chile	pepper	noun	A2.1	food
+cicatriz	scar	noun	A2.1	health
+ciclismo	cycling	noun	A2.1	sports
+cielo	sky	noun	A2.1	nature
+ciencias	sciences, science	noun	A2.1	education
+circo	circus	noun	A2.1	media
+cirujano	surgeon	noun	A2.1	health
+cita	date, appointment, citation, quote	noun	A2.1	
+clase	class	noun	A2.1	education|reflexive
+cliente	client, customer	noun	A2.1	education|food|work
+clásico	classic	adj	A2.1	media
+clínica	clinic	noun	A2.1	health
+col	cabbage	noun	A2.1	food
+colaborar	to collaborate	verb	A2.1	society|work
+coleccionar	to collect	verb	A2.1	
+colega	colleague	noun	A2.1	work
+colegio	school, school (private)	noun	A2.1	education
+colgar	to hang up	verb	A2.1	tech
+colina	hill	noun	A2.1	nature
+comentar	to comment	verb	A2.1	media
+comercial	commercial	noun	A2.1	media
+como	how, as	verb	A2.1	philosophy
+comparar	to compare	verb	A2.1	education
+compañera	colleague	noun	A2.1	work
+compañera de clase	classmate	phrase	A2.1	MWU|education|reflexive
+compañía	company	noun	A2.1	work
+competente	competent	adj	A2.1	work
+competición	competition	noun	A2.1	
+competir	to compete	verb	A2.1	sports|work
+completamente	completely	adv	A2.1	health|philosophy
+completar	to complete	verb	A2.1	work
+completo	complete	adj	A2.1	
+comportarse	to behave	verb	A2.1	reflexive
+comprar souvenirs	to buy souvenirs	phrase	A2.1	travel
+comprender	to understand	verb	A2.1	education|philosophy
+comprometido	committed	adj	A2.1	work
+condimentar	to season	verb	A2.1	food
+condimento	seasoning	noun	A2.1	food
+conectar	to connect	verb	A2.1	tech
+conectarse	to connect	verb	A2.1	reflexive|tech
+conejo	rabbit	noun	A2.1	nature
+confianza	trust, confidence	noun	A2.1	philosophy
+confiar	to trust	verb	A2.1	health|philosophy
+confirmar	to confirm	verb	A2.1	education|philosophy|tech|travel
+confundido	confused	adj	A2.1	
+confundir	to confuse	verb	A2.1	
+confundirse	to get confused	verb	A2.1	reflexive
+confusión	confusion	noun	A2.1	
+conmovedor	moving	adj	A2.1	media
+conocida	acquaintance	noun	A2.1	
+conocimiento	knowledge	adv	A2.1	education|philosophy|work
+consultorio	doctor's office	noun	A2.1	health
+contador	accountant	noun	A2.1	work
+contagioso	contagious	adj	A2.1	health
+contestar	to answer	verb	A2.1	tech
+contraseña	password	noun	A2.1	tech|work
+contrato	contract	noun	A2.1	work
+copiar	to copy	verb	A2.1	education|tech
+corregir	to correct	verb	A2.1	education
+cortar	to cut	verb	A2.1	food|tech
+coser	to sew	verb	A2.1	
+crear	to create	verb	A2.1	media|tech|work
+creativo	creative	adj	A2.1	media|work
+criticar	to criticize, to critique	verb	A2.1	education|media|society
+cruel	cruel	adj	A2.1	
+crujiente	crispy	adj	A2.1	food
+crónico	chronic	adj	A2.1	health
+cuando	when	verb	A2.1	philosophy
+cuarto	quarter	noun	A2.1	media
+cuchara	spoon	noun	A2.1	food
+cucharita	teaspoon	noun	A2.1	food
+cuchillo	knife	noun	A2.1	food
+cuento	story, short story	noun	A2.1	media
+culpa	guilt	noun	A2.1	
+cultural	cultural	adj	A2.1	travel
+curar	to cure	verb	A2.1	health
+curarse	to get better	verb	A2.1	health|reflexive
+curiosidad	curiosity	noun	A2.1	
+currículum	résumé, CV, resume	noun	A2.1	work
+curso	course	noun	A2.1	education
+cuñada	brother-in-law, sister-in-law	noun	A2.1	society
+cámara	camera, chamber	noun	A2.1	tech
+damas	checkers	noun	A2.1	sports
+deadline	deadline	noun	A2.1	work
+debajo de	under, below	phrase	A2.1	
+deberes	homework, duties	noun	A2.1	home|philosophy
+decepcionado	disappointed	adj	A2.1	
+decidir	to decide	verb	A2.1	work
+dedicado	dedicated	adj	A2.1	work
+definir	to define	verb	A2.1	education
+dejar de	to stop doing	phrase	A2.1	philosophy
+dejar propina	to leave a tip	phrase	A2.1	food
+delante de	in front of	phrase	A2.1	
+dentista	dentist	noun	A2.1	health
+dentro de	inside of	phrase	A2.1	
+desanimado	discouraged	adj	A2.1	
+desarrollar	to develop	verb	A2.1	society|tech|work
+desayuno incluido	breakfast included	phrase	A2.1	travel
+descargar	to download	verb	A2.1	tech
+descomponerse	to break down	verb	A2.1	reflexive|tech
+desconectar	to disconnect	verb	A2.1	tech
+desconectarse	to disconnect	verb	A2.1	reflexive|tech
+desconfiar	to distrust	verb	A2.1	health|philosophy
+describir	to describe	verb	A2.1	education
+descubrir	to discover	verb	A2.1	tech|travel
+desde que	since (time)	phrase	A2.1	
+desesperación	desperation	noun	A2.1	
+desesperanzado	hopeless	adj	A2.1	
+desierto	desert	noun	A2.1	nature
+desinstalar	to uninstall	verb	A2.1	tech
+despacho	office, study	noun	A2.1	work
+despegar	to take off	verb	A2.1	travel
+despreciar	to despise	verb	A2.1	health
+después de	after	phrase	A2.1	
+destino	destination	noun	A2.1	travel
+detrás de	behind	phrase	A2.1	
+diagnóstico	diagnosis	noun	A2.1	health
+diccionario	dictionary	noun	A2.1	education
+digital	digital	adj	A2.1	tech
+diploma	diploma	noun	A2.1	education
+director	director	noun	A2.1	media|work
+directora	director	noun	A2.1	media
+dirigir	to manage, to direct	verb	A2.1	media|work
+discutir	to discuss	verb	A2.1	work
+disfrutar	to enjoy	verb	A2.1	health|media
+distinto	different	adj	A2.1	
+divertirse	to have fun	verb	A2.1	media|reflexive
+divorciada	divorced	noun	A2.1	society
+divorcio	divorce	noun	A2.1	society
+documento	document	noun	A2.1	tech|work
+doméstico	domestic	adj	A2.1	travel
+donde	where	pron	A2.1	philosophy
+dramático	dramatic	adj	A2.1	media
+duda	doubt	noun	A2.1	philosophy
+duro	hard	adj	A2.1	food
+educación	education	noun	A2.1	education
+educación física	physical education	phrase	A2.1	MWU|education
+educativo	educational	adj	A2.1	media
+eficiente	efficient	adj	A2.1	work
+ejercicio	exercise	noun	A2.1	
+electrónico	electronic	adj	A2.1	tech
+elefante	elephant	noun	A2.1	nature
+elemental	elementary	adj	A2.1	education|philosophy
+elogiar	to praise	verb	A2.1	
+embarcar	to board	verb	A2.1	travel
+emergencia	emergency	noun	A2.1	health|society
+emocionar	to excite	verb	A2.1	
+emocionarse	to get excited	verb	A2.1	reflexive
+emoción	emotion	noun	A2.1	
+empatar	to tie, draw	verb	A2.1	sports
+empeorar	to worsen	verb	A2.1	health
+empeorarse	to get worse	verb	A2.1	health|reflexive
+empezar a	to begin to	phrase	A2.1	
+empleada	employee	noun	A2.1	work
+empleado	employee	noun	A2.1	work
+empresa	company, business	noun	A2.1	work
+en cambio	on the other hand	connector	A2.1	philosophy
+en lugar de	instead of	phrase	A2.1	philosophy
+enamorado	in love	adj	A2.1	
+enamorarse	to fall in love	verb	A2.1	reflexive
+encender	to turn on	verb	A2.1	tech
+enciclopedia	encyclopedia	noun	A2.1	education
+encima de	on top of	phrase	A2.1	
+enfermar	to get sick	verb	A2.1	health
+enfermarse	to get sick	verb	A2.1	health|reflexive
+enfriar	to cool	verb	A2.1	food
+engañar	to deceive	verb	A2.1	
+enlace	link	noun	A2.1	tech
+enojar	to anger	verb	A2.1	
+enojarse	to get angry	verb	A2.1	reflexive
+enojo	anger	noun	A2.1	
+ensayo	essay	noun	A2.1	education
+enseñanza	teaching	noun	A2.1	education
+enseñar	to teach	verb	A2.1	education
+entender	to understand	verb	A2.1	education|philosophy
+entrada	appetizer	noun	A2.1	food
+entradas	tickets	noun	A2.1	travel
+entrenar	to train	verb	A2.1	
+entretenerse	to entertain oneself	verb	A2.1	media|reflexive
+entretenido	entertaining	adj	A2.1	media
+entretenimiento	entertainment	noun	A2.1	media
+entrevista	interview	noun	A2.1	media|travel|work
+entristecerse	to become sad	verb	A2.1	reflexive
+entusiasmado	enthusiastic	adj	A2.1	
+enviar	to send	verb	A2.1	tech|work
+envidioso	envious	adj	A2.1	
+equipo	team	noun	A2.1	sports|work
+equitación	horse riding	noun	A2.1	nature
+es decir	that is to say	connector	A2.1	
+escala	layover, stopover	noun	A2.1	travel
+escalada	climbing	noun	A2.1	sports
+escalar	to climb	verb	A2.1	
+escena	scene	noun	A2.1	media
+escritora	writer	noun	A2.1	media
+escritorio	desk	noun	A2.1	education
+escuela primaria	elementary school	phrase	A2.1	education
+escuela secundaria	middle school	phrase	A2.1	education
+español	Spanish	noun	A2.1	education
+especialidad	specialty	noun	A2.1	food
+especialista	specialist	noun	A2.1	health
+especialmente	especially	adv	A2.1	philosophy|time
+especias	spices	noun	A2.1	food
+espectadora	spectator	noun	A2.1	sports
+espectáculo	show, performance, spectacle	noun	A2.1	media
+esperanza	hope	noun	A2.1	philosophy
+esperanzado	hopeful	adj	A2.1	
+espinaca	spinach	noun	A2.1	food
+esposa	husband, wife	noun	A2.1	media
+esquiar	to ski	verb	A2.1	
+esquí	skiing	noun	A2.1	sports
+estado de ánimo	mood	phrase	A2.1	
+estrella	star	noun	A2.1	nature
+estresado	stressed	adj	A2.1	
+estresar	to stress (someone)	verb	A2.1	
+estresarse	to get stressed	verb	A2.1	reflexive
+evaluar	to evaluate	verb	A2.1	education|media
+examen	exam	noun	A2.1	education
+examinar	to examine	verb	A2.1	education|health|philosophy|tech
+excelente	excellent	adj	A2.1	education
+excursión	excursion, trip	noun	A2.1	travel
+exitoso	successful	adj	A2.1	work
+experiencia	experience	noun	A2.1	work
+experimentado	experienced	adj	A2.1	work
+explicar	to explain	verb	A2.1	education|philosophy|work
+explorar	to explore	verb	A2.1	education|tech|travel
+exquisito	exquisite	adj	A2.1	food|media
+extranjero	foreigner, foreign, abroad	noun	A2.1	travel
+extrovertido	outgoing	adj	A2.1	
+exótico	exotic	adj	A2.1	travel
+facturar	to check in luggage, to check in	verb	A2.1	travel
+faltar	to miss (class)	verb	A2.1	education
+famoso	famous	adj	A2.1	media
+fascinante	fascinating	adj	A2.1	media
+feria	fair	noun	A2.1	media
+festival	festival	noun	A2.1	media
+fiesta	party	noun	A2.1	media
+film	film	noun	A2.1	media
+filosofía	philosophy	noun	A2.1	education|philosophy
+finalmente	finally	adv	A2.1	time
+flor	flower	noun	A2.1	nature
+fotografiar	to photograph	verb	A2.1	media|travel
+freír	to fry	verb	A2.1	food
+frontera	border	noun	A2.1	travel
+frustrado	frustrated	adj	A2.1	
+frustrar	to frustrate	verb	A2.1	
+frustrarse	to get frustrated	verb	A2.1	reflexive
+fuego	fire	noun	A2.1	nature
+fuera de	outside of	phrase	A2.1	
+fuerte	strong	adj	A2.1	food|health
+funcionar	to work, function	verb	A2.1	tech
+función	show, performance	noun	A2.1	media
+furioso	furious	adj	A2.1	
+fábrica	factory	noun	A2.1	work
+física	physics	noun	A2.1	education
+fútbol americano	American football	phrase	A2.1	MWU|health
+galería	gallery	noun	A2.1	media
+gallina	hen	noun	A2.1	nature
+ganar	to win, to earn	verb	A2.1	sports|work
+generalmente	generally	adv	A2.1	time
+generoso	generous	adj	A2.1	
+geografía	geography	noun	A2.1	education
+gerente	manager	noun	A2.1	work
+gimnasia	gymnastics	noun	A2.1	sports
+gimnasio	gym	noun	A2.1	sports|travel
+golf	golf	noun	A2.1	sports
+golpear	to hit	verb	A2.1	sports
+grabadora	recorder	noun	A2.1	tech
+grabar	to record	verb	A2.1	media|tech
+gracioso	funny	adj	A2.1	media
+grado	degree	noun	A2.1	
+graduarse	to graduate	verb	A2.1	education|reflexive
+gramo	gram	noun	A2.1	
+graso	greasy	adj	A2.1	food
+grave	serious	adj	A2.1	health
+gravemente	seriously	adv	A2.1	health|philosophy
+grupo	group, band	adv	A2.1	media
+guardar	to save	verb	A2.1	tech
+guisar	to stew	verb	A2.1	food
+guión	script	noun	A2.1	media
+guía	guide	noun	A2.1	travel
+guía turística	tour guide	phrase	A2.1	travel
+género	genre	noun	A2.1	media
+habilidad	skill	noun	A2.1	media|work
+habitación	room	noun	A2.1	home|travel
+harina	flour	noun	A2.1	food
+hasta que	until	phrase	A2.1	
+hermoso	beautiful	adj	A2.1	media|travel
+hervir	to boil	verb	A2.1	food
+historia	history, story	noun	A2.1	education|media
+histórico	historical	adj	A2.1	travel
+hockey	hockey	noun	A2.1	home
+honesto	honest	adj	A2.1	
+horario laboral	work schedule	phrase	A2.1	MWU|travel
+hornear	to bake	verb	A2.1	food
+hospedarse	to stay	verb	A2.1	reflexive|travel
+hostal	hostel	noun	A2.1	travel
+hotel	hotel	noun	A2.1	travel|work
+huésped	guest	noun	A2.1	travel
+ida	one way	noun	A2.1	travel
+ida y vuelta	round trip	phrase	A2.1	MWU|travel
+idioma	language	noun	A2.1	
+idiomas	languages	noun	A2.1	
+igual	equal, same	adj	A2.1	society
+imperfecto	imperfect	adj	A2.1	
+impresionante	impressive	adj	A2.1	media|travel
+impresora	printer	noun	A2.1	tech|work
+imprimir	to print	verb	A2.1	tech
+inalámbrico	wireless	adj	A2.1	tech
+incluido	included	noun	A2.1	travel
+incompleto	incomplete	adj	A2.1	
+infección	infection	noun	A2.1	health
+informe	report	noun	A2.1	work
+informática	computer science	noun	A2.1	education|tech
+inglés	English	noun	A2.1	education
+inmediatamente	immediately	adv	A2.1	time
+innecesario	unnecessary	adj	A2.1	
+insatisfecho	unsatisfied	adj	A2.1	
+inscribirse	to enroll	verb	A2.1	education|reflexive
+insecto	insect	noun	A2.1	
+inseguro	insecure	adj	A2.1	
+instalar	to install	verb	A2.1	tech
+instituto	high school, institute	noun	A2.1	education
+instrumento	instrument	noun	A2.1	media
+insuficiente	insufficient	adj	A2.1	
+intensamente	intensely	adv	A2.1	health
+internacional	international	adj	A2.1	travel
+interés	interest	noun	A2.1	finance
+introvertido	introverted	adj	A2.1	
+investigar	to research, to investigate	verb	A2.1	education|philosophy|tech
+invitación	invitation	noun	A2.1	
+invitada	guest	noun	A2.1	society
+itinerario	itinerary	noun	A2.1	travel
+jardinería	gardening	noun	A2.1	home
+jefa	boss	noun	A2.1	work
+jirafa	giraffe	noun	A2.1	nature
+jugadora	player	noun	A2.1	sports
+jugar a las cartas	to play cards	phrase	A2.1	MWU
+jugar a videojuegos	to play video games	phrase	A2.1	MWU
+jugar al ajedrez	to play chess	phrase	A2.1	MWU|sports
+jugoso	juicy	adj	A2.1	food
+juzgar	to judge	verb	A2.1	education
+kilo	kilogram	noun	A2.1	
+kilómetro	kilometer	noun	A2.1	
+laboratorio	laboratory	noun	A2.1	education|tech
+lago	lake	noun	A2.1	nature
+lanzar	to throw	verb	A2.1	sports
+laptop	laptop	noun	A2.1	tech
+lastimar	to hurt	verb	A2.1	health
+lastimarse	to hurt oneself	verb	A2.1	health|reflexive
+lectora	reader	noun	A2.1	media
+lejos de	far from	phrase	A2.1	
+leve	mild	adj	A2.1	health
+levemente	mildly	adv	A2.1	health
+león	lion	noun	A2.1	nature
+libre	free, available	noun	A2.1	travel
+libreta	notebook	noun	A2.1	education
+libro de texto	textbook	phrase	A2.1	education
+licuadora	blender	noun	A2.1	food
+liga	league	noun	A2.1	sports
+ligero	light	adj	A2.1	food
+limón	lemon	noun	A2.1	food
+literatura	literature	noun	A2.1	education|media
+litro	liter	noun	A2.1	
+llamada	call	noun	A2.1	work
+llamar	to call	verb	A2.1	society|tech|work
+lobo	wolf	noun	A2.1	nature
+longitud	length	noun	A2.1	
+lucha	wrestling	noun	A2.1	sports
+luna	moon	noun	A2.1	nature
+mantequilla	butter	noun	A2.1	food
+mapa	map	noun	A2.1	education|travel
+mar	sea	verb	A2.1	nature
+maratón	marathon	noun	A2.1	sports
+marcador	marker	noun	A2.1	education
+margarina	margarine	noun	A2.1	food
+matemáticas	mathematics	noun	A2.1	education
+materia	subject, matter	noun	A2.1	education|philosophy
+matricularse	to register	verb	A2.1	education|reflexive
+matrimonio	marriage	noun	A2.1	society
+medalla	medal	noun	A2.1	sports
+medicamento	medication	noun	A2.1	health
+medida	measurement	adj	A2.1	
+medios	media	noun	A2.1	media
+meditar	to meditate	verb	A2.1	philosophy
+mejorar	to improve	verb	A2.1	health|tech|work
+mejorarse	to get better	verb	A2.1	health|reflexive
+memorizar	to memorize	verb	A2.1	education
+mensaje	message	noun	A2.1	tech
+mentir	to lie	verb	A2.1	
+mentiroso	lying, dishonest	adj	A2.1	
+meta	goal, finish line	noun	A2.1	sports|work
+mezclar	to mix	verb	A2.1	food
+miedo	fear	noun	A2.1	health
+mientras que	whereas, while	phrase	A2.1	philosophy
+mililitro	milliliter	noun	A2.1	
+mitad	half	noun	A2.1	
+mochila	backpack	noun	A2.1	education|travel
+moderno	modern	adj	A2.1	media|philosophy|tech
+molesto	annoyed	adj	A2.1	
+moneda	currency	noun	A2.1	
+mono	monkey	noun	A2.1	home
+montar a caballo	to ride a horse	phrase	A2.1	MWU|nature
+montar en bicicleta	to ride a bicycle	phrase	A2.1	MWU
+montañismo	mountaineering	noun	A2.1	nature
+motel	motel	noun	A2.1	travel
+motivado	motivated	adj	A2.1	
+musical	musical	noun	A2.1	media
+médico	doctor	noun	A2.1	health
+mí	me (after preposition)	adv	A2.1	
+músico	musician	noun	A2.1	media
+natación	swimming	noun	A2.1	sports
+naturaleza	nature	noun	A2.1	nature
+navegar	to browse	verb	A2.1	tech
+necesitar	to need	verb	A2.1	
+negocio	business	noun	A2.1	work
+ninguno	none, not any	pron	A2.1	
+nota	grade, note	noun	A2.1	education
+noticia	news	adj	A2.1	media
+noticias	news	adj	A2.1	media
+novela	novel	noun	A2.1	media
+novia	boyfriend, girlfriend	noun	A2.1	society
+nuera	daughter-in-law	noun	A2.1	society
+objetivo	objective	noun	A2.1	work
+obra de teatro	play	phrase	A2.1	media
+ocupación	occupation	noun	A2.1	work
+ocupado	occupied	adv	A2.1	travel
+océano	ocean	noun	A2.1	nature
+odio	hate	noun	A2.1	
+olla	pot	noun	A2.1	food
+olvidar	to forget	verb	A2.1	education
+operar	to operate	verb	A2.1	health
+opinar	to give an opinion	verb	A2.1	media
+orden	order	noun	A2.1	food
+ordenar	to order	verb	A2.1	food
+organización	organization	noun	A2.1	work
+organizado	organized	adj	A2.1	work
+organizar	to organize	verb	A2.1	education|travel|work
+orgullo	pride	noun	A2.1	
+oso	bear	noun	A2.1	health
+oveja	sheep	noun	A2.1	nature
+pago	payment	noun	A2.1	work
+pantalla	screen	noun	A2.1	tech
+paracaidismo	skydiving	noun	A2.1	nature
+parada	stop	noun	A2.1	travel
+parapente	paragliding	noun	A2.1	sports
+pareja	couple, partner	adv	A2.1	media
+pariente	relative	noun	A2.1	society
+parte	part, party	noun	A2.1	media
+particularmente	particularly	adv	A2.1	philosophy|time
+partido	match, game, party	noun	A2.1	sports
+pasaje	ticket	noun	A2.1	travel
+pasto	grass	noun	A2.1	nature
+patinaje	skating	noun	A2.1	
+patinar	to skate	verb	A2.1	
+pegar	to paste	verb	A2.1	tech
+pelar	to peel	verb	A2.1	food
+pensar + infinitive	to plan to	phrase	A2.1	
+pensión	boarding house, pension	noun	A2.1	home|travel
+pepino	cucumber	noun	A2.1	food
+perder	to lose	verb	A2.1	sports
+perezoso	lazy	adj	A2.1	
+permiso	permission, leave	noun	A2.1	work
+personaje	character	noun	A2.1	media
+personal	staff	noun	A2.1	work
+personalidad	personality	noun	A2.1	
+pesado	heavy	adj	A2.1	food
+pesca	fishing	noun	A2.1	nature
+pescar	to fish	verb	A2.1	nature
+peso	weight	noun	A2.1	
+pez	fish	noun	A2.1	nature
+picante	spicy	adj	A2.1	food
+picar	to chop	verb	A2.1	food
+pimienta	pepper	noun	A2.1	food
+piscina	pool	noun	A2.1	travel
+pizarra	blackboard, whiteboard	noun	A2.1	education
+pizarrón	blackboard	noun	A2.1	education
+planeta	planet	noun	A2.1	nature
+planificar	to plan	verb	A2.1	travel|work
+plano	map, plan	noun	A2.1	travel
+planta	plant	noun	A2.1	nature
+plato	plate	adv	A2.1	food
+plato principal	main course	phrase	A2.1	food
+poesía	poetry	noun	A2.1	media
+popular	popular	verb	A2.1	media
+portátil	portable	adj	A2.1	tech
+posada	inn	noun	A2.1	travel
+practicar	to practice	verb	A2.1	education|sports
+preferir	to prefer	verb	A2.1	
+premio	prize, award	noun	A2.1	sports
+preocupación	worry	noun	A2.1	
+preocupar	to worry (someone)	verb	A2.1	
+preocuparse	to worry	verb	A2.1	reflexive
+preparar	to prepare	verb	A2.1	food
+preparatoria	high school	phrase	A2.1	education
+presentación	presentation	noun	A2.1	education|work
+presentar	to present, introduce, to introduce, to submit	verb	A2.1	education|media|society|work
+presión arterial	blood pressure	phrase	A2.1	health
+prima	cousin, premium	noun	A2.1	society
+principalmente	mainly	adv	A2.1	time
+producir	to produce	verb	A2.1	media|tech|work
+productivo	productive	adj	A2.1	work
+profesional	professional	adj	A2.1	work
+profundamente	deeply	adv	A2.1	health|philosophy
+programa	program	noun	A2.1	media|tech
+prometida	fiancé, fiancée	noun	A2.1	
+promoción	promotion	noun	A2.1	work
+protagonista	protagonist, main character	noun	A2.1	media
+proyecto	project	noun	A2.1	education|work
+prueba	test, proof, evidence	noun	A2.1	education
+práctico	practical	adj	A2.1	education|philosophy|tech
+psicología	psychology	noun	A2.1	education|health|tech
+psicólogo	psychologist	noun	A2.1	health
+puerto	port	noun	A2.1	travel
+puntos	points	noun	A2.1	sports
+puntuación	score	noun	A2.1	education
+página	page	noun	A2.1	media
+página web	web page, webpage	phrase	A2.1	MWU|tech
+pájaro	bird	noun	A2.1	nature
+quien	who (after preposition)	pron	A2.1	
+quiz	quiz	noun	A2.1	education
+química	chemistry	noun	A2.1	education|tech
+ratón	mouse	noun	A2.1	nature|tech
+realizar	to carry out	verb	A2.1	work
+realmente	really	adv	A2.1	philosophy
+recepción	reception	noun	A2.1	travel
+recetar	to prescribe	verb	A2.1	health
+recientemente	recently	adv	A2.1	time
+recital	recital	noun	A2.1	media
+recién	recently, just	adv	A2.1	time
+recordar	to remember	verb	A2.1	education
+recreo	recess, break	noun	A2.1	education
+recuperar	to recover	verb	A2.1	health
+recuperarse	to recover	verb	A2.1	health|reflexive
+red	network	noun	A2.1	tech
+red social	social network	phrase	A2.1	tech
+redes sociales	social networks, social media	phrase	A2.1	MWU|tech
+regalo	gift, present	noun	A2.1	
+registrarse	to check in	verb	A2.1	reflexive|travel
+registro	registration, register	noun	A2.1	tech
+regla	ruler	noun	A2.1	education
+regresar	to return	verb	A2.1	travel
+relación	relationship	noun	A2.1	
+relajado	relaxed	adj	A2.1	
+relajante	relaxing	adj	A2.1	travel
+relajar	to relax (someone)	verb	A2.1	
+relajarse	to relax	verb	A2.1	health|media|reflexive
+remo	rowing	noun	A2.1	sports
+reparar	to repair	verb	A2.1	tech
+reparto	cast	noun	A2.1	media
+repasar	to review	verb	A2.1	education
+reportaje	report	noun	A2.1	media
+representación	performance	noun	A2.1	media
+reprobar	to fail	verb	A2.1	education
+reproductor	player	noun	A2.1	tech
+reservación	reservation	noun	A2.1	food
+reservar	to reserve, book	verb	A2.1	food|travel
+resolver	to solve	verb	A2.1	education|work
+respetar	to respect	verb	A2.1	health|society
+responsabilidad	responsibility	noun	A2.1	philosophy|work
+responsable	responsible	adj	A2.1	work
+resultado	result	noun	A2.1	education
+retraso	delay	noun	A2.1	travel
+reunirse	to meet	verb	A2.1	reflexive|work
+reunión	meeting	noun	A2.1	work
+revista	magazine	noun	A2.1	media
+revolver	to stir	verb	A2.1	food
+romance	romance	noun	A2.1	media
+romántico	romantic	adj	A2.1	media
+rotulador	marker	noun	A2.1	education
+running	running	noun	A2.1	
+ruta	route	noun	A2.1	travel
+rábano	radish	noun	A2.1	food
+río	river	noun	A2.1	nature
+salsa	sauce	noun	A2.1	food
+saltar	to jump	verb	A2.1	sports
+saltear	to sauté	verb	A2.1	food
+salón de clases	classroom	phrase	A2.1	education
+sanar	to heal	verb	A2.1	health
+sartén	frying pan	noun	A2.1	food
+satisfecho	satisfied	adj	A2.1	
+se	reflexive pronoun (all persons)	pron	A2.1	
+seco	dry	adj	A2.1	food
+secretario	secretary	noun	A2.1	work
+seguridad	security	noun	A2.1	travel
+seleccionar	to select	verb	A2.1	tech
+selva	jungle	noun	A2.1	nature
+senderismo	hiking	noun	A2.1	
+sentarse	to sit down	verb	A2.1	food|reflexive
+sentimiento	feeling	noun	A2.1	
+sentirse	to feel, to feel (reflexive)	verb	A2.1	health|reflexive
+separación	separation	noun	A2.1	society
+serio	serious	adj	A2.1	
+servicio	service	noun	A2.1	food|travel
+simpático	nice, friendly	adj	A2.1	
+sino	but (after negative)	conj	A2.1	
+sino que	but rather	phrase	A2.1	
+sitio web	website	phrase	A2.1	MWU|tech
+snowboard	snowboarding	adv	A2.1	sports|time
+sobrina	nephew, niece	noun	A2.1	society
+software	software	noun	A2.1	tech
+soler	to usually do	verb	A2.1	philosophy
+solicitud	application	noun	A2.1	work
+soltera	single	noun	A2.1	society
+sorprender	to surprise	verb	A2.1	
+sorprenderse	to be surprised	verb	A2.1	reflexive
+sorpresa	surprise	noun	A2.1	
+suave	mild	adj	A2.1	food
+suegra	father-in-law, mother-in-law	noun	A2.1	society
+sueldo	salary	noun	A2.1	work
+suficiente	enough	adj	A2.1	
+suite	suite	noun	A2.1	travel
+superior	higher	adj	A2.1	education
+supervisar	to supervise	verb	A2.1	work
+supervisor	supervisor	noun	A2.1	work
+surf	surfing	noun	A2.1	sports
+surfear	to surf	verb	A2.1	
+suspender	to fail	verb	A2.1	
+suspensivo	suspenseful	adj	A2.1	media
+suspenso	suspense, thriller	noun	A2.1	media
+síntoma	symptom	noun	A2.1	health
+tableta	tablet	noun	A2.1	tech
+tamaño	size	noun	A2.1	
+tampoco	neither, not either	connector	A2.1	
+tan pronto como	as soon as	phrase	A2.1	
+tarea	homework, task	noun	A2.1	education|home|work
+tarjeta de embarque	boarding pass	phrase	A2.1	MWU|travel
+taza	cup	noun	A2.1	food
+tazón	bowl	noun	A2.1	food
+teclado	keyboard	noun	A2.1	tech
+tecnología	technology	noun	A2.1	tech
+tejer	to knit	verb	A2.1	
+teléfono inteligente	smartphone	phrase	A2.1	tech
+temperatura	temperature	noun	A2.1	
+temporada	season	noun	A2.1	media
+tenedor	fork	noun	A2.1	food
+terminal	terminal	noun	A2.1	travel
+terminar de	to finish doing	phrase	A2.1	
+teórico	theoretical	adj	A2.1	education|philosophy|tech
+ti	you (after preposition)	pron	A2.1	
+tibio	warm	adj	A2.1	food
+tierno	tender	adj	A2.1	food
+tierra	earth, soil	noun	A2.1	food
+tigre	tiger	noun	A2.1	nature
+tiro con arco	archery	phrase	A2.1	MWU|sports
+tiza	chalk	noun	A2.1	
+tocar un instrumento	to play an instrument	phrase	A2.1	MWU|media
+todo	all, everything	pron	A2.1	
+tomar apuntes	to take notes	phrase	A2.1	education
+tomar medicinas	to take medicine	phrase	A2.1	health
+tonto	silly, stupid	adj	A2.1	
+torneo	tournament	noun	A2.1	sports
+tostadora	toaster	noun	A2.1	food
+totalmente	totally	adv	A2.1	philosophy
+tour	tour	noun	A2.1	travel
+trabajador	hardworking	adj	A2.1	
+trabajador	worker	noun	A2.1	work
+traductor	translator	noun	A2.1	
+trama	plot	noun	A2.1	media
+tratamiento	treatment	noun	A2.1	health
+tratar de	to try to	phrase	A2.1	
+triatlón	triathlon	noun	A2.1	sports
+tristeza	sadness	adj	A2.1	
+trofeo	trophy	noun	A2.1	sports
+tropical	tropical	adj	A2.1	travel
+trozo	piece	noun	A2.1	
+turismo	tourism	noun	A2.1	travel
+turista	tourist	noun	A2.1	travel
+turno	shift	noun	A2.1	work
+turístico	touristic	adj	A2.1	travel
+tía	uncle, aunt	noun	A2.1	society
+tímido	shy	adj	A2.1	
+título	degree, title	noun	A2.1	education
+urgencia	urgency	noun	A2.1	health|society
+usuario	user	noun	A2.1	tech
+utilizar	to utilize	verb	A2.1	tech
+vaca	cow	noun	A2.1	nature
+valle	valley	noun	A2.1	nature
+varios	several	pron	A2.1	
+vaso	glass	noun	A2.1	food
+vecina	neighbor	noun	A2.1	home
+vegetales	vegetables	noun	A2.1	food
+vehículo	vehicle	noun	A2.1	travel
+vela	sailing	noun	A2.1	sports
+verdaderamente	truly	adv	A2.1	philosophy
+verdadero	true, real	adj	A2.1	
+verduras	vegetables	noun	A2.1	food
+vergüenza	shame, embarrassment	noun	A2.1	health
+viajar	to travel	verb	A2.1	travel
+video llamada	video call	phrase	A2.1	tech
+videocámara	video camera	noun	A2.1	tech
+vinagre	vinegar	noun	A2.1	food
+visa	visa	noun	A2.1	travel
+visado	visa	noun	A2.1	travel
+visita	visit	noun	A2.1	
+visitar	to visit	verb	A2.1	society|travel
+vista	view	noun	A2.1	travel
+viuda	widowed	noun	A2.1	society
+voleibol	volleyball	noun	A2.1	sports
+volver	to return	verb	A2.1	travel
+volver a	to do again	phrase	A2.1	philosophy
+vuelo	flight	noun	A2.1	travel
+wifi	wifi	noun	A2.1	travel
+yerno	son-in-law	noun	A2.1	society
+yoga	yoga	noun	A2.1	
+zorro	fox	noun	A2.1	nature
+árbol	tree	noun	A2.1	nature
+ópera	opera	noun	A2.1	media
+últimamente	lately	adv	A2.1	time
+a causa de	because of	connector	A2.2	MWU|philosophy
+a favor	in favor	phrase	A2.2	MWU
+a lo mejor	maybe	phrase	A2.2	MWU
+abogada	lawyer	noun	A2.2	
+accidente	accident	noun	A2.2	
+acción	action	noun	A2.2	media
+acondicionador	conditioner	noun	A2.2	
+aconsejar	to advise	verb	A2.2	
+adelantar	to advance, overtake	verb	A2.2	
+adelanto	advance	noun	A2.2	
+advertir	to warn	verb	A2.2	
+afeitadora	razor	noun	A2.2	
+afeitar	to shave	verb	A2.2	
+agresiva	aggressive	noun	A2.2	
+agricultora	farmer	adv	A2.2	health
+aire acondicionado	air conditioning	phrase	A2.2	MWU|nature|travel
+al contrario	on the contrary	phrase	A2.2	MWU
+alergia	allergy	noun	A2.2	health
+alquilar un coche	to rent a car	phrase	A2.2	MWU|home
+altruista	altruistic	noun	A2.2	
+amable	kind	adj	A2.2	
+anillo	ring	noun	A2.2	
+aniversario	anniversary	noun	A2.2	
+antipática	unfriendly	adj	A2.2	society
+anuncio	advertisement	noun	A2.2	media
+aretes	earrings	noun	A2.2	health
+arquitecta	architect	noun	A2.2	
+artículo	article	noun	A2.2	media
+ascenso	promotion	noun	A2.2	
+asiento	seat	noun	A2.2	nature
+asignar	to assign	verb	A2.2	
+audiencia	audience	noun	A2.2	media
+autopista	highway	noun	A2.2	
+auxiliar de vuelo	flight attendant	phrase	A2.2	MWU
+aventura	adventure	noun	A2.2	media
+avería	breakdown, malfunction	adj	A2.2	
+Año Nuevo	New Year	phrase	A2.2	MWU|health
+bailarina	dancer	noun	A2.2	
+bautizo	baptism	noun	A2.2	
+boletín	bulletin	noun	A2.2	media
+bombera	firefighter	noun	A2.2	nature
+brindis	toast	noun	A2.2	
+buzón	mailbox	noun	A2.2	
+buzón de voz	voicemail	phrase	A2.2	MWU|work
+caducar	to expire	verb	A2.2	
+cajera	cashier	noun	A2.2	
+cajero automático	ATM	phrase	A2.2	MWU|finance
+calefacción	heating	noun	A2.2	
+calzado	footwear	noun	A2.2	health
+camarera	waiter, waitress	noun	A2.2	food
+canal	channel	noun	A2.2	media
+cantante	singer	noun	A2.2	
+carnaval	carnival	noun	A2.2	media
+carnicera	butcher	noun	A2.2	
+carpintera	carpenter	noun	A2.2	
+carretera	road	noun	A2.2	
+carta	letter, menu	noun	A2.2	food
+cepillo	brush	noun	A2.2	
+cepillo de dientes	toothbrush	phrase	A2.2	MWU
+ceremonia	ceremony	noun	A2.2	
+champú	shampoo	noun	A2.2	
+ciencia ficción	science fiction	phrase	A2.2	MWU|media
+científica	scientist	noun	A2.2	
+cirugía	surgery	noun	A2.2	
+ciudadana	citizen	noun	A2.2	
+clase ejecutiva	business class	phrase	A2.2	MWU|education
+clase turista	economy class	phrase	A2.2	MWU|education
+cobarde	coward	noun	A2.2	nature
+cocinera	cook	noun	A2.2	
+collar	necklace	verb	A2.2	
+comedia	comedy	noun	A2.2	media
+comprobar	to check, verify, to verify	verb	A2.2	education|tech
+comunicar	to communicate	verb	A2.2	work
+conductora	driver	noun	A2.2	travel
+conflicto	conflict	noun	A2.2	
+consulta	consultation	noun	A2.2	
+contable	accountant	noun	A2.2	finance
+contrato de arrendamiento	lease, rental agreement	phrase	A2.2	MWU|home
+convivencia	coexistence	noun	A2.2	
+correo	mail	noun	A2.2	
+corte de pelo	haircut	phrase	A2.2	MWU|health
+cortocircuito	short circuit	adj	A2.2	
+cosmética	cosmetics	noun	A2.2	
+costumbre	custom	noun	A2.2	
+crema	cream	noun	A2.2	
+cruce	crossing, intersection	noun	A2.2	
+crítica	review, criticism	noun	A2.2	travel
+cuarto de baño	bathroom	phrase	A2.2	MWU|home
+cuenta bancaria	bank account	phrase	A2.2	MWU|finance
+cuenta corriente	checking account	phrase	A2.2	MWU|finance
+cuenta de ahorros	savings account	phrase	A2.2	MWU|finance
+cuerda	sane	noun	A2.2	
+cuidadosa	careful	noun	A2.2	
+curiosa	curious	noun	A2.2	
+código postal	postal, zip code	phrase	A2.2	MWU
+dar cuenta	to account for	phrase	A2.2	MWU|finance
+dar igual	to not matter	phrase	A2.2	MWU
+dar la bienvenida	to welcome	phrase	A2.2	MWU
+dar las gracias	to thank	phrase	A2.2	MWU|comparison
+dar permiso	to give permission	phrase	A2.2	MWU|work
+darse cuenta	to realize	phrase	A2.2	MWU
+debido a	due to	phrase	A2.2	MWU
+defectuosa	defective	noun	A2.2	
+dejar prestado	to lend	phrase	A2.2	MWU
+democracia	democracy	noun	A2.2	philosophy|society
+depósito	deposit	noun	A2.2	finance
+derechos	rights	adv	A2.2	
+descolgar	to pick up	verb	A2.2	
+descuidada	careless	noun	A2.2	
+desde luego	certainly, of course	phrase	A2.2	MWU|philosophy
+desempleada	unemployed	noun	A2.2	
+desfile	parade	noun	A2.2	media
+deshacer las maletas	to unpack	phrase	A2.2	MWU|travel
+deshonesta	dishonest	noun	A2.2	
+desigualdad	inequality	noun	A2.2	
+desodorante	deodorant	noun	A2.2	
+despido	dismissal, firing	noun	A2.2	
+destinatario	recipient	noun	A2.2	
+desvío	detour	noun	A2.2	
+devolución	return	noun	A2.2	
+diarrea	diarrhea	noun	A2.2	
+dibujos animados	cartoons	phrase	A2.2	MWU|media
+dictadura	dictatorship	noun	A2.2	
+dirán	they will say	noun	A2.2	
+discurso	speech	noun	A2.2	
+diseñadora	designer	noun	A2.2	
+documental	documentary	noun	A2.2	media|work
+dolor de cabeza	headache	phrase	A2.2	MWU|health
+dolor de estómago	stomachache	phrase	A2.2	MWU|health
+dolor de garganta	sore throat	phrase	A2.2	MWU
+dolor de muelas	toothache	phrase	A2.2	MWU
+drama	drama	noun	A2.2	media
+dudo que	I doubt that...	phrase	A2.2	MWU
+débil	weak	adj	A2.2	health
+Día de los Muertos	Day of the Dead	phrase	A2.2	MWU
+echar de menos	to miss someone	phrase	A2.2	MWU
+egoísta	selfish	adj	A2.2	nature
+elecciones	elections	noun	A2.2	
+electricista	electrician	noun	A2.2	
+embotellamiento	traffic jam	noun	A2.2	
+emisión	broadcast, emission	noun	A2.2	media
+empresaria	businessman, businesswoman	noun	A2.2	work
+en contra	against	phrase	A2.2	MWU
+en general	in general	phrase	A2.2	MWU
+en particular	in particular	phrase	A2.2	MWU|media
+en realidad	actually	connector	A2.2	MWU|discourse
+enfermedad	illness, disease	noun	A2.2	health|nature
+entregar	to deliver, to turn in	verb	A2.2	education
+entrevista de trabajo	job interview	phrase	A2.2	MWU|travel
+episodio	episode	noun	A2.2	media
+es importante que	it's important that...	phrase	A2.2	MWU
+es necesario que	it's necessary that...	phrase	A2.2	MWU
+es posible que	it's possible that..., it's possible that	phrase	A2.2	MWU|philosophy
+es probable que	it's likely that..., it's probable that	phrase	A2.2	MWU|philosophy
+escalas	layover, stopover	noun	A2.2	travel
+espero que	I hope that...	phrase	A2.2	MWU
+estacionamiento	parking	noun	A2.2	
+estar de acuerdo	to agree	phrase	A2.2	MWU
+estar en contra	to be against	phrase	A2.2	MWU
+estaré	I will be	noun	A2.2	
+estilo	style	noun	A2.2	media|work
+etiqueta	label, tag	noun	A2.2	
+extracción	withdrawal	noun	A2.2	finance
+extraviado	lost	noun	A2.2	
+extrovertida	extroverted	noun	A2.2	
+fabricante	manufacturer	noun	A2.2	
+falsificación	counterfeit	noun	A2.2	
+felicitación	congratulation	noun	A2.2	
+firma	signature	noun	A2.2	nature
+fuga de agua	water leak	phrase	A2.2	MWU|nature
+funeral	funeral	adj	A2.2	
+garantía	warranty, guarantee	noun	A2.2	finance
+gasolinera	gas station	noun	A2.2	
+generosa	generous	noun	A2.2	
+gobierno	government	noun	A2.2	work
+goteo	leak, drip	noun	A2.2	
+grabación	recording	noun	A2.2	media
+graciosa	funny	adj	A2.2	
+graduación	graduation	noun	A2.2	
+grieta	crack	noun	A2.2	
+gripe	flu	noun	A2.2	health
+guerra	war	noun	A2.2	
+hacer caso	to pay attention	phrase	A2.2	MWU
+hacer daño	to hurt	phrase	A2.2	MWU
+hacer falta	to need	phrase	A2.2	MWU
+hacer las maletas	to pack	phrase	A2.2	MWU|travel
+haremos	we will do	noun	A2.2	
+harían	they would do	noun	A2.2	
+herida	wound	noun	A2.2	health
+hipoteca	mortgage	noun	A2.2	finance
+honesta	honest	noun	A2.2	
+horas extras	overtime	phrase	A2.2	MWU
+impaciente	impatient	adj	A2.2	
+impuesto	tax	noun	A2.2	
+informar	to inform	verb	A2.2	
+ingeniera	engineer	noun	A2.2	
+inmadura	immature	noun	A2.2	
+inquilina	tenant	noun	A2.2	
+insegura	insecure	noun	A2.2	
+insensible	insensitive	noun	A2.2	
+instrucciones de uso	instructions for use	phrase	A2.2	MWU
+inteligente	intelligent	adj	A2.2	
+inversión	investment	noun	A2.2	finance
+inyección	injection	noun	A2.2	
+irresponsable	irresponsible	adj	A2.2	
+irás	you will go	noun	A2.2	
+iríamos	we would go	noun	A2.2	
+jabón	soap	noun	A2.2	
+jardinera	gardener	noun	A2.2	home
+joyería	jewelry	noun	A2.2	
+jubilada	retired	adj	A2.2	
+jueza	judge	noun	A2.2	
+justicia	justice	adv	A2.2	philosophy|society
+ley	law	noun	A2.2	society
+libertad	freedom	noun	A2.2	philosophy
+llamada perdida	missed call	phrase	A2.2	MWU|work
+llamar la atención	to attract attention	phrase	A2.2	MWU
+loca	crazy	noun	A2.2	
+loción	lotion	noun	A2.2	
+límite de velocidad	speed limit	phrase	A2.2	MWU
+línea ocupada	busy line	phrase	A2.2	MWU
+madura	mature	noun	A2.2	
+mal	to make a good, bad impression, badly	adv	A2.2	
+maletero	trunk, boot	noun	A2.2	
+mantenimiento	maintenance	noun	A2.2	
+manual	manual	noun	A2.2	
+maquillaje	makeup	adv	A2.2	
+maquillar	to apply makeup	verb	A2.2	
+marca	brand	noun	A2.2	
+marcar	to dial	verb	A2.2	
+mareada	dizzy	noun	A2.2	
+marinera	sailor	noun	A2.2	
+me alegro de que	I'm glad that...	phrase	A2.2	MWU
+me gustaría	I would like	phrase	A2.2	MWU
+me molesta que	it bothers me that...	phrase	A2.2	MWU
+me sorprende que	it surprises me that...	phrase	A2.2	MWU
+mecánica	mechanic	noun	A2.2	
+mentirosa	liar	noun	A2.2	
+militar	military person	verb	A2.2	society
+moda	fashion	noun	A2.2	
+modelo	model	noun	A2.2	
+mudanza	move, moving	noun	A2.2	
+multa	fine, ticket	noun	A2.2	travel
+navegador	GPS, navigator, browser	noun	A2.2	
+Navidad	Christmas	noun	A2.2	
+nerviosa	nervous	noun	A2.2	
+no creo que	I don't think that...	phrase	A2.2	MWU
+no obstante	nevertheless	connector	A2.2	MWU|discourse
+número equivocado	wrong number	phrase	A2.2	MWU
+obligar	to force, obligate	verb	A2.2	
+operación	operation	noun	A2.2	
+optimista	optimistic	adj	A2.2	
+original	original	adj	A2.2	media|philosophy
+oyente	listener	noun	A2.2	media
+paciente	patient	adj	A2.2	
+pacífica	peaceful	noun	A2.2	
+panadera	baker	noun	A2.2	
+paquete	package	noun	A2.2	travel
+partido político	political party	phrase	A2.2	MWU|media|society
+Pascua	Easter	noun	A2.2	
+pasillo	aisle, hallway	noun	A2.2	
+pasta de dientes	toothpaste	phrase	A2.2	MWU
+pastilla	pill	noun	A2.2	health
+paz	peace	noun	A2.2	
+peaje	toll	noun	A2.2	
+pedir perdón	to apologize	phrase	A2.2	MWU
+pedir prestado	to borrow	phrase	A2.2	MWU
+peinar	to comb	verb	A2.2	
+peine	comb	noun	A2.2	
+peluquera	hairdresser	noun	A2.2	health
+peluquería	hair salon	noun	A2.2	health
+perezosa	lazy	noun	A2.2	
+perfume	perfume	noun	A2.2	
+periodista	journalist	noun	A2.2	
+periódico	newspaper	adj	A2.2	media
+permitir	to allow	verb	A2.2	
+pescadora	fisher	noun	A2.2	nature
+pesimista	pessimistic	adj	A2.2	
+piloto	pilot	noun	A2.2	
+pintura	paint, painting	noun	A2.2	health|media
+plomero	plumber	noun	A2.2	
+pobreza	poverty	noun	A2.2	society
+podrás	you will be able to	noun	A2.2	
+policía	police officer	noun	A2.2	education|work
+política	politics, policy	noun	A2.2	
+ponerse de acuerdo	to agree, reach an agreement	phrase	A2.2	MWU
+por eso	therefore, that's why	connector	A2.2	MWU|discourse
+por lo menos	at least	phrase	A2.2	MWU
+por lo tanto	therefore	connector	A2.2	MWU|discourse|philosophy
+posponer	to postpone	verb	A2.2	
+presidenta	president	noun	A2.2	
+primera clase	first class	phrase	A2.2	MWU|education|reflexive
+primera ministra	prime minister	phrase	A2.2	MWU
+producto	product	noun	A2.2	
+profesión	profession	noun	A2.2	work
+programa en vivo	live program	phrase	A2.2	MWU|tech
+programadora	programmer	noun	A2.2	tech
+prohibir	to prohibit	verb	A2.2	
+propietaria	owner	noun	A2.2	home
+préstamo	loan	noun	A2.2	finance
+psicóloga	psychologist	noun	A2.2	
+publicidad	advertising	noun	A2.2	media
+pulsera	bracelet	noun	A2.2	
+quedarse con	to keep	phrase	A2.2	MWU
+queja	complaint	noun	A2.2	
+quiero que	I want that...	phrase	A2.2	MWU
+radar	radar	verb	A2.2	
+recepcionista	receptionist	noun	A2.2	travel|work
+receptor	receiver	noun	A2.2	
+receta médica	prescription	phrase	A2.2	MWU|health
+reclamación	claim	noun	A2.2	
+recomendar	to recommend	verb	A2.2	food|media
+reembolso	refund	adj	A2.2	finance
+reloj de pulsera	wristwatch	phrase	A2.2	MWU
+remitente	sender	noun	A2.2	
+renovar	to renew	verb	A2.2	
+reparación	repair, reparation	noun	A2.2	nature
+riqueza	wealth	noun	A2.2	
+romántica	romantic	noun	A2.2	media
+rotonda	roundabout	noun	A2.2	
+ruptura	breakage, rupture	noun	A2.2	
+sabrá	he, she will know	adv	A2.2	time
+salario	salary	noun	A2.2	work
+salón de belleza	beauty salon	phrase	A2.2	MWU
+sangre	blood	noun	A2.2	health
+se alquila	it is rented	phrase	A2.2	MWU|home|reflexive
+se busca	one seeks, it is sought	phrase	A2.2	MWU|reflexive
+se considera	one considers, it is considered	phrase	A2.2	MWU|reflexive
+se dice	one says, it is said	phrase	A2.2	MWU|reflexive
+se habla	one speaks, it is spoken	phrase	A2.2	MWU|reflexive
+se necesita	one needs, it is needed	phrase	A2.2	MWU|reflexive
+se permite	it is allowed	phrase	A2.2	MWU|reflexive
+se prohíbe	it is forbidden	phrase	A2.2	MWU|reflexive
+se recomienda	one recommends, it is recommended	phrase	A2.2	MWU|reflexive
+se vende	it is sold	phrase	A2.2	MWU|reflexive
+secador de pelo	hair dryer	phrase	A2.2	MWU|health
+secretaria	secretary	noun	A2.2	
+segura	confident	adj	A2.2	
+seguro de viaje	travel insurance	phrase	A2.2	MWU|travel
+seguro médico	health insurance	phrase	A2.2	MWU|health
+sello	stamp	noun	A2.2	
+sensible	sensitive	noun	A2.2	
+seria	serious	noun	A2.2	
+serie	series	noun	A2.2	media
+señal de tráfico	traffic sign	phrase	A2.2	MWU
+sin duda	without doubt	phrase	A2.2	MWU
+sin embargo	however	connector	A2.2	MWU|discourse|philosophy
+sincera	sincere	noun	A2.2	time
+sobre todo	above all, especially	phrase	A2.2	MWU|philosophy
+sugerir	to suggest	verb	A2.2	
+suscripción	subscription	noun	A2.2	
+tacaña	stingy	noun	A2.2	
+talla	size	noun	A2.2	
+tarjeta	card, key card	noun	A2.2	travel
+tarjeta de crédito	credit card	phrase	A2.2	MWU|finance
+tarjeta de débito	debit card	phrase	A2.2	MWU|finance
+te compraría	I would buy you	phrase	A2.2	MWU
+telediario	news program	adj	A2.2	tech
+tendré	I will have	noun	A2.2	
+tener en cuenta	to take into account	phrase	A2.2	MWU|finance
+tener razón	to be right	phrase	A2.2	MWU
+tener suerte	to be lucky	phrase	A2.2	MWU
+terror	horror	noun	A2.2	media
+thriller	thriller	verb	A2.2	media
+titular	headline	verb	A2.2	health
+toalla	towel	noun	A2.2	
+tonta	silly, stupid	adv	A2.2	
+tos	cough	noun	A2.2	health
+trabajadora	hardworking	noun	A2.2	
+tradición	tradition	noun	A2.2	
+traductora	translator	noun	A2.2	
+tramitar	to process	verb	A2.2	
+tranquila	calm	adj	A2.2	
+transbordo	transfer	noun	A2.2	finance
+transferencia	transfer	noun	A2.2	finance
+transmisor	transmitter	noun	A2.2	
+tráfico	traffic	noun	A2.2	
+turística	tour guide	noun	A2.2	
+tímida	shy	noun	A2.2	
+vacaciones pagadas	paid vacation	phrase	A2.2	MWU|travel
+valiente	brave	noun	A2.2	
+vecindario	neighborhood	noun	A2.2	home
+vendedora	salesperson	noun	A2.2	society
+vendrá	he, she will come	noun	A2.2	
+vendría	he, she would come	noun	A2.2	
+ventanilla	window seat	noun	A2.2	nature
+veremos	we will see	noun	A2.2	
+viaje de negocios	business trip	phrase	A2.2	MWU|travel
+vivirán	they will live	noun	A2.2	
+vómito	vomit	noun	A2.2	
+¡di!	say!	noun	A2.2	
+¡haz!	do!	noun	A2.2	
+¡no bebas!	don't drink!	phrase	A2.2	MWU
+¡no comas!	don't eat!	phrase	A2.2	MWU
+¡no digas!	don't say!	phrase	A2.2	MWU
+¡no hables!	don't speak!	phrase	A2.2	MWU
+¡no hagas!	don't do!	phrase	A2.2	MWU
+¡no salgas!	don't go out!	phrase	A2.2	MWU
+¡no vengas!	don't come!	phrase	A2.2	MWU
+¡pon!	put!	noun	A2.2	
+¡sal!	go out!	noun	A2.2	
+¡sé!	be!	noun	A2.2	
+¡ten!	have, take!	noun	A2.2	
+¡ve!	go!	noun	A2.2	
+¡ven!	come!	noun	A2.2	
+a favor de	in favor of	phrase	B1.1	philosophy
+a fin de que	so that	connector	B1.1	philosophy
+a la vez	at the same time	phrase	B1.1	time
+a lo largo de	along, throughout	phrase	B1.1	philosophy
+a menos que	unless	phrase	B1.1	philosophy
+a partir de	from, starting from	phrase	B1.1	philosophy
+a pesar de que	despite the fact that	connector	B1.1	philosophy
+aborrecer	to loathe	verb	B1.1	health
+absolutamente	absolutely	adv	B1.1	philosophy
+abstracto	abstract	adj	B1.1	philosophy
+abuso	abuse	noun	B1.1	society
+académico	academic	adj	B1.1	education
+aceptar	to accept	verb	B1.1	society
+acerca de	about	phrase	B1.1	philosophy
+aclarar	to clarify	verb	B1.1	philosophy
+actividad física	physical activity	phrase	B1.1	
+acuerdo	agreement	adj	B1.1	
+acusar	to accuse	verb	B1.1	society
+admiración	admiration	noun	B1.1	health
+adorar	to adore	verb	B1.1	health
+aficionado	fan	noun	B1.1	
+agilidad	agility	noun	B1.1	
+al mismo tiempo	at the same time	phrase	B1.1	time
+alcalde	mayor	noun	B1.1	society
+alcanzar	to reach	verb	B1.1	work
+alcanzar a	to manage to	phrase	B1.1	philosophy
+alergia	allergy	adj	B1.1	
+algoritmo	algorithm	adj	B1.1	tech
+altruismo	altruism	adj	B1.1	health
+amateur	amateur	noun	B1.1	
+ambición	ambition	noun	B1.1	work
+ambiguo	ambiguous	adj	B1.1	philosophy
+ambivalencia	ambivalence	adj	B1.1	
+amorosamente	lovingly	adv	B1.1	health
+analogía	analogy	adj	B1.1	education
+analítico	analytical	adj	B1.1	tech
+analógico	analog	adj	B1.1	tech
+anhelo	yearning	noun	B1.1	health
+anormal	abnormal	adj	B1.1	philosophy
+ansiedad	anxiety	noun	B1.1	
+antibiótico	antibiotic	adj	B1.1	
+anuncio	advertisement	adj	B1.1	
+análisis	analysis	adj	B1.1	education
+análisis de sangre	blood test	phrase	B1.1	
+aparato	apparatus	noun	B1.1	
+apasionadamente	passionately	adv	B1.1	health
+apatía	apathy	noun	B1.1	health
+aplicación	application	adj	B1.1	tech
+apoyar	to support	verb	B1.1	society
+apreciar	to appreciate	verb	B1.1	health|media
+aptitud	aptitude	noun	B1.1	work
+aptitudes	aptitudes	noun	B1.1	
+apuntes	notes	noun	B1.1	
+ardorosamente	ardently	adv	B1.1	health
+argumentación	argumentation	adj	B1.1	education|philosophy
+argumentar	to argue	verb	B1.1	education|philosophy
+argumento	plot, argument	adj	B1.1	education|media
+arqueología	archaeology	noun	B1.1	tech
+arquitectura	architecture	noun	B1.1	media
+arrepentimiento	regret, repentance	adj	B1.1	health
+arrogancia	arrogance	noun	B1.1	
+artesanía	crafts	noun	B1.1	
+artículo	article	adj	B1.1	
+ascender	to be promoted	verb	B1.1	work
+ascenso	promotion, advancement	adj	B1.1	work
+asignatura obligatoria	mandatory subject	phrase	B1.1	
+asignatura optativa	elective subject	phrase	B1.1	
+asilo	asylum	noun	B1.1	
+aspecto	aspect	noun	B1.1	education
+aspiración	aspiration	noun	B1.1	work
+astronomía	astronomy	noun	B1.1	tech
+asumir	to assume	verb	B1.1	philosophy
+así pues	thus	phrase	B1.1	philosophy
+así que	so	phrase	B1.1	philosophy
+atípico	atypical	adj	B1.1	philosophy
+aun cuando	even when	phrase	B1.1	philosophy
+automatización	automation	noun	B1.1	tech
+automatizar	to automate	verb	B1.1	tech|work
+automático	automatic	adj	B1.1	tech
+autoritario	authoritarian	adj	B1.1	society
+avance	advance, progress	noun	B1.1	tech
+avanzar	to advance	verb	B1.1	work
+ayudante	assistant	adj	B1.1	
+añoranza	longing	noun	B1.1	health
+bachillerato	high school diploma, baccalaureate	adj	B1.1	
+bacteria	bacteria	noun	B1.1	
+baja por enfermedad	sick leave	phrase	B1.1	
+basura	trash	noun	B1.1	
+beca	scholarship, grant	adj	B1.1	
+belleza	beauty	noun	B1.1	
+bello	beautiful	adj	B1.1	media
+beneficio	benefit	noun	B1.1	
+bibliografía	bibliography	noun	B1.1	
+biocombustible	biofuel	noun	B1.1	
+biodegradable	biodegradable	adj	B1.1	
+biodiversidad	biodiversity	adj	B1.1	
+biotecnología	biotechnology	noun	B1.1	tech
+bondad	kindness	noun	B1.1	health
+calentamiento global	global warming	phrase	B1.1	
+cambio climático	climate change	phrase	B1.1	
+campaña	campaign	noun	B1.1	society
+campus	campus	noun	B1.1	
+candidato	candidate	noun	B1.1	
+canto	singing	noun	B1.1	media
+capa de ozono	ozone layer	phrase	B1.1	
+capacidad	ability	noun	B1.1	work
+capacitarse	to train	verb	B1.1	reflexive|work
+cardiólogo	cardiologist	noun	B1.1	
+cariñosamente	affectionately	adv	B1.1	health
+carrera profesional	career	phrase	B1.1	work
+carta de presentación	cover letter	phrase	B1.1	
+catedrático	professor	noun	B1.1	
+categorizar	to categorize	verb	B1.1	education
+categoría	category	noun	B1.1	education|philosophy
+celos	jealousy	adj	B1.1	
+censurar	to censure	verb	B1.1	society
+centrista	centrist	adj	B1.1	
+cerebro	brain	noun	B1.1	health
+certeza	certainty	noun	B1.1	philosophy
+certificación	certification	adj	B1.1	tech
+cesar de	to cease doing	phrase	B1.1	philosophy
+ciencia	science	noun	B1.1	tech
+científico	scientist, scientific	adj	B1.1	education|tech
+cinematografía	cinematography	noun	B1.1	media
+ciudadano	citizen	noun	B1.1	society
+ciudadanía	citizenship	noun	B1.1	
+civil	civil	adj	B1.1	society
+claro	clear	adj	B1.1	philosophy
+clasificación	classification	adj	B1.1	education
+clasificar	to classify	verb	B1.1	education
+clonación	cloning	noun	B1.1	
+cobardía	cowardice	adj	B1.1	
+codificar	to code	verb	B1.1	tech
+coherente	coherent	adv	B1.1	philosophy
+columna	column	noun	B1.1	
+combatir	to combat	verb	B1.1	society
+comentarista	commentator	adj	B1.1	
+como si	as if	phrase	B1.1	philosophy
+comparación	comparison	noun	B1.1	education
+comparativamente	comparatively	adv	B1.1	philosophy
+compasión	compassion	noun	B1.1	health
+compañero de clase	classmate	phrase	B1.1	
+competencias	competencies	noun	B1.1	
+complejo	complex	adj	B1.1	philosophy|tech
+componer	to compose	verb	B1.1	media
+composición	composition	noun	B1.1	media
+comprensión	understanding	noun	B1.1	philosophy
+comprometerse	to commit	verb	B1.1	reflexive|work
+compromiso	commitment	adj	B1.1	philosophy|work
+comunicación	communication	adj	B1.1	work
+comunicado	statement	adj	B1.1	
+común	common	adj	B1.1	philosophy
+con base en	based on	phrase	B1.1	philosophy
+con motivo de	on the occasion of	phrase	B1.1	philosophy
+con respecto a	with respect to	phrase	B1.1	philosophy
+con tal de que	provided that	phrase	B1.1	philosophy
+concluir	to conclude	verb	B1.1	education|philosophy
+conclusión	conclusion	noun	B1.1	education
+concreto	concrete	adj	B1.1	philosophy
+condenar	to condemn	verb	B1.1	society
+conducta	conduct	noun	B1.1	health
+conferencia	conference	noun	B1.1	
+confiable	reliable	adj	B1.1	work
+configurar	to configure	verb	B1.1	tech
+conformidad	conformity	noun	B1.1	health
+confuso	confusing	adj	B1.1	philosophy
+congreso	congress	noun	B1.1	
+conseguir	to manage to, to achieve	verb	B1.1	philosophy|work
+conservación	conservation	noun	B1.1	
+conservador	conservative	adj	B1.1	society
+conservatorio	conservatory	noun	B1.1	media
+considerablemente	considerably	adv	B1.1	philosophy
+considerar	to consider	verb	B1.1	education|philosophy
+consistente	consistent	adj	B1.1	philosophy
+constancia	perseverance	noun	B1.1	work
+constantemente	constantly	adv	B1.1	time
+constitución	constitution	noun	B1.1	society
+construir	to build	verb	B1.1	tech
+contagio	contagion	noun	B1.1	
+contaminación	pollution	noun	B1.1	
+contaminar	to pollute	verb	B1.1	
+contenido	content	adj	B1.1	
+contexto	context	noun	B1.1	
+continuamente	continuously	adv	B1.1	time
+continuar + gerund	to continue doing	phrase	B1.1	philosophy
+contraargumento	counterargument	adj	B1.1	education
+contradecir	to contradict	verb	B1.1	education|philosophy
+contrastar	to contrast	verb	B1.1	education
+contraste	contrast	noun	B1.1	education
+contrato indefinido	permanent contract	phrase	B1.1	
+contrato temporal	temporary contract	phrase	B1.1	
+contribuir	to contribute	verb	B1.1	society
+control	control	noun	B1.1	work
+convencional	conventional	adj	B1.1	philosophy
+cooperar	to cooperate	verb	B1.1	society
+coordinación	coordination	noun	B1.1	work
+corresponsal	correspondent	adj	B1.1	
+creación	creation	noun	B1.1	media
+creatividad	creativity	noun	B1.1	media
+crecer	to grow	verb	B1.1	work
+crecimiento profesional	professional growth	phrase	B1.1	work
+creencia	belief	noun	B1.1	philosophy
+creer	to believe	verb	B1.1	health|philosophy
+criminalidad	crime	noun	B1.1	society
+crisis	crisis	noun	B1.1	society
+crueldad	cruelty	noun	B1.1	health
+cruelmente	cruelly	adv	B1.1	health
+crédito	credit	noun	B1.1	
+crítica	critique, criticism	adj	B1.1	education
+crítico	critic	adj	B1.1	
+crónica	chronicle	adj	B1.1	media
+cualificación	qualification	adj	B1.1	
+cualitativo	qualitative	adj	B1.1	tech
+cualquiera	whatever, whichever	adj	B1.1	philosophy
+cuantitativo	quantitative	adj	B1.1	tech
+cuanto	as much, many as	pron	B1.1	philosophy
+cuestión social	social issue	phrase	B1.1	society
+cultura	culture	noun	B1.1	media
+currículum vitae	resume, CV	phrase	B1.1	
+cuyo	whose	pron	B1.1	philosophy
+célula madre	stem cell	phrase	B1.1	
+código	code	noun	B1.1	
+dado que	given that	phrase	B1.1	philosophy
+danza	dance	noun	B1.1	media
+dato	data point	noun	B1.1	education
+datos	data	noun	B1.1	education
+dañar	to damage	verb	B1.1	
+de acuerdo con	according to	phrase	B1.1	philosophy
+de hecho	in fact	phrase	B1.1	philosophy
+debate	debate	noun	B1.1	
+debido a que	due to the fact that	phrase	B1.1	philosophy
+decano	dean	noun	B1.1	
+decepción	disappointment	adj	B1.1	
+dedicación	dedication	adj	B1.1	work
+dedicarse	to dedicate oneself	verb	B1.1	reflexive|work
+deducción	deduction	noun	B1.1	education|philosophy
+deducir	to deduce	verb	B1.1	education|philosophy
+defender	to defend	verb	B1.1	education|society
+definición	definition	noun	B1.1	education
+definitivamente	definitively	adv	B1.1	time
+deforestación	deforestation	noun	B1.1	
+delegación	delegation	noun	B1.1	work
+delincuencia	delinquency	noun	B1.1	society
+democrático	democratic	adj	B1.1	society
+demostración	demonstration	noun	B1.1	education|philosophy
+demostrar	to demonstrate	verb	B1.1	education|philosophy|tech
+denunciar	to denounce	verb	B1.1	society
+departamento	department	adj	B1.1	
+deportista profesional	professional athlete	phrase	B1.1	
+derecho	right, law	noun	B1.1	society
+derechos	rights	noun	B1.1	philosophy
+dermatólogo	dermatologist	noun	B1.1	
+derrota	defeat	noun	B1.1	
+desarrollarse	to develop	verb	B1.1	reflexive|work
+desarrollo profesional	professional development	phrase	B1.1	work
+desastre natural	natural disaster	phrase	B1.1	
+desconfianza	distrust	noun	B1.1	
+descripción	description	noun	B1.1	education
+descubrimiento	discovery	noun	B1.1	tech
+desdén	disdain	noun	B1.1	health
+desecho	waste	noun	B1.1	
+desempleo	unemployment	adj	B1.1	
+desequilibrio	imbalance	adj	B1.1	health
+desesperanza	hopelessness	adj	B1.1	philosophy
+deshonestidad	dishonesty	adj	B1.1	
+desigual	unequal	adj	B1.1	society
+desigualdad	inequality	adj	B1.1	philosophy|society
+desinformación	misinformation	noun	B1.1	
+despiadadamente	mercilessly	adv	B1.1	health
+despido	dismissal	adj	B1.1	
+desprecio	contempt	noun	B1.1	health
+destacarse	to stand out	verb	B1.1	reflexive|work
+destreza	skill	noun	B1.1	work
+destruir	to destroy	verb	B1.1	
+detallado	detailed	adj	B1.1	education
+determinación	determination	noun	B1.1	work
+deuda	debt	noun	B1.1	
+dibujo	drawing	noun	B1.1	media
+diestro	skilled	adj	B1.1	work
+digitalización	digitalization	adj	B1.1	tech
+digitalizar	to digitize	verb	B1.1	tech|work
+dignidad	dignity	noun	B1.1	
+dimensión	dimension	noun	B1.1	education
+dimisión	resignation	noun	B1.1	
+dinámico	dynamic	adj	B1.1	work
+diputado	deputy, congressman, representative	adj	B1.1	society
+disciplina	discipline	noun	B1.1	work
+discriminación	discrimination	noun	B1.1	society
+discusión	discussion	noun	B1.1	
+diseñar	to design	verb	B1.1	media|tech|work
+diseño	design	noun	B1.1	
+disgusto	disgust	noun	B1.1	
+dispositivo	device	adj	B1.1	
+diversidad cultural	cultural diversity	phrase	B1.1	
+doctorado	doctorate, PhD	noun	B1.1	
+dominar	to master	verb	B1.1	work
+dominio	mastery	noun	B1.1	work
+don	gift	noun	B1.1	media|work
+donación de órganos	organ donation	phrase	B1.1	
+dondequiera	wherever	adv	B1.1	philosophy
+dopaje	doping	noun	B1.1	
+dudar	to doubt	verb	B1.1	health|philosophy
+dulcemente	sweetly	adv	B1.1	health
+déficit	deficit	adj	B1.1	
+día libre	day off	phrase	B1.1	
+echarse a	to start doing	phrase	B1.1	philosophy
+ecografía	ultrasound	noun	B1.1	
+ecosistema	ecosystem	noun	B1.1	
+editar	to edit	verb	B1.1	media
+editorial	publisher, editorial	adj	B1.1	
+efecto invernadero	greenhouse effect	phrase	B1.1	
+eficaz	effective	adj	B1.1	work
+egoísmo	selfishness	adj	B1.1	health
+ejemplo	example	noun	B1.1	education
+elección	election	noun	B1.1	society
+emigración	emigration	noun	B1.1	
+emisor	sender	noun	B1.1	
+emisora	station	noun	B1.1	
+emotivo	emotional	adj	B1.1	media
+empate	tie, draw	noun	B1.1	
+empatía	empathy	noun	B1.1	health
+empeño	effort	noun	B1.1	work
+empírico	empirical	adj	B1.1	education|tech
+en conclusión	in conclusion	connector	B1.1	philosophy
+en consecuencia	consequently	connector	B1.1	philosophy
+en contra de	against	phrase	B1.1	philosophy
+en cuanto a	as for	phrase	B1.1	philosophy
+en efecto	indeed	phrase	B1.1	philosophy
+en el ínterin	in the meantime	phrase	B1.1	time
+en función de	depending on	phrase	B1.1	philosophy
+en primer lugar	first of all	connector	B1.1	philosophy
+en realidad	actually	phrase	B1.1	philosophy
+en relación con	in relation to	phrase	B1.1	philosophy
+en resumen	in summary	connector	B1.1	philosophy
+en segundo lugar	secondly	connector	B1.1	philosophy
+en tanto que	while	phrase	B1.1	philosophy
+en torno a	around (topic)	phrase	B1.1	philosophy
+en vez de	instead of	phrase	B1.1	philosophy
+encuesta	poll, survey	noun	B1.1	
+energía eólica	wind energy	phrase	B1.1	
+energía renovable	renewable energy	phrase	B1.1	
+energía solar	solar energy	phrase	B1.1	
+enfermedad aguda	acute disease	phrase	B1.1	
+enfermedad crónica	chronic disease	phrase	B1.1	
+enfermedad terminal	terminal illness	phrase	B1.1	
+enfoque	approach	noun	B1.1	education|work
+enormemente	enormously	adv	B1.1	philosophy
+enseñanza primaria	primary education	phrase	B1.1	
+enseñanza secundaria	secondary education	phrase	B1.1	
+enteramente	entirely	adv	B1.1	philosophy
+entrenador	coach	noun	B1.1	
+entrenamiento	training	noun	B1.1	
+entretenimiento	entertainment	adj	B1.1	
+entrevista laboral	job interview	phrase	B1.1	
+entrevistado	interviewee	noun	B1.1	
+entrevistador	interviewer	noun	B1.1	
+envidia	envy	noun	B1.1	
+epidemia	epidemic	adj	B1.1	
+equilibrio	balance	adj	B1.1	health
+erupción volcánica	volcanic eruption	phrase	B1.1	
+esclavitud	slavery	noun	B1.1	philosophy
+esculpir	to sculpt	verb	B1.1	media
+escultura	sculpture	noun	B1.1	media
+escáner	scanner	verb	B1.1	
+esencial	essential	adj	B1.1	philosophy
+esforzarse	to make an effort	verb	B1.1	reflexive|work
+esfuerzo	effort	noun	B1.1	work
+especialista	specialist	adj	B1.1	
+especialización	specialization	adj	B1.1	work
+especializado	specialized	adj	B1.1	work
+especializarse	to specialize	verb	B1.1	reflexive|work
+especie	species	noun	B1.1	
+especie en peligro de extinción	endangered species	phrase	B1.1	
+espectador	viewer	noun	B1.1	
+estabilidad	stability	noun	B1.1	health
+estado	state	noun	B1.1	society
+estado mental	mental state	phrase	B1.1	health
+estadística	statistics	adj	B1.1	education
+estar a punto de	to be about to	phrase	B1.1	philosophy
+estereotipo	stereotype	noun	B1.1	
+estimar	to estimate, to esteem	verb	B1.1	education|health|philosophy
+estrategia	strategy	noun	B1.1	work
+estructura	structure	noun	B1.1	
+estrés	stress	noun	B1.1	
+estudio	study	noun	B1.1	education
+estética	aesthetics	adj	B1.1	
+estético	aesthetic	adj	B1.1	media
+evaluación	evaluation	adj	B1.1	education
+evaluación continua	continuous assessment	phrase	B1.1	
+eventualmente	eventually	adv	B1.1	time
+evidencia	evidence	noun	B1.1	education
+evidenciar	to evidence	verb	B1.1	education|philosophy|tech
+evidente	evident	adj	B1.1	philosophy
+exactamente	exactly	adv	B1.1	philosophy
+exacto	exact	adj	B1.1	education|tech
+examen escrito	written exam	phrase	B1.1	
+examen final	final exam	phrase	B1.1	
+examen oral	oral exam	phrase	B1.1	
+examen parcial	midterm exam	phrase	B1.1	
+excepcional	exceptional	adj	B1.1	philosophy
+excluido	excluded	adj	B1.1	society
+exclusión	exclusion	noun	B1.1	society
+exhaustivo	exhaustive	adj	B1.1	education
+exhibición	exhibition	noun	B1.1	media
+exhibir	to exhibit	verb	B1.1	media
+exigir	to demand	verb	B1.1	society
+experiencia laboral	work experience	phrase	B1.1	
+experimental	experimental	adj	B1.1	education|media|tech
+experimentar	to experience, to experiment	verb	B1.1	education|health|tech
+experimento	experiment	adj	B1.1	education|tech
+experto	expert	adj	B1.1	work
+explicación	explanation	noun	B1.1	education
+exponer	to display	verb	B1.1	media
+exposición	presentation, exhibition	adj	B1.1	media
+expresivo	expressive	adj	B1.1	media
+expresión	expression	noun	B1.1	media
+expresión artística	artistic expression	phrase	B1.1	
+extranjería	immigration office, status	adj	B1.1	
+extraordinariamente	extraordinarily	adv	B1.1	philosophy
+extraordinario	extraordinary	adj	B1.1	media|philosophy
+extremista	extremist	noun	B1.1	
+fabricar	to manufacture	verb	B1.1	tech
+factor	factor	noun	B1.1	education
+facultad	faculty	noun	B1.1	
+fascinación	fascination	noun	B1.1	health
+fe	faith	noun	B1.1	philosophy
+fervientemente	fervently	adv	B1.1	health
+filmar	to film	verb	B1.1	media
+filosófico	philosophical	adj	B1.1	philosophy
+fin	end, purpose	noun	B1.1	philosophy
+fisioterapeuta	physiotherapist	noun	B1.1	
+flexibilidad	flexibility	noun	B1.1	health
+fomentar	to foster	verb	B1.1	society
+formación	training	noun	B1.1	
+formación profesional	vocational training	phrase	B1.1	
+formarse	to train	verb	B1.1	reflexive|work
+foro	forum	noun	B1.1	
+fotografía	photography	noun	B1.1	media
+fracaso	failure	noun	B1.1	
+frustración	frustration	noun	B1.1	
+fuente	source	noun	B1.1	
+fuerza	strength	noun	B1.1	
+fundación	foundation	noun	B1.1	philosophy
+fundamentación	foundation	noun	B1.1	education
+fundamental	fundamental	adj	B1.1	philosophy
+fundamentar	to base	verb	B1.1	education|philosophy
+fundamento	foundation	noun	B1.1	philosophy
+gabinete	cabinet	noun	B1.1	
+generosidad	generosity	noun	B1.1	health
+genio	genius	noun	B1.1	
+geología	geology	noun	B1.1	tech
+ginecólogo	gynecologist	noun	B1.1	
+glóbulo	blood cell	noun	B1.1	
+gobierno	government	adj	B1.1	society
+gozar	to enjoy	verb	B1.1	health
+grado universitario	university degree	phrase	B1.1	
+gratitud	gratitude	noun	B1.1	
+habilidades	skills	noun	B1.1	
+hardware	hardware	noun	B1.1	tech
+herramienta	tool	adv	B1.1	
+hipótesis	hypothesis	noun	B1.1	education|philosophy|tech
+homofobia	homophobia	noun	B1.1	
+honestidad	honesty	noun	B1.1	philosophy
+horario flexible	flexible schedule	phrase	B1.1	
+horas extraordinarias	overtime	phrase	B1.1	
+huelga	strike	noun	B1.1	
+humildad	humility	noun	B1.1	
+huracán	hurricane	adj	B1.1	
+hábil	skillful	adj	B1.1	work
+hábitat	habitat	noun	B1.1	
+identidad	identity	adj	B1.1	health
+identidad cultural	cultural identity	phrase	B1.1	
+ideología	ideology	noun	B1.1	
+idolatrar	to idolize	verb	B1.1	health
+ignorancia	ignorance	noun	B1.1	philosophy
+igualdad	equality	adj	B1.1	philosophy
+ilógico	illogical	adj	B1.1	philosophy
+imaginación	imagination	noun	B1.1	media
+imaginar	to imagine	verb	B1.1	philosophy
+imaginativo	imaginative	adj	B1.1	media
+impaciencia	impatience	noun	B1.1	
+imparcial	impartial	adj	B1.1	education
+impuesto sobre la renta	income tax	phrase	B1.1	
+impulsar	to drive	verb	B1.1	society|work
+incluido	included	adj	B1.1	society
+inclusión	inclusion	noun	B1.1	society
+incoherente	incoherent	adv	B1.1	philosophy
+inconsciencia	unconsciousness	adj	B1.1	health
+inconsistente	inconsistent	adj	B1.1	philosophy
+increíblemente	incredibly	adv	B1.1	philosophy
+indemnización	compensation	noun	B1.1	
+indiferencia	indifference	noun	B1.1	health
+indignación	indignation	noun	B1.1	health
+inducir	to induce	verb	B1.1	philosophy
+inesperadamente	unexpectedly	adv	B1.1	time
+inestabilidad	instability	noun	B1.1	health
+inferir	to infer	verb	B1.1	education|philosophy
+inflación	inflation	noun	B1.1	
+influir	to influence	verb	B1.1	media
+información	information	noun	B1.1	
+ingeniería genética	genetic engineering	phrase	B1.1	tech
+injusto	unfair	adj	B1.1	society
+inmadurez	immaturity	noun	B1.1	health
+inmigración	immigration	noun	B1.1	
+innovación	innovation	noun	B1.1	tech
+innovador	innovative	adj	B1.1	media|philosophy|tech|work
+innovar	to innovate	verb	B1.1	tech|work
+insistir	to insist	verb	B1.1	work
+inspiración	inspiration	noun	B1.1	health|media|work
+inspirar	to inspire	verb	B1.1	media
+instrumento	instrument	adj	B1.1	media
+integrado	integrated	adj	B1.1	society
+intelectual	intellectual	adj	B1.1	education
+inteligencia artificial	artificial intelligence	phrase	B1.1	tech
+intentar	to try	verb	B1.1	philosophy
+interpretación	interpretation, performance	noun	B1.1	education|media|philosophy
+interpretar	to interpret	verb	B1.1	education|media|philosophy
+intolerante	intolerant	adj	B1.1	society
+inundación	flood	noun	B1.1	
+inventar	to invent	verb	B1.1	tech|work
+invento	invention	adj	B1.1	
+investigación	research	noun	B1.1	education
+investigación científica	scientific research	phrase	B1.1	tech
+inválido	invalid	adj	B1.1	philosophy
+ira	anger	noun	B1.1	
+irrazonable	unreasonable	adj	B1.1	philosophy
+jubilación	retirement	adj	B1.1	
+jugador	player	noun	B1.1	
+juicio	trial, judgment	adj	B1.1	philosophy
+justificación	justification	adv	B1.1	education
+justificar	to justify	verb	B1.1	education|philosophy
+justo	fair	adj	B1.1	society
+lealtad	loyalty	adj	B1.1	
+lector	reader	noun	B1.1	
+legislación	legislation	noun	B1.1	
+lesión	injury	noun	B1.1	
+liberal	liberal	adj	B1.1	society
+libre	free	adj	B1.1	society
+licenciatura	bachelor's degree	noun	B1.1	
+llegar a	to manage to	phrase	B1.1	philosophy
+llevar + gerund	to have been doing	phrase	B1.1	philosophy
+lo cual	which (referring to idea)	phrase	B1.1	philosophy
+lo que	what, that which	phrase	B1.1	philosophy
+lograr	to manage to, to achieve	verb	B1.1	philosophy|work
+logro	achievement	adj	B1.1	work
+luchar	to fight	verb	B1.1	society|work
+lógico	logical	adj	B1.1	philosophy
+madurez	maturity	noun	B1.1	health
+magnífico	magnificent	adj	B1.1	media
+maldad	evil, malice	adj	B1.1	health
+manejo	handling	noun	B1.1	work
+manifestación	demonstration, protest	noun	B1.1	
+manifestar	to demonstrate	verb	B1.1	society
+manual	manual	adj	B1.1	tech
+marginado	marginalized	adj	B1.1	society
+matemáticas	mathematics	adj	B1.1	tech
+matrícula	enrollment, tuition	adj	B1.1	
+medalla	medal	adj	B1.1	
+medio ambiente	environment	phrase	B1.1	
+medio de comunicación	media	phrase	B1.1	
+mediocre	mediocre	adj	B1.1	media
+medir	to measure	verb	B1.1	education|tech
+melancolía	melancholy	noun	B1.1	health
+mente	mind	adv	B1.1	health
+mentira	lie	noun	B1.1	philosophy
+merecer	to deserve	verb	B1.1	work
+meta	goal	adj	B1.1	philosophy|work
+metodología	methodology	noun	B1.1	education
+metodológico	methodological	adj	B1.1	education
+metáfora	metaphor	noun	B1.1	education
+mientras tanto	meanwhile	phrase	B1.1	time
+ministerio	ministry	noun	B1.1	
+ministro	minister	noun	B1.1	society
+minucioso	thorough	adj	B1.1	education
+modelar	to model	verb	B1.1	tech
+modelización	modeling	noun	B1.1	tech
+monarquía	monarchy	noun	B1.1	society
+mostrar	to show	verb	B1.1	media
+motivación	motivation	noun	B1.1	work
+movimiento	movement	adj	B1.1	philosophy
+muestra	sample, display	noun	B1.1	education|media
+musical	musical	adj	B1.1	media
+máquina	machine	noun	B1.1	
+máster	master's degree	verb	B1.1	
+método	method	noun	B1.1	education|work
+música	music	adj	B1.1	media
+nacionalidad	nationality	adj	B1.1	
+nación	nation	noun	B1.1	society
+nanotecnología	nanotechnology	noun	B1.1	tech
+negociación	negotiation	noun	B1.1	work
+neutral	neutral	adj	B1.1	education
+no obstante	nevertheless	phrase	B1.1	philosophy
+noción	notion	noun	B1.1	philosophy
+normal	normal	adj	B1.1	philosophy
+nostalgia	nostalgia	adj	B1.1	health
+notablemente	notably	adv	B1.1	philosophy
+noticia	news	noun	B1.1	
+novato	novice	adj	B1.1	work
+objeción	objection	noun	B1.1	education
+objetar	to object	verb	B1.1	education
+objetivo	objective, goal	adj	B1.1	education|philosophy|tech|work
+obligaciones	obligations	noun	B1.1	philosophy
+obra de arte	artwork	phrase	B1.1	
+obra literaria	literary work	phrase	B1.1	media
+observar	to observe	verb	B1.1	education|tech
+obsesión	obsession	noun	B1.1	health
+obtener	to obtain	verb	B1.1	work
+obvio	obvious	adj	B1.1	philosophy
+ocasionalmente	occasionally	adv	B1.1	time
+oftalmólogo	ophthalmologist	adj	B1.1	
+olímpico	Olympic	adj	B1.1	
+opinión	opinion	noun	B1.1	
+opinión pública	public opinion	phrase	B1.1	
+oponerse	to oppose	verb	B1.1	reflexive|society
+oprimido	oppressed	adj	B1.1	society
+optimizar	to optimize	verb	B1.1	tech|work
+ordinario	ordinary	adj	B1.1	philosophy
+orgánico	organic	adj	B1.1	
+orientador	counselor	noun	B1.1	
+paciencia	patience	noun	B1.1	
+pacífico	peaceful	adj	B1.1	society
+padecer	to suffer	verb	B1.1	health
+pandemia	pandemic	adj	B1.1	
+para que	so that	connector	B1.1	philosophy
+paralelamente	in parallel	adv	B1.1	time
+paraolímpico	Paralympic	adj	B1.1	
+parcial	partial	adj	B1.1	education
+parlamento	parliament	adj	B1.1	
+participar	to participate	verb	B1.1	society
+pasión	passion	noun	B1.1	health
+patrimonio	heritage	noun	B1.1	
+paulatinamente	gradually	adv	B1.1	time
+pediatra	pediatrician	adj	B1.1	
+pensar	to think	verb	B1.1	philosophy
+perdonar	to forgive	verb	B1.1	health
+perfectamente	perfectly	adv	B1.1	philosophy
+pericia	expertise	noun	B1.1	work
+periodista	journalist	adj	B1.1	
+permanentemente	permanently	adv	B1.1	time
+permiso de maternidad	maternity, paternity leave	phrase	B1.1	
+perseverancia	perseverance	noun	B1.1	work
+perseverar	to persevere	verb	B1.1	work
+persistir	to persist	verb	B1.1	work
+perspectiva	perspective	adj	B1.1	education
+período de prueba	probation period	phrase	B1.1	
+pieza	piece	noun	B1.1	media
+plagio	plagiarism	noun	B1.1	
+plataforma	platform	noun	B1.1	tech
+plazo	deadline, term	noun	B1.1	
+plenamente	fully	adv	B1.1	philosophy
+población	population	noun	B1.1	education|society
+podcast	podcast	noun	B1.1	
+político	politician, political	adj	B1.1	society
+ponerse a	to start doing	phrase	B1.1	philosophy
+por consiguiente	consequently	connector	B1.1	philosophy
+por el contrario	on the contrary	phrase	B1.1	philosophy
+por medio de	by means of	phrase	B1.1	philosophy
+por último	finally	connector	B1.1	philosophy
+posteriormente	subsequently	adv	B1.1	time
+postgrado	postgraduate	noun	B1.1	
+poético	poetic	adj	B1.1	media
+precisamente	precisely	adv	B1.1	philosophy
+preciso	precise	adj	B1.1	education|tech
+prejuicio	prejudice	adj	B1.1	society
+prensa	press	noun	B1.1	
+prepararse	to prepare	verb	B1.1	reflexive|work
+presencial	in-person	noun	B1.1	
+presentación	presentation	adj	B1.1	media
+presentador	presenter, host	adj	B1.1	
+preservar	to preserve	verb	B1.1	
+presidente	president	adj	B1.1	society
+presumir	to presume	verb	B1.1	philosophy
+presupuesto	budget	noun	B1.1	
+pretender	to intend	verb	B1.1	philosophy
+previamente	previously	adv	B1.1	time
+primitivo	primitive	adj	B1.1	philosophy
+principiante	beginner	adj	B1.1	work
+principios	principles	noun	B1.1	philosophy
+proactivo	proactive	adj	B1.1	work
+problema social	social problem	phrase	B1.1	society
+proceso	process	noun	B1.1	
+procurar	to try	verb	B1.1	philosophy
+programa informático	software	phrase	B1.1	
+programar	to program	verb	B1.1	tech
+progresar	to progress	verb	B1.1	work
+progresista	progressive	adj	B1.1	society
+progresivamente	progressively	adv	B1.1	time
+promesa	promise	noun	B1.1	
+promover	to promote	verb	B1.1	society
+pronóstico	prognosis	noun	B1.1	
+propaganda	propaganda	noun	B1.1	
+propósito	purpose	noun	B1.1	philosophy
+prosa	prose	noun	B1.1	media
+proteger	to protect	verb	B1.1	society
+protestar	to protest	verb	B1.1	society
+préstamo estudiantil	student loan	phrase	B1.1	
+psiquiatra	psychiatrist	noun	B1.1	
+publicar	to publish	verb	B1.1	media
+quienquiera	whoever	pron	B1.1	philosophy
+racionalidad	rationality	adj	B1.1	philosophy
+racismo	racism	noun	B1.1	society
+radical	radical	adj	B1.1	
+radiografía	X-ray	noun	B1.1	
+razonable	reasonable	adj	B1.1	philosophy
+razonar	to reason	verb	B1.1	philosophy
+real	real	adj	B1.1	tech
+realidad aumentada	augmented reality	phrase	B1.1	
+realidad virtual	virtual reality	phrase	B1.1	
+rebatir	to refute, to rebut	verb	B1.1	education|philosophy
+rebeldía	rebellion	noun	B1.1	health
+receptor	receiver	adj	B1.1	
+recesión	recession	noun	B1.1	
+rechazar	to reject	verb	B1.1	society
+reciclar	to recycle	verb	B1.1	
+reclamar	to claim	verb	B1.1	society
+reconciliarse	to reconcile	verb	B1.1	health|reflexive
+rector	rector, chancellor	noun	B1.1	
+recursos naturales	natural resources	phrase	B1.1	
+redacción	writing	noun	B1.1	media
+reducir	to reduce	verb	B1.1	
+referencias	references	noun	B1.1	
+refinado	refined	adj	B1.1	media
+reflexionar	to reflect	verb	B1.1	philosophy
+reforestación	reforestation	noun	B1.1	
+refugiado	refugee	noun	B1.1	
+refutar	to refute	verb	B1.1	education|philosophy
+reglamento	regulation	noun	B1.1	
+rehabilitación	rehabilitation	noun	B1.1	
+reivindicar	to demand	verb	B1.1	society
+relativamente	relatively	adv	B1.1	philosophy
+relato	story	noun	B1.1	media
+rencor	grudge	noun	B1.1	health
+rencor	to hold a grudge	verb	B1.1	health
+repentinamente	suddenly	adv	B1.1	time
+reportero	reporter	noun	B1.1	
+representar	to represent	verb	B1.1	media
+república	republic	adj	B1.1	society
+resentimiento	resentment	adj	B1.1	health
+residuo	waste, residue	noun	B1.1	
+resignación	resignation	noun	B1.1	health
+resistencia	endurance, resistance	noun	B1.1	health
+resistir	to resist	verb	B1.1	society
+resolución de problemas	problem solving	phrase	B1.1	work
+resonancia magnética	MRI	phrase	B1.1	
+respeto	respect	noun	B1.1	
+reunión virtual	virtual meeting	phrase	B1.1	
+reutilizar	to reuse	verb	B1.1	
+revisar	to review	verb	B1.1	media
+riguroso	rigorous	adj	B1.1	education|tech
+riqueza	wealth	adj	B1.1	society
+rivalizar	to rival	verb	B1.1	work
+robotización	robotization	noun	B1.1	tech
+robótica	robotics	adj	B1.1	
+rueda de prensa	press conference	phrase	B1.1	
+récord	record	noun	B1.1	
+sabiduría	wisdom	noun	B1.1	philosophy
+saborear	to savor	verb	B1.1	health
+salud mental	mental health	phrase	B1.1	health
+salvajemente	savagely	adv	B1.1	health
+salvo que	except that, unless	phrase	B1.1	philosophy
+satisfacción	satisfaction	noun	B1.1	
+seguidor	follower	noun	B1.1	
+seguir + gerund	to keep doing	phrase	B1.1	philosophy
+seguridad social	social security	phrase	B1.1	
+semestre	semester	noun	B1.1	
+seminario	seminar	noun	B1.1	
+senado	senate	noun	B1.1	
+senador	senator	noun	B1.1	society
+sencillo	simple	adj	B1.1	philosophy
+sensibilidad	sensitivity	noun	B1.1	
+sentencia	sentence, verdict	adj	B1.1	
+sequía	drought	noun	B1.1	
+sesgado	biased	adj	B1.1	education
+sexismo	sexism	noun	B1.1	society
+significado	meaning	noun	B1.1	philosophy
+significativamente	significantly	adv	B1.1	philosophy
+simpatía	sympathy	noun	B1.1	health
+simulación	simulation	noun	B1.1	tech
+simular	to simulate	verb	B1.1	tech
+simultáneamente	simultaneously	adv	B1.1	time
+sinceridad	sincerity	noun	B1.1	philosophy
+sindicato	union	noun	B1.1	
+sintetizar	to synthesize	verb	B1.1	education|philosophy
+sistema	system	noun	B1.1	tech
+sistema inmune	immune system	phrase	B1.1	
+sistemático	systematic	adj	B1.1	education|tech
+sobresalir	to excel	verb	B1.1	work
+social	social	adj	B1.1	society
+sofisticado	sophisticated	adj	B1.1	media|philosophy|tech
+solicitud de empleo	job application	phrase	B1.1	
+solidaridad	solidarity	noun	B1.1	society
+solidario	supportive	adj	B1.1	society
+sostener	to maintain	verb	B1.1	education|philosophy
+sostenible	sustainable	adj	B1.1	
+subconsciencia	subconscious, subconsciousness	adj	B1.1	health
+subjetivo	subjective	adj	B1.1	education
+sublime	sublime	adj	B1.1	media
+sufrir	to suffer	verb	B1.1	health
+sumamente	extremely	adv	B1.1	philosophy
+superar	to overcome	verb	B1.1	work
+supervisión	supervision	noun	B1.1	work
+suponer	to suppose	verb	B1.1	philosophy
+suscriptor	subscriber	noun	B1.1	
+sustentación	support	noun	B1.1	education
+sustentar	to support	verb	B1.1	education
+símbolo	symbol	noun	B1.1	
+talento	talent	adj	B1.1	media|work
+talentoso	talented	adj	B1.1	work
+taller	workshop	verb	B1.1	
+tecnológico	technological	adj	B1.1	tech
+teletrabajo	remote work	noun	B1.1	
+tema	theme	noun	B1.1	media
+temporalmente	temporarily	adv	B1.1	time
+tender a	to tend to	phrase	B1.1	philosophy
+teoría	theory	noun	B1.1	education|philosophy|tech
+terapia	therapy	noun	B1.1	
+ternura	tenderness	noun	B1.1	
+terremoto	earthquake	noun	B1.1	
+territorio	territory	noun	B1.1	
+tertulia	talk show, discussion	adj	B1.1	
+tesis	thesis	noun	B1.1	education|philosophy
+tiernamente	tenderly	adv	B1.1	health
+tolerancia	tolerance	noun	B1.1	
+tolerante	tolerant	adj	B1.1	society
+tolerar	to tolerate	verb	B1.1	society
+toma de decisiones	decision making	phrase	B1.1	work
+tormenta	storm	noun	B1.1	
+torneo	tournament	adj	B1.1	
+trabajo duro	hard work	phrase	B1.1	work
+trabajo en grupo	group work	phrase	B1.1	
+trabajo individual	individual work	phrase	B1.1	
+tradicional	traditional	adj	B1.1	media|philosophy|society
+traición	betrayal	adj	B1.1	
+transplante	transplant	adj	B1.1	
+tratamiento	treatment	adj	B1.1	
+trayectoria	trajectory, path	noun	B1.1	work
+tremendamente	tremendously	adv	B1.1	philosophy
+tribunal	court	noun	B1.1	
+trimestre	trimester, quarter	noun	B1.1	
+tristeza	sadness	noun	B1.1	
+triunfar	to succeed	verb	B1.1	work
+tsunami	tsunami	noun	B1.1	
+tutor	tutor	noun	B1.1	
+táctica	tactic	adj	B1.1	work
+técnica	technique	noun	B1.1	media|work
+técnico	technical	adj	B1.1	tech
+típico	typical	adj	B1.1	philosophy
+tóxico	toxic	adj	B1.1	
+ulteriormente	later	adv	B1.1	time
+urna	ballot box	adj	B1.1	
+vacuna	vaccine	noun	B1.1	
+validar	to validate	verb	B1.1	education|philosophy|tech
+valor	courage, value	adj	B1.1	philosophy
+valoración	assessment	adj	B1.1	education
+valorar	to value, to assess	verb	B1.1	education|health|society
+vanguardista	avant-garde	adj	B1.1	media
+variable	variable	adj	B1.1	education
+vehementemente	vehemently	adv	B1.1	health
+velocidad	speed	noun	B1.1	
+vencer	to overcome	verb	B1.1	work
+venerar	to venerate	verb	B1.1	health
+vengarse	to take revenge	verb	B1.1	health|reflexive
+verificar	to verify	verb	B1.1	education|philosophy|tech
+vertedero	landfill	noun	B1.1	
+veterano	veteran	adj	B1.1	work
+victoria	victory	adj	B1.1	
+violentamente	violently	adv	B1.1	health
+violento	violent	adj	B1.1	society
+virtual	virtual	adj	B1.1	tech
+virtualización	virtualization	adj	B1.1	tech
+virus	virus	noun	B1.1	
+visionario	visionary	adj	B1.1	work
+visual	visual	adj	B1.1	media
+voto	vote	noun	B1.1	society
+vulgar	vulgar	verb	B1.1	media
+válido	valid	adj	B1.1	philosophy
+xenofobia	xenophobia	noun	B1.1	
+ya que	since	phrase	B1.1	philosophy
+árbitro	referee	noun	B1.1	
+éxito	success	noun	B1.1	work
+único	unique	adj	B1.1	philosophy
+acciones	shares, stocks	noun	B1.2	
+accionista	shareholder	noun	B1.2	
+actitud	attitude	noun	B1.2	health
+actuación	performance, acting	noun	B1.2	media
+acupuntura	acupuncture	noun	B1.2	
+adaptable	adaptable	adj	B1.2	
+administración	administration	noun	B1.2	work
+adquisición	acquisition	noun	B1.2	
+agresivo	aggressive	adj	B1.2	
+agudo	acute	noun	B1.2	
+ahorro	saving	noun	B1.2	
+alimentación	eating, nutrition	noun	B1.2	
+amenaza	threat	noun	B1.2	
+antagonista	antagonist	adj	B1.2	
+antioxidante	antioxidant	adj	B1.2	
+apéndice	appendix	noun	B1.2	
+aranceles	tariffs	noun	B1.2	
+armas de destrucción masiva	weapons of mass destruction	phrase	B1.2	
+armonía	harmony	noun	B1.2	health|media
+asertivo	assertive	adj	B1.2	
+asesor de viajes	travel advisor	phrase	B1.2	
+atención sanitaria	healthcare	phrase	B1.2	
+auditoría	audit	noun	B1.2	
+autobiografía	autobiography	noun	B1.2	media
+autoestima	self-esteem	noun	B1.2	health
+autoimagen	self-image	noun	B1.2	health
+autor	author	noun	B1.2	
+autoritarismo	authoritarianism	noun	B1.2	
+aventura	adventure	adj	B1.2	
+bailarín	dancer	noun	B1.2	
+balance	balance sheet	adj	B1.2	
+ballet	ballet	adj	B1.2	
+banda	band	noun	B1.2	
+beneficios sociales	social benefits	phrase	B1.2	
+bienes	goods, assets	noun	B1.2	
+biografía	biography	noun	B1.2	media
+bonos	bonds	noun	B1.2	
+calidad de vida	quality of life	phrase	B1.2	
+calorías	calories	adj	B1.2	
+cancelación	cancellation	noun	B1.2	
+carbohidrato	carbohydrate	noun	B1.2	
+censura	censorship	noun	B1.2	
+cláusula	clause	noun	B1.2	
+cobertura	coverage	noun	B1.2	
+colaboración	collaboration	noun	B1.2	
+colección	collection	noun	B1.2	media
+compasivo	compassionate	noun	B1.2	
+competencia	competition, competence	noun	B1.2	work
+competitividad	competitiveness	adj	B1.2	
+comportamiento	behavior	noun	B1.2	health
+compositor	composer	noun	B1.2	
+compulsivo	compulsive	adj	B1.2	
+comunicativo	communicative	adj	B1.2	
+conciencia	consciousness, awareness	adj	B1.2	health
+concurso	contest, game show	noun	B1.2	
+condición física	physical condition	phrase	B1.2	
+conexión	connection	noun	B1.2	
+conflicto armado	armed conflict	phrase	B1.2	
+consola	console	noun	B1.2	
+contabilidad	accounting	noun	B1.2	
+contaminante	pollutant	adj	B1.2	
+convalecencia	convalescence	adj	B1.2	
+coreografía	choreography	noun	B1.2	
+corrupción	corruption	noun	B1.2	society
+cortometraje	short film	noun	B1.2	
+cotización	quote, price	adj	B1.2	
+crecimiento	growth	noun	B1.2	
+crisis migratoria	migration crisis	phrase	B1.2	
+crisis mundial	world crisis	phrase	B1.2	
+crucero	cruise	noun	B1.2	
+cumplimiento	compliance	noun	B1.2	
+cura	cure	noun	B1.2	
+declaración de impuestos	tax return	phrase	B1.2	
+declarar	to declare	verb	B1.2	
+deducción fiscal	tax deduction	phrase	B1.2	
+deflación	deflation	noun	B1.2	
+demanda laboral	labor demand	phrase	B1.2	
+demora	delay	noun	B1.2	
+depresión	depression	noun	B1.2	
+derechos de aterrizaje	landing rights	phrase	B1.2	
+derechos humanos	human rights	phrase	B1.2	
+derivación	referral	adj	B1.2	
+desafío	challenge	adj	B1.2	
+desarme	disarmament	adj	B1.2	
+descanso	rest	noun	B1.2	
+deseo	desire	noun	B1.2	health
+desertificación	desertification	adj	B1.2	
+deshidratación	dehydration	noun	B1.2	
+dictadura	dictatorship	adj	B1.2	philosophy|society
+dieta	diet	noun	B1.2	
+digestión	digestion	noun	B1.2	
+dirección	direction, management	adj	B1.2	work
+directo	live	adj	B1.2	
+dividendo	dividend	noun	B1.2	
+documental	documentary	adj	B1.2	
+débito	debit	noun	B1.2	
+economía	economy	noun	B1.2	
+edición	edition	noun	B1.2	
+efectos especiales	special effects	phrase	B1.2	
+efectos secundarios	side effects	phrase	B1.2	
+eficiencia	efficiency	adj	B1.2	
+emigrar	to emigrate	verb	B1.2	
+emisiones	emissions	noun	B1.2	
+emprendedor	entrepreneur, entrepreneurial	adj	B1.2	work
+empático	empathetic	adj	B1.2	
+energía hidroeléctrica	hydroelectric energy	phrase	B1.2	
+enfermedad infecciosa	infectious disease	phrase	B1.2	
+ensayo	rehearsal, essay	adj	B1.2	media
+equipaje de mano	hand luggage	phrase	B1.2	
+escasez de agua	water scarcity	phrase	B1.2	
+escritor	writer	noun	B1.2	
+estadio	stadium	noun	B1.2	
+estilo de vida	lifestyle	phrase	B1.2	
+estreno	premiere	noun	B1.2	
+evento	event	adj	B1.2	
+exclusión social	social exclusion	phrase	B1.2	
+excursionista	hiker, day-tripper	noun	B1.2	
+exención	exemption	noun	B1.2	
+expatriado	expatriate	noun	B1.2	
+explotación	exploitation	noun	B1.2	society
+exportación	export	noun	B1.2	
+extinción	extinction	noun	B1.2	
+extrovertido	extroverted	noun	B1.2	
+factura	invoice, bill	adj	B1.2	
+facturación	check-in	noun	B1.2	
+fantasía	fantasy	adj	B1.2	
+festival	festival	adj	B1.2	
+fibra	fiber	noun	B1.2	
+financiación	financing	noun	B1.2	
+flexible	flexible	adj	B1.2	
+fobia	phobia	noun	B1.2	
+fondo	fund	noun	B1.2	
+fusión	merger	noun	B1.2	
+galería	gallery	adj	B1.2	media
+ganancias y pérdidas	profit and loss	phrase	B1.2	
+gastos	expenses	noun	B1.2	
+gestión	management	adj	B1.2	work
+gira	tour	noun	B1.2	
+globalización	globalization	adj	B1.2	
+grasa	fat	noun	B1.2	
+guion	script	noun	B1.2	
+guionista	screenwriter	noun	B1.2	
+hambre	hunger	noun	B1.2	
+herencia	inheritance	noun	B1.2	
+hidratación	hydration	noun	B1.2	
+higiene	hygiene	noun	B1.2	
+homeopatía	homeopathy	noun	B1.2	
+horario de llegada	arrival schedule	phrase	B1.2	
+horario de salida	departure schedule	phrase	B1.2	
+hábito	habit	noun	B1.2	
+idea	idea	noun	B1.2	philosophy
+idealista	idealistic	adj	B1.2	
+importación	import	noun	B1.2	
+improvisación	improvisation	noun	B1.2	
+impulso	impulse	noun	B1.2	
+impunidad	impunity	noun	B1.2	
+incentivo	incentive	adj	B1.2	
+inconsciente	unconscious	adj	B1.2	health
+incumplimiento	non-compliance	noun	B1.2	
+ingresos	income	noun	B1.2	
+injusticia	injustice	adv	B1.2	philosophy|society
+inmaduro	immature	noun	B1.2	
+inmigrar	to immigrate	verb	B1.2	
+inmunidad	immunity	noun	B1.2	
+insomnio	insomnia	noun	B1.2	
+inteligencia	intelligence	noun	B1.2	philosophy
+interés compuesto	compound interest	phrase	B1.2	
+introvertido	introverted	noun	B1.2	
+intuición	intuition	noun	B1.2	philosophy
+inversión	investment	adj	B1.2	
+invitado	guest	noun	B1.2	
+irracional	irrational	adj	B1.2	philosophy
+itinerario	itinerary	adj	B1.2	
+jet lag	jet lag	phrase	B1.2	
+lectura	reading	noun	B1.2	
+letra	lyrics	adj	B1.2	
+liderazgo	leadership	noun	B1.2	society|work
+lluvia ácida	acid rain	phrase	B1.2	
+lógica	logic	adj	B1.2	philosophy
+maduro	mature	noun	B1.2	
+malnutrición	malnutrition	adj	B1.2	
+marginación	marginalization	adj	B1.2	society
+masaje terapéutico	therapeutic massage	phrase	B1.2	
+media pensión	half board	phrase	B1.2	
+mediación	mediation	noun	B1.2	
+medicación	medication	adj	B1.2	
+meditación	meditation	noun	B1.2	
+melodía	melody	noun	B1.2	media
+memoria	memory	noun	B1.2	
+mentalidad	mentality	adj	B1.2	health
+mercado libre	free market	phrase	B1.2	
+metabolismo	metabolism	noun	B1.2	
+migración forzada	forced migration	phrase	B1.2	
+mineral	mineral	adj	B1.2	
+misión	mission	noun	B1.2	
+mochilero	backpacker	noun	B1.2	
+monopolio	monopoly	noun	B1.2	
+multinacional	multinational	adj	B1.2	
+músico	musician	adj	B1.2	
+narrador	narrator	noun	B1.2	media
+nativo	native	adj	B1.2	
+necesidad	need, necessity	noun	B1.2	philosophy|society
+negociación colectiva	collective bargaining	phrase	B1.2	
+nivel	level	noun	B1.2	
+nutrición	nutrition	noun	B1.2	
+nutriente	nutrient	adj	B1.2	
+obra	work	noun	B1.2	media
+obsesivo	obsessive	adj	B1.2	
+ocio	leisure	noun	B1.2	
+oferta laboral	labor supply	phrase	B1.2	
+olvido	forgetfulness	adj	B1.2	
+opresión	oppression	noun	B1.2	society
+origen	origin	noun	B1.2	
+orquesta	orchestra	noun	B1.2	
+pacificación	pacification	adj	B1.2	
+paliativo	palliative	adj	B1.2	
+pasajero frecuente	frequent flyer	phrase	B1.2	
+pasatiempo	hobby, pastime	noun	B1.2	
+pasivo	passive	adj	B1.2	
+patrocinio	sponsorship	noun	B1.2	
+pensamiento	thought	noun	B1.2	philosophy
+pensión completa	full board	phrase	B1.2	
+percepción	perception	noun	B1.2	philosophy
+personalidad	personality	adj	B1.2	health
+planificación	planning	noun	B1.2	work
+poema	poem	noun	B1.2	media
+poeta	poet	noun	B1.2	
+pragmático	pragmatic	adj	B1.2	
+precariedad	precariousness	adj	B1.2	
+prevención	prevention	adj	B1.2	
+problema global	global problem	phrase	B1.2	
+productividad	productivity	noun	B1.2	
+productor	producer	noun	B1.2	
+proliferación nuclear	nuclear proliferation	phrase	B1.2	
+propiedad	property	noun	B1.2	
+proteccionismo	protectionism	noun	B1.2	
+proteína	protein	noun	B1.2	
+prólogo	prologue	noun	B1.2	
+psicoanálisis	psychoanalysis	adj	B1.2	
+psicoterapia	psychotherapy	noun	B1.2	
+psiquiatría	psychiatry	noun	B1.2	
+publicación	publication	adj	B1.2	
+puerta de embarque	boarding gate	phrase	B1.2	
+póliza	policy	adj	B1.2	
+quiropráctica	chiropractic	adj	B1.2	
+racional	rational	adj	B1.2	philosophy
+rating	rating	noun	B1.2	
+razonamiento	reasoning	noun	B1.2	education|philosophy
+reactivación	recovery, reactivation	noun	B1.2	
+realista	realistic	adj	B1.2	
+reality show	reality show	phrase	B1.2	
+reciclaje	recycling	noun	B1.2	
+recital	recital	adj	B1.2	
+recuerdo	memory, recollection	noun	B1.2	
+recuperación	recovery	noun	B1.2	
+recursos humanos	human resources	phrase	B1.2	
+reembolso	refund	noun	B1.2	
+relajación	relaxation	noun	B1.2	
+rendimiento	performance, yield	noun	B1.2	
+reserva anticipada	advance booking	phrase	B1.2	
+reservado	reserved	noun	B1.2	
+residuos	waste	noun	B1.2	
+retransmisión	rebroadcast	noun	B1.2	
+revisión médica	medical check-up	phrase	B1.2	
+ritmo	rhythm	noun	B1.2	media
+rural	rural	adj	B1.2	
+rutina	routine	noun	B1.2	
+rígido	rigid	noun	B1.2	
+salud	health	adj	B1.2	
+seguro	insurance	noun	B1.2	
+sensación	sensation	noun	B1.2	philosophy
+sensible	sensitive	adj	B1.2	
+sistema de salud	health system	phrase	B1.2	
+sistema inmunitario	immune system	phrase	B1.2	
+sobrecargo	surcharge	noun	B1.2	
+sobreexplotación	overexploitation	noun	B1.2	
+sociable	sociable	adj	B1.2	
+socio	partner	noun	B1.2	
+solitario	solitary, lonely	adj	B1.2	
+sostenibilidad	sustainability	noun	B1.2	work
+startup	startup	noun	B1.2	
+subconsciente	subconscious	adj	B1.2	
+sueño	sleep	noun	B1.2	
+superávit	surplus	noun	B1.2	
+taquilla	box office	adj	B1.2	
+tasa de interés	interest rate	phrase	B1.2	
+telenovela	soap opera	noun	B1.2	
+temperamento	temperament	adj	B1.2	health
+temporada alta	high season	phrase	B1.2	
+temporada baja	low season	phrase	B1.2	
+temporal	seasonal	adj	B1.2	
+terapia alternativa	alternative therapy	phrase	B1.2	
+terminal	terminal	adj	B1.2	
+terrorismo	terrorism	noun	B1.2	
+todo incluido	all inclusive	phrase	B1.2	
+tortura	torture	noun	B1.2	
+trabajo infantil	child labor	phrase	B1.2	
+transmisión	broadcast	noun	B1.2	
+trasbordo	transfer	noun	B1.2	
+trastorno	disorder	noun	B1.2	
+trata de personas	human trafficking	phrase	B1.2	
+tratado comercial	trade agreement	phrase	B1.2	
+trauma	trauma	noun	B1.2	
+vacunación	vaccination	noun	B1.2	
+valores	securities, values	adj	B1.2	
+videojuego	video game	noun	B1.2	
+violación de derechos	rights violation	phrase	B1.2	
+violencia	violence	noun	B1.2	society
+visión	vision	noun	B1.2	
+vitamina	vitamin	noun	B1.2	
+índice	index	noun	B1.2	
+a condición de que	on condition that	phrase	B2.1	philosophy
+a fin de cuentas	in the end	phrase	B2.1	philosophy
+a lo que parece	apparently	phrase	B2.1	philosophy
+a no ser por	if it weren't for	phrase	B2.1	philosophy
+a no ser que	unless	phrase	B2.1	philosophy
+a posteriori	a posteriori	phrase	B2.1	
+a priori	a priori	phrase	B2.1	
+a saber	namely	phrase	B2.1	philosophy
+abandono	abandonment	adj	B2.1	health
+abducción	abduction	noun	B2.1	education
+absolutismo	absolutism	noun	B2.1	philosophy
+abstracción	abstraction	noun	B2.1	philosophy
+abstraer	to abstract	verb	B2.1	philosophy
+acaso	perhaps	adv	B2.1	philosophy
+accidente	accident	adj	B2.1	philosophy
+acelerar	to accelerate	verb	B2.1	work
+acreditación	accreditation	noun	B2.1	tech
+acreditar	to accredit	verb	B2.1	tech
+activos intangibles	intangible assets	phrase	B2.1	work
+actualizar	to update	verb	B2.1	work
+adaptabilidad	adaptability	noun	B2.1	health
+adaptabilidad estratégica	strategic adaptability	phrase	B2.1	work
+adaptación	adaptation	noun	B2.1	
+adaptar	to adapt	verb	B2.1	tech|work
+administrar	to administer	verb	B2.1	work
+ADN	DNA	noun	B2.1	
+adopción tecnológica	technology adoption	phrase	B2.1	tech
+afinidad	affinity	noun	B2.1	health
+afirmar	to affirm	verb	B2.1	philosophy
+agilidad estratégica	strategic agility	phrase	B2.1	work
+agilidad organizacional	organizational agility	phrase	B2.1	work
+agilizar	to streamline	verb	B2.1	work
+agujero negro	black hole	phrase	B2.1	
+ahondar	to delve into	verb	B2.1	education
+ahora bien	now then	phrase	B2.1	philosophy
+aislamiento	isolation	noun	B2.1	health
+ajustar	to adjust	verb	B2.1	tech|work
+al fin y al cabo	after all	phrase	B2.1	philosophy
+al parecer	apparently	phrase	B2.1	philosophy
+alejamiento	withdrawal	adj	B2.1	health
+alfabetización digital	digital literacy	phrase	B2.1	tech
+alianza	alliance	adj	B2.1	
+alineación estratégica	strategic alignment	phrase	B2.1	work
+alma	soul	noun	B2.1	health
+almacenamiento	storage	noun	B2.1	
+alteridad	alterity	adj	B2.1	
+alto el fuego	ceasefire	phrase	B2.1	
+amortización	amortization	noun	B2.1	
+ampliamente	widely	adv	B2.1	philosophy
+anacronismo	anachronism	noun	B2.1	
+anarquismo	anarchism	noun	B2.1	
+anatomía	anatomy	noun	B2.1	
+ante todo	first of all	connector	B2.1	philosophy
+antiguo	ancient	adj	B2.1	
+antipatía	antipathy	adj	B2.1	health
+antropología	anthropology	adj	B2.1	tech
+análisis bivariado	bivariate analysis	phrase	B2.1	education
+análisis de contenido	content analysis	phrase	B2.1	education
+análisis de correlación	correlation analysis	phrase	B2.1	education
+análisis de regresión	regression analysis	phrase	B2.1	education
+análisis de varianza	variance analysis	phrase	B2.1	education
+análisis de viabilidad	viability analysis	phrase	B2.1	tech
+análisis del discurso	discourse analysis	phrase	B2.1	education
+análisis factorial	factor analysis	phrase	B2.1	education
+análisis multivariado	multivariate analysis	phrase	B2.1	education
+análisis univariado	univariate analysis	phrase	B2.1	education
+apaciguarse	to calm down	verb	B2.1	health|reflexive
+aparentemente	apparently	adv	B2.1	philosophy
+apariencia	appearance	noun	B2.1	philosophy
+aprendizaje automático	machine learning	phrase	B2.1	tech
+aprendizaje organizacional	organizational learning	phrase	B2.1	work
+aprendizaje profundo	deep learning	phrase	B2.1	tech
+apropiación tecnológica	technology appropriation	phrase	B2.1	tech
+aprovechar	to leverage	verb	B2.1	work
+aproximarse	to approach	verb	B2.1	education|reflexive
+aquietarse	to quiet down	verb	B2.1	health|reflexive
+armas	weapons	noun	B2.1	
+armisticio	armistice	adj	B2.1	
+ARN	RNA	noun	B2.1	
+arquitectura digital	digital architecture	phrase	B2.1	tech
+arrebato	rapture	noun	B2.1	health
+articular	to articulate	verb	B2.1	education
+astrobiología	astrobiology	noun	B2.1	tech
+astrofísica	astrophysics	adj	B2.1	tech
+así como	just as	phrase	B2.1	philosophy
+ataque	attack	noun	B2.1	
+atisbar	to catch a glimpse	verb	B2.1	health
+auge	boom	noun	B2.1	
+aun así	even so	phrase	B2.1	philosophy
+autenticación	authentication	adv	B2.1	
+autenticidad	authenticity	adv	B2.1	health
+autoconcepto	self-concept	noun	B2.1	health
+autocracia	autocracy	noun	B2.1	
+autodeterminación	self-determination	noun	B2.1	
+autoeficacia	self-efficacy	adj	B2.1	health
+autonomía	autonomy	noun	B2.1	
+autoridad	authority	noun	B2.1	society|work
+autorización	authorization	noun	B2.1	
+autorrealización	self-actualization	adj	B2.1	health
+aval	guarantee	adj	B2.1	
+axioma	axiom	noun	B2.1	
+azar	chance	verb	B2.1	
+backup	backup	noun	B2.1	
+balancearse	to balance	verb	B2.1	health
+balanza comercial	trade balance	phrase	B2.1	
+balanza de pagos	balance of payments	phrase	B2.1	
+banco central	central bank	phrase	B2.1	
+barruntar	to suspect	verb	B2.1	health
+base	base, alkali, basis	adj	B2.1	philosophy
+base de datos	database	phrase	B2.1	tech
+base epistemológica	epistemological basis	phrase	B2.1	education
+bien...bien	whether...or	conj	B2.1	philosophy
+big bang	big bang	phrase	B2.1	
+biogeografía	biogeography	noun	B2.1	tech
+bioinformática	bioinformatics	adj	B2.1	tech
+bioingeniería	bioengineering	noun	B2.1	tech
+biomedicina	biomedicine	adj	B2.1	tech
+bipartidismo	bipartisanship	noun	B2.1	
+bloque	bloc	noun	B2.1	
+bochorno	embarrassment	adj	B2.1	health
+bolsa	stock exchange	noun	B2.1	
+bono	bond	noun	B2.1	
+brainstorming	brainstorming	noun	B2.1	work
+brecha tecnológica	technology gap	phrase	B2.1	tech
+bueno	good	noun	B2.1	
+cabe la posibilidad de que	there's a possibility that	phrase	B2.1	philosophy
+calibración	calibration	adj	B2.1	tech
+calibrar	to calibrate	verb	B2.1	tech
+calmarse	to calm down	verb	B2.1	health|reflexive
+cambio organizacional	organizational change	phrase	B2.1	work
+cantidad	quantity	adj	B2.1	philosophy
+capacidad organizacional	organizational capability	phrase	B2.1	work
+capital intelectual	intellectual capital	phrase	B2.1	work
+capitalismo	capitalism	adj	B2.1	
+capitalización	capitalization	adj	B2.1	
+capitalizar	to capitalize	verb	B2.1	work
+caracterizar	to characterize	verb	B2.1	education
+característico	characteristic	adj	B2.1	philosophy
+cardinal	cardinal	adj	B2.1	philosophy
+cartel	cartel	noun	B2.1	
+catalizador	catalyst	adj	B2.1	
+catarsis	catharsis	noun	B2.1	health
+categórico	categorical	adj	B2.1	philosophy
+causa	cause	noun	B2.1	philosophy
+causalidad	causality	adj	B2.1	education|philosophy
+centrismo	centrism	adj	B2.1	
+cercanía	closeness	noun	B2.1	health
+certificar	to certify	verb	B2.1	tech
+cibercrimen	cybercrime	noun	B2.1	tech
+ciberespacio	cyberspace	noun	B2.1	tech
+ciberguerra	cyberwar	noun	B2.1	tech
+ciberseguridad	cybersecurity	noun	B2.1	tech
+ciclo económico	economic cycle	phrase	B2.1	
+ciertamente	certainly	adv	B2.1	philosophy
+cinemática	kinematics	adj	B2.1	
+ciudadanía digital	digital citizenship	phrase	B2.1	tech
+civilización	civilization	noun	B2.1	
+cliente	client	adj	B2.1	
+clima organizacional	organizational climate	phrase	B2.1	work
+climatología	climatology	noun	B2.1	tech
+climax	climax	noun	B2.1	health
+coalición	coalition	adj	B2.1	
+coherencia estratégica	strategic coherence	phrase	B2.1	work
+colonialismo	colonialism	adj	B2.1	
+combinar	to combine	verb	B2.1	tech
+comercialización	commercialization	adj	B2.1	tech
+comercio internacional	international trade	phrase	B2.1	
+como no sea que	unless	phrase	B2.1	philosophy
+compatibilidad	compatibility	noun	B2.1	health
+competencia digital	digital competence	phrase	B2.1	tech
+competitividad organizacional	organizational competitiveness	phrase	B2.1	work
+complementariedad	complementarity	adj	B2.1	health
+compuesto	compound	noun	B2.1	
+computación	computing	noun	B2.1	tech
+computación cuántica	quantum computing	phrase	B2.1	tech
+computar	to compute	verb	B2.1	tech
+comunidad	community	noun	B2.1	
+comunismo	communism	noun	B2.1	
+con todo	nevertheless	phrase	B2.1	philosophy
+concebir	to conceive	verb	B2.1	tech
+concentración	concentration	adj	B2.1	
+concepto	concept	noun	B2.1	philosophy
+conceptualización	conceptualization	adj	B2.1	work
+conceptualizar	to conceptualize	verb	B2.1	education|philosophy|work
+concluyente	conclusive	adj	B2.1	philosophy
+concretar	to make concrete	verb	B2.1	work
+confiabilidad	reliability	noun	B2.1	education
+conflicto	conflict	adj	B2.1	society
+conforme	as, according to	conj	B2.1	philosophy
+congruencia	congruence	noun	B2.1	education|health
+conocimiento organizacional	organizational knowledge	phrase	B2.1	work
+consecuencialismo	consequentialism	adj	B2.1	
+consenso	consensus	noun	B2.1	
+conservadurismo	conservatism	noun	B2.1	
+consistencia	consistency	noun	B2.1	education
+consistencia estratégica	strategic consistency	phrase	B2.1	work
+consonancia	consonance	noun	B2.1	health
+conspicuo	conspicuous	adj	B2.1	philosophy
+constatar	to verify	verb	B2.1	tech
+consulta popular	popular consultation	phrase	B2.1	
+consumo	consumption	noun	B2.1	
+contemplar	to contemplate	verb	B2.1	philosophy
+contemporáneo	contemporary	adj	B2.1	media|philosophy
+contextualismo	contextualism	adj	B2.1	
+contingencia	contingency	noun	B2.1	philosophy
+contradicción	contradiction	adj	B2.1	philosophy
+contrainsurgencia	counterinsurgency	noun	B2.1	
+contrastación	contrasting	noun	B2.1	education
+contraterrorismo	counterterrorism	noun	B2.1	
+contrato social	social contract	phrase	B2.1	
+contundente	compelling	adj	B2.1	philosophy
+convergencia tecnológica	technological convergence	phrase	B2.1	tech
+coordinar	to coordinate	verb	B2.1	work
+corporación	corporation	noun	B2.1	
+correcto	right, correct	noun	B2.1	
+correlación	correlation	noun	B2.1	education
+correspondencia	correspondence	noun	B2.1	health
+corroboración	corroboration	noun	B2.1	education
+corroborar	to corroborate	verb	B2.1	philosophy|tech
+cosmogonía	cosmogony	noun	B2.1	philosophy
+cosmología	cosmology	noun	B2.1	philosophy|tech
+cosmos	cosmos	noun	B2.1	philosophy
+cotejar	to compare	verb	B2.1	education
+covarianza	covariance	noun	B2.1	education
+creatividad empresarial	business creativity	phrase	B2.1	work
+crecimiento económico	economic growth	phrase	B2.1	
+credibilidad	credibility	noun	B2.1	education
+cristalizar	to crystallize	verb	B2.1	work
+cromosoma	chromosome	noun	B2.1	
+crucial	crucial	adj	B2.1	philosophy
+cualidad	quality	adj	B2.1	philosophy
+cuantificar	to quantify	verb	B2.1	education|tech
+cuanto más...tanto más	the more...the more	phrase	B2.1	philosophy
+cuestionar	to question	verb	B2.1	philosophy
+cultura emprendedora	entrepreneurial culture	phrase	B2.1	work
+cultura organizacional	organizational culture	phrase	B2.1	work
+célula	cell	noun	B2.1	
+de alto nivel	high-level	phrase	B2.1	philosophy
+de gran calibre	high-caliber	phrase	B2.1	philosophy
+de gran envergadura	large-scale	phrase	B2.1	philosophy
+de no ser por	if it weren't for	phrase	B2.1	philosophy
+de primer orden	first-class	phrase	B2.1	philosophy
+de primera	first-rate	phrase	B2.1	philosophy
+de primera magnitud	of first magnitude	phrase	B2.1	philosophy
+de todas formas	anyway	phrase	B2.1	philosophy
+de todas maneras	anyway	phrase	B2.1	philosophy
+de todos modos	anyway	phrase	B2.1	philosophy
+de una parte...de otra	on one side...on the other	phrase	B2.1	philosophy
+decisivo	decisive	adj	B2.1	philosophy
+deconstrucción	deconstruction	noun	B2.1	
+decreto	decree	noun	B2.1	
+defensa	defense	noun	B2.1	
+delimitar	to delimit	verb	B2.1	education
+demagogia	demagoguery	noun	B2.1	
+demanda	demand	noun	B2.1	
+deontología	deontology	noun	B2.1	
+depresión económica	economic depression	phrase	B2.1	
+derivados	derivatives	adj	B2.1	
+desamparo	helplessness	adj	B2.1	health
+desarrollo	development	adj	B2.1	tech
+desarrollo económico	economic development	phrase	B2.1	
+desarrollo organizacional	organizational development	phrase	B2.1	work
+desarrollo tecnológico	technological development	phrase	B2.1	tech
+descifrado	decryption	noun	B2.1	
+descolonización	decolonization	noun	B2.1	
+descomponer	to decompose	verb	B2.1	education|philosophy
+desconcierto	bewilderment	adj	B2.1	health
+desempeño organizacional	organizational performance	phrase	B2.1	work
+desestresarse	to de-stress	verb	B2.1	health|reflexive
+deslumbramiento	dazzlement	adj	B2.1	health
+desmenuzar	to break down	verb	B2.1	education
+desmilitarización	demilitarization	noun	B2.1	
+desplegar	to deploy	verb	B2.1	tech
+después de todo	after all	phrase	B2.1	philosophy
+destacado	outstanding	adj	B2.1	philosophy
+desviación estándar	standard deviation	phrase	B2.1	education
+determinismo	determinism	noun	B2.1	philosophy
+deuda externa	external debt	phrase	B2.1	
+deuda pública	public debt	phrase	B2.1	
+devenir	becoming	verb	B2.1	philosophy
+dialéctica	dialectics	adj	B2.1	philosophy
+dicho de otro modo	in other words	phrase	B2.1	philosophy
+dicho esto	having said this	phrase	B2.1	philosophy
+diferenciación estratégica	strategic differentiation	phrase	B2.1	work
+diferenciar	to differentiate	verb	B2.1	education
+difusión tecnológica	technology diffusion	phrase	B2.1	tech
+dilema	dilemma	noun	B2.1	
+dilución	dilution	noun	B2.1	
+dinámica	dynamics	adj	B2.1	
+diplomacia	diplomacy	noun	B2.1	
+dirección estratégica	strategic direction	phrase	B2.1	work
+diseccionar	to dissect	verb	B2.1	education
+disenso	dissent	adj	B2.1	
+disolvente	solvent	adj	B2.1	
+disonancia	dissonance	noun	B2.1	health
+dispersión	dispersion	noun	B2.1	education
+disputa territorial	territorial dispute	phrase	B2.1	
+disrupción tecnológica	technological disruption	phrase	B2.1	tech
+distanciamiento	distancing	noun	B2.1	health
+distenderse	to relax	verb	B2.1	health|reflexive
+distinguir	to distinguish	verb	B2.1	education
+distintivo	distinctive	adj	B2.1	philosophy
+distribución	distribution	noun	B2.1	education
+disuasión	deterrence	noun	B2.1	
+diversidad	diversity	adj	B2.1	
+divide digital	digital divide	phrase	B2.1	tech
+divino	divine	noun	B2.1	
+divisa	currency	noun	B2.1	
+dogmatismo	dogmatism	noun	B2.1	philosophy
+dominación	domination	noun	B2.1	
+ecología	ecology	noun	B2.1	tech
+economía digital	digital economy	phrase	B2.1	tech
+ecosistema digital	digital ecosystem	phrase	B2.1	tech
+ecosistema emprendedor	entrepreneurial ecosystem	phrase	B2.1	work
+efectivamente	effectively	adv	B2.1	philosophy
+efectividad organizacional	organizational effectiveness	phrase	B2.1	work
+efecto	effect	noun	B2.1	philosophy
+eficiencia operacional	operational efficiency	phrase	B2.1	work
+eficientar	to make efficient	verb	B2.1	work
+ego	ego	noun	B2.1	health
+ejecución estratégica	strategic execution	phrase	B2.1	work
+ejecutar	to execute	verb	B2.1	work
+electrodinámica	electrodynamics	adj	B2.1	tech
+electromagnetismo	electromagnetism	noun	B2.1	
+elemento	element	adj	B2.1	education
+ello	id	noun	B2.1	health
+emblemático	emblematic	adj	B2.1	philosophy
+eminente	eminent	adj	B2.1	philosophy
+empirismo	empiricism	adj	B2.1	
+emprendimiento	entrepreneurship	adj	B2.1	work
+emular	to emulate	verb	B2.1	tech
+en caso de que	in case	phrase	B2.1	philosophy
+en cualquier caso	in any case	phrase	B2.1	philosophy
+en definitiva	definitively	phrase	B2.1	philosophy
+en el supuesto de que	supposing that	phrase	B2.1	philosophy
+en extremo	extremely	phrase	B2.1	philosophy
+en la medida en que	to the extent that	phrase	B2.1	philosophy
+en otras palabras	in other words	phrase	B2.1	philosophy
+en primer lugar...en segundo lugar	firstly...secondly	connector	B2.1	philosophy
+en resumidas cuentas	in short	phrase	B2.1	philosophy
+en suma	in sum	phrase	B2.1	philosophy
+en sumo grado	to the highest degree	phrase	B2.1	philosophy
+en síntesis	in synthesis	phrase	B2.1	philosophy
+en tanto en cuanto	insofar as	phrase	B2.1	philosophy
+en todo caso	in any case	phrase	B2.1	philosophy
+en vista de que	in view of the fact that	phrase	B2.1	philosophy
+en última instancia	ultimately	phrase	B2.1	philosophy
+encriptación	encryption	noun	B2.1	
+energía	energy	noun	B2.1	
+energía oscura	dark energy	phrase	B2.1	
+enfocar	to focus	verb	B2.1	education
+ensayar	to test	verb	B2.1	tech
+ente	entity	adj	B2.1	philosophy
+entendimiento	understanding	noun	B2.1	philosophy
+entrever	to glimpse	verb	B2.1	health
+epidemiología	epidemiology	noun	B2.1	
+epifanía	epiphany	noun	B2.1	health
+epistemología	epistemology	noun	B2.1	education|philosophy
+equidad	equity	noun	B2.1	
+equilibrarse	to balance	verb	B2.1	health|reflexive
+es más	what's more	phrase	B2.1	philosophy
+escalabilidad	scalability	adj	B2.1	work
+escalamiento	scaling	adj	B2.1	tech
+escepticismo	skepticism	adj	B2.1	philosophy
+escudriñar	to scrutinize	verb	B2.1	education
+esencia	essence	noun	B2.1	philosophy
+espacialidad	spatiality	adj	B2.1	philosophy
+espacio	space	noun	B2.1	philosophy
+especificar	to specify	verb	B2.1	education
+especulación	speculation	noun	B2.1	
+especular	to speculate	verb	B2.1	philosophy
+espíritu	spirit	noun	B2.1	health
+espíritu emprendedor	entrepreneurial spirit	phrase	B2.1	work
+estabilizarse	to stabilize	verb	B2.1	health|reflexive
+estadística descriptiva	descriptive statistics	phrase	B2.1	education
+estadística inferencial	inferential statistics	phrase	B2.1	education
+estancamiento	stagnation	noun	B2.1	
+estandarización	standardization	noun	B2.1	tech
+estandarizar	to standardize	verb	B2.1	tech
+estanflación	stagflation	noun	B2.1	
+esto es	that is	phrase	B2.1	philosophy
+estrategizar	to strategize	verb	B2.1	work
+estrechamente	closely	adv	B2.1	philosophy
+estructuralismo	structuralism	adj	B2.1	
+estructurar	to structure	verb	B2.1	education
+estudio de factibilidad	feasibility study	phrase	B2.1	tech
+estupefacción	stupefaction	noun	B2.1	health
+eternidad	eternity	noun	B2.1	philosophy
+etnografía	ethnography	noun	B2.1	
+etnología	ethnology	noun	B2.1	
+eudemonismo	eudaemonism	noun	B2.1	
+evaluación técnica	technical evaluation	phrase	B2.1	tech
+evasión fiscal	tax evasion	phrase	B2.1	
+evidentemente	evidently	adv	B2.1	philosophy
+evolución	evolution	noun	B2.1	philosophy
+exactitud	accuracy	noun	B2.1	education
+excelencia organizacional	organizational excellence	phrase	B2.1	work
+excepto que	except that	phrase	B2.1	philosophy
+exhaustividad	exhaustiveness	adj	B2.1	education
+existencia	existence	noun	B2.1	philosophy
+existencialismo	existentialism	adj	B2.1	
+exobiología	exobiology	noun	B2.1	tech
+explotar	to exploit	verb	B2.1	work
+extensamente	extensively	adv	B2.1	philosophy
+extrapolación	extrapolation	noun	B2.1	education
+extremismo	extremism	noun	B2.1	
+factibilidad	feasibility	noun	B2.1	work
+falacia	fallacy	adj	B2.1	philosophy
+falsabilidad	falsifiability	adj	B2.1	
+falsación	falsification	adj	B2.1	education
+falsedad	falsehood	adj	B2.1	
+fascismo	fascism	noun	B2.1	
+fehaciente	reliable	adj	B2.1	philosophy
+felicidad	happiness	noun	B2.1	health
+fenomenología	phenomenology	noun	B2.1	
+fenómeno	phenomenon	noun	B2.1	philosophy
+fiabilidad	reliability	noun	B2.1	education
+filosofar	to philosophize	verb	B2.1	philosophy
+filosofía de la ciencia	philosophy of science	phrase	B2.1	
+filosofía de la mente	philosophy of mind	phrase	B2.1	
+filosofía del lenguaje	philosophy of language	phrase	B2.1	
+filosofía moral	moral philosophy	phrase	B2.1	
+filosofía política	political philosophy	phrase	B2.1	
+finalidad	purpose, finality	adj	B2.1	philosophy
+finanzas	finance	noun	B2.1	
+finito	finite	noun	B2.1	
+firewall	firewall	adj	B2.1	
+firmemente	firmly	adv	B2.1	philosophy
+fisiología	physiology	noun	B2.1	
+flagrante	flagrant	adj	B2.1	philosophy
+flexibilidad estratégica	strategic flexibility	phrase	B2.1	work
+fluctuar	to fluctuate	verb	B2.1	health
+fondo de inversión	investment fund	phrase	B2.1	
+forma	form	noun	B2.1	philosophy
+formular	to formulate	verb	B2.1	education|tech
+fortaleza	strength	noun	B2.1	health
+fragilidad	fragility	noun	B2.1	health
+francamente	frankly	adv	B2.1	philosophy
+frecuencia	frequency	noun	B2.1	education
+fundamento teórico	theoretical foundation	phrase	B2.1	education
+fusionar	to merge	verb	B2.1	tech
+futuro	future	noun	B2.1	
+fármaco	drug, pharmaceutical	adj	B2.1	
+física	physics	adj	B2.1	tech
+física cuántica	quantum physics	phrase	B2.1	tech
+física de partículas	particle physics	phrase	B2.1	
+galaxia	galaxy	adj	B2.1	
+ganancia	profit	noun	B2.1	
+garantía	guarantee, collateral	adv	B2.1	
+gasto	spending	noun	B2.1	
+gen	gene	noun	B2.1	
+generación de ideas	idea generation	phrase	B2.1	work
+generalidad	generality	adj	B2.1	
+generalización	generalization	adj	B2.1	education|philosophy
+generalizar	to generalize	verb	B2.1	philosophy
+genética	genetics	adj	B2.1	
+geofísica	geophysics	adj	B2.1	tech
+geopolítica	geopolitics	adj	B2.1	
+gestionar	to manage	verb	B2.1	work
+gestión estratégica	strategic management	phrase	B2.1	work
+gnoseología	gnoseology	noun	B2.1	philosophy
+golpe de estado	coup d'état	phrase	B2.1	
+gravitación	gravitation	noun	B2.1	
+guerrilla	guerrilla	noun	B2.1	
+habida cuenta de que	given that	phrase	B2.1	philosophy
+hackeo	hacking	noun	B2.1	
+hedonismo	hedonism	noun	B2.1	
+hegemonía	hegemony	noun	B2.1	
+hermenéutica	hermeneutics	adj	B2.1	
+heterogeneidad	heterogeneity	noun	B2.1	
+heteronomía	heteronomy	noun	B2.1	
+hibridar	to hybridize	verb	B2.1	tech
+hipotetizar	to hypothesize	verb	B2.1	education|tech
+historicismo	historicism	adj	B2.1	
+homogeneidad	homogeneity	noun	B2.1	
+homologar	to homologate	verb	B2.1	tech
+hondamente	deeply	adv	B2.1	philosophy
+honestamente	honestly	adv	B2.1	philosophy
+huella digital	digital footprint	phrase	B2.1	tech
+humanismo	humanism	noun	B2.1	
+humano	human	noun	B2.1	
+humillación	humiliation	noun	B2.1	health
+I+D+i	R&D&I	noun	B2.1	tech
+ideación	ideation	noun	B2.1	work
+idealismo	idealism	adj	B2.1	
+identidad digital	digital identity	phrase	B2.1	tech
+idiosincrasia	idiosyncrasy	noun	B2.1	health
+ilimitado	unlimited	noun	B2.1	
+ilustración	enlightenment, illustration	adj	B2.1	education
+imagen	image	noun	B2.1	
+imparcialidad científica	scientific impartiality	phrase	B2.1	education
+imperativo	imperative	adj	B2.1	
+imperialismo	imperialism	adj	B2.1	
+implementación estratégica	strategic implementation	phrase	B2.1	work
+implementar	to implement	verb	B2.1	tech|work
+imposibilidad	impossibility	noun	B2.1	
+impresión	impression	noun	B2.1	
+incertidumbre	uncertainty	noun	B2.1	philosophy
+inclusión digital	digital inclusion	phrase	B2.1	tech
+incompatibilidad	incompatibility	noun	B2.1	health
+incontrovertible	incontrovertible	adj	B2.1	philosophy
+incorporar	to incorporate	verb	B2.1	tech
+incorrecto	wrong, incorrect	noun	B2.1	
+incuestionable	unquestionable	adj	B2.1	philosophy
+indagar	to investigate	verb	B2.1	education|tech
+independencia	independence	noun	B2.1	
+indiscutible	indisputable	adj	B2.1	philosophy
+individualidad	individuality	adj	B2.1	health
+individuo	individual	adj	B2.1	
+inducción	induction	noun	B2.1	education|philosophy
+indudablemente	undoubtedly	adv	B2.1	philosophy
+industrialización	industrialization	adj	B2.1	tech
+inferencia	inference	noun	B2.1	education
+infinito	infinite, infinity	noun	B2.1	philosophy
+influencia	influence	noun	B2.1	work
+informatizar	to computerize	verb	B2.1	tech
+infraestructura digital	digital infrastructure	phrase	B2.1	tech
+ingeniería	engineering	noun	B2.1	tech
+ingreso	income	noun	B2.1	
+inmanencia	immanence	noun	B2.1	
+inmanente	immanent	adj	B2.1	
+innegable	undeniable	adj	B2.1	philosophy
+innovación abierta	open innovation	phrase	B2.1	work
+innovación colaborativa	collaborative innovation	phrase	B2.1	work
+innovación disruptiva	disruptive innovation	phrase	B2.1	work
+innovación estratégica	strategic innovation	phrase	B2.1	work
+innovación incremental	incremental innovation	phrase	B2.1	work
+innovación radical	radical innovation	phrase	B2.1	work
+innovación tecnológica	technological innovation	phrase	B2.1	tech
+inorgánico	inorganic	adj	B2.1	
+insurgencia	insurgency	noun	B2.1	
+integración	integration	noun	B2.1	society
+integrar	to integrate	verb	B2.1	education|tech
+integridad	integrity	noun	B2.1	health
+integridad territorial	territorial integrity	phrase	B2.1	
+intelecto	intellect	noun	B2.1	philosophy
+inteligencia organizacional	organizational intelligence	phrase	B2.1	work
+intencionalidad	intentionality	adj	B2.1	
+interfaz	interface	noun	B2.1	tech
+intersubjetividad	intersubjectivity	noun	B2.1	
+intervención	intervention	adj	B2.1	
+intimidad	intimacy	noun	B2.1	health
+intolerancia	intolerance	noun	B2.1	
+intuir	to intuit	verb	B2.1	health
+invención	invention	adj	B2.1	tech
+investigación aplicada	applied research	phrase	B2.1	education
+investigación básica	basic research	phrase	B2.1	education
+investigación correlacional	correlational research	phrase	B2.1	education
+investigación cualitativa	qualitative research	phrase	B2.1	education
+investigación cuantitativa	quantitative research	phrase	B2.1	education
+investigación descriptiva	descriptive research	phrase	B2.1	education
+investigación experimental	experimental research	phrase	B2.1	education
+investigación explicativa	explanatory research	phrase	B2.1	education
+investigación exploratoria	exploratory research	phrase	B2.1	education
+investigación longitudinal	longitudinal research	phrase	B2.1	education
+investigación mixta	mixed research	phrase	B2.1	education
+investigación pura	pure research	phrase	B2.1	education
+investigación transversal	cross-sectional research	phrase	B2.1	education
+investigación y desarrollo	research and development	phrase	B2.1	tech
+irrefutable	irrefutable	adj	B2.1	philosophy
+legalidad	legality	adj	B2.1	
+legitimar	to legitimize	verb	B2.1	philosophy
+legitimidad	legitimacy	noun	B2.1	
+lenguaje	language	noun	B2.1	
+ley científica	scientific law	phrase	B2.1	tech
+liberación	liberation	noun	B2.1	health
+liberalismo	liberalism	adj	B2.1	
+libre albedrío	free will	phrase	B2.1	philosophy
+libre mercado	free market	phrase	B2.1	
+liderar	to lead	verb	B2.1	work
+liderazgo carismático	charismatic leadership	phrase	B2.1	work
+liderazgo estratégico	strategic leadership	phrase	B2.1	work
+liderazgo participativo	participative leadership	phrase	B2.1	work
+liderazgo situacional	situational leadership	phrase	B2.1	work
+liderazgo transformacional	transformational leadership	phrase	B2.1	work
+liderazgo visionario	visionary leadership	phrase	B2.1	work
+liquidez	liquidity	noun	B2.1	
+lluvia de ideas	brainstorming	phrase	B2.1	work
+límite	limit	noun	B2.1	
+macroeconomía	macroeconomics	adj	B2.1	
+madurez organizacional	organizational maturity	phrase	B2.1	work
+malo	bad	noun	B2.1	
+malware	malware	adj	B2.1	
+manifiesto	manifest	adj	B2.1	philosophy
+marco conceptual	conceptual framework	phrase	B2.1	education
+marco metodológico	methodological framework	phrase	B2.1	education
+marco teórico	theoretical framework	phrase	B2.1	education
+margen	margin	noun	B2.1	
+masa	mass	noun	B2.1	
+materia oscura	dark matter	phrase	B2.1	
+materialismo	materialism	adj	B2.1	
+materializar	to materialize	verb	B2.1	work
+matizar	to nuance	verb	B2.1	education
+maximizar	to maximize	verb	B2.1	work
+mayoría	majority	noun	B2.1	
+mecánica	mechanics	adj	B2.1	
+mecánica cuántica	quantum mechanics	phrase	B2.1	tech
+medicina	medicine	adj	B2.1	tech
+medición	measurement	adj	B2.1	
+medieval	medieval	adj	B2.1	
+mejora continua	continuous improvement	phrase	B2.1	work
+memoria organizacional	organizational memory	phrase	B2.1	work
+mentalidad emprendedora	entrepreneurial mindset	phrase	B2.1	work
+mentalidad estratégica	strategic mindset	phrase	B2.1	work
+mercado de valores	stock market	phrase	B2.1	
+meta-análisis	meta-analysis	adj	B2.1	education
+metafísica	metaphysics	adj	B2.1	philosophy
+meteorología	meteorology	noun	B2.1	tech
+metodizar	to methodize	verb	B2.1	philosophy
+microeconomía	microeconomics	adj	B2.1	
+mientras más...más	the more...the more	phrase	B2.1	philosophy
+miniaturización	miniaturization	noun	B2.1	tech
+minoría	minority	noun	B2.1	
+minuciosidad	thoroughness	noun	B2.1	education
+moderación	moderation	noun	B2.1	
+modernismo	modernism	noun	B2.1	
+modernizar	to modernize	verb	B2.1	work
+modificar	to modify	verb	B2.1	work
+molécula	molecule	noun	B2.1	
+monetizar	to monetize	verb	B2.1	work
+monismo	monism	noun	B2.1	
+moral	morality	adj	B2.1	philosophy
+multilateralismo	multilateralism	adv	B2.1	
+multipartidismo	multipartisanship	noun	B2.1	
+mutación	mutation	noun	B2.1	
+mutualidad	mutuality	adj	B2.1	health
+más aún	even more	phrase	B2.1	philosophy
+máxime	especially	adv	B2.1	philosophy
+método científico	scientific method	phrase	B2.1	tech
+nacionalismo	nationalism	adj	B2.1	
+narración	narrative	adj	B2.1	
+negar	to deny	verb	B2.1	philosophy
+neurobiología	neurobiology	noun	B2.1	tech
+neurociencia	neuroscience	noun	B2.1	tech
+neurotecnología	neurotechnology	noun	B2.1	tech
+neutralidad científica	scientific neutrality	phrase	B2.1	education
+ni...ni	neither...nor	conj	B2.1	philosophy
+no intervención	non-intervention	phrase	B2.1	
+no solo...sino también	not only...but also	phrase	B2.1	philosophy
+nominalismo	nominalism	adj	B2.1	
+norma	norm	noun	B2.1	
+normalización	normalization	adj	B2.1	tech
+normalizar	to normalize	verb	B2.1	tech
+normativa	regulation, normative	adj	B2.1	
+notorio	notorious	adj	B2.1	philosophy
+noúmeno	noumenon	noun	B2.1	philosophy
+o bien...o bien	either...or	phrase	B2.1	philosophy
+objetividad	objectivity	noun	B2.1	
+objetividad científica	scientific objectivity	phrase	B2.1	education
+objeto	object	noun	B2.1	
+obligación	obligation	noun	B2.1	
+observación	observation	noun	B2.1	education
+obsolescencia tecnológica	technological obsolescence	phrase	B2.1	tech
+obviamente	obviously	adv	B2.1	philosophy
+oceanografía	oceanography	noun	B2.1	tech
+oficialismo	ruling party	noun	B2.1	
+oligopolio	oligopoly	noun	B2.1	
+onda	wave	noun	B2.1	
+ontología	ontology	noun	B2.1	philosophy
+opción	option	noun	B2.1	
+operacionalizar	to operationalize	verb	B2.1	education|work
+oposición	opposition	noun	B2.1	
+optimización	optimization	noun	B2.1	tech
+optimización de procesos	process optimization	phrase	B2.1	work
+ora...ora	either...or	conj	B2.1	philosophy
+organismo	organism	noun	B2.1	
+orientación estratégica	strategic orientation	phrase	B2.1	work
+oscilar	to oscillate	verb	B2.1	health
+ostensible	ostensible	adj	B2.1	philosophy
+otredad	otherness	noun	B2.1	
+oxidación	oxidation	noun	B2.1	
+palmario	obvious	adj	B2.1	philosophy
+paradigma	paradigm	noun	B2.1	education
+paradigmático	paradigmatic	adj	B2.1	philosophy
+paradoja	paradox	noun	B2.1	philosophy
+parametrizar	to parameterize	verb	B2.1	tech
+parangonar	to compare	verb	B2.1	education
+paraíso fiscal	tax haven	phrase	B2.1	
+paroxismo	paroxysm	noun	B2.1	health
+particulares	particulars	adj	B2.1	philosophy
+particularidad	particularity	adj	B2.1	
+particularizar	to particularize	verb	B2.1	philosophy
+partícula	particle	adj	B2.1	
+pasmo	astonishment	adj	B2.1	health
+patente	patent	adj	B2.1	philosophy
+patología	pathology	noun	B2.1	
+peculiar	peculiar	verb	B2.1	philosophy
+pensamiento convergente	convergent thinking	phrase	B2.1	work
+pensamiento creativo	creative thinking	phrase	B2.1	work
+pensamiento divergente	divergent thinking	phrase	B2.1	work
+pensamiento estratégico	strategic thinking	phrase	B2.1	work
+pensamiento lateral	lateral thinking	phrase	B2.1	work
+percibir	to perceive	verb	B2.1	health
+perfeccionar	to perfect	verb	B2.1	tech|work
+permanencia	permanence	noun	B2.1	philosophy
+perplejidad	perplexity	noun	B2.1	health
+personalizar	to customize	verb	B2.1	tech
+perspectiva estratégica	strategic perspective	phrase	B2.1	work
+perspectivismo	perspectivism	noun	B2.1	
+pH	pH	noun	B2.1	
+planificación estratégica	strategic planning	phrase	B2.1	work
+plantear	to pose	verb	B2.1	education|philosophy|tech
+plataforma digital	digital platform	phrase	B2.1	tech
+plausibilidad	plausibility	noun	B2.1	education
+plebiscito	plebiscite	noun	B2.1	
+plenitud	fullness	adj	B2.1	health
+pluralismo	pluralism	adj	B2.1	
+poder ejecutivo	executive power	phrase	B2.1	
+poder judicial	judicial power	phrase	B2.1	
+poder legislativo	legislative power	phrase	B2.1	
+polarización	polarization	noun	B2.1	
+política	politics	adj	B2.1	society
+política fiscal	fiscal policy	phrase	B2.1	
+política monetaria	monetary policy	phrase	B2.1	
+ponderar	to weigh	verb	B2.1	education
+populismo	populism	noun	B2.1	
+por añadidura	moreover	phrase	B2.1	philosophy
+por cierto	by the way	phrase	B2.1	philosophy
+por ende	therefore	connector	B2.1	philosophy
+por excelencia	par excellence	phrase	B2.1	philosophy
+por lo demás	for the rest	phrase	B2.1	philosophy
+por lo que se ve	from what can be seen	phrase	B2.1	philosophy
+por lo visto	apparently	phrase	B2.1	philosophy
+por un lado...por otro lado	on one side...on the other	phrase	B2.1	philosophy
+por una parte...por otra	on one hand...on the other	phrase	B2.1	philosophy
+posibilidad	possibility	noun	B2.1	philosophy
+posiblemente	possibly	adv	B2.1	philosophy
+posicionamiento estratégico	strategic positioning	phrase	B2.1	work
+positivismo	positivism	noun	B2.1	
+posmoderno	postmodern	noun	B2.1	
+postestructuralismo	post-structuralism	adj	B2.1	
+posthumanismo	posthumanism	noun	B2.1	
+postmodernismo	postmodernism	noun	B2.1	
+postulado	postulate	adv	B2.1	
+postular	to postulate	verb	B2.1	education|philosophy|tech
+potenciar	to enhance	verb	B2.1	work
+pragmatismo	pragmatism	noun	B2.1	
+precio	price	adj	B2.1	
+precipitación	precipitation	noun	B2.1	
+precisar	to specify	verb	B2.1	education
+precisión	precision	noun	B2.1	education
+preconsciente	preconscious	adj	B2.1	health
+premisa	premise	noun	B2.1	
+presentir	to have a premonition	verb	B2.1	health
+presumiblemente	presumably	adv	B2.1	philosophy
+primordial	primordial	adj	B2.1	philosophy
+principio	principle	noun	B2.1	philosophy|tech
+privacidad	privacy	noun	B2.1	
+privacidad digital	digital privacy	phrase	B2.1	tech
+probabilidad	probability	noun	B2.1	education|philosophy
+probablemente	probably	adv	B2.1	philosophy
+problematizar	to problematize	verb	B2.1	education|philosophy
+procesamiento	processing	noun	B2.1	
+procesar	to process	verb	B2.1	tech
+producción	production	noun	B2.1	
+productividad organizacional	organizational productivity	phrase	B2.1	work
+producto interno bruto	gross domestic product	phrase	B2.1	
+profundizar	to deepen	verb	B2.1	education
+programación	programming	noun	B2.1	tech
+progreso	progress	noun	B2.1	philosophy|tech|work
+prominente	prominent	adj	B2.1	philosophy
+propiedad intelectual	intellectual property	phrase	B2.1	
+proponer	to propose	verb	B2.1	philosophy
+propuesta de valor	value proposition	phrase	B2.1	work
+prototipado	prototyping	noun	B2.1	tech|work
+prototipo	prototype	noun	B2.1	
+proximidad	proximity	noun	B2.1	health
+prueba de concepto	proof of concept	phrase	B2.1	tech
+psique	psyche	noun	B2.1	health
+puede que	it may be that	phrase	B2.1	philosophy
+pues bien	well then	phrase	B2.1	philosophy
+pulir	to polish	verb	B2.1	work
+puntualizar	to point out	verb	B2.1	education
+pérdida	loss	noun	B2.1	
+quiebra	bankruptcy	noun	B2.1	
+quizás	perhaps	adv	B2.1	philosophy
+racionalismo	rationalism	adj	B2.1	
+racionalizar	to rationalize	verb	B2.1	philosophy|work
+radiación	radiation	noun	B2.1	
+radicalización	radicalization	adj	B2.1	
+razón	reason	noun	B2.1	philosophy
+reacción química	chemical reaction	phrase	B2.1	
+realidad	reality	adj	B2.1	philosophy
+realismo	realism	adj	B2.1	
+realización	fulfillment	adj	B2.1	health
+rebelión	rebellion	noun	B2.1	
+recelar	to be suspicious	verb	B2.1	health
+reciprocidad	reciprocity	noun	B2.1	health
+reconfigurar	to reconfigure	verb	B2.1	work
+redes neuronales	neural networks	phrase	B2.1	tech
+rediseñar	to redesign	verb	B2.1	work
+reducción	reduction	noun	B2.1	
+reestructurar	to restructure	verb	B2.1	work
+referencia	reference	noun	B2.1	
+referéndum	referendum	noun	B2.1	
+refinar	to refine	verb	B2.1	tech|work
+reforma	reform	noun	B2.1	
+refutación	refutation	noun	B2.1	education|philosophy
+regresión	regression	noun	B2.1	philosophy
+regulación	regulation	noun	B2.1	
+reinventar	to reinvent	verb	B2.1	work
+relaciones internacionales	international relations	phrase	B2.1	
+relatividad	relativity	noun	B2.1	tech
+relativismo	relativism	noun	B2.1	philosophy
+renacentista	renaissance	noun	B2.1	
+renta fija	fixed income	phrase	B2.1	
+renta variable	variable income	phrase	B2.1	
+rentabilidad	profitability	noun	B2.1	work
+reorganizar	to reorganize	verb	B2.1	work
+replicar	to replicate	verb	B2.1	tech
+reposo	rest	noun	B2.1	philosophy
+representación	representation	adj	B2.1	media
+representativo	representative	adj	B2.1	philosophy
+reproducir	to reproduce	verb	B2.1	tech
+resiliencia	resilience	noun	B2.1	health
+resiliencia organizacional	organizational resilience	phrase	B2.1	work
+revolucionar	to revolutionize	verb	B2.1	work
+revolución	revolution	noun	B2.1	
+revolución científica	scientific revolution	phrase	B2.1	
+revolución digital	digital revolution	phrase	B2.1	tech
+revuelta	revolt	noun	B2.1	
+riesgo	risk	noun	B2.1	
+rigidez	rigidity	noun	B2.1	health
+rigor científico	scientific rigor	phrase	B2.1	education
+robotizar	to robotize	verb	B2.1	tech
+romanticismo	romanticism	adj	B2.1	
+rotundo	resounding	adj	B2.1	philosophy
+salud pública	public health	phrase	B2.1	
+satélite	satellite	noun	B2.1	
+sea como sea	be that as it may	phrase	B2.1	philosophy
+sea...sea	whether...or	conj	B2.1	philosophy
+secesión	secession	noun	B2.1	
+sector bancario	banking sector	phrase	B2.1	
+sector privado	private sector	phrase	B2.1	
+sector público	public sector	phrase	B2.1	
+seguramente	surely	adv	B2.1	philosophy
+seguridad digital	digital security	phrase	B2.1	tech
+según como	depending on how	phrase	B2.1	philosophy
+según parece	apparently	phrase	B2.1	philosophy
+selección natural	natural selection	phrase	B2.1	
+semiótica	semiotics	adj	B2.1	
+sentido	sense, meaning	noun	B2.1	philosophy
+separación de poderes	separation of powers	phrase	B2.1	
+serenarse	to calm down	verb	B2.1	health|reflexive
+seriamente	seriously	adv	B2.1	philosophy
+servidor	server	noun	B2.1	
+siempre que	provided that	phrase	B2.1	philosophy
+siempre y cuando	provided that	phrase	B2.1	philosophy
+significación	signification	adj	B2.1	education
+significancia	significance	adj	B2.1	education
+signo	sign	noun	B2.1	
+sin duda alguna	without a doubt	phrase	B2.1	philosophy
+sinceramente	sincerely	adv	B2.1	philosophy
+sincronizar	to synchronize	verb	B2.1	tech
+singularidad	singularity	noun	B2.1	
+sintonía	harmony	noun	B2.1	health
+sistema financiero	financial system	phrase	B2.1	
+sistema operativo	operating system	phrase	B2.1	
+sistematicidad	systematicity	adj	B2.1	education
+sistematización	systematization	noun	B2.1	tech
+sistematizar	to systematize	verb	B2.1	education|philosophy|tech|work
+soberanía	sovereignty	noun	B2.1	
+sobremanera	exceedingly	noun	B2.1	philosophy
+sobresaliente	excellent	adj	B2.1	philosophy
+socialismo	socialism	adj	B2.1	
+sociedad	society	noun	B2.1	society
+sociedad civil	civil society	phrase	B2.1	
+sociedad digital	digital society	phrase	B2.1	tech
+sociología	sociology	noun	B2.1	tech
+soledad	loneliness	noun	B2.1	health
+solución	solution	noun	B2.1	
+soluto	solute	noun	B2.1	
+solvencia	solvency	noun	B2.1	
+sondeo	poll, survey	noun	B2.1	
+sosegarse	to calm down	verb	B2.1	health|reflexive
+sospechar	to suspect	verb	B2.1	health
+sostenibilidad organizacional	organizational sustainability	phrase	B2.1	work
+subjetividad	subjectivity	noun	B2.1	
+sublimación	sublimation	noun	B2.1	health
+subsidio	subsidy	noun	B2.1	
+sufragio	suffrage	noun	B2.1	
+sujeto	subject	noun	B2.1	
+superpotencia	superpower	noun	B2.1	
+superyó	superego	noun	B2.1	health
+suponiendo que	supposing that	phrase	B2.1	philosophy
+supuestamente	supposedly	adv	B2.1	philosophy
+sustancia	substance	noun	B2.1	philosophy
+sustentabilidad	sustainability	noun	B2.1	
+sustento científico	scientific support	phrase	B2.1	education
+síntesis	synthesis	noun	B2.1	education|philosophy
+sólidamente	solidly	adv	B2.1	philosophy
+tambalearse	to waver	verb	B2.1	health
+tanto...como	both...and	conj	B2.1	philosophy
+taxonomía	taxonomy	noun	B2.1	
+tejido	tissue	noun	B2.1	
+teleología	teleology	noun	B2.1	philosophy
+temporalidad	temporality	adj	B2.1	philosophy
+tendencia central	central tendency	phrase	B2.1	education
+teorema	theorem	noun	B2.1	
+teorizar	to theorize	verb	B2.1	education|philosophy|tech
+teoría social	social theory	phrase	B2.1	
+termodinámica	thermodynamics	adj	B2.1	tech
+tipificar	to typify	verb	B2.1	education
+tipo de cambio	exchange rate	phrase	B2.1	
+titubear	to hesitate	verb	B2.1	health
+toda vez que	since	phrase	B2.1	philosophy
+totalitarismo	totalitarianism	adj	B2.1	
+tranquilizarse	to calm down	verb	B2.1	health|reflexive
+transferencia de tecnología	technology transfer	phrase	B2.1	tech
+transferencia tecnológica	technology transfer	phrase	B2.1	tech
+transformación digital	digital transformation	phrase	B2.1	tech
+transformación organizacional	organizational transformation	phrase	B2.1	work
+transformar	to transform	verb	B2.1	work
+trascendencia	transcendence	noun	B2.1	
+trascendental	transcendental	adj	B2.1	philosophy
+tratado	treaty	noun	B2.1	
+tregua	truce	noun	B2.1	
+triangulación	triangulation	noun	B2.1	education
+turbación	perturbation	noun	B2.1	health
+unilateralismo	unilateralism	adv	B2.1	
+universales	universals	adj	B2.1	philosophy
+universalidad	universality	adj	B2.1	
+universo	universe	adj	B2.1	philosophy
+utilitarismo	utilitarianism	noun	B2.1	
+vacilar	to hesitate	verb	B2.1	health
+vale decir	that is to say	phrase	B2.1	philosophy
+validación técnica	technical validation	phrase	B2.1	tech
+validez	validity	adj	B2.1	education
+validez científica	scientific validity	phrase	B2.1	education
+valor agregado	added value	phrase	B2.1	work
+variabilidad	variability	noun	B2.1	education
+varianza	variance	noun	B2.1	education
+ventaja competitiva	competitive advantage	phrase	B2.1	work
+veracidad	veracity	noun	B2.1	education
+verdad	truth	noun	B2.1	philosophy
+verificación	verification	adj	B2.1	education|tech
+verosimilitud	verisimilitude	noun	B2.1	education
+viabilidad	viability	noun	B2.1	work
+vicio	vice	adj	B2.1	philosophy
+virtualidad	virtuality	adj	B2.1	philosophy
+virtud	virtue	noun	B2.1	philosophy
+visionar	to envision	verb	B2.1	work
+visión empresarial	business vision	phrase	B2.1	work
+visión estratégica	strategic vision	phrase	B2.1	work
+vislumbrar	to glimpse	verb	B2.1	health
+visto que	seeing that	phrase	B2.1	philosophy
+vivenciar	to experience	verb	B2.1	health
+volatilidad	volatility	noun	B2.1	
+vulnerabilidad	vulnerability	noun	B2.1	health
+web	web	noun	B2.1	
+ácido	acid	noun	B2.1	
+átomo	atom	noun	B2.1	
+ética	ethics	adj	B2.1	philosophy
+ética de la virtud	virtue ethics	phrase	B2.1	
+éxtasis	ecstasy	noun	B2.1	health
+íntimamente	intimately	adv	B2.1	philosophy
+órbita	orbit	noun	B2.1	
+órgano	organ	noun	B2.1	
+ablativo	ablative	adj	B2.2	
+ablución	ablution	noun	B2.2	
+absolución	absolution	noun	B2.2	
+abstinencia	abstinence	noun	B2.2	
+absuelto	acquitted	noun	B2.2	
+accesión	accession	noun	B2.2	
+accidente de trabajo	work accident	phrase	B2.2	
+acento	accent	adj	B2.2	
+acento diacrítico	diacritic accent	phrase	B2.2	
+acento ortográfico	orthographic accent	phrase	B2.2	
+acento prosódico	prosodic accent	phrase	B2.2	
+acrecimiento	accretion	noun	B2.2	
+acronía	achrony	noun	B2.2	
+acróstico	acrostic	adj	B2.2	
+acta	minutes	noun	B2.2	
+acto	act	noun	B2.2	
+acto administrativo	administrative act	phrase	B2.2	
+acto de habla	speech act	phrase	B2.2	
+acto ilocutivo	illocutionary act	phrase	B2.2	
+acto locutivo	locutionary act	phrase	B2.2	
+acto perlocutivo	perlocutionary act	phrase	B2.2	
+aculturación	acculturation	noun	B2.2	
+acusado	accused	noun	B2.2	
+acusativo	accusative	adj	B2.2	
+adjetivo	adjective	adj	B2.2	
+administración pública	public administration	phrase	B2.2	
+administrador	administrator, director	noun	B2.2	
+adopción	adoption	noun	B2.2	
+adoración	adoration	noun	B2.2	
+adverbio	adverb	noun	B2.2	
+afijo	affix	noun	B2.2	
+agnosticismo	agnosticism	adj	B2.2	
+agravante	aggravating circumstance	noun	B2.2	
+albacea	executor	noun	B2.2	
+alegación	allegation	adj	B2.2	
+alegato	argument, plea	adj	B2.2	
+alegoría	allegory	adj	B2.2	
+alejandrino	alexandrine	adj	B2.2	
+aliteración	alliteration	adj	B2.2	
+alomorfo	allomorph	adj	B2.2	
+altar	altar	verb	B2.2	
+alófono	allophone	adj	B2.2	
+ambientación	setting	noun	B2.2	
+ambigüedad	ambiguity	noun	B2.2	
+anadiplosis	anadiplosis	noun	B2.2	
+analepsis	flashback	noun	B2.2	
+anatema	anathema	noun	B2.2	
+anfibología	amphibology	noun	B2.2	
+anomia	anomie	noun	B2.2	
+anticlímax	anticlimax	adj	B2.2	
+antihéroe	antihero	adj	B2.2	
+antijuridicidad	unlawfulness	adj	B2.2	
+antonimia	antonymy	adj	B2.2	
+antonomasia	antonomasia	adj	B2.2	
+antítesis	antithesis	adj	B2.2	philosophy
+anulabilidad	voidability	noun	B2.2	
+anáfora	anaphora	noun	B2.2	
+análisis literario	literary analysis	phrase	B2.2	
+apoderado	proxy, attorney	noun	B2.2	
+apostasía	apostasy	noun	B2.2	
+arcaísmo	archaism	noun	B2.2	
+architextualidad	architextuality	adj	B2.2	
+argot	slang	noun	B2.2	
+arquetipo	archetype	noun	B2.2	
+arresto	arrest	noun	B2.2	
+ascetismo	asceticism	adj	B2.2	
+asimilación	assimilation	noun	B2.2	
+aspecto habitual	habitual aspect	phrase	B2.2	
+aspecto imperfectivo	imperfective aspect	phrase	B2.2	
+aspecto perfectivo	perfective aspect	phrase	B2.2	
+aspecto perfecto	perfect aspect	phrase	B2.2	
+aspecto progresivo	progressive aspect	phrase	B2.2	
+asíndeton	asyndeton	noun	B2.2	
+atenuante	mitigating circumstance	noun	B2.2	
+ateísmo	atheism	noun	B2.2	
+atmósfera	atmosphere	adv	B2.2	
+atributo	attribute	noun	B2.2	
+atrición	attrition	noun	B2.2	
+autor implícito	implied author	phrase	B2.2	
+autoría	authorship	noun	B2.2	
+ayuno	fasting	noun	B2.2	
+bautismo	baptism	noun	B2.2	
+bendición	blessing	adj	B2.2	
+bien	good, asset	noun	B2.2	
+bien consumible	consumable good	phrase	B2.2	
+bien divisible	divisible good	phrase	B2.2	
+bien fungible	fungible good	phrase	B2.2	
+bien indivisible	indivisible good	phrase	B2.2	
+bien infungible	non-fungible good	phrase	B2.2	
+bien inmueble	immovable property	phrase	B2.2	
+bien mueble	movable property	phrase	B2.2	
+bien no consumible	non-consumable good	phrase	B2.2	
+bisílabo	disyllable	adj	B2.2	
+blasfemia	blasphemy	noun	B2.2	
+cacofonía	cacophony	noun	B2.2	
+caducidad	expiration	noun	B2.2	
+calambur	pun	noun	B2.2	
+calco	calque	adj	B2.2	
+caligrama	calligram	adj	B2.2	
+campo léxico	lexical field	phrase	B2.2	
+campo semántico	semantic field	phrase	B2.2	
+canon	canon	noun	B2.2	
+capacidad de obrar	capacity to act	phrase	B2.2	
+capacidad jurídica	legal capacity	phrase	B2.2	
+capital social	share capital	phrase	B2.2	
+caracterización	characterization	noun	B2.2	tech
+carga	burden	noun	B2.2	
+caso	case	noun	B2.2	
+caso fortuito	fortuitous event	phrase	B2.2	
+catacresis	catachresis	noun	B2.2	
+catáfora	cataphora	noun	B2.2	
+caudal relicto	estate left behind	phrase	B2.2	
+causante	decedent	adj	B2.2	
+celibato	celibacy	noun	B2.2	
+censo	land tax, ground rent	adj	B2.2	
+cesura	caesura	noun	B2.2	
+cierre patronal	lockout	phrase	B2.2	
+circunfijo	circumfix	noun	B2.2	
+circunstancia modificativa	modifying circumstance	phrase	B2.2	
+cisma	schism	noun	B2.2	
+citación	citation, summons	noun	B2.2	
+clase social	social class	phrase	B2.2	
+clero	clergy	noun	B2.2	
+clímax	climax	noun	B2.2	
+clímax retórico	rhetorical climax	phrase	B2.2	
+coadyuvante	intervener	noun	B2.2	
+coherencia	coherence	adv	B2.2	education|health
+cohesión	cohesion	noun	B2.2	
+cohesión social	social cohesion	phrase	B2.2	
+colación	collation	noun	B2.2	
+comentario	comment	adj	B2.2	
+comerciante	merchant	adj	B2.2	
+comparatismo	comparatism	noun	B2.2	
+comparecencia	appearance	noun	B2.2	
+complemento	complement	adj	B2.2	
+complemento agente	agent complement	phrase	B2.2	
+complemento circunstancial	adverbial complement	phrase	B2.2	
+complemento directo	direct object	phrase	B2.2	
+complemento indirecto	indirect object	phrase	B2.2	
+complemento predicativo	predicative complement	phrase	B2.2	
+comunidad interpretativa	interpretive community	phrase	B2.2	
+comunión	communion	noun	B2.2	
+concatenación	concatenation	noun	B2.2	
+concesión	concession	noun	B2.2	
+concesión demanial	public domain concession	phrase	B2.2	
+conclusiones	conclusions	noun	B2.2	
+concordancia	agreement	adj	B2.2	
+condena	conviction, sentence	adj	B2.2	
+condenado	convicted	adj	B2.2	
+conector	connector	noun	B2.2	
+confesionario	confessional	adj	B2.2	
+confesión	confession	noun	B2.2	
+confirmación	confirmation	noun	B2.2	education
+conflicto colectivo	collective dispute	phrase	B2.2	
+conflicto externo	external conflict	phrase	B2.2	
+conflicto interno	internal conflict	phrase	B2.2	
+congregación	congregation	noun	B2.2	
+conjugación	conjugation	noun	B2.2	
+conjunción	conjunction	noun	B2.2	
+connotación	connotation	noun	B2.2	
+consagración	consecration	noun	B2.2	
+consejo de administración	board of directors	phrase	B2.2	
+consonante	consonant	adj	B2.2	
+consumación	consummation	noun	B2.2	
+contador-partidor	accountant-divider	adj	B2.2	
+contemplación	contemplation	noun	B2.2	
+contestación	answer	noun	B2.2	
+continuidad	continuity	noun	B2.2	
+contrato administrativo	administrative contract	phrase	B2.2	
+contrato de trabajo	employment contract	phrase	B2.2	
+contrición	contrition	noun	B2.2	health
+convención	convention	adj	B2.2	
+convenio	agreement	adj	B2.2	
+convenio colectivo	collective agreement	phrase	B2.2	
+conversación	conversation	noun	B2.2	
+conversión	conversion	noun	B2.2	
+copla	couplet	noun	B2.2	
+correferencia	coreference	noun	B2.2	
+cosa juzgada	res judicata	phrase	B2.2	
+cosmovisión	worldview	noun	B2.2	
+cronolecto	chronolect	noun	B2.2	
+cronotopo	chronotope	noun	B2.2	
+crítica literaria	literary criticism	phrase	B2.2	
+cuarteto	quartet	noun	B2.2	
+cuenta de pérdidas y ganancias	profit and loss account	phrase	B2.2	
+culpabilidad	culpability, guilt	noun	B2.2	health
+cultismo	cultism	noun	B2.2	
+culto	cult, worship	noun	B2.2	
+cuota vidual	widow's, widower's share	phrase	B2.2	
+curatela	curatorship	noun	B2.2	
+cómplice	accomplice	adj	B2.2	
+cómputo silábico	syllable count	phrase	B2.2	
+dativo	dative	adj	B2.2	
+daño	damage	noun	B2.2	
+declaración	declaration, statement	adj	B2.2	
+declinación	declension	noun	B2.2	
+deixis	deixis	noun	B2.2	
+delito	crime	noun	B2.2	
+delito doloso	intentional crime	phrase	B2.2	
+delito imprudente	negligent crime	phrase	B2.2	
+demandado	defendant	adj	B2.2	
+demandante	plaintiff	noun	B2.2	
+demografía	demography	noun	B2.2	
+denominación	denomination	noun	B2.2	
+denotación	denotation	noun	B2.2	
+derecho administrativo	administrative law	phrase	B2.2	
+derecho de habitación	right of habitation	phrase	B2.2	
+derecho de huelga	right to strike	phrase	B2.2	
+derecho de uso	right of use	phrase	B2.2	
+derecho laboral	labor law	phrase	B2.2	
+derecho mercantil	commercial law	phrase	B2.2	
+derecho penal	criminal law	phrase	B2.2	
+derecho real	real right	phrase	B2.2	
+derecho subjetivo	subjective right	phrase	B2.2	
+desenlace	denouement	adj	B2.2	
+desviación	deviance	noun	B2.2	
+detención	detention	adj	B2.2	
+determinante	determiner, determining	adj	B2.2	philosophy
+devoción	devotion	noun	B2.2	
+deísmo	deism	noun	B2.2	
+dialecto	dialect	adj	B2.2	
+dialectología	dialectology	adj	B2.2	
+dialogismo	dialogism	adj	B2.2	
+diario	diary, journal	adj	B2.2	media
+diccionario	dictionary	adj	B2.2	
+dictamen	expert opinion	noun	B2.2	
+digresión	digression	noun	B2.2	
+dilogía	dilogy	noun	B2.2	
+diptongo	diphthong	noun	B2.2	
+disfemismo	dysphemism	noun	B2.2	
+diálogo	dialogue	adj	B2.2	
+diéresis	diaeresis	noun	B2.2	
+doctrina	doctrine	noun	B2.2	
+documento	document	adj	B2.2	
+dolo	malice, fraud	adj	B2.2	
+domicilio	domicile	adj	B2.2	
+dominio público	public domain	phrase	B2.2	
+dual	dual	adj	B2.2	
+décima	décima	noun	B2.2	
+edicto	edict	adj	B2.2	
+ejecución	execution, enforcement	adj	B2.2	
+elegía	elegy	noun	B2.2	
+elipsis	ellipsis	noun	B2.2	
+emancipación	emancipation	noun	B2.2	health
+embargo	seizure, attachment	adj	B2.2	
+emplazamiento	summons	noun	B2.2	
+empleador	employer	noun	B2.2	
+empresario	entrepreneur, businessman	adj	B2.2	
+encabalgamiento	enjambment	adj	B2.2	
+encubridor	accessory after the fact	adv	B2.2	
+enculturación	enculturation	noun	B2.2	
+endecasílabo	hendecasyllable	adj	B2.2	
+eneasílabo	enneasyllable	adj	B2.2	
+enfermedad profesional	occupational disease	phrase	B2.2	
+enfiteusis	emphyteusis	noun	B2.2	
+entonación	intonation	noun	B2.2	
+epanadiplosis	epanalepsis	adj	B2.2	
+epistolar	epistolary	verb	B2.2	
+equívoco	equivocation	noun	B2.2	
+escritura	deed, writing	noun	B2.2	media
+espiritualidad	spirituality	adj	B2.2	
+establecimiento mercantil	commercial establishment	phrase	B2.2	
+estado civil	marital status	phrase	B2.2	
+estatuto	statute	noun	B2.2	
+estatutos sociales	articles of association	phrase	B2.2	
+estigma	stigma	noun	B2.2	
+estilo directo	direct style	phrase	B2.2	
+estilo indirecto	indirect style	phrase	B2.2	
+estilo indirecto libre	free indirect style	phrase	B2.2	
+estratificación social	social stratification	phrase	B2.2	
+estrofa	stanza	noun	B2.2	
+estructura social	social structure	phrase	B2.2	
+estructurador	structurer	noun	B2.2	
+estética de la recepción	reception aesthetics	phrase	B2.2	
+etimología	etymology	noun	B2.2	
+etnocentrismo	ethnocentrism	adj	B2.2	
+eucaristía	eucharist	noun	B2.2	
+eufemismo	euphemism	noun	B2.2	
+eufonía	euphony	noun	B2.2	
+evangelización	evangelization	noun	B2.2	
+excepción	exception, defense	noun	B2.2	
+excomunión	excommunication	adj	B2.2	
+exhorto	letter rogatory	noun	B2.2	
+eximente	exempting circumstance	adv	B2.2	
+exorcismo	exorcism	noun	B2.2	
+expediente administrativo	administrative file	phrase	B2.2	
+experimentación	experimentation	adj	B2.2	
+expiación	atonement	adj	B2.2	health
+expropiación	expropriation	noun	B2.2	
+exégesis	exegesis	noun	B2.2	
+fallo	ruling	noun	B2.2	
+falta	misdemeanor	noun	B2.2	
+familia léxica	lexical family	phrase	B2.2	
+fanatismo	fanaticism	adj	B2.2	
+farsa	farce	adv	B2.2	
+fedatario	public attestor	adj	B2.2	
+femenino	feminine	noun	B2.2	
+fideicomiso	trust	noun	B2.2	
+filiación	filiation	noun	B2.2	
+fiscal	prosecutor	noun	B2.2	
+flexión	inflection	noun	B2.2	
+flujo de conciencia	stream of consciousness	phrase	B2.2	
+focalización	focalization	adj	B2.2	
+folclore	folklore	noun	B2.2	
+fondo de comercio	goodwill	phrase	B2.2	
+fonema	phoneme	noun	B2.2	
+fonología	phonology	noun	B2.2	
+fonética	phonetics	adj	B2.2	
+forma no personal	non-personal form	phrase	B2.2	
+frase	phrase	noun	B2.2	
+frutos	fruits, products	noun	B2.2	
+fuerza mayor	force majeure	phrase	B2.2	
+funcionario	civil servant, official	adj	B2.2	society
+fundamentalismo	fundamentalism	adj	B2.2	
+fábula	fable	adj	B2.2	
+genitivo	genitive	adj	B2.2	
+gerundio	gerund	noun	B2.2	
+glosario	glossary	adj	B2.2	
+gracia	grace	noun	B2.2	
+gradación	gradation	noun	B2.2	
+gramática	grammar	noun	B2.2	
+gramática comparada	comparative grammar	phrase	B2.2	
+gramática descriptiva	descriptive grammar	phrase	B2.2	
+gramática generativa	generative grammar	phrase	B2.2	
+gramática histórica	historical grammar	phrase	B2.2	
+gramática normativa	prescriptive grammar	phrase	B2.2	
+gramática universal	universal grammar	phrase	B2.2	
+género discursivo	discourse genre	phrase	B2.2	
+género gramatical	grammatical gender	phrase	B2.2	
+géneros literarios	literary genres	phrase	B2.2	
+habilitación	qualification, authorization	adj	B2.2	
+haiku	haiku	noun	B2.2	
+hecho	fact	noun	B2.2	
+hemistiquio	hemistich	adj	B2.2	
+heptasílabo	heptasyllable	adj	B2.2	
+heredero	heir	noun	B2.2	
+herejía	heresy	adv	B2.2	
+herencia cultural	cultural heritage	phrase	B2.2	
+heterodoxia	heterodoxy	noun	B2.2	
+heteroglosia	heteroglossia	noun	B2.2	
+hexasílabo	hexasyllable	adj	B2.2	
+hiato	hiatus	noun	B2.2	
+hibridación cultural	cultural hybridization	phrase	B2.2	
+hiperonimia	hypernymy	noun	B2.2	
+hipertexto	hypertext	noun	B2.2	
+hipertextualidad	hypertextuality	adj	B2.2	
+hiponimia	hyponymy	noun	B2.2	
+hipérbaton	hyperbaton	noun	B2.2	
+hipérbole	hyperbole	noun	B2.2	
+historiografía literaria	literary historiography	phrase	B2.2	
+holonimia	holonymy	noun	B2.2	
+homilía	homily	noun	B2.2	
+homofonía	homophony	noun	B2.2	
+homografía	homography	noun	B2.2	
+homologación	homologation, approval	adj	B2.2	tech
+homonimia	homonymy	noun	B2.2	
+horizonte de expectativas	horizon of expectations	phrase	B2.2	
+idiolecto	idiolect	noun	B2.2	
+idolatría	idolatry	noun	B2.2	
+iluminación	illumination, enlightenment	adj	B2.2	health
+implicatura	implicature	adj	B2.2	
+implicatura convencional	conventional implicature	phrase	B2.2	
+implicatura conversacional	conversational implicature	phrase	B2.2	
+impugnación	challenge	adj	B2.2	
+imputabilidad	imputability	noun	B2.2	
+imputado	charged, indicted	adj	B2.2	
+in medias res	in medias res	phrase	B2.2	
+incapacidad	disability	noun	B2.2	
+incapacitación	incapacitation	noun	B2.2	
+indemnización por despido	dismissal compensation	phrase	B2.2	
+indicio	indication	adj	B2.2	
+indulto	pardon	noun	B2.2	
+infijo	infix	noun	B2.2	
+infinitivo	infinitive	adj	B2.2	
+inspección	inspection	noun	B2.2	
+institución social	social institution	phrase	B2.2	
+integración social	social integration	phrase	B2.2	
+intención autorial	authorial intention	phrase	B2.2	
+interacción	interaction	noun	B2.2	
+interculturalidad	interculturality	adj	B2.2	
+interfijo	interfix	noun	B2.2	
+interjección	interjection	noun	B2.2	
+intertextualidad	intertextuality	adj	B2.2	
+interés público	public interest	phrase	B2.2	
+inventario	inventory	adj	B2.2	
+ironía	irony	noun	B2.2	
+isotopía	isotopy	noun	B2.2	
+jerarquía	hierarchy	noun	B2.2	
+jerga	jargon	noun	B2.2	
+juez	judge	noun	B2.2	
+junta general	general meeting	phrase	B2.2	
+juramento	oath	noun	B2.2	
+jurisdicción	jurisdiction	adj	B2.2	
+jurisdicción contencioso-administrativa	administrative jurisdiction	phrase	B2.2	
+jurisprudencia	jurisprudence	noun	B2.2	
+laicado	laity	noun	B2.2	
+laicismo	laicism	adj	B2.2	
+laudo	arbitration award	noun	B2.2	
+lector implícito	implied reader	phrase	B2.2	
+lector modelo	model reader	phrase	B2.2	
+legado	legacy	noun	B2.2	
+legatario	legatee	noun	B2.2	
+legítima	legitimate portion	noun	B2.2	
+leitmotiv	leitmotif	noun	B2.2	
+lexema	lexeme	noun	B2.2	
+lexicografía	lexicography	adj	B2.2	
+lexicología	lexicology	adj	B2.2	
+leyenda	legend	noun	B2.2	
+libación	libation	noun	B2.2	
+libertad condicional	parole	phrase	B2.2	
+libro diario	journal	phrase	B2.2	
+libro mayor	ledger	phrase	B2.2	
+licencia	license	adj	B2.2	
+lingüística	linguistics	adj	B2.2	
+lingüística aplicada	applied linguistics	phrase	B2.2	
+lingüística comparada	comparative linguistics	phrase	B2.2	
+lingüística computacional	computational linguistics	phrase	B2.2	
+lingüística descriptiva	descriptive linguistics	phrase	B2.2	
+lingüística histórica	historical linguistics	phrase	B2.2	
+lingüística prescriptiva	prescriptive linguistics	phrase	B2.2	
+lira	lyre	noun	B2.2	
+litigio	litigation	noun	B2.2	
+litisconsorte	co-litigant	adj	B2.2	
+litotes	litotes	noun	B2.2	
+liturgia	liturgy	noun	B2.2	
+locativo	locative	adj	B2.2	
+léxico	lexicon	adj	B2.2	
+lírica	lyric	adj	B2.2	
+magistrado	magistrate	noun	B2.2	
+maldición	curse	noun	B2.2	
+mandamiento	writ	noun	B2.2	
+marcador discursivo	discourse marker	phrase	B2.2	
+martirio	martyrdom	noun	B2.2	
+masa hereditaria	hereditary mass	phrase	B2.2	
+masculino	masculine	noun	B2.2	
+mejora	improvement, enhancement	adj	B2.2	
+memorias	memoirs	noun	B2.2	media
+meronimia	meronymy	noun	B2.2	
+metatextualidad	metatextuality	adj	B2.2	
+metonimia	metonymy	noun	B2.2	
+mezquita	mosque	noun	B2.2	
+microrrelato	flash fiction	adj	B2.2	
+misericordia	mercy	noun	B2.2	health
+misticismo	mysticism	adj	B2.2	
+mito	myth	noun	B2.2	
+modalidad	modality	adj	B2.2	
+modalidad deóntica	deontic modality	phrase	B2.2	
+modalidad dinámica	dynamic modality	phrase	B2.2	
+modalidad epistémica	epistemic modality	phrase	B2.2	
+modalidad evidencial	evidential modality	phrase	B2.2	
+modalización	modalization	adj	B2.2	
+modo condicional	conditional mood	phrase	B2.2	
+modo imperativo	imperative mood	phrase	B2.2	
+modo indicativo	indicative mood	phrase	B2.2	
+modo subjuntivo	subjunctive mood	phrase	B2.2	
+monasticismo	monasticism	adj	B2.2	
+monosemia	monosemy	noun	B2.2	
+monosílabo	monosyllable	adj	B2.2	
+monoteísmo	monotheism	noun	B2.2	
+monólogo	monologue	noun	B2.2	
+monólogo interior	interior monologue	phrase	B2.2	
+morfema	morpheme	noun	B2.2	
+morfema derivativo	derivational morpheme	phrase	B2.2	
+morfema flexivo	inflectional morpheme	phrase	B2.2	
+morfema libre	free morpheme	phrase	B2.2	
+morfema ligado	bound morpheme	phrase	B2.2	
+morfología	morphology	noun	B2.2	
+mortificación	mortification	adj	B2.2	health
+motivo	motif	noun	B2.2	media
+movilidad social	social mobility	phrase	B2.2	
+muerte del autor	death of the author	phrase	B2.2	
+multiculturalismo	multiculturalism	adj	B2.2	
+métrica	metrics	adj	B2.2	
+mínimo par	minimal pair	phrase	B2.2	
+narrador en primera persona	first-person narrator	phrase	B2.2	
+narrador en tercera persona	third-person narrator	phrase	B2.2	
+narrador no fiable	unreliable narrator	phrase	B2.2	
+narrador omnisciente	omniscient narrator	phrase	B2.2	
+narrativa	narrative	adj	B2.2	
+negligencia	negligence	noun	B2.2	
+negocio jurídico	legal transaction	phrase	B2.2	
+neologismo	neologism	noun	B2.2	
+neurolingüística	neurolinguistics	adj	B2.2	
+neutro	neuter	noun	B2.2	
+nominativo	nominative	adj	B2.2	
+norma social	social norm	phrase	B2.2	
+notario	notary	adj	B2.2	
+notificación	notification	adj	B2.2	
+novela corta	novella	phrase	B2.2	
+nudo	complication	adj	B2.2	
+nulidad	nullity	noun	B2.2	
+nulidad matrimonial	marriage annulment	phrase	B2.2	
+numeral	numeral	adj	B2.2	
+nómina	payroll	noun	B2.2	
+número gramatical	grammatical number	phrase	B2.2	
+octava real	royal octave	phrase	B2.2	
+octosílabo	octosyllable	adj	B2.2	
+oda	ode	noun	B2.2	
+ofrenda	offering	noun	B2.2	
+onomatopeya	onomatopoeia	noun	B2.2	
+operador	operator	noun	B2.2	
+oración	prayer	noun	B2.2	
+oración adjetiva	adjective clause	phrase	B2.2	
+oración adverbial	adverbial clause	phrase	B2.2	
+oración afirmativa	affirmative sentence	phrase	B2.2	
+oración causal	causal clause	phrase	B2.2	
+oración comparativa	comparative clause	phrase	B2.2	
+oración compleja	complex sentence	phrase	B2.2	
+oración compuesta	compound sentence	phrase	B2.2	
+oración concesiva	concessive clause	phrase	B2.2	
+oración condicional	conditional clause	phrase	B2.2	
+oración consecutiva	consecutive clause	phrase	B2.2	
+oración coordinada	coordinate sentence	phrase	B2.2	
+oración de relativo	relative clause	phrase	B2.2	
+oración desiderativa	desiderative sentence	phrase	B2.2	
+oración dubitativa	dubitative sentence	phrase	B2.2	
+oración enunciativa	declarative sentence	phrase	B2.2	
+oración exclamativa	exclamative sentence	phrase	B2.2	
+oración final	final clause	phrase	B2.2	
+oración imperativa	imperative sentence	phrase	B2.2	
+oración interrogativa	interrogative sentence	phrase	B2.2	
+oración locativa	locative clause	phrase	B2.2	
+oración modal	modal clause	phrase	B2.2	
+oración negativa	negative sentence	phrase	B2.2	
+oración principal	main sentence	phrase	B2.2	
+oración secundaria	secondary sentence	phrase	B2.2	
+oración simple	simple sentence	phrase	B2.2	
+oración subordinada	subordinate sentence	phrase	B2.2	
+oración sustantiva	noun clause	phrase	B2.2	
+oración temporal	temporal clause	phrase	B2.2	
+orden público	public order	phrase	B2.2	
+ordenación	ordination	noun	B2.2	
+ordenanza	ordinance	noun	B2.2	
+ortodoxia	orthodoxy	noun	B2.2	
+oxímoron	oxymoron	noun	B2.2	
+pacto	pact	noun	B2.2	
+palabra	word	noun	B2.2	
+palabra compuesta	compound word	phrase	B2.2	
+palabra derivada	derived word	phrase	B2.2	
+palabra funcional	functional word	phrase	B2.2	
+palabra lexical	lexical word	phrase	B2.2	
+palabra parasintética	parasynthetic word	phrase	B2.2	
+palabra simple	simple word	phrase	B2.2	
+palimpsesto	palimpsest	adj	B2.2	
+panteísmo	pantheism	adj	B2.2	
+paralelismo	parallelism	adj	B2.2	
+paranomasia	paranomasia	noun	B2.2	
+parasíntesis	parasynthesis	noun	B2.2	
+paratextualidad	paratextuality	adj	B2.2	
+parodia	parody	noun	B2.2	
+paronimia	paronymy	noun	B2.2	
+paronomasia	paronomasia	noun	B2.2	
+participación	participation, share	adj	B2.2	
+participio	participle	adj	B2.2	
+parábola	parable	adj	B2.2	
+patria potestad	parental authority	phrase	B2.2	
+patrimonio hereditario	hereditary estate	phrase	B2.2	
+pausa	pause	noun	B2.2	
+pecado	sin	noun	B2.2	
+pena	penalty	adj	B2.2	
+pena de multa	fine	phrase	B2.2	
+pena privativa de libertad	imprisonment	phrase	B2.2	
+penitencia	penance	noun	B2.2	health
+pentasílabo	pentasyllable	adj	B2.2	
+peregrinación	pilgrimage	noun	B2.2	
+periodismo literario	literary journalism	phrase	B2.2	
+perito	expert witness	noun	B2.2	
+perjuicio	harm	noun	B2.2	
+persona física	natural person	phrase	B2.2	
+persona gramatical	grammatical person	phrase	B2.2	
+persona jurídica	legal person	phrase	B2.2	
+personaje plano	flat character	phrase	B2.2	
+personaje principal	main character	phrase	B2.2	
+personaje redondo	round character	phrase	B2.2	
+personaje secundario	secondary character	phrase	B2.2	
+personificación	personification	adj	B2.2	
+perífrasis	periphrasis	noun	B2.2	
+perífrasis aspectual	aspectual periphrasis	phrase	B2.2	
+perífrasis modal	modal periphrasis	phrase	B2.2	
+perífrasis temporal	temporal periphrasis	phrase	B2.2	
+perífrasis verbal	verbal periphrasis	phrase	B2.2	
+piedad	piety	noun	B2.2	
+pleonasmo	pleonasm	noun	B2.2	
+plural	plural	adj	B2.2	
+poema en prosa	prose poem	phrase	B2.2	
+polifonía	polyphony	noun	B2.2	
+polisemia	polysemy	noun	B2.2	
+polisíndeton	polysyndeton	noun	B2.2	
+politeísmo	polytheism	noun	B2.2	
+políptoton	polyptoton	noun	B2.2	
+posesión	possession	noun	B2.2	
+pragmática	pragmatics	adj	B2.2	
+preclusión	preclusion	noun	B2.2	
+predicación	preaching	noun	B2.2	
+predicado	predicate	adj	B2.2	
+predicado nominal	nominal predicate	phrase	B2.2	
+predicado verbal	verbal predicate	phrase	B2.2	
+prefijo	prefix	noun	B2.2	
+prenda	pledge	noun	B2.2	
+preposición	preposition	noun	B2.2	
+prescripción	prescription, statute of limitations	noun	B2.2	
+prescripción de la pena	statute of limitations for penalties	phrase	B2.2	
+prescripción del delito	statute of limitations for crimes	phrase	B2.2	
+presunción	presumption	noun	B2.2	
+presuposición	presupposition	noun	B2.2	
+primera persona	first person	phrase	B2.2	
+principio general	general principle	phrase	B2.2	
+prisión	prison	noun	B2.2	
+procedimiento	procedure	noun	B2.2	work
+procedimiento administrativo	administrative procedure	phrase	B2.2	
+procesado	prosecuted	noun	B2.2	
+procesión	procession	noun	B2.2	
+procurador	solicitor	adj	B2.2	
+profanación	profanation	noun	B2.2	
+prolepsis	flashforward	noun	B2.2	
+pronombre	pronoun	noun	B2.2	
+prosa poética	poetic prose	phrase	B2.2	
+proselitismo	proselytism	noun	B2.2	
+prosodia	prosody	noun	B2.2	
+prosopopeya	prosopopoeia	noun	B2.2	
+providencia	court providence	noun	B2.2	
+práctica	practice	adj	B2.2	
+psicolingüística	psycholinguistics	adj	B2.2	
+punto de vista	point of view	phrase	B2.2	education
+purificación	purification	adj	B2.2	health
+púlpito	pulpit	noun	B2.2	
+quiasmo	chiasmus	noun	B2.2	
+raíz	root	noun	B2.2	
+rección	government	adj	B2.2	
+reclusión	confinement	adj	B2.2	
+reconciliación	reconciliation	noun	B2.2	health
+reconvención	counterclaim	noun	B2.2	
+recurso	appeal, resource	adj	B2.2	
+recurso administrativo	administrative appeal	phrase	B2.2	
+redención	redemption	noun	B2.2	health
+redondilla	roundel	noun	B2.2	
+referente	referent	adj	B2.2	
+reformulador	reformulator	noun	B2.2	
+regionalismo	regionalism	adj	B2.2	
+registro mercantil	commercial register	phrase	B2.2	
+reiteración	reiteration	noun	B2.2	
+relación laboral	employment relationship	phrase	B2.2	
+relativismo cultural	cultural relativism	phrase	B2.2	
+relectura	rereading	noun	B2.2	
+religiosidad	religiosity	noun	B2.2	
+rema	rheme	noun	B2.2	
+remisión condicional	suspended sentence	phrase	B2.2	
+remordimiento	remorse	noun	B2.2	health
+rentas	rents, income	adj	B2.2	
+representación sindical	union representation	phrase	B2.2	
+requerimiento	requirement, demand	adj	B2.2	
+residencia	residence	noun	B2.2	
+resolución	resolution	noun	B2.2	
+responsabilidad penal	criminal liability	phrase	B2.2	
+respuesta del lector	reader response	phrase	B2.2	
+restitución	restitution	noun	B2.2	
+retribución	remuneration	noun	B2.2	
+retruécano	pun	noun	B2.2	
+revelación	revelation	noun	B2.2	health
+rima	rhyme	noun	B2.2	
+rito	rite	noun	B2.2	
+ritual	ritual	adj	B2.2	
+romance	ballad	adj	B2.2	
+régimen	regime	noun	B2.2	
+sacerdocio	priesthood	noun	B2.2	
+sacramento	sacrament	adj	B2.2	
+sacrificio	sacrifice	adj	B2.2	work
+sacrilegio	sacrilege	noun	B2.2	
+saga	saga	noun	B2.2	
+salario	salary	adj	B2.2	
+salvación	salvation	adj	B2.2	
+sanción	sanction	noun	B2.2	
+santidad	holiness	noun	B2.2	
+santuario	sanctuary	adj	B2.2	
+secretario judicial	court clerk	phrase	B2.2	
+secta	sect	noun	B2.2	
+secularismo	secularism	noun	B2.2	
+seguidilla	seguidilla	noun	B2.2	
+segunda persona	second person	phrase	B2.2	
+semántica	semantics	adj	B2.2	
+sermón	sermon	noun	B2.2	
+serventesio	quatrain	noun	B2.2	
+servicio público	public service	phrase	B2.2	
+servidumbre	easement, servitude	adj	B2.2	
+sextina	sestina	noun	B2.2	
+significante	signifier	noun	B2.2	
+silepsis	syllepsis	noun	B2.2	
+silva	silva	noun	B2.2	
+sinagoga	synagogue	noun	B2.2	
+sinalefa	synalepha	adj	B2.2	
+sincretismo	syncretism	noun	B2.2	
+sinestesia	synesthesia	noun	B2.2	
+singular	singular	verb	B2.2	philosophy
+sinonimia	synonymy	noun	B2.2	
+sintagma	syntagm	noun	B2.2	
+sintagma adjetival	adjectival phrase	phrase	B2.2	
+sintagma adverbial	adverbial phrase	phrase	B2.2	
+sintagma nominal	nominal phrase	phrase	B2.2	
+sintagma preposicional	prepositional phrase	phrase	B2.2	
+sintagma verbal	verbal phrase	phrase	B2.2	
+sintaxis	syntax	noun	B2.2	
+sinécdoque	synecdoche	noun	B2.2	
+sinéresis	syneresis	noun	B2.2	
+socialización	socialization	adj	B2.2	
+sociedad anónima	public limited company	phrase	B2.2	
+sociedad colectiva	general partnership	phrase	B2.2	
+sociedad comanditaria	limited partnership	phrase	B2.2	
+sociedad cooperativa	cooperative society	phrase	B2.2	
+sociedad limitada	limited liability company	phrase	B2.2	
+sociolecto	sociolect	noun	B2.2	
+sociolingüística	sociolinguistics	adj	B2.2	
+soneto	sonnet	noun	B2.2	
+status	status	noun	B2.2	
+subasta	auction	noun	B2.2	
+sucesión	succession	noun	B2.2	
+sucesión intestada	intestate succession	phrase	B2.2	
+sucesión testada	testate succession	phrase	B2.2	
+sufijo	suffix	noun	B2.2	
+sujeto elíptico	elliptical subject	phrase	B2.2	
+sujeto explícito	explicit subject	phrase	B2.2	
+sujeto gramatical	grammatical subject	phrase	B2.2	
+sujeto lógico	logical subject	phrase	B2.2	
+sujeto tácito	tacit subject	phrase	B2.2	
+sumario	summary	adj	B2.2	
+superficie	surface right	noun	B2.2	
+sustantivo	noun	noun	B2.2	
+sustitución	substitution	noun	B2.2	
+sátira	satire	noun	B2.2	
+sílaba	syllable	adj	B2.2	
+sílaba tónica	stressed syllable	phrase	B2.2	
+sílaba átona	unstressed syllable	phrase	B2.2	
+tautología	tautology	noun	B2.2	philosophy
+templo	temple	noun	B2.2	
+tentación	temptation	noun	B2.2	
+tentativa	attempt	noun	B2.2	
+teoría literaria	literary theory	phrase	B2.2	
+tercera persona	third person	phrase	B2.2	
+tercero	third party	noun	B2.2	
+terceto	tercet	noun	B2.2	
+terminología	terminology	noun	B2.2	
+terminología jurídica	legal terminology	phrase	B2.2	
+tesauro	thesaurus	noun	B2.2	
+testamento	will, testament	adj	B2.2	
+testigo	witness	noun	B2.2	
+testimonio	testimony	noun	B2.2	
+tetrasílabo	tetrasyllable	adj	B2.2	
+texto	text	noun	B2.2	media
+texto administrativo	administrative text	phrase	B2.2	
+texto argumentativo	argumentative text	phrase	B2.2	
+texto científico	scientific text	phrase	B2.2	
+texto descriptivo	descriptive text	phrase	B2.2	
+texto dialogado	dialogic text	phrase	B2.2	
+texto digital	digital text	phrase	B2.2	
+texto expositivo	expository text	phrase	B2.2	
+texto instructivo	instructive text	phrase	B2.2	
+texto jurídico	legal text	phrase	B2.2	
+texto literario	literary text	phrase	B2.2	
+texto narrativo	narrative text	phrase	B2.2	
+texto periodístico	journalistic text	phrase	B2.2	
+texto predictivo	predictive text	phrase	B2.2	
+texto publicitario	advertising text	phrase	B2.2	
+teísmo	theism	noun	B2.2	
+tiempo condicional perfecto	conditional perfect tense	phrase	B2.2	
+tiempo del relato	story time	phrase	B2.2	
+tiempo futuro	future tense	phrase	B2.2	
+tiempo futuro perfecto	future perfect tense	phrase	B2.2	
+tiempo narrativo	narrative time	phrase	B2.2	
+tiempo pasado	past tense	phrase	B2.2	
+tiempo presente	present tense	phrase	B2.2	
+tiempo pretérito anterior	anterior past tense	phrase	B2.2	
+tiempo pretérito imperfecto	imperfect past tense	phrase	B2.2	
+tiempo pretérito perfecto compuesto	compound past perfect tense	phrase	B2.2	
+tiempo pretérito perfecto simple	simple past perfect tense	phrase	B2.2	
+tiempo pretérito pluscuamperfecto	past perfect tense	phrase	B2.2	
+tipicidad	typicality	adj	B2.2	
+tipo penal	criminal type	phrase	B2.2	
+tipología textual	textual typology	phrase	B2.2	
+tono	tone	noun	B2.2	
+tradición literaria	literary tradition	phrase	B2.2	
+tragedia	tragedy	noun	B2.2	media
+transculturación	transculturation	noun	B2.2	
+transgresión	transgression	noun	B2.2	
+transtextualidad	transtextuality	adj	B2.2	
+triptongo	triphthong	noun	B2.2	
+trisílabo	trisyllable	adj	B2.2	
+turno de palabra	turn taking	phrase	B2.2	
+tutela	guardianship	noun	B2.2	
+tópico	topic	adj	B2.2	
+ucronía	uchronia	noun	B2.2	
+unción	anointing	noun	B2.2	
+usufructo	usufruct	noun	B2.2	
+usufructo vidual	widow's, widower's usufruct	phrase	B2.2	
+validación	validation	adj	B2.2	education|tech|work
+vanguardia	avant-garde	adj	B2.2	
+veneración	veneration	noun	B2.2	
+verbo	verb	noun	B2.2	
+versificación	versification	adj	B2.2	
+verso	verse	noun	B2.2	media
+verso blanco	blank verse	phrase	B2.2	
+verso libre	free verse	phrase	B2.2	
+vigilia	vigil	noun	B2.2	
+villancico	carol	noun	B2.2	
+vista	hearing, trial	adj	B2.2	
+vocabulario	vocabulary	adj	B2.2	
+vocal	vowel	noun	B2.2	
+vocativo	vocative	adj	B2.2	
+votos	vows	noun	B2.2	
+voz	voice	adj	B2.2	
+voz activa	active voice	phrase	B2.2	
+voz media	middle voice	phrase	B2.2	
+voz pasiva	passive voice	phrase	B2.2	
+vulgarismo	vulgarism	noun	B2.2	
+zeugma	zeugma	noun	B2.2	
+égloga	eclogue	noun	B2.2	
+épica	epic	adj	B2.2	
+órgano social	corporate body	phrase	B2.2	
