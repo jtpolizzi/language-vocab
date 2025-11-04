@@ -55,7 +55,6 @@ baño	bathroom	noun	A1.1	home
 beber	to drink	verb	A1.1	food	
 bebé	baby	noun	A1.1	society	
 bicicleta	bicycle	noun	A1.1	travel	
-bien	well, fine	adv	A1.1	society	
 blanca	white	noun	A1.1		
 blanco	white	adj	A1.1	colors	
 boleto	ticket	noun	A1.1	travel	
@@ -68,12 +67,9 @@ brillar	to shine	verb	A1.1	nature
 buena	good	adj	A1.1		
 buenas noches	good night, good evening, night	phrase	A1.1	MWU|society	
 buenas tardes	good afternoon	phrase	A1.1	MWU|society|time	remove:glue
-bueno	good	adj	A1.1	education|food	
 buenos	good	adj	A1.1		
 buenos días	good morning	phrase	A1.1	MWU|society	remove:glue
 básquetbol	basketball	noun	A1.1	media|sports	
-café	coffee, brown	adj	A1.1	colors	
-café	coffee, café	noun	A1.1	food	
 caliente	hot	adj	A1.1	food|nature	
 calle	street	noun	A1.1	nature	
 calor	heat	noun	A1.1	nature	
@@ -118,7 +114,6 @@ conversar	to converse	verb	A1.1	society
 correo electrónico	email	phrase	A1.1	MWU|tech|work	
 corto	short	adj	A1.1	travel	
 cuaderno	notebook	noun	A1.1	education	
-cuando	when	adv	A1.1	glue	
 cuarenta	forty	num	A1.1		
 cuatro	four	num	A1.1		
 cuello	neck	noun	A1.1	health	
@@ -138,7 +133,6 @@ delgado	thin	adj	A1.1	health
 delicioso	delicious	adj	A1.1	food	
 demasiado	too much, too many	adv	A1.1	glue	add:glue
 dentro	inside	adv	A1.1	glue	add:glue
-departamento	apartment	noun	A1.1	home	incorrect POS
 deporte	sport	noun	A1.1	media	
 derecha	right	adv	A1.1	glue	add:glue
 desayuno	breakfast	adj	A1.1	food	
@@ -150,7 +144,6 @@ diciembre	December	noun	A1.1
 diez	ten	num	A1.1		
 difícil	difficult, hard	adj	A1.1	education|tech	
 dinero	money	noun	A1.1	finance	
-dirección	address	noun	A1.1		
 directamente	directly	adv	A1.1	travel	
 disculpa	excuse me (informal)	interj	A1.1	society	
 disculpe	excuse me (formal)	interj	A1.1	society	
@@ -189,7 +182,6 @@ escuela	school	noun	A1.1	education|work
 ese	that	det	A1.1	glue|reflexive	add:glue
 esos	those	det	A1.1	glue	add:glue
 España	Spain	noun	A1.1	countries|health	
-español	Spanish - language, Spanish	pron	A1.1	countries	
 española	Spanish - nationality	noun	A1.1		
 esperar	to wait, to hope	verb	A1.1	time	
 esposo	husband, wife	noun	A1.1	society	
@@ -245,7 +237,6 @@ importante	important	adj	A1.1	education
 ingeniero	engineer	noun	A1.1	education	
 Inglaterra	England	noun	A1.1	countries	
 inglesa	English - nationality	noun	A1.1		
-inglés	English - language, English	pron	A1.1	countries	
 interesante	interesting	adj	A1.1	education|media|travel	
 internet	internet	noun	A1.1	tech	
 ir	to go	verb	A1.1	glue|media|travel	add:glue
@@ -291,18 +282,14 @@ lápiz	pencil	noun	A1.1	education
 madre	mother	noun	A1.1	society	
 madrugada	early morning, dawn	adv	B1.2	time	incorrect POS
 maestro	teacher	noun	A1.1	education	
-mal	badly, bad, poorly	adj	A1.1	society	
 mala	bad	adj	A1.1		
 maleta	suitcase	noun	A1.1	travel	
-malo	bad	adj	A1.1	education|food	
 mamá	mom	noun	A1.1	society	
 manejar	to drive	verb	A1.1	travel	
 manzana	apple	noun	A1.1	food	
 martes	Tuesday	noun	A1.1	time	
 marzo	March	noun	A1.1		
 mayo	May	noun	A1.1		
-mañana	tomorrow	adv	A1.1	time	
-mañana	morning	noun	A1.1	time	
 medianoche	midnight	noun	A1.1	time	
 mediodía	noon	noun	A1.1	time	
 menos	less	adv	A1.1	comparison|glue	incorrect POS, add:glue
@@ -326,10 +313,7 @@ más	more	adv	A1.1	comparison|glue	incorrect POS, add:glue
 más o menos	more or less, so-so	phrase	A1.1	MWU|comparison|society	remove:glue
 médica	doctor	noun	A1.1		
 México	Mexico	noun	A1.1	countries	
-música	music	noun	A1.1	education|media	
 nacer	to be born	verb	A1.1	countries	
-naranja	orange	adj	A1.1	colors	
-naranja	orange	noun	A1.1	food	
 negra	black	noun	A1.1		
 negro	black	adj	A1.1	colors	
 nevar	to snow	verb	A1.1	nature|time	
@@ -417,12 +401,9 @@ roja	red	noun	A1.1
 rojo	red	adj	A1.1	colors	
 rosa	pink	adj	A1.1	colors	
 rápidamente	quickly	adv	A1.1	health|travel	
-rápido	quickly	adv	A1.1	food	
-rápido	fast, quick	adj	A1.1	tech|time|travel	
 sabroso	tasty	adj	A1.1	food	
 salado	salty	adj	A1.1	food	
 salir	to leave	verb	A1.1	glue|time|travel	add:glue
-salud	health	noun	A1.1	health	
 saludar	to greet	verb	A1.1	society	
 sano	healthy	adj	A1.1	health	
 segundo	second	noun	A1.1	time	
@@ -441,13 +422,10 @@ sin	without	prep	A1.1	glue
 sobre	about, on, over	prep	A1.1	glue	
 soleado	sunny	adj	A1.1	nature	
 soltero	single	adj	A1.1	society	
-sopa	soup	noun	A1.1	food	
 soplar	to blow (wind)	verb	A1.1	nature	
 su	his, her, your formal, its, your (formal)	det	A1.1	glue	add:glue
 subir	to get on, to go up, to upload	verb	A1.1	tech|travel	
 sucio	dirty	adj	A1.1	home	
-supermercado	supermarket	adv	A1.1		
-supermercado	supermarket	noun	A1.1		
 suéter	sweater	noun	A1.1		incorrect POS
 sábado	Saturday	noun	A1.1	time	
 sí	yes	pron	A1.1	glue	add:glue
@@ -542,7 +520,6 @@ armario	closet, wardrobe	noun	A1.2	home
 arroz	rice	noun	A1.2	food	
 ascensor	elevator	noun	A1.2	home	
 así	like this, in this way	noun	A1.2		
-así que	so, therefore	connector	A1.2	MWU|comparison|discourse|glue	
 aunque	although, even though	conj	A1.2	discourse|glue	
 avenida	avenue	noun	A1.2		
 avergonzado	embarrassed	adj	A1.2		
@@ -585,7 +562,6 @@ cine	cinema, movie theater	noun	A1.2	media
 cocinar	to cook	verb	A1.2	food|home|media	
 comedor	dining room	noun	A1.2	home|travel	
 complicado	complicated	adj	A1.2	education|tech	
-común	common	noun	A1.2		
 concierto	concert	noun	A1.2	media	
 conductor	driver	noun	A1.2	travel	
 conmigo	with me	pron	A1.2		
@@ -594,13 +570,11 @@ consigo	with oneself, with himself, herself	pron	A1.2
 contento	content, happy	adj	A1.2		
 contigo	with you	pron	A1.2		
 contra	against	prep	A1.2	glue	
-correcto	correct	adj	A1.2		
 correos	post office	noun	A1.2	work	
 correr	to run	verb	A1.2	media|sports|travel	
 cortina	curtain	noun	A1.2	home	
 costar	to cost	verb	A1.2		
 cuadro	painting	noun	A1.2	health	
-cualquiera	any	noun	A1.2		
 cuenta	bill, check	noun	A1.2	food	
 cuidado	care, careful	noun	A1.2		
 debajo	underneath	noun	A1.2		
@@ -647,14 +621,12 @@ estantería	bookshelf	noun	A1.2
 estas	these	det	A1.2	glue	add:glue
 estómago	stomach	noun	A1.2	health	
 excepto	except	noun	A1.2		
-exposición	exhibition	noun	A1.2	media	
 extraño	strange	noun	A1.2		
 falda	skirt	noun	A1.2		
 falso	FALSE	adj	A1.2		
 farmacia	pharmacy	noun	A1.2	health	
 feliz	happy	adj	A1.2	health	
 fiebre	fever	noun	A1.2	health	
-fotografía	photography	noun	A1.2		incorrect POS
 fue	was, went	noun	A1.2		
 gafas	glasses	noun	A1.2		
 galleta	cookie, biscuit	noun	A1.2	food	
@@ -673,7 +645,6 @@ huevo	egg	noun	A1.2	food
 iglesia	church	noun	A1.2		
 igual...que	equal...to	phrase	A1.2		
 imposible	impossible	adj	A1.2		
-incorrecto	incorrect	adj	A1.2		
 interesado	interested	noun	A1.2	finance	
 invierno	winter	noun	A1.2		
 inútil	useless	adj	A1.2		
@@ -695,7 +666,6 @@ manta	blanket	noun	A1.2	home
 maquillarse	to put on makeup	verb	A1.2	reflexive	
 mayor	older, bigger	adj	A1.2	society	
 me	me	pron	A1.2	glue	add:glue
-medicina	medicine	noun	A1.2	health	
 mejor	better, best	adj	A1.2		
 menor	younger, smaller	adj	A1.2	society	
 menos...que	less...than	phrase	A1.2	comparison	
@@ -714,11 +684,9 @@ nariz	nose	noun	A1.2	health
 necesario	necessary	adj	A1.2		
 nervioso	nervous	adj	A1.2	health	
 nieve	snow	noun	A1.2	nature|time	incorrect POS
-normal	normal	noun	A1.2		
 nos	us	pron	A1.2	glue	add:glue
 nube	cloud	noun	A1.2	nature	
 número de talla	size number	phrase	A1.2	MWU	
-ocupado	busy	noun	A1.2		
 oferta	offer, sale, supply	noun	A1.2	finance	
 ojo	eye	noun	A1.2	health	
 oreja	ear	noun	A1.2	health	
@@ -753,7 +721,6 @@ ponerse	to put on [clothing], to put on	verb	A1.2	reflexive
 por supuesto	of course	phrase	A1.2	MWU|education	
 posible	possible	adj	A1.2		
 postre	dessert	noun	A1.2	food	
-precio	price	noun	A1.2	food	
 preocupado	worried	adj	A1.2	health	
 primavera	spring	noun	A1.2		
 probar	to try, test, to taste, se) (to try on, to prove, to test	verb	A1.2	education|food|tech	
@@ -776,7 +743,6 @@ saber	to know, knowledge, to know (facts)	verb	A1.2	glue|time	add:glue
 sal	salt	noun	A1.2	food	
 sala	living room	noun	A1.2	home	
 salida	exit, departure	noun	A1.2	travel	
-seguro	sure, confident	adj	A1.2		
 según	according to	prep	A1.2	glue	
 semáforo	traffic light	noun	A1.2		
 sentir	to feel, regret	verb	A1.2	glue|health	add:glue
@@ -787,11 +753,9 @@ sofá	sofa	noun	A1.2	home
 sol	sun	noun	A1.2	nature	
 solamente	only	adv	A1.2		
 sombrero	hat	noun	A1.2		
-sopa	soup	noun	A1.2	food	incorrect POS
 sorprendido	surprised	adj	A1.2		
 tal como	just as	phrase	A1.2	MWU|comparison	
 tal vez	perhaps, maybe	phrase	A1.2	MWU	
-tampoco	neither, not either	adv	A1.2	glue	incorrect POS, add:glue
 tan...como	as...as	phrase	A1.2	comparison	
 tanto como	as much as	phrase	A1.2	MWU|comparison	
 taxi	taxi	noun	A1.2	travel	
@@ -808,7 +772,6 @@ traer	to bring	verb	A1.2	food
 tranquilo	calm	adj	A1.2	health	
 triste	sad	adj	A1.2	health|media	
 tuvo	had	noun	A1.2		
-típico	typical	noun	A1.2		
 varias	several	noun	A1.2		
 vecino	neighbor	noun	A1.2	home	
 verano	summer	noun	A1.2		
@@ -843,7 +806,6 @@ aficionada	fan	noun	A2.1	sports
 agencia de viajes	travel agency	phrase	A2.1	MWU|travel	
 agradecido	grateful	adj	A2.1		
 agrio	sour	adj	A2.1	food	
-agudo	acute	adj	A2.1	health	
 aire	air	noun	A2.1	nature	
 ajedrez	chess	noun	A2.1	sports	
 ajo	garlic	noun	A2.1	food	
@@ -883,7 +845,6 @@ apagar	to turn off	verb	A2.1	tech
 apenas	barely, hardly	adv	A2.1	time	incorrect POS
 apio	celery	noun	A2.1	food	
 aplaudir	to applaud	verb	A2.1	media|sports	
-aplicación	application, app	noun	A2.1	tech|work	
 aprender	to learn	verb	A2.1	education|health	
 aprendizaje	learning	noun	A2.1	education	
 aprobar	to pass	verb	A2.1	education	
@@ -911,12 +872,10 @@ autora	author	noun	A2.1	media
 avanzado	advanced	adj	A2.1	education|tech	
 aventurero	adventurous	adj	A2.1	travel	
 aún	still, even	adv	A2.1	glue|time	add:glue
-ballet	ballet	noun	A2.1	media	
 banda sonora	soundtrack	phrase	A2.1	MWU|media	
 batidora	mixer	noun	A2.1	food	
 batir	to beat	verb	A2.1	food	
 bebida	drink	noun	A2.1	food	
-beca	scholarship	noun	A2.1	education	
 bienestar	well-being	noun	A2.1	health	incorrect POS
 billar	billiards	noun	A2.1	food	incorrect POS
 biología	biology	noun	A2.1	education|tech	
@@ -962,7 +921,6 @@ caza	hunting	noun	A2.1	sports
 cazar	to hunt	verb	A2.1		
 cazuela	casserole	noun	A2.1	food	
 celebración	celebration	noun	A2.1		
-celos	jealousy	noun	A2.1		
 celoso	jealous	adj	A2.1		
 centímetro	centimeter	noun	A2.1		
 cerca de	near, close to	phrase	A2.1	MWU	
@@ -980,7 +938,6 @@ circo	circus	noun	A2.1	media
 cirujano	surgeon	noun	A2.1	health	
 cita	date, appointment, citation, quote	noun	A2.1		
 clase	class	noun	A2.1	education|reflexive	
-cliente	client, customer	noun	A2.1	education|food|work	
 clásico	classic	adj	A2.1	media	
 clínica	clinic	noun	A2.1	health	
 col	cabbage	noun	A2.1	food	
@@ -1038,7 +995,6 @@ criticar	to criticize, to critique	verb	A2.1	education|media|society
 cruel	cruel	adj	A2.1		
 crujiente	crispy	adj	A2.1	food	
 crónico	chronic	adj	A2.1	health	
-cuando	when	adv	A2.1	glue	incorrect POS, add:glue
 cuarto	quarter	noun	A2.1	media	
 cuchara	spoon	noun	A2.1	food	
 cucharita	teaspoon	noun	A2.1	food	
@@ -1088,7 +1044,6 @@ después de	after	phrase	A2.1	MWU|time	remove:glue
 destino	destination	noun	A2.1	travel	
 detrás de	behind	phrase	A2.1	MWU	
 diagnóstico	diagnosis	noun	A2.1	health	
-diccionario	dictionary	noun	A2.1	education	
 digital	digital	adj	A2.1	tech	
 diploma	diploma	noun	A2.1	education	
 director	director	noun	A2.1	media|work	
@@ -1100,7 +1055,6 @@ distinto	different	adj	A2.1
 divertirse	to have fun	verb	A2.1	media|reflexive	
 divorciada	divorced	noun	A2.1	society	
 divorcio	divorce	noun	A2.1	society	
-documento	document	noun	A2.1	tech|work	
 doméstico	domestic	adj	A2.1	travel	
 donde	where	pron	A2.1	glue	add:glue
 dramático	dramatic	adj	A2.1	media	
@@ -1142,7 +1096,6 @@ enlace	link	noun	A2.1	tech
 enojar	to anger	verb	A2.1		
 enojarse	to get angry	verb	A2.1	reflexive	
 enojo	anger	noun	A2.1		
-ensayo	essay	noun	A2.1	education	
 enseñanza	teaching	noun	A2.1	education	
 enseñar	to teach	verb	A2.1	education	
 entender	to understand	verb	A2.1	education	
@@ -1151,7 +1104,6 @@ entradas	tickets	noun	A2.1	travel
 entrenar	to train	verb	A2.1		
 entretenerse	to entertain oneself	verb	A2.1	media|reflexive	
 entretenido	entertaining	adj	A2.1	media	
-entretenimiento	entertainment	noun	A2.1	media	
 entrevista	interview	noun	A2.1	media|travel|work	
 entristecerse	to become sad	verb	A2.1	reflexive	
 entusiasmado	enthusiastic	adj	A2.1	discourse	remove:glue
@@ -1168,9 +1120,7 @@ escritora	writer	noun	A2.1	media
 escritorio	desk	noun	A2.1	education	
 escuela primaria	elementary school	phrase	A2.1	MWU|education	
 escuela secundaria	middle school	phrase	A2.1	MWU|education	
-español	Spanish	noun	A2.1	education	
 especialidad	specialty	noun	A2.1	food	
-especialista	specialist	noun	A2.1	health	
 especialmente	especially	adv	A2.1	time	
 especias	spices	noun	A2.1	food	
 espectadora	spectator	noun	A2.1	sports	
@@ -1198,14 +1148,12 @@ explicar	to explain	verb	A2.1	education|work
 explorar	to explore	verb	A2.1	education|tech|travel	
 exquisito	exquisite	adj	A2.1	food|media	
 extranjero	foreigner, foreign, abroad	noun	A2.1	travel	
-extrovertido	outgoing	adj	A2.1		
 exótico	exotic	adj	A2.1	travel	
 facturar	to check in luggage, to check in	verb	A2.1	travel	
 faltar	to miss (class)	verb	A2.1	education	
 famoso	famous	adj	A2.1	media	
 fascinante	fascinating	adj	A2.1	media	
 feria	fair	noun	A2.1	media	
-festival	festival	noun	A2.1	media	
 fiesta	party	noun	A2.1	media	
 film	film	noun	A2.1	media	
 filosofía	philosophy	noun	A2.1	education	
@@ -1224,9 +1172,7 @@ funcionar	to work, function	verb	A2.1	tech
 función	show, performance	noun	A2.1	media	
 furioso	furious	adj	A2.1		
 fábrica	factory	noun	A2.1	work	
-física	physics	noun	A2.1	education	
 fútbol americano	American football	phrase	A2.1	MWU|health	
-galería	gallery	noun	A2.1	media	
 gallina	hen	noun	A2.1	nature	
 ganar	to win, to earn	verb	A2.1	sports|work	
 generalmente	generally	adv	A2.1	time	
@@ -1279,12 +1225,10 @@ impresionante	impressive	adj	A2.1	media|travel
 impresora	printer	noun	A2.1	tech|work	
 imprimir	to print	verb	A2.1	tech	
 inalámbrico	wireless	adj	A2.1	tech	
-incluido	included	noun	A2.1	travel	
 incompleto	incomplete	adj	A2.1		
 infección	infection	noun	A2.1	health	
 informe	report	noun	A2.1	work	
 informática	computer science	noun	A2.1	education|tech	
-inglés	English	noun	A2.1	education	
 inmediatamente	immediately	adv	A2.1	time	
 innecesario	unnecessary	adj	A2.1		
 insatisfecho	unsatisfied	adj	A2.1		
@@ -1293,16 +1237,13 @@ insecto	insect	noun	A2.1
 inseguro	insecure	adj	A2.1		
 instalar	to install	verb	A2.1	tech	
 instituto	high school, institute	noun	A2.1	education	
-instrumento	instrument	noun	A2.1	media	
 insuficiente	insufficient	adj	A2.1		
 intensamente	intensely	adv	A2.1	health	
 internacional	international	adj	A2.1	travel	
 interés	interest	noun	A2.1	finance	
-introvertido	introverted	adj	A2.1		
 investigar	to research, to investigate	verb	A2.1	education|tech	
 invitación	invitation	noun	A2.1		
 invitada	guest	noun	A2.1	society	
-itinerario	itinerary	noun	A2.1	travel	
 jardinería	gardening	noun	A2.1	home	
 jefa	boss	noun	A2.1	work	
 jirafa	giraffe	noun	A2.1	nature	
@@ -1325,7 +1266,6 @@ lejos de	far from	phrase	A2.1	MWU
 leve	mild	adj	A2.1	health	
 levemente	mildly	adv	A2.1	health	
 león	lion	noun	A2.1	nature	
-libre	free, available	noun	A2.1	travel	
 libreta	notebook	noun	A2.1	education	
 libro de texto	textbook	phrase	A2.1	MWU|education	
 licuadora	blender	noun	A2.1	food	
@@ -1346,11 +1286,9 @@ mar	sea	noun	A2.1	nature	incorrect POS
 maratón	marathon	noun	A2.1	sports	
 marcador	marker	noun	A2.1	education	
 margarina	margarine	noun	A2.1	food	
-matemáticas	mathematics	noun	A2.1	education	
 materia	subject, matter	noun	A2.1	education	
 matricularse	to register	verb	A2.1	education|reflexive	
 matrimonio	marriage	noun	A2.1	society	
-medalla	medal	noun	A2.1	sports	
 medicamento	medication	noun	A2.1	health	
 medida	measurement	noun	A2.1		incorrect POS
 medios	media	noun	A2.1	media	
@@ -1361,7 +1299,6 @@ memorizar	to memorize	verb	A2.1	education
 mensaje	message	noun	A2.1	tech	
 mentir	to lie	verb	A2.1		
 mentiroso	lying, dishonest	adj	A2.1		
-meta	goal, finish line	noun	A2.1	sports|work	
 mezclar	to mix	verb	A2.1	food	
 miedo	fear	noun	A2.1	health	
 mientras que	whereas, while	phrase	A2.1	MWU|comparison|time	remove:glue
@@ -1377,10 +1314,8 @@ montar en bicicleta	to ride a bicycle	phrase	A2.1	MWU
 montañismo	mountaineering	noun	A2.1	nature	
 motel	motel	noun	A2.1	travel	
 motivado	motivated	adj	A2.1		
-musical	musical	noun	A2.1	media	
 médico	doctor	noun	A2.1	health	
 mí	me (after preposition)	adv	A2.1	glue|time	add:glue
-músico	musician	noun	A2.1	media	
 natación	swimming	noun	A2.1	sports	
 naturaleza	nature	noun	A2.1	nature	
 navegar	to browse	verb	A2.1	tech	
@@ -1388,15 +1323,12 @@ necesitar	to need	verb	A2.1
 negocio	business	noun	A2.1	work	
 ninguno	none, not any	pron	A2.1	glue	add:glue
 nota	grade, note	noun	A2.1	education	
-noticia	news	noun	A2.1	media	incorrect POS
 noticias	news	noun	A2.1	media	incorrect POS
 novela	novel	noun	A2.1	media	
 novia	boyfriend, girlfriend	noun	A2.1	society	
 nuera	daughter-in-law	noun	A2.1	society	
-objetivo	objective	noun	A2.1	work	
 obra de teatro	play	phrase	A2.1	MWU|media	
 ocupación	occupation	noun	A2.1	work	
-ocupado	occupied	adv	A2.1	travel	
 océano	ocean	noun	A2.1	nature	
 odio	hate	noun	A2.1		
 olla	pot	noun	A2.1	food	
@@ -1435,7 +1367,6 @@ perezoso	lazy	adj	A2.1
 permiso	permission, leave	noun	A2.1	work	
 personaje	character	noun	A2.1	media	
 personal	staff	noun	A2.1	work	
-personalidad	personality	noun	A2.1		
 pesado	heavy	adj	A2.1	food	
 pesca	fishing	noun	A2.1	nature	
 pescar	to fish	verb	A2.1	nature	
@@ -1465,7 +1396,6 @@ preocupar	to worry (someone)	verb	A2.1
 preocuparse	to worry	verb	A2.1	reflexive	
 preparar	to prepare	verb	A2.1	food	
 preparatoria	high school	phrase	A2.1	education	
-presentación	presentation	noun	A2.1	education|work	
 presentar	to present, introduce, to introduce, to submit	verb	A2.1	education|media|society|work	
 presión arterial	blood pressure	phrase	A2.1	MWU|health	
 prima	cousin, premium	noun	A2.1	society	
@@ -1498,7 +1428,6 @@ realmente	really	adv	A2.1
 recepción	reception	noun	A2.1	travel	
 recetar	to prescribe	verb	A2.1	health	
 recientemente	recently	adv	A2.1	time	
-recital	recital	noun	A2.1	media	
 recién	recently, just	adv	A2.1	time	
 recordar	to remember	verb	A2.1	education	
 recreo	recess, break	noun	A2.1	education	
@@ -1522,7 +1451,6 @@ reparar	to repair	verb	A2.1	tech
 reparto	cast	noun	A2.1	media	
 repasar	to review	verb	A2.1	education	
 reportaje	report	noun	A2.1	media	
-representación	performance	noun	A2.1	media	
 reprobar	to fail	verb	A2.1	education	
 reproductor	player	noun	A2.1	tech	
 reservación	reservation	noun	A2.1	food	
@@ -1537,7 +1465,6 @@ reunirse	to meet	verb	A2.1	reflexive|work
 reunión	meeting	noun	A2.1	work	
 revista	magazine	noun	A2.1	media	
 revolver	to stir	verb	A2.1	food	
-romance	romance	noun	A2.1	media	
 romántico	romantic	adj	A2.1	media	
 rotulador	marker	noun	A2.1	education	
 running	running	noun	A2.1		
@@ -1593,7 +1520,6 @@ suspenso	suspense, thriller	noun	A2.1	media
 síntoma	symptom	noun	A2.1	health	
 tableta	tablet	noun	A2.1	tech	
 tamaño	size	noun	A2.1		
-tampoco	neither, not either	adv	A2.1	discourse|glue	
 tan pronto como	as soon as	phrase	A2.1	MWU|comparison|time	remove:glue
 tarea	homework, task	noun	A2.1	education|home|work	
 tarjeta de embarque	boarding pass	phrase	A2.1	MWU|travel	
@@ -1606,7 +1532,6 @@ teléfono inteligente	smartphone	phrase	A2.1	MWU|tech
 temperatura	temperature	noun	A2.1		
 temporada	season	noun	A2.1	media	
 tenedor	fork	noun	A2.1	food	
-terminal	terminal	noun	A2.1	travel	
 terminar de	to finish doing	phrase	A2.1	MWU	
 teórico	theoretical	adj	A2.1	education|tech	
 ti	you (after preposition)	pron	A2.1	glue|time	add:glue
@@ -1621,18 +1546,13 @@ todo	all, everything	pron	A2.1	glue	add:glue
 tomar apuntes	to take notes	phrase	A2.1	MWU|education	
 tomar medicinas	to take medicine	phrase	A2.1	MWU|health	
 tonto	silly, stupid	adj	A2.1		
-torneo	tournament	noun	A2.1	sports	
 tostadora	toaster	noun	A2.1	food	
 totalmente	totally	adv	A2.1		
 tour	tour	noun	A2.1	travel	
-trabajador	hardworking	adj	A2.1		
-trabajador	worker	noun	A2.1	work	
 traductor	translator	noun	A2.1		
 trama	plot	noun	A2.1	media	
-tratamiento	treatment	noun	A2.1	health	
 tratar de	to try to	phrase	A2.1	MWU	
 triatlón	triathlon	noun	A2.1	sports	
-tristeza	sadness	noun	A2.1		incorrect POS
 trofeo	trophy	noun	A2.1	sports	
 tropical	tropical	adj	A2.1	travel	
 trozo	piece	noun	A2.1		
@@ -1666,7 +1586,6 @@ visa	visa	noun	A2.1	travel
 visado	visa	noun	A2.1	travel	
 visita	visit	noun	A2.1		
 visitar	to visit	verb	A2.1	society|travel	
-vista	view	noun	A2.1	travel	
 viuda	widowed	noun	A2.1	society	
 voleibol	volleyball	noun	A2.1	sports	
 volver	to return	verb	A2.1	travel	
@@ -1683,7 +1602,6 @@ a causa de	because of	connector	A2.2	MWU|discourse	remove:glue
 a favor	in favor	phrase	A2.2	MWU	remove:glue
 a lo mejor	maybe	phrase	A2.2	MWU	
 abogada	lawyer	noun	A2.2		
-accidente	accident	noun	A2.2		
 acción	action	noun	A2.2	media	
 acondicionador	conditioner	noun	A2.2		
 aconsejar	to advise	verb	A2.2		
@@ -1696,24 +1614,19 @@ agresiva	aggressive	noun	A2.2
 agricultora	farmer	noun	A2.2	health	incorrect POS
 aire acondicionado	air conditioning	phrase	A2.2	MWU|nature|travel	
 al contrario	on the contrary	phrase	A2.2	MWU	
-alergia	allergy	noun	A2.2	health	
 alquilar un coche	to rent a car	phrase	A2.2	MWU|home	
 altruista	altruistic	noun	A2.2		
 amable	kind	adj	A2.2		
 anillo	ring	noun	A2.2		
 aniversario	anniversary	noun	A2.2		
 antipática	unfriendly	adj	A2.2	society	
-anuncio	advertisement	noun	A2.2	media	
 aretes	earrings	noun	A2.2	health	
 arquitecta	architect	noun	A2.2		
-artículo	article	noun	A2.2	media	
-ascenso	promotion	noun	A2.2		
 asiento	seat	noun	A2.2	nature	
 asignar	to assign	verb	A2.2		
 audiencia	audience	noun	A2.2	media	
 autopista	highway	noun	A2.2		
 auxiliar de vuelo	flight attendant	phrase	A2.2	MWU	
-aventura	adventure	noun	A2.2	media	
 avería	breakdown, malfunction	adj	A2.2		
 Año Nuevo	New Year	phrase	A2.2	MWU|health	
 bailarina	dancer	noun	A2.2		
@@ -1753,7 +1666,6 @@ comedia	comedy	noun	A2.2	media
 comprobar	to check, verify, to verify	verb	A2.2	education|tech	
 comunicar	to communicate	verb	A2.2	work	
 conductora	driver	noun	A2.2	travel	
-conflicto	conflict	noun	A2.2		
 consulta	consultation	noun	A2.2		
 contable	accountant	noun	A2.2	finance	
 contrato de arrendamiento	lease, rental agreement	phrase	A2.2	MWU|home	
@@ -1765,7 +1677,6 @@ cosmética	cosmetics	noun	A2.2
 costumbre	custom	noun	A2.2		
 crema	cream	noun	A2.2		
 cruce	crossing, intersection	noun	A2.2		
-crítica	review, criticism	noun	A2.2	travel	
 cuarto de baño	bathroom	phrase	A2.2	MWU|home	
 cuenta bancaria	bank account	phrase	A2.2	MWU|finance	
 cuenta corriente	checking account	phrase	A2.2	MWU|finance	
@@ -1785,7 +1696,6 @@ defectuosa	defective	noun	A2.2
 dejar prestado	to lend	phrase	A2.2	MWU	
 democracia	democracy	noun	A2.2	society	
 depósito	deposit	noun	A2.2	finance	
-derechos	rights	noun	A2.2		incorrect POS
 descolgar	to pick up	verb	A2.2		
 descuidada	careless	noun	A2.2		
 desde luego	certainly, of course	phrase	A2.2	MWU	
@@ -1793,19 +1703,15 @@ desempleada	unemployed	noun	A2.2
 desfile	parade	noun	A2.2	media	
 deshacer las maletas	to unpack	phrase	A2.2	MWU|travel	
 deshonesta	dishonest	noun	A2.2		
-desigualdad	inequality	noun	A2.2		
 desodorante	deodorant	noun	A2.2		
-despido	dismissal, firing	noun	A2.2		
 destinatario	recipient	noun	A2.2		
 desvío	detour	noun	A2.2		
 devolución	return	noun	A2.2		
 diarrea	diarrhea	noun	A2.2		
 dibujos animados	cartoons	phrase	A2.2	MWU|media	
-dictadura	dictatorship	noun	A2.2		
 dirán	they will say	noun	A2.2		
 discurso	speech	noun	A2.2		
 diseñadora	designer	noun	A2.2		
-documental	documentary	noun	A2.2	media|work	
 dolor de cabeza	headache	phrase	A2.2	MWU|health	
 dolor de estómago	stomachache	phrase	A2.2	MWU|health	
 dolor de garganta	sore throat	phrase	A2.2	MWU	remove:glue
@@ -1824,7 +1730,6 @@ empresaria	businessman, businesswoman	noun	A2.2	work
 en contra	against	phrase	A2.2	MWU	
 en general	in general	phrase	A2.2	MWU	
 en particular	in particular	phrase	A2.2	MWU|media	
-en realidad	actually	connector	A2.2	MWU|discourse	remove:glue
 enfermedad	illness, disease	noun	A2.2	health|nature	
 entregar	to deliver, to turn in	verb	A2.2	education	
 entrevista de trabajo	job interview	phrase	A2.2	MWU|travel	
@@ -1850,10 +1755,8 @@ felicitación	congratulation	noun	A2.2
 firma	signature	noun	A2.2	nature	
 fuga de agua	water leak	phrase	A2.2	MWU|nature	
 funeral	funeral	noun	A2.2		incorrect POS
-garantía	warranty, guarantee	verb	A2.2	finance	
 gasolinera	gas station	noun	A2.2	comparison	
 generosa	generous	noun	A2.2		
-gobierno	government	noun	A2.2	work	
 goteo	leak, drip	noun	A2.2		
 grabación	recording	noun	A2.2	media	
 graciosa	funny	adj	A2.2		
@@ -1881,7 +1784,6 @@ insegura	insecure	noun	A2.2
 insensible	insensitive	noun	A2.2		
 instrucciones de uso	instructions for use	phrase	A2.2	MWU	remove:glue
 inteligente	intelligent	adj	A2.2		
-inversión	investment	noun	A2.2	finance	
 inyección	injection	noun	A2.2		
 irresponsable	irresponsible	adj	A2.2		
 irás	you will go	noun	A2.2		
@@ -1901,10 +1803,8 @@ loción	lotion	noun	A2.2
 límite de velocidad	speed limit	phrase	A2.2	MWU	
 línea ocupada	busy line	phrase	A2.2	MWU	
 madura	mature	noun	A2.2		
-mal	to make a good, bad impression, badly	adj	A2.2		incorrect POS
 maletero	trunk, boot	noun	A2.2		
 mantenimiento	maintenance	noun	A2.2		
-manual	manual	noun	A2.2		
 maquillaje	makeup	noun	A2.2		incorrect POS
 maquillar	to apply makeup	verb	A2.2		
 marca	brand	noun	A2.2		
@@ -1915,7 +1815,6 @@ me alegro de que	I'm glad that...	phrase	A2.2	MWU|comparison
 me gustaría	I would like	phrase	A2.2	MWU	
 me molesta que	it bothers me that...	phrase	A2.2	MWU|comparison	
 me sorprende que	it surprises me that...	phrase	A2.2	MWU|comparison	
-mecánica	mechanic	noun	A2.2		
 mentirosa	liar	noun	A2.2		
 militar	military person	noun	A2.2	society	incorrect POS
 moda	fashion	noun	A2.2		
@@ -1926,7 +1825,6 @@ navegador	GPS, navigator, browser	noun	A2.2
 Navidad	Christmas	noun	A2.2		
 nerviosa	nervous	noun	A2.2		
 no creo que	I don't think that...	phrase	A2.2	MWU|comparison	
-no obstante	nevertheless	connector	A2.2	MWU|discourse|time	remove:glue
 número equivocado	wrong number	phrase	A2.2	MWU	
 obligar	to force, obligate	verb	A2.2		
 operación	operation	noun	A2.2		
@@ -1952,7 +1850,6 @@ peluquera	hairdresser	noun	A2.2	health
 peluquería	hair salon	noun	A2.2	health	
 perezosa	lazy	noun	A2.2		
 perfume	perfume	noun	A2.2		
-periodista	journalist	noun	A2.2		
 periódico	newspaper	noun	A2.2	media	incorrect POS
 permitir	to allow	verb	A2.2		
 pescadora	fisher	noun	A2.2	nature	
@@ -1963,7 +1860,6 @@ plomero	plumber	noun	A2.2
 pobreza	poverty	noun	A2.2	society	
 podrás	you will be able to	noun	A2.2		
 policía	police officer	noun	A2.2	education|work	
-política	politics, policy	noun	A2.2		
 ponerse de acuerdo	to agree, reach an agreement	phrase	A2.2	MWU	
 por eso	therefore, that's why	connector	A2.2	MWU|discourse|glue	
 por lo menos	at least	phrase	A2.2	MWU|comparison	
@@ -1987,21 +1883,17 @@ queja	complaint	noun	A2.2
 quiero que	I want that...	phrase	A2.2	MWU|comparison	
 radar	radar	noun	A2.2		incorrect POS
 recepcionista	receptionist	noun	A2.2	travel|work	
-receptor	receiver	noun	A2.2		
 receta médica	prescription	phrase	A2.2	MWU|health	
 reclamación	claim	noun	A2.2		
 recomendar	to recommend	verb	A2.2	food|media	
-reembolso	refund	adj	A2.2	finance	
 reloj de pulsera	wristwatch	phrase	A2.2	MWU	
 remitente	sender	noun	A2.2		
 renovar	to renew	verb	A2.2		
 reparación	repair, reparation	noun	A2.2	nature	
-riqueza	wealth	noun	A2.2		
 romántica	romantic	noun	A2.2	media	
 rotonda	roundabout	noun	A2.2		
 ruptura	breakage, rupture	noun	A2.2		
 sabrá	he, she will know	verb	A2.2	time	incorrect POS
-salario	salary	noun	A2.2	work	
 salón de belleza	beauty salon	phrase	A2.2	MWU	
 sangre	blood	noun	A2.2	health	
 se alquila	it is rented	phrase	A2.2	MWU|home|reflexive	
@@ -2020,7 +1912,6 @@ segura	confident	adj	A2.2
 seguro de viaje	travel insurance	phrase	A2.2	MWU|travel	
 seguro médico	health insurance	phrase	A2.2	MWU|health	
 sello	stamp	noun	A2.2		
-sensible	sensitive	noun	A2.2		
 seria	serious	noun	A2.2		
 serie	series	noun	A2.2	media	
 señal de tráfico	traffic sign	phrase	A2.2	MWU	
@@ -2110,7 +2001,6 @@ al mismo tiempo	at the same time	phrase	B1.1	MWU|time
 alcalde	mayor	noun	B1.1	society	
 alcanzar	to reach	verb	B1.1	work	
 alcanzar a	to manage to	phrase	B1.1	MWU	
-alergia	allergy	adj	B1.1		
 algoritmo	algorithm	noun	B1.1	tech	incorrect POS
 altruismo	altruism	noun	B1.1	health	incorrect POS
 amateur	amateur	noun	B1.1		
@@ -2125,13 +2015,11 @@ anhelo	yearning	noun	B1.1	health
 anormal	abnormal	adj	B1.1		
 ansiedad	anxiety	noun	B1.1		
 antibiótico	antibiotic	noun	B1.1		incorrect POS
-anuncio	advertisement	noun	B1.1		incorrect POS
 análisis	analysis	noun	B1.1	education	incorrect POS
 análisis de sangre	blood test	phrase	B1.1	MWU	
 aparato	apparatus	noun	B1.1		
 apasionadamente	passionately	adv	B1.1	health	
 apatía	apathy	noun	B1.1	health	
-aplicación	application	noun	B1.1	tech	incorrect POS
 apoyar	to support	verb	B1.1	society	
 apreciar	to appreciate	verb	B1.1	health|media	
 aptitud	aptitude	noun	B1.1	work	
@@ -2146,9 +2034,7 @@ arquitectura	architecture	noun	B1.1	media
 arrepentimiento	regret, repentance	noun	B1.1	health	incorrect POS
 arrogancia	arrogance	noun	B1.1		
 artesanía	crafts	noun	B1.1		
-artículo	article	noun	B1.1		incorrect POS
 ascender	to be promoted	verb	B1.1	work	
-ascenso	promotion, advancement	noun	B1.1	work	incorrect POS
 asignatura obligatoria	mandatory subject	phrase	B1.1	MWU	remove:glue
 asignatura optativa	elective subject	phrase	B1.1	MWU	
 asilo	asylum	noun	B1.1		
@@ -2157,7 +2043,6 @@ aspiración	aspiration	noun	B1.1	work
 astronomía	astronomy	noun	B1.1	tech	
 asumir	to assume	verb	B1.1		
 así pues	thus	phrase	B1.1	MWU|discourse	remove:glue
-así que	so	phrase	B1.1	MWU|comparison|discourse	remove:glue
 atípico	atypical	adj	B1.1		
 aun cuando	even when	phrase	B1.1	MWU|time	remove:glue
 automatización	automation	noun	B1.1	tech	
@@ -2172,7 +2057,6 @@ bachillerato	high school diploma, baccalaureate	noun	B1.1		incorrect POS
 bacteria	bacteria	noun	B1.1		
 baja por enfermedad	sick leave	phrase	B1.1	MWU	
 basura	trash	noun	B1.1		
-beca	scholarship, grant	noun	B1.1		incorrect POS
 belleza	beauty	noun	B1.1		
 bello	beautiful	adj	B1.1	media	
 beneficio	benefit	noun	B1.1		
@@ -2198,7 +2082,6 @@ carta de presentación	cover letter	phrase	B1.1	MWU
 catedrático	professor	noun	B1.1		
 categorizar	to categorize	verb	B1.1	education	
 categoría	category	noun	B1.1	education	
-celos	jealousy	noun	B1.1		incorrect POS
 censurar	to censure	verb	B1.1	society	
 centrista	centrist	noun	B1.1		incorrect POS
 cerebro	brain	noun	B1.1	health	
@@ -2235,7 +2118,6 @@ comprometerse	to commit	verb	B1.1	reflexive|work
 compromiso	commitment	adj	B1.1	work	
 comunicación	communication	adj	B1.1	work	
 comunicado	statement	adj	B1.1		
-común	common	adj	B1.1		
 con base en	based on	phrase	B1.1	MWU	
 con motivo de	on the occasion of	phrase	B1.1	MWU	
 con respecto a	with respect to	phrase	B1.1	MWU	
@@ -2292,12 +2174,10 @@ crisis	crisis	noun	B1.1	society
 crueldad	cruelty	noun	B1.1	health	
 cruelmente	cruelly	adv	B1.1	health	
 crédito	credit	noun	B1.1		
-crítica	critique, criticism	adj	B1.1	education	
 crítico	critic	adj	B1.1		
 crónica	chronicle	adj	B1.1	media	
 cualificación	qualification	adj	B1.1		
 cualitativo	qualitative	adj	B1.1	tech	
-cualquiera	whatever, whichever	adj	B1.1		
 cuantitativo	quantitative	adj	B1.1	tech	
 cuanto	as much, many as	pron	B1.1	glue	add:glue
 cuestión social	social issue	phrase	B1.1	MWU|society	
@@ -2331,10 +2211,8 @@ democrático	democratic	adj	B1.1	society
 demostración	demonstration	noun	B1.1	education	
 demostrar	to demonstrate	verb	B1.1	education|tech	
 denunciar	to denounce	verb	B1.1	society	
-departamento	department	noun	B1.1		
 deportista profesional	professional athlete	phrase	B1.1	MWU	
 derecho	right, law	noun	B1.1	society	
-derechos	rights	noun	B1.1		
 dermatólogo	dermatologist	noun	B1.1		
 derrota	defeat	noun	B1.1		
 desarrollarse	to develop	verb	B1.1	reflexive|work	
@@ -2350,10 +2228,8 @@ desequilibrio	imbalance	adj	B1.1	health
 desesperanza	hopelessness	adj	B1.1		
 deshonestidad	dishonesty	adj	B1.1		
 desigual	unequal	adj	B1.1	society	
-desigualdad	inequality	adj	B1.1	society	
 desinformación	misinformation	noun	B1.1		
 despiadadamente	mercilessly	adv	B1.1	health	
-despido	dismissal	adj	B1.1		
 desprecio	contempt	noun	B1.1	health	
 destacarse	to stand out	verb	B1.1	reflexive|work	
 destreza	skill	noun	B1.1	work	
@@ -2415,7 +2291,6 @@ en efecto	indeed	phrase	B1.1	MWU
 en el ínterin	in the meantime	phrase	B1.1	MWU|time	
 en función de	depending on	phrase	B1.1	MWU	
 en primer lugar	first of all	connector	B1.1	MWU|discourse	remove:glue
-en realidad	actually	phrase	B1.1	MWU|discourse	remove:glue
 en relación con	in relation to	phrase	B1.1	MWU	
 en resumen	in summary	connector	B1.1	MWU|discourse	remove:glue
 en segundo lugar	secondly	connector	B1.1	MWU|discourse	remove:glue
@@ -2436,7 +2311,6 @@ enseñanza secundaria	secondary education	phrase	B1.1	MWU
 enteramente	entirely	adv	B1.1		
 entrenador	coach	noun	B1.1		
 entrenamiento	training	noun	B1.1		
-entretenimiento	entertainment	adj	B1.1		
 entrevista laboral	job interview	phrase	B1.1	MWU	
 entrevistado	interviewee	noun	B1.1		
 entrevistador	interviewer	noun	B1.1		
@@ -2451,7 +2325,6 @@ escáner	scanner	noun	B1.1		incorrect POS
 esencial	essential	adj	B1.1		
 esforzarse	to make an effort	verb	B1.1	reflexive|work	
 esfuerzo	effort	noun	B1.1	work	
-especialista	specialist	adj	B1.1		
 especialización	specialization	adj	B1.1	work	
 especializado	specialized	adj	B1.1	work	
 especializarse	to specialize	verb	B1.1	reflexive|work	
@@ -2497,7 +2370,6 @@ experimento	experiment	adj	B1.1	education|tech
 experto	expert	adj	B1.1	work	
 explicación	explanation	noun	B1.1	education	
 exponer	to display	verb	B1.1	media	
-exposición	presentation, exhibition	adj	B1.1	media	
 expresivo	expressive	adj	B1.1	media	
 expresión	expression	noun	B1.1	media	
 expresión artística	artistic expression	phrase	B1.1	MWU	
@@ -2521,7 +2393,6 @@ formación	training	noun	B1.1
 formación profesional	vocational training	phrase	B1.1	MWU	
 formarse	to train	verb	B1.1	reflexive|work	
 foro	forum	noun	B1.1		
-fotografía	photography	noun	B1.1	media	
 fracaso	failure	noun	B1.1		
 frustración	frustration	noun	B1.1		
 fuente	source	noun	B1.1		
@@ -2537,7 +2408,6 @@ genio	genius	noun	B1.1
 geología	geology	noun	B1.1	tech	
 ginecólogo	gynecologist	noun	B1.1		
 glóbulo	blood cell	noun	B1.1		
-gobierno	government	adj	B1.1	society	
 gozar	to enjoy	verb	B1.1	health	
 grado universitario	university degree	phrase	B1.1	MWU	
 gratitud	gratitude	noun	B1.1		
@@ -2568,7 +2438,6 @@ impaciencia	impatience	noun	B1.1
 imparcial	impartial	adj	B1.1	education	
 impuesto sobre la renta	income tax	phrase	B1.1	MWU	
 impulsar	to drive	verb	B1.1	society|work	
-incluido	included	adj	B1.1	society	
 inclusión	inclusion	noun	B1.1	society	
 incoherente	incoherent	noun	B1.1		incorrect POS
 inconsciencia	unconsciousness	adj	B1.1	health	
@@ -2594,7 +2463,6 @@ innovar	to innovate	verb	B1.1	tech|work
 insistir	to insist	verb	B1.1	work	
 inspiración	inspiration	noun	B1.1	health|media|work	
 inspirar	to inspire	verb	B1.1	media	
-instrumento	instrument	adj	B1.1	media	
 integrado	integrated	adj	B1.1	society	
 intelectual	intellectual	adj	B1.1	education	
 inteligencia artificial	artificial intelligence	phrase	B1.1	MWU|tech	
@@ -2621,7 +2489,6 @@ lector	reader	noun	B1.1
 legislación	legislation	noun	B1.1		
 lesión	injury	noun	B1.1		
 liberal	liberal	adj	B1.1	society	
-libre	free	adj	B1.1	society	
 licenciatura	bachelor's degree	noun	B1.1		
 llegar a	to manage to	phrase	B1.1	MWU	
 llevar + gerund	to have been doing	phrase	B1.1	MWU	
@@ -2637,11 +2504,8 @@ maldad	evil, malice	adj	B1.1	health
 manejo	handling	noun	B1.1	work	
 manifestación	demonstration, protest	noun	B1.1		
 manifestar	to demonstrate	verb	B1.1	society	
-manual	manual	adj	B1.1	tech	
 marginado	marginalized	adj	B1.1	society	
-matemáticas	mathematics	adj	B1.1	tech	
 matrícula	enrollment, tuition	adj	B1.1		
-medalla	medal	adj	B1.1		
 medio ambiente	environment	phrase	B1.1	MWU	
 medio de comunicación	media	phrase	B1.1	MWU	
 mediocre	mediocre	adj	B1.1	media	
@@ -2650,7 +2514,6 @@ melancolía	melancholy	noun	B1.1	health
 mente	mind	noun	B1.1	health	incorrect POS
 mentira	lie	noun	B1.1		
 merecer	to deserve	verb	B1.1	work	
-meta	goal	adj	B1.1	work	
 metodología	methodology	noun	B1.1	education	
 metodológico	methodological	adj	B1.1	education	
 metáfora	metaphor	noun	B1.1	education	
@@ -2665,26 +2528,20 @@ mostrar	to show	verb	B1.1	media
 motivación	motivation	noun	B1.1	work	
 movimiento	movement	adj	B1.1		
 muestra	sample, display	noun	B1.1	education|media	
-musical	musical	adj	B1.1	media	
 máquina	machine	noun	B1.1		
 máster	master's degree	noun	B1.1		incorrect POS
 método	method	noun	B1.1	education|work	
-música	music	adj	B1.1	media	
 nacionalidad	nationality	adj	B1.1		
 nación	nation	noun	B1.1	society	
 nanotecnología	nanotechnology	noun	B1.1	tech	
 negociación	negotiation	noun	B1.1	work	
 neutral	neutral	adj	B1.1	education	
-no obstante	nevertheless	phrase	B1.1	MWU|discourse|time	remove:glue
 noción	notion	noun	B1.1		
-normal	normal	adj	B1.1		
 nostalgia	nostalgia	adj	B1.1	health	
 notablemente	notably	adv	B1.1		
-noticia	news	noun	B1.1		
 novato	novice	adj	B1.1	work	
 objeción	objection	noun	B1.1	education	
 objetar	to object	verb	B1.1	education	
-objetivo	objective, goal	adj	B1.1	education|tech|work	
 obligaciones	obligations	noun	B1.1		
 obra de arte	artwork	phrase	B1.1	MWU	remove:glue
 obra literaria	literary work	phrase	B1.1	MWU|media	remove:glue
@@ -2721,7 +2578,6 @@ pensar	to think	verb	B1.1
 perdonar	to forgive	verb	B1.1	health	
 perfectamente	perfectly	adv	B1.1		
 pericia	expertise	noun	B1.1	work	
-periodista	journalist	adj	B1.1		
 permanentemente	permanently	adv	B1.1	time	
 permiso de maternidad	maternity, paternity leave	phrase	B1.1	MWU	
 perseverancia	perseverance	noun	B1.1	work	
@@ -2751,7 +2607,6 @@ prejuicio	prejudice	adj	B1.1	society
 prensa	press	noun	B1.1		
 prepararse	to prepare	verb	B1.1	reflexive|work	
 presencial	in-person	noun	B1.1		
-presentación	presentation	adj	B1.1	media	
 presentador	presenter, host	adj	B1.1		
 preservar	to preserve	verb	B1.1		
 presidente	president	adj	B1.1	society	
@@ -2794,7 +2649,6 @@ realidad aumentada	augmented reality	phrase	B1.1	MWU
 realidad virtual	virtual reality	phrase	B1.1	MWU	
 rebatir	to refute, to rebut	verb	B1.1	education	
 rebeldía	rebellion	noun	B1.1	health	
-receptor	receiver	adj	B1.1		
 recesión	recession	noun	B1.1		
 rechazar	to reject	verb	B1.1	society	
 reciclar	to recycle	verb	B1.1		
@@ -2815,8 +2669,6 @@ rehabilitación	rehabilitation	noun	B1.1
 reivindicar	to demand	verb	B1.1	society	
 relativamente	relatively	adv	B1.1		
 relato	story	noun	B1.1	media	
-rencor	grudge	noun	B1.1	health	
-rencor	to hold a grudge	verb	B1.1	health	
 repentinamente	suddenly	adv	B1.1	time	
 reportero	reporter	noun	B1.1		
 representar	to represent	verb	B1.1	media	
@@ -2833,7 +2685,6 @@ reunión virtual	virtual meeting	phrase	B1.1	MWU
 reutilizar	to reuse	verb	B1.1		
 revisar	to review	verb	B1.1	media	
 riguroso	rigorous	adj	B1.1	education|tech	
-riqueza	wealth	adj	B1.1	society	
 rivalizar	to rival	verb	B1.1	work	
 robotización	robotization	noun	B1.1	tech	
 robótica	robotics	adj	B1.1		
@@ -2911,26 +2762,22 @@ tolerante	tolerant	adj	B1.1	society
 tolerar	to tolerate	verb	B1.1	society	
 toma de decisiones	decision making	phrase	B1.1	MWU|work	
 tormenta	storm	noun	B1.1		
-torneo	tournament	adj	B1.1		
 trabajo duro	hard work	phrase	B1.1	MWU|work	remove:glue
 trabajo en grupo	group work	phrase	B1.1	MWU	remove:glue
 trabajo individual	individual work	phrase	B1.1	MWU	remove:glue
 tradicional	traditional	adj	B1.1	media|society	
 traición	betrayal	adj	B1.1		
 transplante	transplant	adj	B1.1		
-tratamiento	treatment	adj	B1.1		
 trayectoria	trajectory, path	noun	B1.1	work	
 tremendamente	tremendously	adv	B1.1		
 tribunal	court	noun	B1.1		
 trimestre	trimester, quarter	noun	B1.1		
-tristeza	sadness	noun	B1.1		
 triunfar	to succeed	verb	B1.1	work	
 tsunami	tsunami	noun	B1.1		
 tutor	tutor	noun	B1.1		
 táctica	tactic	adj	B1.1	work	
 técnica	technique	noun	B1.1	media|work	
 técnico	technical	adj	B1.1	tech	
-típico	typical	adj	B1.1		
 tóxico	toxic	adj	B1.1		
 ulteriormente	later	adv	B1.1	time	
 urna	ballot box	adj	B1.1		
@@ -2974,7 +2821,6 @@ adaptable	adaptable	adj	B1.2
 administración	administration	noun	B1.2	work	
 adquisición	acquisition	noun	B1.2		
 agresivo	aggressive	adj	B1.2		
-agudo	acute	noun	B1.2		
 ahorro	saving	noun	B1.2		
 alimentación	eating, nutrition	noun	B1.2		
 amenaza	threat	noun	B1.2		
@@ -2993,10 +2839,8 @@ autoestima	self-esteem	noun	B1.2	health
 autoimagen	self-image	noun	B1.2	health	
 autor	author	noun	B1.2		
 autoritarismo	authoritarianism	noun	B1.2		
-aventura	adventure	adj	B1.2		
 bailarín	dancer	noun	B1.2		
 balance	balance sheet	adj	B1.2		
-ballet	ballet	adj	B1.2		
 banda	band	noun	B1.2		
 beneficios sociales	social benefits	phrase	B1.2	MWU	
 bienes	goods, assets	noun	B1.2		
@@ -3053,13 +2897,10 @@ descanso	rest	noun	B1.2
 deseo	desire	noun	B1.2	health	
 desertificación	desertification	adj	B1.2		
 deshidratación	dehydration	noun	B1.2		
-dictadura	dictatorship	adj	B1.2	society	
 dieta	diet	noun	B1.2		
 digestión	digestion	noun	B1.2		
-dirección	direction, management	adj	B1.2	work	
 directo	live	adj	B1.2		
 dividendo	dividend	noun	B1.2		
-documental	documentary	adj	B1.2		
 débito	debit	noun	B1.2		
 economía	economy	noun	B1.2		
 edición	edition	noun	B1.2		
@@ -3072,7 +2913,6 @@ emprendedor	entrepreneur, entrepreneurial	adj	B1.2	work
 empático	empathetic	adj	B1.2		
 energía hidroeléctrica	hydroelectric energy	phrase	B1.2	MWU	
 enfermedad infecciosa	infectious disease	phrase	B1.2	MWU	
-ensayo	rehearsal, essay	adj	B1.2	media	
 equipaje de mano	hand luggage	phrase	B1.2	MWU	remove:glue
 escasez de agua	water scarcity	phrase	B1.2	MWU	
 escritor	writer	noun	B1.2		
@@ -3087,18 +2927,15 @@ expatriado	expatriate	noun	B1.2
 explotación	exploitation	noun	B1.2	society	
 exportación	export	noun	B1.2		
 extinción	extinction	noun	B1.2		
-extrovertido	extroverted	noun	B1.2		
 factura	invoice, bill	adj	B1.2		
 facturación	check-in	noun	B1.2		
 fantasía	fantasy	adj	B1.2		
-festival	festival	adj	B1.2		
 fibra	fiber	noun	B1.2		
 financiación	financing	noun	B1.2		
 flexible	flexible	adj	B1.2		
 fobia	phobia	noun	B1.2		
 fondo	fund	noun	B1.2		
 fusión	merger	noun	B1.2		
-galería	gallery	adj	B1.2	media	
 ganancias y pérdidas	profit and loss	phrase	B1.2	MWU	remove:glue
 gastos	expenses	noun	B1.2		
 gestión	management	adj	B1.2	work	
@@ -3132,12 +2969,9 @@ inmunidad	immunity	noun	B1.2
 insomnio	insomnia	noun	B1.2		
 inteligencia	intelligence	noun	B1.2		
 interés compuesto	compound interest	phrase	B1.2	MWU	
-introvertido	introverted	noun	B1.2		
 intuición	intuition	noun	B1.2		
-inversión	investment	adj	B1.2		
 invitado	guest	noun	B1.2		
 irracional	irrational	adj	B1.2		
-itinerario	itinerary	adj	B1.2		
 jet lag	jet lag	phrase	B1.2	MWU	
 lectura	reading	noun	B1.2		
 letra	lyrics	adj	B1.2		
@@ -3163,7 +2997,6 @@ misión	mission	noun	B1.2
 mochilero	backpacker	noun	B1.2		
 monopolio	monopoly	noun	B1.2		
 multinacional	multinational	adj	B1.2		
-músico	musician	adj	B1.2		
 narrador	narrator	noun	B1.2	media	
 nativo	native	adj	B1.2		
 necesidad	need, necessity	noun	B1.2	society	
@@ -3188,7 +3021,6 @@ patrocinio	sponsorship	noun	B1.2
 pensamiento	thought	noun	B1.2		
 pensión completa	full board	phrase	B1.2	MWU	
 percepción	perception	noun	B1.2		
-personalidad	personality	adj	B1.2	health	
 planificación	planning	noun	B1.2	work	
 poema	poem	noun	B1.2	media	
 poeta	poet	noun	B1.2		
@@ -3217,11 +3049,9 @@ reactivación	recovery, reactivation	noun	B1.2
 realista	realistic	adj	B1.2		
 reality show	reality show	phrase	B1.2	MWU	
 reciclaje	recycling	noun	B1.2		
-recital	recital	adj	B1.2		
 recuerdo	memory, recollection	noun	B1.2		
 recuperación	recovery	noun	B1.2		
 recursos humanos	human resources	phrase	B1.2	MWU	
-reembolso	refund	noun	B1.2		
 relajación	relaxation	noun	B1.2		
 rendimiento	performance, yield	noun	B1.2		
 reserva anticipada	advance booking	phrase	B1.2	MWU	
@@ -3233,10 +3063,7 @@ ritmo	rhythm	noun	B1.2	media
 rural	rural	adj	B1.2		
 rutina	routine	noun	B1.2		
 rígido	rigid	noun	B1.2		
-salud	health	adj	B1.2		
-seguro	insurance	noun	B1.2		
 sensación	sensation	noun	B1.2		
-sensible	sensitive	adj	B1.2		
 sistema de salud	health system	phrase	B1.2	MWU	
 sistema inmunitario	immune system	phrase	B1.2	MWU	
 sobrecargo	surcharge	noun	B1.2		
@@ -3257,7 +3084,6 @@ temporada alta	high season	phrase	B1.2	MWU
 temporada baja	low season	phrase	B1.2	MWU	
 temporal	seasonal	adj	B1.2		
 terapia alternativa	alternative therapy	phrase	B1.2	MWU	
-terminal	terminal	adj	B1.2		
 terrorismo	terrorism	noun	B1.2		
 todo incluido	all inclusive	phrase	B1.2	MWU	
 tortura	torture	noun	B1.2		
@@ -3290,7 +3116,6 @@ absolutismo	absolutism	noun	B2.1
 abstracción	abstraction	noun	B2.1		
 abstraer	to abstract	verb	B2.1		
 acaso	perhaps	noun	B2.1		incorrect POS
-accidente	accident	adj	B2.1		
 acelerar	to accelerate	verb	B2.1	work	
 acreditación	accreditation	noun	B2.1	tech	
 acreditar	to accredit	verb	B2.1	tech	
@@ -3400,7 +3225,6 @@ bolsa	stock exchange	noun	B2.1
 bono	bond	noun	B2.1		
 brainstorming	brainstorming	noun	B2.1	work	
 brecha tecnológica	technology gap	phrase	B2.1	MWU|tech	
-bueno	good	noun	B2.1		
 cabe la posibilidad de que	there's a possibility that	phrase	B2.1	MWU|comparison	
 calibración	calibration	adj	B2.1	tech	
 calibrar	to calibrate	verb	B2.1	tech	
@@ -3433,7 +3257,6 @@ ciertamente	certainly	adv	B2.1
 cinemática	kinematics	adj	B2.1		
 ciudadanía digital	digital citizenship	phrase	B2.1	MWU|tech	
 civilización	civilization	noun	B2.1		
-cliente	client	adj	B2.1		
 clima organizacional	organizational climate	phrase	B2.1	MWU|work	remove:glue
 climatología	climatology	noun	B2.1	tech	
 climax	climax	noun	B2.1	health	
@@ -3463,7 +3286,6 @@ conceptualizar	to conceptualize	verb	B2.1	education|work
 concluyente	conclusive	adj	B2.1		
 concretar	to make concrete	verb	B2.1	work	
 confiabilidad	reliability	noun	B2.1	education	
-conflicto	conflict	adj	B2.1	society	
 conforme	as, according to	conj	B2.1		remove:glue
 congruencia	congruence	noun	B2.1	education|health	
 conocimiento organizacional	organizational knowledge	phrase	B2.1	MWU|time|work	remove:glue
@@ -3490,7 +3312,6 @@ contundente	compelling	adj	B2.1
 convergencia tecnológica	technological convergence	phrase	B2.1	MWU|tech	
 coordinar	to coordinate	verb	B2.1	work	
 corporación	corporation	noun	B2.1		
-correcto	right, correct	noun	B2.1		
 correlación	correlation	noun	B2.1	education	
 correspondencia	correspondence	noun	B2.1	health	
 corroboración	corroboration	noun	B2.1	education	
@@ -3719,12 +3540,10 @@ fundamento teórico	theoretical foundation	phrase	B2.1	MWU|education	remove:glue
 fusionar	to merge	verb	B2.1	tech	
 futuro	future	noun	B2.1		
 fármaco	drug, pharmaceutical	adj	B2.1		
-física	physics	adj	B2.1	tech	
 física cuántica	quantum physics	phrase	B2.1	MWU|tech	
 física de partículas	particle physics	phrase	B2.1	MWU	
 galaxia	galaxy	adj	B2.1		
 ganancia	profit	noun	B2.1		
-garantía	guarantee, collateral	verb	B2.1	time	incorrect POS
 gasto	spending	noun	B2.1		
 gen	gene	noun	B2.1		
 generación de ideas	idea generation	phrase	B2.1	MWU|work	
@@ -3778,7 +3597,6 @@ inclusión digital	digital inclusion	phrase	B2.1	MWU|tech
 incompatibilidad	incompatibility	noun	B2.1	health	
 incontrovertible	incontrovertible	adj	B2.1		
 incorporar	to incorporate	verb	B2.1	tech	
-incorrecto	wrong, incorrect	noun	B2.1		
 incuestionable	unquestionable	adj	B2.1		
 indagar	to investigate	verb	B2.1	education|tech	
 independencia	independence	noun	B2.1		
@@ -3857,7 +3675,6 @@ lluvia de ideas	brainstorming	phrase	B2.1	MWU|work	remove:glue
 límite	limit	noun	B2.1		
 macroeconomía	macroeconomics	adj	B2.1		
 madurez organizacional	organizational maturity	phrase	B2.1	MWU|work	remove:glue
-malo	bad	noun	B2.1		
 malware	malware	adj	B2.1		
 manifiesto	manifest	adj	B2.1		
 marco conceptual	conceptual framework	phrase	B2.1	MWU|education	remove:glue
@@ -3871,9 +3688,7 @@ materializar	to materialize	verb	B2.1	work
 matizar	to nuance	verb	B2.1	education	
 maximizar	to maximize	verb	B2.1	work	
 mayoría	majority	noun	B2.1		
-mecánica	mechanics	adj	B2.1		
 mecánica cuántica	quantum mechanics	phrase	B2.1	MWU|tech	
-medicina	medicine	adj	B2.1	tech	
 medición	measurement	adj	B2.1		
 medieval	medieval	adj	B2.1		
 mejora continua	continuous improvement	phrase	B2.1	MWU|work	
@@ -3987,7 +3802,6 @@ poder ejecutivo	executive power	phrase	B2.1	MWU
 poder judicial	judicial power	phrase	B2.1	MWU	
 poder legislativo	legislative power	phrase	B2.1	MWU	
 polarización	polarization	noun	B2.1		
-política	politics	adj	B2.1	society	
 política fiscal	fiscal policy	phrase	B2.1	MWU	
 política monetaria	monetary policy	phrase	B2.1	MWU	
 ponderar	to weigh	verb	B2.1	education	
@@ -4013,7 +3827,6 @@ postulado	postulate	noun	B2.1	time	incorrect POS
 postular	to postulate	verb	B2.1	education|tech|time	
 potenciar	to enhance	verb	B2.1	work	
 pragmatismo	pragmatism	noun	B2.1		
-precio	price	adj	B2.1		
 precipitación	precipitation	noun	B2.1		
 precisar	to specify	verb	B2.1	education	
 precisión	precision	noun	B2.1	education	
@@ -4087,7 +3900,6 @@ rentabilidad	profitability	noun	B2.1	work
 reorganizar	to reorganize	verb	B2.1	work	
 replicar	to replicate	verb	B2.1	tech	
 reposo	rest	noun	B2.1		
-representación	representation	adj	B2.1	media	
 representativo	representative	adj	B2.1		
 reproducir	to reproduce	verb	B2.1	tech	
 resiliencia	resilience	noun	B2.1	health	
@@ -4317,7 +4129,6 @@ autoría	authorship	noun	B2.2
 ayuno	fasting	noun	B2.2		
 bautismo	baptism	noun	B2.2		
 bendición	blessing	adj	B2.2		
-bien	good, asset	noun	B2.2		
 bien consumible	consumable good	phrase	B2.2	MWU	
 bien divisible	divisible good	phrase	B2.2	MWU	
 bien fungible	fungible good	phrase	B2.2	MWU	
@@ -4458,7 +4269,6 @@ dialecto	dialect	adj	B2.2
 dialectología	dialectology	adj	B2.2		
 dialogismo	dialogism	adj	B2.2		
 diario	diary, journal	adj	B2.2	media	
-diccionario	dictionary	adj	B2.2		
 dictamen	expert opinion	noun	B2.2		
 digresión	digression	noun	B2.2		
 dilogía	dilogy	noun	B2.2		
@@ -4467,7 +4277,6 @@ disfemismo	dysphemism	noun	B2.2
 diálogo	dialogue	adj	B2.2		
 diéresis	diaeresis	noun	B2.2		
 doctrina	doctrine	noun	B2.2		
-documento	document	adj	B2.2		
 dolo	malice, fraud	adj	B2.2		
 domicilio	domicile	adj	B2.2		
 dominio público	public domain	phrase	B2.2	MWU	
@@ -4896,14 +4705,12 @@ revelación	revelation	noun	B2.2	health
 rima	rhyme	noun	B2.2		
 rito	rite	noun	B2.2		
 ritual	ritual	adj	B2.2		
-romance	ballad	adj	B2.2		
 régimen	regime	noun	B2.2		
 sacerdocio	priesthood	noun	B2.2		
 sacramento	sacrament	adj	B2.2		
 sacrificio	sacrifice	adj	B2.2	work	
 sacrilegio	sacrilege	noun	B2.2		
 saga	saga	noun	B2.2		
-salario	salary	adj	B2.2		
 salvación	salvation	adj	B2.2		
 sanción	sanction	noun	B2.2		
 santidad	holiness	noun	B2.2		
@@ -5036,7 +4843,6 @@ verso blanco	blank verse	phrase	B2.2	MWU
 verso libre	free verse	phrase	B2.2	MWU	
 vigilia	vigil	noun	B2.2		
 villancico	carol	noun	B2.2		
-vista	hearing, trial	adj	B2.2		
 vocabulario	vocabulary	adj	B2.2		
 vocal	vowel	noun	B2.2		
 vocativo	vocative	adj	B2.2		
@@ -5050,3 +4856,100 @@ zeugma	zeugma	noun	B2.2
 égloga	eclogue	noun	B2.2		
 épica	epic	adj	B2.2		
 órgano social	corporate body	phrase	B2.2	MWU	remove:glue
+accidente	accident	noun	A2.2		
+agudo	acute	adj	A2.1	health	
+alergia	allergy	noun	A2.2	health	
+anuncio	advertisement	noun	A2.2	media	incorrect POS
+aplicación	application; application, app	noun	A2.1	tech|work	incorrect POS
+artículo	article	noun	A2.2	media	incorrect POS
+ascenso	promotion; promotion, advancement	noun	A2.2	work	incorrect POS
+así que	so; so, therefore	connector	A1.2	MWU|comparison|discourse|glue	remove:glue
+aventura	adventure	noun	A2.2	media	
+ballet	ballet	noun	A2.1	media	
+beca	scholarship; scholarship, grant	noun	A2.1	education	incorrect POS
+bien	good, asset; well, fine	adv	A1.1	society	
+bueno	good	adj	A1.1	education|food	
+café	coffee, brown; coffee, café	adj	A1.1	colors|food	
+celos	jealousy	noun	A2.1		incorrect POS
+cliente	client; client, customer	noun	A2.1	education|food|work	
+común	common	noun	A1.2		
+conflicto	conflict	noun	A2.2	society	
+correcto	correct; right, correct	adj	A1.2		
+crítica	critique, criticism; review, criticism	noun	A2.2	education|travel	
+cualquiera	any; whatever, whichever	noun	A1.2		
+cuando	when	adv	A1.1	glue	incorrect POS, add:glue
+departamento	apartment; department	noun	A1.1	home	incorrect POS
+derechos	rights	noun	A2.2		incorrect POS
+desigualdad	inequality	noun	A2.2	society	
+despido	dismissal; dismissal, firing	noun	A2.2		
+diccionario	dictionary	noun	A2.1	education	
+dictadura	dictatorship	noun	A2.2	society	
+dirección	address; direction, management	noun	A1.1	work	
+documental	documentary	noun	A2.2	media|work	
+documento	document	noun	A2.1	tech|work	
+en realidad	actually	connector	A2.2	MWU|discourse	remove:glue
+ensayo	essay; rehearsal, essay	noun	A2.1	education|media	
+entretenimiento	entertainment	noun	A2.1	media	
+español	Spanish; Spanish - language, Spanish	pron	A1.1	countries|education	
+especialista	specialist	noun	A2.1	health	
+exposición	exhibition; presentation, exhibition	noun	A1.2	media	
+extrovertido	extroverted; outgoing	adj	A2.1		
+festival	festival	noun	A2.1	media	
+fotografía	photography	noun	A1.2	media	incorrect POS
+física	physics	noun	A2.1	education|tech	
+galería	gallery	noun	A2.1	media	
+garantía	guarantee, collateral; warranty, guarantee	verb	A2.2	finance|time	incorrect POS
+gobierno	government	noun	A2.2	society|work	
+incluido	included	noun	A2.1	society|travel	
+incorrecto	incorrect; wrong, incorrect	adj	A1.2		
+inglés	English; English - language, English	pron	A1.1	countries|education	
+instrumento	instrument	noun	A2.1	media	
+introvertido	introverted	adj	A2.1		
+inversión	investment	noun	A2.2	finance	
+itinerario	itinerary	noun	A2.1	travel	
+libre	free; free, available	noun	A2.1	society|travel	
+mal	badly, bad, poorly; to make a good, bad impression, badly	adj	A1.1	society	incorrect POS
+malo	bad	adj	A1.1	education|food	
+manual	manual	noun	A2.2	tech	
+matemáticas	mathematics	noun	A2.1	education|tech	
+mañana	morning; tomorrow	adv	A1.1	time	
+mecánica	mechanic; mechanics	noun	A2.2		
+medalla	medal	noun	A2.1	sports	
+medicina	medicine	noun	A1.2	health|tech	
+meta	goal; goal, finish line	noun	A2.1	sports|work	
+musical	musical	noun	A2.1	media	
+música	music	noun	A1.1	education|media	
+músico	musician	noun	A2.1	media	
+naranja	orange	adj	A1.1	colors|food	
+no obstante	nevertheless	connector	A2.2	MWU|discourse|time	remove:glue
+normal	normal	noun	A1.2		
+noticia	news	noun	A2.1	media	incorrect POS
+objetivo	objective; objective, goal	noun	A2.1	education|tech|work	
+ocupado	busy; occupied	noun	A1.2	travel	
+periodista	journalist	noun	A2.2		
+personalidad	personality	noun	A2.1	health	
+política	politics; politics, policy	noun	A2.2	society	
+precio	price	noun	A1.2	food	
+presentación	presentation	noun	A2.1	education|media|work	
+receptor	receiver	noun	A2.2		
+recital	recital	noun	A2.1	media	
+reembolso	refund	adj	A2.2	finance	
+rencor	grudge; to hold a grudge	noun	B1.1	health	
+representación	performance; representation	noun	A2.1	media	
+riqueza	wealth	noun	A2.2	society	
+romance	ballad; romance	noun	A2.1	media	
+rápido	fast, quick; quickly	adj	A1.1	food|tech|time|travel	
+salario	salary	noun	A2.2	work	
+salud	health	noun	A1.1	health	
+seguro	insurance; sure, confident	adj	A1.2		
+sensible	sensitive	noun	A2.2		
+sopa	soup	noun	A1.1	food	incorrect POS
+supermercado	supermarket	adv	A1.1		
+tampoco	neither, not either	adv	A1.2	discourse|glue	incorrect POS, add:glue
+terminal	terminal	noun	A2.1	travel	
+torneo	tournament	noun	A2.1	sports	
+trabajador	hardworking; worker	adj	A2.1	work	
+tratamiento	treatment	noun	A2.1	health	
+tristeza	sadness	noun	A2.1		incorrect POS
+típico	typical	noun	A1.2		
+vista	hearing, trial; view	noun	A2.1	travel	
