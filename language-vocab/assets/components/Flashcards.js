@@ -231,13 +231,23 @@ export function mountFlashcards(container) {
   window.addEventListener('keydown', handleKey);
 
   // Cleanup when leaving view
+  let cleaned = false;
   function cleanup() {
+    if (cleaned) return;
+    cleaned = true;
     window.removeEventListener('keydown', handleKey);
     card.removeEventListener('click', onCardClick);
+    if (bar.parentNode) {
+      bar.remove();
+    }
+    document.body.classList.remove('pad-bottom');
   }
-  window.addEventListener('hashchange', cleanup, { once: true });
 
   container.appendChild(card);
   render();
-  return subscribe(() => render());
+  const unsubscribe = subscribe(() => render());
+  return () => {
+    cleanup();
+    unsubscribe();
+  };
 }

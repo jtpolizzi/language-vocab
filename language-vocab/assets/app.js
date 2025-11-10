@@ -10,12 +10,17 @@ const view = document.getElementById('view');
 mountTopBar(topbar);
 mountSettings();
 
+let cleanupView = () => {};
+
 function renderRoute() {
+    cleanupView();
+    cleanupView = () => {};
+
     const hash = location.hash || '#/list';
     if (hash.startsWith('#/cards')) {
-        mountFlashcards(view);
+        cleanupView = mountFlashcards(view) || (() => {});
     } else {
-        mountWordList(view);
+        cleanupView = mountWordList(view) || (() => {});
     }
 }
 window.addEventListener('hashchange', renderRoute);

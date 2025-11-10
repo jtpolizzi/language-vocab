@@ -4,9 +4,14 @@ import { applyFilters, Prog, sortWords, State, subscribe } from '../state.js';
 export function mountWordList(container) {
   container.innerHTML = '';
 
+  // Defensive cleanup in case the previous flashcard view didn't teardown
+  document.querySelectorAll('.bottombar').forEach((el) => el.remove());
+  document.body.classList.remove('pad-bottom');
+
   const table = document.createElement('table');
   const thead = document.createElement('thead');
   const tbody = document.createElement('tbody');
+  let cleaned = false;
 
   const cols = [
     { key: 'star', label: '★' },
@@ -112,7 +117,14 @@ export function mountWordList(container) {
   }
 
   render();
-  return subscribe(render);
+  const unsubscribe = subscribe(render);
+  return () => {
+    if (cleaned) return;
+    cleaned = true;
+    window.removeEventListener('resize', setStickyOffset);
+    window.removeEventListener('hashchange', setStickyOffset);
+    unsubscribe();
+  };
 }
 
 /* --- cells --- */
