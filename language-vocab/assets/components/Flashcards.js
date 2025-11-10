@@ -36,11 +36,30 @@ export function mountFlashcards(container) {
   function computeView() {
     const filtered = applyFilters(State.words);
     const sorted = sortWords(filtered);
+
     if (State.order && State.order.length) {
       const byId = new Map(sorted.map(w => [w.id, w]));
-      const inOrder = State.order.map(id => byId.get(id)).filter(Boolean);
-      if (inOrder.length) return inOrder;
+      const ordered = [];
+      const seen = new Set();
+      State.order.forEach(id => {
+        if (seen.has(id)) return;
+        const hit = byId.get(id);
+        if (hit) {
+          ordered.push(hit);
+          seen.add(id);
+        }
+      });
+      if (ordered.length) {
+        if (ordered.length < sorted.length) {
+          sorted.forEach(w => {
+            if (seen.has(w.id)) return;
+            ordered.push(w);
+          });
+        }
+        return ordered;
+      }
     }
+
     return sorted;
   }
 

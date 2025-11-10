@@ -87,15 +87,30 @@ export function mountWordList(container) {
 
   function render() {
     const filtered = applyFilters(State.words);
+    let rows = sortWords(filtered);
 
-    // Respect State.order if present so Shuffle affects Word List
-    let rows;
+    // Respect State.order for Shuffle but never drop matching rows
     if (State.order && State.order.length) {
-      const byId = new Map(filtered.map(w => [w.id, w]));
-      rows = State.order.map(id => byId.get(id)).filter(Boolean);
-      if (!rows.length) rows = sortWords(filtered);
-    } else {
-      rows = sortWords(filtered);
+      const byId = new Map(rows.map(w => [w.id, w]));
+      const ordered = [];
+      const seen = new Set();
+      State.order.forEach(id => {
+        if (seen.has(id)) return;
+        const hit = byId.get(id);
+        if (hit) {
+          ordered.push(hit);
+          seen.add(id);
+        }
+      });
+      if (ordered.length) {
+        if (ordered.length < rows.length) {
+          rows.forEach(w => {
+            if (seen.has(w.id)) return;
+            ordered.push(w);
+          });
+        }
+        rows = ordered;
+      }
     }
 
     tbody.innerHTML = '';
