@@ -1,4 +1,40 @@
-# Plan overview (v2.4)
+# Vocab Mini-App Notes (v2.7)
 
+## Snapshot
+- SPA written in vanilla HTML/CSS/JS; routes driven via hash (`#/list`, `#/cards`, `#/match`, `#/choice`).
+- Vocabulary loaded from `data/words.tsv` (preferred) or `data/words.json`, then normalized through `mapRaw()` into `State.words`.
+- Global `State` persists filters, stars, weights, and UI prefs in `localStorage`; `subscribe()` notifies mounted views.
+- Components live in `assets/components/` and mount/unmount via `mount*` helpers; shared top bar + settings modal stay resident.
 
+## Current Views
+### Word List
+- Sortable table with sticky header and columns for ⭐, weight, Spanish, English, POS, CEFR, Tags.
+- Filter/search chips in the shared top bar (Only★, Shuffle, Filters popover, Search, Settings).
+- Filters offer multi-select for POS/CEFR/Tags/Weights plus quick clear; result count shown live.
 
+### Flashcards
+- Large center card plus persistent bottom nav (← counter →) with keyboard + touch parity.
+- Click/tap center to flip; left/right tap zones or horizontal swipes move prev/next.
+- Keyboard: ←/→ prev/next, Space/Enter/↑/↓ flip, `s` toggles star, digits `0`-`4` set weight.
+- Top-right overlays expose ⭐ toggle, weight chips, and optional translation line tied to settings.
+
+### Match & Multiple Choice
+- Word Match pairs Spanish ↔ English tiles with progress tracking.
+- Multiple Choice generates lightweight quizzes pulling from the filtered word pool.
+
+## Data & Persistence
+- `State` fields: `words`, `filters`, `order` (shuffle), `ui` prefs, plus derived helpers in `state.js`.
+- User progress lives under the `Prog` namespace (stars + weights) and syncs across all views.
+- Filters and shuffle order survive reloads; resetting happens via Settings → “Reset filters & order”.
+
+## Recent Additions (v2.5 → v2.7)
+1. Unified top bar + settings modal shared by every view.
+2. Flashcard refinements: guarded controls, translation toggle, improved touch targets, keyboard helpers.
+3. New learning modes (Match, Multiple Choice) alongside the list/cards staples.
+4. TSV-first loading pipeline with JSON fallback plus better tag formatting.
+
+## Next Targets / Ideas
+1. Progress export/import (JSON) for stars + weights.
+2. Optional TTS button + auto-speak toggle on flashcards.
+3. Enhanced filter UX (clear-all, select-all weights) and Edge sticky-header workaround.
+4. Hosting story (GitHub Pages) and/or packaging as a simple PWA.

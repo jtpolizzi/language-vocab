@@ -12,6 +12,19 @@ export function mountFlashcards(container) {
   card.appendChild(topr);
   card.appendChild(foot);
 
+  // progress bar (reuse multiple-choice styles)
+  const progress = document.createElement('div');
+  progress.className = 'choice-progress flash-progress';
+  const progressLabel = document.createElement('span');
+  progressLabel.className = 'choice-progress-label';
+  progressLabel.textContent = 'Loading...';
+  const progressBar = document.createElement('div');
+  progressBar.className = 'choice-progress-bar';
+  const progressFill = document.createElement('div');
+  progressFill.className = 'choice-progress-fill';
+  progressBar.appendChild(progressFill);
+  progress.append(progressLabel, progressBar);
+
   // bottom bar
   const bar = document.createElement('div');
   bar.className = 'bottombar';
@@ -21,16 +34,14 @@ export function mountFlashcards(container) {
   const next = document.createElement('button');
   next.className = 'bigbtn';
   next.textContent = '→';
-  const count = document.createElement('span');
-  count.className = 'counter';
-  count.textContent = '1/1';
-  bar.append(prev, count, next);
+  bar.append(prev, next);
   document.body.appendChild(bar);
   document.body.classList.add('pad-bottom');
 
   let showFront = true;
   let index = 0;
   let view = [];
+  let currentWord = null;
   let suppressNextCardClick = false;  // <-- hard guard
 
   function computeView() {
@@ -84,9 +95,10 @@ export function mountFlashcards(container) {
     if (index >= view.length) index = Math.max(0, view.length - 1);
 
     const w = view[index];
+    currentWord = w || null;
     if (!w) {
       card.textContent = 'No cards match your filters.';
-      count.textContent = `0 / 0`;
+      updateProgress(0, 0);
       return;
     }
 
@@ -165,8 +177,18 @@ export function mountFlashcards(container) {
       ${State.ui.showTranslation ? `<div class="translation">${w.en || ''}</div>` : ''}
     `;
 
-    // counter
-    count.textContent = `${view.length ? index + 1 : 0} / ${view.length}`;
+    updateProgress(index + 1, view.length);
+  }
+
+  function updateProgress(current, total) {
+    if (!total) {
+      progressLabel.textContent = '0 / 0';
+      progressFill.style.width = '0%';
+      return;
+    }
+    progressLabel.textContent = `Card ${current} / ${total}`;
+    const pct = Math.min(100, Math.max(0, (current / total) * 100));
+    progressFill.style.width = `${pct}%`;
   }
 
   function prevCard() {
@@ -188,6 +210,34 @@ export function mountFlashcards(container) {
     render();
   }
 
+  function handleTapZone(clientX, clientY) {
+    const rect = card.getBoundingClientRect();
+    if (!rect.width || !rect.height) return;
+    const relX = Math.min(1, Math.max(0, (clientX - rect.left) / rect.width));
+    const relY = Math.min(1, Math.max(0, (clientY - rect.top) / rect.height));
+    if (relY >= 0.75) {
+      if (relX < 0.5) {
+        prevCard();
+      } else {
+        nextCard();
+      }
+    } else {
+      flipCard();
+    }
+  }
+
+  function toggleStarForCurrent() {
+    if (!currentWord) return;
+    Prog.setStar(currentWord.id, !Prog.star(currentWord.id));
+    render();
+  }
+
+  function setWeightForCurrent(weight) {
+    if (!currentWord) return;
+    Prog.setWeight(currentWord.id, weight);
+    render();
+  }
+
   // Buttons
   prev.onclick = prevCard;
   next.onclick = nextCard;
@@ -199,7 +249,7 @@ export function mountFlashcards(container) {
       return;
     }
     if (e.target.closest('.topright')) return;
-    flipCard();
+    handleTapZone(e.clientX, e.clientY);
   }
   card.addEventListener('click', onCardClick);
 
@@ -218,15 +268,36 @@ export function mountFlashcards(container) {
     { passive: true }
   );
   card.addEventListener('touchend', (e) => {
-    if (touchStartedInsideTopr) return;
-    const dx = Math.abs(
-      e.changedTouches[0].clientX - (parseFloat(card.dataset.tX) || 0)
-    );
-    const dy = Math.abs(
-      e.changedTouches[0].clientY - (parseFloat(card.dataset.tY) || 0)
-    );
-    const dt = Date.now() - (parseInt(card.dataset.tT) || 0);
-    if (dx < 10 && dy < 10 && dt < 300) flipCard();
+    if (touchStartedInsideTopr) {
+      touchStartedInsideTopr = false;
+      return;
+    }
+    const startX = parseFloat(card.dataset.tX) || 0;
+    const startY = parseFloat(card.dataset.tY) || 0;
+    const startT = parseInt(card.dataset.tT, 10) || 0;
+    const endTouch = e.changedTouches[0];
+    const dx = endTouch.clientX - startX;
+    const dy = endTouch.clientY - startY;
+    const adx = Math.abs(dx);
+    const ady = Math.abs(dy);
+    const dt = Date.now() - startT;
+
+    const swipeThreshold = 60;
+    if (adx > ady && adx >= swipeThreshold) {
+      if (dx > 0) {
+        prevCard();
+      } else {
+        nextCard();
+      }
+      return;
+    }
+
+    const tapMove = 35;
+    const tapTime = 450;
+    if (adx <= tapMove && ady <= tapMove && dt <= tapTime) {
+      handleTapZone(endTouch.clientX, endTouch.clientY);
+    }
+    touchStartedInsideTopr = false;
   });
 
   // Keyboard navigation (ignore when a control has focus)
@@ -242,9 +313,20 @@ export function mountFlashcards(container) {
     } else if (e.key === 'ArrowRight') {
       e.preventDefault();
       nextCard();
-    } else if (e.key === ' ' || e.key === 'Enter') {
+    } else if (
+      e.key === ' ' ||
+      e.key === 'Enter' ||
+      e.key === 'ArrowUp' ||
+      e.key === 'ArrowDown'
+    ) {
       e.preventDefault();
       flipCard();
+    } else if (e.key === 's' || e.key === 'S') {
+      e.preventDefault();
+      toggleStarForCurrent();
+    } else if (/^[0-4]$/.test(e.key)) {
+      e.preventDefault();
+      setWeightForCurrent(Number(e.key));
     }
   }
   window.addEventListener('keydown', handleKey);
@@ -256,12 +338,14 @@ export function mountFlashcards(container) {
     cleaned = true;
     window.removeEventListener('keydown', handleKey);
     card.removeEventListener('click', onCardClick);
+    container.innerHTML = '';
     if (bar.parentNode) {
       bar.remove();
     }
     document.body.classList.remove('pad-bottom');
   }
 
+  container.appendChild(progress);
   container.appendChild(card);
   render();
   const unsubscribe = subscribe(() => render());

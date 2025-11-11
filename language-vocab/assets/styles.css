@@ -412,13 +412,13 @@ thead th[data-key="tags"] {
 }
 
 .bigbtn {
-  min-width: 80px;
-  padding: 10px 16px;
-  border-radius: 12px;
+  min-width: 110px;
+  padding: 14px 22px;
+  border-radius: 14px;
   border: 1px solid #56608a;
   background: #1f2440;
   color: var(--fg);
-  font: 600 15px system-ui;
+  font: 600 17px system-ui;
   cursor: pointer;
 }
 
@@ -717,6 +717,16 @@ thead th[data-key="tags"] {
   display: flex;
   flex-direction: column;
   gap: 6px;
+}
+
+.flash-progress {
+  max-width: 520px;
+  margin: 0 auto 18px;
+}
+
+.flash-progress .choice-progress-label {
+  text-align: center;
+  font-size: 14px;
 }
 
 .choice-progress-label {
