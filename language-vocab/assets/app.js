@@ -2,6 +2,7 @@ import { mountFlashcards } from './components/Flashcards.js';
 import { mountSettings } from './components/SettingsModal.js';
 import { mountTopBar } from './components/TopBar.js';
 import { mountWordList } from './components/WordList.js';
+import { mountWordMatch } from './components/WordMatch.js';
 import { State, mapRaw } from './state.js';
 
 const topbar = document.getElementById('topbar');
@@ -17,13 +18,25 @@ function renderRoute() {
     cleanupView = () => {};
 
     const hash = location.hash || '#/list';
+    setActiveNav(hash);
     if (hash.startsWith('#/cards')) {
         cleanupView = mountFlashcards(view) || (() => {});
+    } else if (hash.startsWith('#/match')) {
+        cleanupView = mountWordMatch(view) || (() => {});
     } else {
         cleanupView = mountWordList(view) || (() => {});
     }
 }
 window.addEventListener('hashchange', renderRoute);
+
+function setActiveNav(hash) {
+    const links = document.querySelectorAll('.app-header nav a');
+    links.forEach((link) => {
+        const target = link.getAttribute('href') || '';
+        const isActive = target && hash.startsWith(target);
+        link.classList.toggle('active', !!isActive);
+    });
+}
 
 // --- TSV loader (preferred) with JSON fallback ---
 function parseTSV(text) {
