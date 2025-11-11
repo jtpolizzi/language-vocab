@@ -1,4 +1,4 @@
-# Vocab Mini-App Notes (v2.8)
+# Vocab Mini-App Notes (v2.9)
 
 ## Snapshot
 - SPA written in vanilla HTML/CSS/JS; routes driven via hash (`#/list`, `#/cards`, `#/match`, `#/choice`).
@@ -27,7 +27,7 @@
 - User progress lives under the `Prog` namespace (stars + weights) and syncs across all views.
 - Filters and shuffle order survive reloads; resetting happens via Settings → “Reset filters & order”.
 
-## Recent Additions (v2.5 → v2.8)
+## Recent Additions (v2.5 → v2.9)
 1. Unified top bar + settings modal shared by every view.
 2. Flashcard refinements: guarded controls, translation toggle, improved touch targets, keyboard helpers.
 3. New learning modes (Match, Multiple Choice) alongside the list/cards staples.

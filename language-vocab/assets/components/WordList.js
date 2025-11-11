@@ -72,7 +72,7 @@ export function mountWordList(container) {
     if (e.target.closest('button')) return;
     row.focus();
   });
-  tbody.addEventListener('keydown', handleRowKeydown);
+  tbody.addEventListener('keydown', handleRowKeydown, true);
 
   // sticky offset (under app header)
   function setStickyOffset() {
@@ -137,6 +137,7 @@ export function mountWordList(container) {
 
     tbody.innerHTML = '';
     let currentWord = null;
+    let focusedRow = null;
     for (const w of rows) {
       const tr = document.createElement('tr');
       tr.tabIndex = 0;
@@ -153,6 +154,7 @@ export function mountWordList(container) {
         tr.classList.add('is-current');
         tr.setAttribute('aria-current', 'true');
         currentWord = w;
+        focusedRow = tr;
       } else {
         tr.removeAttribute('aria-current');
       }
@@ -164,6 +166,13 @@ export function mountWordList(container) {
         }
       });
       tbody.appendChild(tr);
+    }
+
+    if (focusedRow) {
+      requestAnimationFrame(() => {
+        focusedRow.focus({ preventScroll: true });
+        focusedRow.scrollIntoView({ block: 'center', behavior: 'smooth' });
+      });
     }
 
     if (currentWord) {
@@ -296,31 +305,43 @@ function applyColumnVisibility(table) {
 
 function handleRowKeydown(e) {
   const target = e.target;
-  if (target.closest('button')) return;
   const row = target.closest('tr');
   if (!row) return;
   const wordId = row.dataset.wordId;
   if (!wordId) return;
+  if (target.closest('button')) {
+    return;
+  }
 
   if (e.key === 'ArrowDown') {
     e.preventDefault();
     const next = row.nextElementSibling;
-    if (next) next.focus();
+    if (next) {
+      next.focus();
+      setCurrentWordId(next.dataset.wordId || '');
+      next.scrollIntoView({ block: 'nearest' });
+    }
     return;
   }
   if (e.key === 'ArrowUp') {
     e.preventDefault();
     const prev = row.previousElementSibling;
-    if (prev) prev.focus();
+    if (prev) {
+      prev.focus();
+      setCurrentWordId(prev.dataset.wordId || '');
+      prev.scrollIntoView({ block: 'nearest' });
+    }
     return;
   }
   if (e.key === 's' || e.key === 'S') {
     e.preventDefault();
     Prog.setStar(wordId, !Prog.star(wordId));
+    setCurrentWordId(wordId);
     return;
   }
   if (/^[0-4]$/.test(e.key)) {
     e.preventDefault();
     Prog.setWeight(wordId, Number(e.key));
+    setCurrentWordId(wordId);
   }
 }

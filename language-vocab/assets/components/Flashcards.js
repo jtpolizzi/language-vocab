@@ -347,6 +347,7 @@ export function mountFlashcards(container) {
       const tapTime = 450;
       if (adx <= tapMove && ady <= tapMove && dt <= tapTime) {
         handleTapZone(e.clientX, e.clientY);
+        suppressNextCardClick = true;
       }
       if (card.releasePointerCapture) {
         try { card.releasePointerCapture(e.pointerId); } catch {}
@@ -406,6 +407,7 @@ export function mountFlashcards(container) {
       const tapTime = 450;
       if (adx <= tapMove && ady <= tapMove && dt <= tapTime) {
         handleTapZone(endTouch.clientX, endTouch.clientY);
+        suppressNextCardClick = true;
       }
     });
   }
