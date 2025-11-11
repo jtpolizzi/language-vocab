@@ -19,6 +19,7 @@ const DEFAULT_FILTERS = {
 };
 
 const DEFAULT_WEIGHT = [...DEFAULT_FILTERS.weight];
+const DEFAULT_UI = { showTranslation: false, currentWordId: '' };
 
 function normalizeList(list = []) {
   const out = [];
@@ -86,6 +87,18 @@ function loadFilterSets() {
   return sanitizeFilterSets(stored || []);
 }
 
+function sanitizeUI(ui = {}) {
+  return {
+    showTranslation: !!ui.showTranslation,
+    currentWordId: typeof ui.currentWordId === 'string' ? ui.currentWordId : ''
+  };
+}
+
+function loadUI() {
+  const stored = LS.get('v23:ui', DEFAULT_UI);
+  return sanitizeUI(stored || DEFAULT_UI);
+}
+
 export const State = {
   words: [],
   filters: loadFilters(),
@@ -93,7 +106,7 @@ export const State = {
   sort: LS.get('v23:sort', { key: 'spanish', dir: 'asc' }),
   columns: LS.get('v23:columns', { star: true, weight: true, spanish: true, english: true, pos: true, cefr: true, tags: true }),
   order: LS.get('v23:order', []),
-  ui: LS.get('v23:ui', { showTranslation: false }),
+  ui: loadUI(),
 
   set(k, v) {
     // ensure we never lose default keys when updating filters
@@ -105,6 +118,10 @@ export const State = {
       const next = sanitizeFilterSets(v || []);
       this.filterSets = next;
       LS.set('v23:filterSets', next);
+    } else if (k === 'ui') {
+      const next = sanitizeUI(v || {});
+      this.ui = next;
+      LS.set('v23:ui', next);
     } else {
       this[k] = v;
       if (['sort', 'columns', 'order', 'words', 'ui'].includes(k)) LS.set('v23:' + k, v);
@@ -184,6 +201,12 @@ export function applyFilters(list) {
   if (tagSet.size) out = out.filter(w => normTags(w.tags).some(t => tagSet.has(t)));
 
   return out;
+}
+
+export function setCurrentWordId(wordId) {
+  const next = typeof wordId === 'string' ? wordId : '';
+  if ((State.ui.currentWordId || '') === next) return;
+  State.set('ui', { ...State.ui, currentWordId: next });
 }
 
 export function sortWords(list) {

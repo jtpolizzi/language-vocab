@@ -1,5 +1,5 @@
 // assets/components/Flashcards.js
-import { applyFilters, Prog, sortWords, State, subscribe } from '../state.js';
+import { applyFilters, Prog, setCurrentWordId, sortWords, State, subscribe } from '../state.js';
 
 export function mountFlashcards(container) {
   container.innerHTML = '';
@@ -18,12 +18,15 @@ export function mountFlashcards(container) {
   const progressLabel = document.createElement('span');
   progressLabel.className = 'choice-progress-label';
   progressLabel.textContent = 'Loading...';
-  const progressBar = document.createElement('div');
-  progressBar.className = 'choice-progress-bar';
-  const progressFill = document.createElement('div');
-  progressFill.className = 'choice-progress-fill';
-  progressBar.appendChild(progressFill);
-  progress.append(progressLabel, progressBar);
+  const progressSlider = document.createElement('input');
+  progressSlider.type = 'range';
+  progressSlider.className = 'flash-progress-slider';
+  progressSlider.min = '0';
+  progressSlider.max = '0';
+  progressSlider.value = '0';
+  progressSlider.disabled = true;
+  progressSlider.setAttribute('aria-label', 'Card position');
+  progress.append(progressLabel, progressSlider);
 
   // bottom bar
   const bar = document.createElement('div');
@@ -31,10 +34,16 @@ export function mountFlashcards(container) {
   const prev = document.createElement('button');
   prev.className = 'bigbtn';
   prev.textContent = '←';
+  prev.title = 'Previous card';
+  const flip = document.createElement('button');
+  flip.className = 'bigbtn';
+  flip.textContent = 'Flip';
+  flip.title = 'Flip card';
   const next = document.createElement('button');
   next.className = 'bigbtn';
   next.textContent = '→';
-  bar.append(prev, next);
+  next.title = 'Next card';
+  bar.append(prev, flip, next);
   document.body.appendChild(bar);
   document.body.classList.add('pad-bottom');
 
@@ -43,6 +52,10 @@ export function mountFlashcards(container) {
   let view = [];
   let currentWord = null;
   let suppressNextCardClick = false;  // <-- hard guard
+  let pointerGesture = null;
+  let isSliderDrag = false;
+  let pendingWordId = null;
+  const supportsPointerEvents = typeof window !== 'undefined' && window.PointerEvent !== undefined;
 
   function computeView() {
     const filtered = applyFilters(State.words);
@@ -87,9 +100,14 @@ export function mountFlashcards(container) {
     const oldId = view[index]?.id;
     view = computeView();
 
-    // keep index stable relative to same id if possible
-    if (oldId) {
-      const newIdx = view.findIndex(w => w.id === oldId);
+    let desiredId = pendingWordId;
+    pendingWordId = null;
+
+    const sharedId = State.ui?.currentWordId || '';
+    if (!desiredId && sharedId) desiredId = sharedId;
+    if (!desiredId && oldId) desiredId = oldId;
+    if (desiredId) {
+      const newIdx = view.findIndex(w => w.id === desiredId);
       if (newIdx !== -1) index = newIdx;
     }
     if (index >= view.length) index = Math.max(0, view.length - 1);
@@ -99,6 +117,7 @@ export function mountFlashcards(container) {
     if (!w) {
       card.textContent = 'No cards match your filters.';
       updateProgress(0, 0);
+      setCurrentWordId('');
       return;
     }
 
@@ -178,31 +197,44 @@ export function mountFlashcards(container) {
     `;
 
     updateProgress(index + 1, view.length);
+    setCurrentWordId(w.id);
   }
 
   function updateProgress(current, total) {
     if (!total) {
       progressLabel.textContent = '0 / 0';
-      progressFill.style.width = '0%';
+      progressSlider.disabled = true;
+      progressSlider.value = '0';
+      progressSlider.max = '0';
       return;
     }
+    progressSlider.disabled = false;
+    progressSlider.min = '1';
+    progressSlider.max = String(total);
+    if (!isSliderDrag) {
+      progressSlider.value = String(current);
+    }
     progressLabel.textContent = `Card ${current} / ${total}`;
-    const pct = Math.min(100, Math.max(0, (current / total) * 100));
-    progressFill.style.width = `${pct}%`;
+  }
+
+  function jumpToIndex(nextIndex) {
+    if (!view.length) return;
+    const clamped = Math.max(0, Math.min(view.length - 1, nextIndex));
+    const nextWord = view[clamped];
+    pendingWordId = nextWord ? nextWord.id : null;
+    index = clamped;
+    showFront = true;
+    render();
   }
 
   function prevCard() {
     if (index > 0) {
-      index--;
-      showFront = true;
-      render();
+      jumpToIndex(index - 1);
     }
   }
   function nextCard() {
     if (index < view.length - 1) {
-      index++;
-      showFront = true;
-      render();
+      jumpToIndex(index + 1);
     }
   }
   function flipCard() {
@@ -211,6 +243,7 @@ export function mountFlashcards(container) {
   }
 
   function handleTapZone(clientX, clientY) {
+    if (!view.length) return;
     const rect = card.getBoundingClientRect();
     if (!rect.width || !rect.height) return;
     const relX = Math.min(1, Math.max(0, (clientX - rect.left) / rect.width));
@@ -240,7 +273,25 @@ export function mountFlashcards(container) {
 
   // Buttons
   prev.onclick = prevCard;
+  flip.onclick = flipCard;
   next.onclick = nextCard;
+  progressSlider.addEventListener('pointerdown', () => {
+    if (progressSlider.disabled) return;
+    isSliderDrag = true;
+  });
+  const releaseSlider = () => { isSliderDrag = false; };
+  progressSlider.addEventListener('pointerup', releaseSlider);
+  progressSlider.addEventListener('pointercancel', releaseSlider);
+  progressSlider.addEventListener('pointerleave', (e) => {
+    if (!('buttons' in e) || e.buttons === 0) isSliderDrag = false;
+  });
+  progressSlider.addEventListener('input', () => {
+    if (progressSlider.disabled) return;
+    const nextIndex = Number(progressSlider.value) - 1;
+    if (Number.isFinite(nextIndex)) {
+      jumpToIndex(nextIndex);
+    }
+  });
 
   // Guarded card click
   function onCardClick(e) {
@@ -253,52 +304,111 @@ export function mountFlashcards(container) {
   }
   card.addEventListener('click', onCardClick);
 
-  // Touch flip (guarded)
-  let touchStartedInsideTopr = false;
-  card.addEventListener(
-    'touchstart',
-    (e) => {
-      const t = e.touches[0];
-      const el = document.elementFromPoint(t.clientX, t.clientY);
-      touchStartedInsideTopr = !!(el && el.closest('.topright'));
-      card.dataset.tX = t.clientX;
-      card.dataset.tY = t.clientY;
-      card.dataset.tT = Date.now();
-    },
-    { passive: true }
-  );
-  card.addEventListener('touchend', (e) => {
-    if (touchStartedInsideTopr) {
-      touchStartedInsideTopr = false;
-      return;
-    }
-    const startX = parseFloat(card.dataset.tX) || 0;
-    const startY = parseFloat(card.dataset.tY) || 0;
-    const startT = parseInt(card.dataset.tT, 10) || 0;
-    const endTouch = e.changedTouches[0];
-    const dx = endTouch.clientX - startX;
-    const dy = endTouch.clientY - startY;
-    const adx = Math.abs(dx);
-    const ady = Math.abs(dy);
-    const dt = Date.now() - startT;
-
-    const swipeThreshold = 60;
-    if (adx > ady && adx >= swipeThreshold) {
-      if (dx > 0) {
-        prevCard();
-      } else {
-        nextCard();
+  // Touch support
+  if (supportsPointerEvents) {
+    card.addEventListener('pointerdown', (e) => {
+      if (e.pointerType === 'mouse') return;
+      if (e.target.closest('.topright')) {
+        pointerGesture = null;
+        return;
       }
-      return;
-    }
+      pointerGesture = {
+        id: e.pointerId,
+        x: e.clientX,
+        y: e.clientY,
+        t: Date.now()
+      };
+      if (card.setPointerCapture) {
+        try { card.setPointerCapture(e.pointerId); } catch {}
+      }
+    });
 
-    const tapMove = 35;
-    const tapTime = 450;
-    if (adx <= tapMove && ady <= tapMove && dt <= tapTime) {
-      handleTapZone(endTouch.clientX, endTouch.clientY);
-    }
-    touchStartedInsideTopr = false;
-  });
+    card.addEventListener('pointerup', (e) => {
+      if (e.pointerType === 'mouse') return;
+      if (!pointerGesture || pointerGesture.id !== e.pointerId) return;
+      const dx = e.clientX - pointerGesture.x;
+      const dy = e.clientY - pointerGesture.y;
+      const adx = Math.abs(dx);
+      const ady = Math.abs(dy);
+      const dt = Date.now() - pointerGesture.t;
+      pointerGesture = null;
+
+      const swipeThreshold = 60;
+      if (adx > ady && adx >= swipeThreshold) {
+        if (dx > 0) {
+          prevCard();
+        } else {
+          nextCard();
+        }
+        return;
+      }
+
+      const tapMove = 35;
+      const tapTime = 450;
+      if (adx <= tapMove && ady <= tapMove && dt <= tapTime) {
+        handleTapZone(e.clientX, e.clientY);
+      }
+      if (card.releasePointerCapture) {
+        try { card.releasePointerCapture(e.pointerId); } catch {}
+      }
+    });
+
+    card.addEventListener('pointercancel', (e) => {
+      pointerGesture = null;
+      if (card.releasePointerCapture && e.pointerId != null) {
+        try { card.releasePointerCapture(e.pointerId); } catch {}
+      }
+    });
+  } else {
+    let touchInfo = null;
+    card.addEventListener('touchstart', (e) => {
+      const t = e.touches[0];
+      if (!t) return;
+      const el = document.elementFromPoint(t.clientX, t.clientY);
+      const insideTop = !!(el && el.closest('.topright'));
+      touchInfo = {
+        x: t.clientX,
+        y: t.clientY,
+        t: Date.now(),
+        insideTop
+      };
+    }, { passive: true });
+
+    card.addEventListener('touchend', (e) => {
+      if (!touchInfo) return;
+      if (touchInfo.insideTop) {
+        touchInfo = null;
+        return;
+      }
+      const endTouch = e.changedTouches[0];
+      if (!endTouch) {
+        touchInfo = null;
+        return;
+      }
+      const dx = endTouch.clientX - touchInfo.x;
+      const dy = endTouch.clientY - touchInfo.y;
+      const adx = Math.abs(dx);
+      const ady = Math.abs(dy);
+      const dt = Date.now() - touchInfo.t;
+      touchInfo = null;
+
+      const swipeThreshold = 60;
+      if (adx > ady && adx >= swipeThreshold) {
+        if (dx > 0) {
+          prevCard();
+        } else {
+          nextCard();
+        }
+        return;
+      }
+
+      const tapMove = 35;
+      const tapTime = 450;
+      if (adx <= tapMove && ady <= tapMove && dt <= tapTime) {
+        handleTapZone(endTouch.clientX, endTouch.clientY);
+      }
+    });
+  }
 
   // Keyboard navigation (ignore when a control has focus)
   function handleKey(e) {

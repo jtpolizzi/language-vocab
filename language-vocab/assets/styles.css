@@ -291,6 +291,36 @@ tbody tr td:last-child {
   border-bottom-right-radius: 12px
 }
 
+tbody tr {
+  cursor: pointer;
+}
+
+tbody tr:focus-visible td {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+}
+
+tbody tr.is-current td {
+  background: #252d4b;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px rgba(138, 164, 255, 0.35);
+}
+
+.current-word-banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 12px;
+  font: 600 14px system-ui;
+}
+
+.current-word-banner strong {
+  font-weight: 700;
+  margin-right: 4px;
+}
+
 .hide {
   display: none !important
 }
@@ -359,6 +389,8 @@ thead th[data-key="tags"] {
   /* much bigger text */
   line-height: 1.2;
   transition: all 0.2s ease-in-out;
+  touch-action: pan-y;
+  user-select: none;
 }
 
 .card:hover {
@@ -408,11 +440,14 @@ thead th[data-key="tags"] {
   gap: 12px;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   z-index: 999;
 }
 
 .bigbtn {
+  flex: 1 1 110px;
   min-width: 110px;
+  max-width: 160px;
   padding: 14px 22px;
   border-radius: 14px;
   border: 1px solid #56608a;
@@ -726,11 +761,48 @@ thead th[data-key="tags"] {
 .flash-progress {
   max-width: 520px;
   margin: 0 auto 18px;
+  gap: 10px;
 }
 
 .flash-progress .choice-progress-label {
   text-align: center;
   font-size: 14px;
+}
+
+.flash-progress-slider {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 8px;
+  border-radius: 999px;
+  background: #1c1f30;
+  outline: none;
+  cursor: pointer;
+}
+
+.flash-progress-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid #050814;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .45);
+}
+
+.flash-progress-slider::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid #050814;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .45);
+}
+
+.flash-progress-slider:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
 }
 
 .choice-progress-label {

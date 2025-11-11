@@ -1,5 +1,5 @@
 // assets/components/WordList.js
-import { applyFilters, Prog, sortWords, State, subscribe } from '../state.js';
+import { applyFilters, Prog, setCurrentWordId, sortWords, State, subscribe } from '../state.js';
 
 export function mountWordList(container) {
   container.innerHTML = '';
@@ -7,6 +7,18 @@ export function mountWordList(container) {
   // Defensive cleanup in case the previous flashcard view didn't teardown
   document.querySelectorAll('.bottombar').forEach((el) => el.remove());
   document.body.classList.remove('pad-bottom');
+
+  const info = document.createElement('div');
+  info.className = 'panel current-word-banner';
+  const infoText = document.createElement('span');
+  infoText.textContent = 'Tap a row to set the current word for Flashcards.';
+  const clearBtn = document.createElement('button');
+  clearBtn.className = 'chip';
+  clearBtn.textContent = 'Clear selection';
+  clearBtn.hidden = true;
+  clearBtn.type = 'button';
+  clearBtn.addEventListener('click', () => setCurrentWordId(''));
+  info.append(infoText, clearBtn);
 
   const table = document.createElement('table');
   const thead = document.createElement('thead');
@@ -51,7 +63,16 @@ export function mountWordList(container) {
   thead.appendChild(trh);
   table.appendChild(thead);
   table.appendChild(tbody);
+  container.appendChild(info);
   container.appendChild(table);
+
+  tbody.addEventListener('click', (e) => {
+    const row = e.target.closest('tr');
+    if (!row) return;
+    if (e.target.closest('button')) return;
+    row.focus();
+  });
+  tbody.addEventListener('keydown', handleRowKeydown);
 
   // sticky offset (under app header)
   function setStickyOffset() {
@@ -88,6 +109,7 @@ export function mountWordList(container) {
   function render() {
     const filtered = applyFilters(State.words);
     let rows = sortWords(filtered);
+    const currentId = State.ui?.currentWordId || '';
 
     // Respect State.order for Shuffle but never drop matching rows
     if (State.order && State.order.length) {
@@ -114,8 +136,11 @@ export function mountWordList(container) {
     }
 
     tbody.innerHTML = '';
+    let currentWord = null;
     for (const w of rows) {
       const tr = document.createElement('tr');
+      tr.tabIndex = 0;
+      tr.dataset.wordId = w.id;
       tr.appendChild(tdStar(w.id));
       tr.appendChild(tdWeight(w.id));
       tr.appendChild(tdText(w.es));
@@ -123,7 +148,35 @@ export function mountWordList(container) {
       tr.appendChild(tdText(w.pos));
       tr.appendChild(tdText(w.cefr));
       tr.appendChild(tdTags(w.tags));
+      tr.addEventListener('focus', () => setCurrentWordId(w.id));
+      if (currentId && currentId === w.id) {
+        tr.classList.add('is-current');
+        tr.setAttribute('aria-current', 'true');
+        currentWord = w;
+      } else {
+        tr.removeAttribute('aria-current');
+      }
+      tr.addEventListener('click', () => setCurrentWordId(w.id));
+      tr.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          setCurrentWordId(w.id);
+        }
+      });
       tbody.appendChild(tr);
+    }
+
+    if (currentWord) {
+      infoText.innerHTML = '';
+      const strong = document.createElement('strong');
+      strong.textContent = 'Current word';
+      const detail = document.createElement('span');
+      detail.textContent = ` ${currentWord.es || '—'} • ${currentWord.en || '—'}`;
+      infoText.append(strong, detail);
+      clearBtn.hidden = false;
+    } else {
+      infoText.textContent = 'Tap a row to set the current word for Flashcards.';
+      clearBtn.hidden = true;
     }
 
     updateHeaderIndicators();
@@ -239,4 +292,35 @@ function applyColumnVisibility(table) {
     table.querySelectorAll(`thead th:nth-child(${idx + 1}), tbody td:nth-child(${idx + 1})`)
       .forEach(el => el.classList.toggle('hide', !show));
   });
+}
+
+function handleRowKeydown(e) {
+  const target = e.target;
+  if (target.closest('button')) return;
+  const row = target.closest('tr');
+  if (!row) return;
+  const wordId = row.dataset.wordId;
+  if (!wordId) return;
+
+  if (e.key === 'ArrowDown') {
+    e.preventDefault();
+    const next = row.nextElementSibling;
+    if (next) next.focus();
+    return;
+  }
+  if (e.key === 'ArrowUp') {
+    e.preventDefault();
+    const prev = row.previousElementSibling;
+    if (prev) prev.focus();
+    return;
+  }
+  if (e.key === 's' || e.key === 'S') {
+    e.preventDefault();
+    Prog.setStar(wordId, !Prog.star(wordId));
+    return;
+  }
+  if (/^[0-4]$/.test(e.key)) {
+    e.preventDefault();
+    Prog.setWeight(wordId, Number(e.key));
+  }
 }
