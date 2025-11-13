@@ -1,5 +1,6 @@
 // assets/components/TopBar.js
 import { applyFilters, shuffledIds, sortWords, State, subscribe, sanitizeFilters } from '../state.js';
+import { createSparkIcon, WEIGHT_DESCRIPTIONS, WEIGHT_SHORT_LABELS } from './WeightControl.js';
 
 let lastSelectedFilterSetId = '';
 import { openSettingsModal } from './SettingsModal.js';
@@ -160,27 +161,37 @@ export function mountTopBar(container) {
     wTitle.textContent = 'Weight';
     Object.assign(wTitle.style, { fontWeight: '700', marginTop: '8px', marginBottom: '6px' });
     const wRow = document.createElement('div');
-    Object.assign(wRow.style, { display: 'flex', gap: '8px', flexWrap: 'wrap' });
+    wRow.className = 'weight-chip-row';
 
     const weightBtns = [];
+    const allWeights = [1, 2, 3, 4, 5];
     const refreshWeightBtns = () => {
-      const set = new Set(State.filters.weight || [0, 1, 2, 3, 4]);
+      const set = new Set(State.filters.weight || allWeights);
       weightBtns.forEach(btn => {
         const n = parseInt(btn.dataset.weight, 10);
         btn.setAttribute('aria-pressed', String(set.has(n)));
       });
     };
-    for (let n = 0; n <= 4; n++) {
-      const b = chip('W' + n, false, () => {
-        const set = new Set(State.filters.weight || [0, 1, 2, 3, 4]);
+    allWeights.forEach((n) => {
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.className = `weight-chip weight-chip--${n}`;
+      b.dataset.weight = String(n);
+      b.setAttribute('aria-pressed', 'true');
+      b.title = WEIGHT_DESCRIPTIONS[n] || `Weight ${n}`;
+      const icon = createSparkIcon('weight-chip__icon');
+      const label = document.createElement('span');
+      label.textContent = WEIGHT_SHORT_LABELS[n] || `W${n}`;
+      b.append(icon, label);
+      b.addEventListener('click', () => {
+        const set = new Set(State.filters.weight || allWeights);
         set.has(n) ? set.delete(n) : set.add(n);
         State.set('filters', { ...State.filters, weight: [...set].sort((a, b) => a - b) });
         refreshWeightBtns();
       });
-      b.dataset.weight = String(n);
       weightBtns.push(b);
       wRow.appendChild(b);
-    }
+    });
     weightWrap.append(wTitle, wRow);
 
     el.appendChild(grid);
@@ -193,7 +204,7 @@ export function mountTopBar(container) {
     clear.className = 'chip';
     clear.textContent = 'Clear';
     clear.onclick = () => {
-      State.set('filters', { ...State.filters, pos: [], cefr: [], tags: [], weight: [0, 1, 2, 3, 4] });
+      State.set('filters', { ...State.filters, pos: [], cefr: [], tags: [], weight: [...allWeights] });
       selectedSetId = '';
       lastSelectedFilterSetId = '';
       refreshWeightBtns();

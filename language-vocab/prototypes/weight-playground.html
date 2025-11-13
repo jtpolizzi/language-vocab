@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weight Controls Playground</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+  <style>
+    :root {
+      --bg: #0d101c;
+      --panel: #1b2137;
+      --panel-dark: #161b2b;
+      --line: #2c3147;
+      --fg: #eef0ff;
+      --fg-dim: #b9c0de;
+      --accent: #8aa4ff;
+      --weight-1: #18b28b;
+      --weight-2: #0f8bff;
+      --weight-3: #f7f7ff;
+      --weight-4: #ffb657;
+      --weight-5: #ff5c7a;
+    }
+
+    body.proto-body {
+      margin: 0;
+      font: 500 15px/1.5 "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      min-height: 100vh;
+      padding: 32px clamp(16px, 6vw, 80px);
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    header.proto-head h1 {
+      margin: 0 0 6px;
+      font-size: 28px;
+      letter-spacing: -.01em;
+    }
+
+    header.proto-head p {
+      margin: 0;
+      color: var(--fg-dim);
+      max-width: 640px;
+      font-size: 15px;
+    }
+
+    .demo-section {
+      background: var(--panel);
+      border-radius: 24px;
+      padding: 24px;
+      border: 1px solid var(--line);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+    }
+
+    .section-head {
+      margin-bottom: 18px;
+    }
+
+    .section-head h2 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    .section-head p {
+      margin: 6px 0 0;
+      color: var(--fg-dim);
+      font-size: 14px;
+    }
+
+    .demo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      align-items: start;
+    }
+
+    .demo-col h3 {
+      margin: 0 0 10px;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--fg-dim);
+    }
+
+    .word-table {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .word-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      column-gap: 12px;
+      row-gap: 6px;
+      align-items: center;
+      padding: 14px 16px;
+      border-radius: 18px;
+      background: var(--panel-dark);
+      border: 1px solid var(--line);
+      min-height: 62px;
+      transition: border-color .2s ease, box-shadow .2s ease;
+    }
+
+    .word-row[data-current-weight="1"] { border-color: rgba(24, 178, 139, .6); }
+    .word-row[data-current-weight="2"] { border-color: rgba(15, 139, 255, .6); }
+    .word-row[data-current-weight="4"] { border-color: rgba(255, 182, 87, .6); }
+    .word-row[data-current-weight="5"] { border-color: rgba(255, 92, 122, .7); }
+
+    .word-info {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .word-info h4 {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    .word-info span {
+      font-size: 13px;
+      color: var(--fg-dim);
+    }
+
+    .word-meta {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--fg-dim);
+      justify-self: end;
+    }
+
+    .control-pack {
+      grid-column: span 2;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 10px;
+    }
+
+    @media (min-width: 540px) {
+      .word-row {
+        grid-template-columns: minmax(0, 1fr) auto auto;
+      }
+
+      .control-pack {
+        grid-column: auto;
+      }
+    }
+
+    .star {
+      width: 32px;
+      height: 32px;
+      border-radius: 11px;
+      border: 1px solid var(--line);
+      background: transparent;
+      color: var(--fg-dim);
+      font-size: 18px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: border-color .2s ease, color .2s ease;
+    }
+
+    .star[aria-pressed="true"] {
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+
+    .flashcard {
+      background: radial-gradient(circle at 20% 20%, rgba(138, 164, 255, .12), transparent), var(--panel-dark);
+      border-radius: 28px;
+      border: 1px solid var(--line);
+      padding: 24px;
+      min-height: 320px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .flashcard[data-current-weight="1"] { border-color: rgba(24, 178, 139, .6); }
+    .flashcard[data-current-weight="2"] { border-color: rgba(15, 139, 255, .6); }
+    .flashcard[data-current-weight="4"] { border-color: rgba(255, 182, 87, .65); }
+    .flashcard[data-current-weight="5"] { border-color: rgba(255, 92, 122, .7); }
+
+    .flashcard__head,
+    .flashcard__foot {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .flashcard__term {
+      margin: 0;
+      font: 600 64px/1.1 "Georgia", "Times New Roman", serif;
+      text-align: center;
+      letter-spacing: .04em;
+    }
+
+    .flashcard__meta {
+      font-size: 12px;
+      color: var(--fg-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    /* bump control */
+    [data-weight-control] {
+      --weight-color: var(--weight-3);
+      position: relative;
+    }
+
+    .weight-control--bump {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .bump-btn {
+      width: 26px;
+      height: 26px;
+      border-radius: 9px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.02);
+      color: var(--fg);
+      font-size: 16px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: border-color .2s ease, color .2s ease;
+    }
+
+    .bump-btn:hover {
+      border-color: var(--weight-color);
+      color: var(--weight-color);
+    }
+
+    .bump-core {
+      width: 26px;
+      height: 26px;
+      border-radius: 11px;
+      border: 1px solid rgba(255, 255, 255, .08);
+      background: rgba(255, 255, 255, .04);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.45);
+      padding: 1px;
+    }
+
+    .bump-icon {
+      width: 22px;
+      height: 22px;
+      color: var(--weight-color);
+      filter: drop-shadow(0 0 6px var(--weight-color));
+      transition: color .2s ease, filter .2s ease;
+    }
+
+    .sr-label {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      border: 0;
+    }
+  </style>
+</head>
+<body class="proto-body">
+  <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden;">
+    <symbol id="icon-spark" viewBox="0 0 24 24">
+      <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"
+        d="M9 4.5c.335 0 .629.222.721.544l.813 2.846c.356 1.246 1.33 2.219 2.576 2.575l2.846.814c.322.092.544.386.544.721s-.222.629-.544.721l-2.846.813c-1.246.356-2.22 1.33-2.576 2.576l-.813 2.846c-.092.322-.386.544-.721.544s-.629-.222-.721-.544l-.813-2.846c-.356-1.246-1.33-2.22-2.576-2.576l-2.846-.813C2.222 12.629 2 12.335 2 12s.222-.629.544-.721l2.846-.814c1.246-.356 2.22-1.33 2.576-2.575l.813-2.846C8.371 4.722 8.665 4.5 9 4.5Zm9-3c.344 0 .644.234.728.568l.259 1.035c.235.94.97 1.675 1.91 1.91l1.035.259c.334.083.568.383.568.728s-.234.644-.568.727l-1.035.259c-.94.235-1.675.97-1.91 1.91l-.259 1.035A.75.75 0 0 1 18 10.5a.75.75 0 0 1-.728-.568l-.259-1.035c-.235-.94-.97-1.675-1.91-1.91l-1.035-.259A.75.75 0 0 1 13.5 6c0-.345.234-.645.568-.728l1.035-.259c.94-.235 1.675-.97 1.91-1.91l.259-1.035A.75.75 0 0 1 18 1.5Zm-1.5 13.5c.323 0 .61.206.712.513l.394 1.183c.149.448.501.8.949.949l1.183.394c.306.102.512.389.512.712s-.206.61-.512.712l-1.183.394a1.5 1.5 0 0 0-.949.949l-.394 1.183a.75.75 0 0 1-1.424 0l-.394-1.183a1.5 1.5 0 0 0-.949-.949l-1.183-.394A.75.75 0 0 1 12.75 18c0-.323.206-.61.512-.712l1.183-.394a1.5 1.5 0 0 0 .949-.949l.394-1.183a.75.75 0 0 1 .712-.513Z" />
+    </symbol>
+  </svg>
+
+  <header class="proto-head">
+    <h1>Weight Controls Playground</h1>
+    <p>Focusing on the inline bump strip: just a minus, a luminous spark, and a plus. Color alone communicates how urgently a card needs work.</p>
+  </header>
+
+  <main>
+    <section class="demo-section">
+      <div class="section-head">
+        <h2>Minus · Spark · Plus</h2>
+        <p>The middle spark uses the material “Sparkles” icon so it feels related to the existing star but still distinct. Weight&nbsp;3 stays white, while the cool teal/blue tones flag “show me less”.</p>
+      </div>
+      <div class="demo-grid">
+        <div class="demo-col">
+          <h3>Word list</h3>
+          <div class="word-table">
+            <article class="word-row" id="bump-row-1" data-current-weight="3">
+              <div class="word-info">
+                <h4>die Aussicht</h4>
+                <span>noun · outlook</span>
+              </div>
+              <div class="word-meta">New · A2</div>
+              <div class="control-pack">
+                <button class="star" aria-pressed="false" aria-label="Star word">★</button>
+                <div class="weight-control weight-control--bump" data-weight-control="bump" data-value="3" data-sync="#bump-row-1">
+                  <button class="bump-btn" type="button" data-delta="-1" aria-label="See less">−</button>
+                  <div class="bump-core" aria-hidden="true">
+                    <svg class="bump-icon" role="presentation" focusable="false">
+                      <use href="#icon-spark" />
+                    </svg>
+                  </div>
+                  <button class="bump-btn" type="button" data-delta="1" aria-label="See more">+</button>
+                  <span class="sr-label">Weight 3</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="word-row" id="bump-row-2" data-current-weight="2">
+              <div class="word-info">
+                <h4>die Senkung</h4>
+                <span>noun · reduction</span>
+              </div>
+              <div class="word-meta">Due · B1</div>
+              <div class="control-pack">
+                <button class="star" aria-pressed="true" aria-label="Star word">★</button>
+                <div class="weight-control weight-control--bump" data-weight-control="bump" data-value="2" data-sync="#bump-row-2">
+                  <button class="bump-btn" type="button" data-delta="-1" aria-label="See less">−</button>
+                  <div class="bump-core" aria-hidden="true">
+                    <svg class="bump-icon" role="presentation" focusable="false">
+                      <use href="#icon-spark" />
+                    </svg>
+                  </div>
+                  <button class="bump-btn" type="button" data-delta="1" aria-label="See more">+</button>
+                  <span class="sr-label">Weight 2</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="word-row" id="bump-row-3" data-current-weight="5">
+              <div class="word-info">
+                <h4>die Funken</h4>
+                <span>noun · sparks</span>
+              </div>
+              <div class="word-meta">Due · B2</div>
+              <div class="control-pack">
+                <button class="star" aria-pressed="false" aria-label="Star word">★</button>
+                <div class="weight-control weight-control--bump" data-weight-control="bump" data-value="5" data-sync="#bump-row-3">
+                  <button class="bump-btn" type="button" data-delta="-1" aria-label="See less">−</button>
+                  <div class="bump-core" aria-hidden="true">
+                    <svg class="bump-icon" role="presentation" focusable="false">
+                      <use href="#icon-spark" />
+                    </svg>
+                  </div>
+                  <button class="bump-btn" type="button" data-delta="1" aria-label="See more">+</button>
+                  <span class="sr-label">Weight 5</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="demo-col">
+          <h3>Flashcard chrome</h3>
+          <article class="flashcard" id="bump-card" data-current-weight="4">
+            <div class="flashcard__head">
+              <button class="star" aria-pressed="false" aria-label="Star card">★</button>
+              <div class="weight-control weight-control--bump" data-weight-control="bump" data-value="4" data-sync="#bump-card">
+                <button class="bump-btn" type="button" data-delta="-1" aria-label="See less">−</button>
+                <div class="bump-core" aria-hidden="true">
+                  <svg class="bump-icon" role="presentation" focusable="false">
+                    <use href="#icon-spark" />
+                  </svg>
+                </div>
+                <button class="bump-btn" type="button" data-delta="1" aria-label="See more">+</button>
+                <span class="sr-label">Weight 4</span>
+              </div>
+            </div>
+            <h2 class="flashcard__term">die Neigung</h2>
+            <div class="flashcard__foot">
+              <span class="flashcard__meta">Card 64 · 101</span>
+              <span class="flashcard__meta">Filters: Verb · ★</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const COLOR_MAP = {
+      1: getComputedStyle(document.documentElement).getPropertyValue('--weight-1').trim() || '#18b28b',
+      2: getComputedStyle(document.documentElement).getPropertyValue('--weight-2').trim() || '#0f8bff',
+      3: getComputedStyle(document.documentElement).getPropertyValue('--weight-3').trim() || '#f7f7ff',
+      4: getComputedStyle(document.documentElement).getPropertyValue('--weight-4').trim() || '#ffb657',
+      5: getComputedStyle(document.documentElement).getPropertyValue('--weight-5').trim() || '#ff5c7a',
+    };
+
+    const srPhrases = {
+      1: 'Hide almost completely',
+      2: 'Show rarely',
+      3: 'Default cadence',
+      4: 'Show more often',
+      5: 'Show constantly',
+    };
+
+    function clampWeight(value) {
+      return Math.min(5, Math.max(1, value));
+    }
+
+    function parseSyncTargets(control) {
+      return (control.dataset.sync || '')
+        .split(',')
+        .map(sel => sel.trim())
+        .filter(Boolean);
+    }
+
+    function updateHosts(targets, value) {
+      targets.forEach(sel => {
+        document.querySelectorAll(sel).forEach(node => {
+          node.dataset.currentWeight = value;
+        });
+      });
+    }
+
+    function setValue(control, value) {
+      const next = clampWeight(value);
+      control.dataset.value = next;
+      control.style.setProperty('--weight-color', COLOR_MAP[next]);
+      const sr = control.querySelector('.sr-label');
+      if (sr) sr.textContent = `${srPhrases[next]} (weight ${next})`;
+      updateHosts(parseSyncTargets(control), next);
+      updateBump(control);
+    }
+
+    function updateBump(control) {
+      const icon = control.querySelector('.bump-icon');
+      if (icon) {
+        const glow = COLOR_MAP[Number(control.dataset.value) || 3];
+        icon.style.color = glow;
+        icon.style.filter = `drop-shadow(0 0 6px ${glow})`;
+      }
+    }
+
+    function initBump(control) {
+      control.querySelectorAll('[data-delta]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const delta = Number(btn.dataset.delta) || 0;
+          setValue(control, Number(control.dataset.value) + delta);
+        });
+      });
+
+      control.addEventListener('wheel', event => {
+        event.preventDefault();
+        const delta = event.deltaY > 0 ? 1 : -1;
+        setValue(control, Number(control.dataset.value) + delta);
+      }, { passive: false });
+    }
+
+    document.querySelectorAll('[data-weight-control="bump"]').forEach(control => {
+      initBump(control);
+      const initial = Number(control.dataset.value) || 3;
+      setValue(control, initial);
+    });
+  </script>
+</body>
+</html>

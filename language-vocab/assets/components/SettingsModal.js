@@ -1,5 +1,5 @@
 // assets/components/SettingsModal.js
-import { State } from '../state.js';
+import { Prog, State, forceStateUpdate } from '../state.js';
 
 export function openSettingsModal() {
   const overlay = document.createElement('div');
@@ -77,11 +77,48 @@ export function openSettingsModal() {
   resetBtn.className = 'chip';
   resetBtn.textContent = 'Reset filters & order';
   resetBtn.onclick = () => {
-    State.set('filters', { starred: false, weight: [0, 1, 2, 3, 4], search: '', pos: [], cefr: [], tags: [] });
+    State.set('filters', { starred: false, weight: [1, 2, 3, 4, 5], search: '', pos: [], cefr: [], tags: [] });
     State.set('order', []);
     State.set('sort', { key: 'spanish', dir: 'asc' });
   };
   resetWrap.append(resetBtn);
+
+  const migrationWrap = document.createElement('div');
+  migrationWrap.style.marginTop = '12px';
+  const migrationInfo = document.createElement('p');
+  migrationInfo.textContent = 'One-time weight migration: set everything to 3 unless starred (4).';
+  migrationInfo.style.margin = '0 0 6px 0';
+  migrationInfo.style.fontSize = '13px';
+  migrationInfo.style.color = 'var(--fg-dim)';
+  const migrationStatus = document.createElement('div');
+  migrationStatus.style.fontSize = '12px';
+  migrationStatus.style.color = 'var(--fg-dim)';
+  migrationStatus.style.marginTop = '4px';
+  const migrationBtn = document.createElement('button');
+  migrationBtn.className = 'chip';
+  const MIGRATION_FLAG = 'v23:weight-migrated-v2';
+  const alreadyMigrated = localStorage.getItem(MIGRATION_FLAG) === '1';
+  migrationBtn.textContent = alreadyMigrated ? 'Weights already migrated' : 'Apply weight migration';
+  migrationBtn.disabled = alreadyMigrated;
+  migrationStatus.textContent = alreadyMigrated ? 'Already migrated on this device.' : '';
+  migrationBtn.onclick = () => {
+    migrationBtn.disabled = true;
+    migrationBtn.textContent = 'Migrating…';
+    migrationStatus.textContent = 'Updating weights…';
+    requestAnimationFrame(() => {
+      let touched = 0;
+      State.words.forEach(word => {
+        const target = Prog.star(word.id) ? 4 : 3;
+        Prog.setWeight(word.id, target, { silent: true });
+        touched += 1;
+      });
+      forceStateUpdate();
+      localStorage.setItem(MIGRATION_FLAG, '1');
+      migrationBtn.textContent = 'Weights migrated';
+      migrationStatus.textContent = touched ? `Updated ${touched} words.` : 'Nothing to update.';
+    });
+  };
+  migrationWrap.append(migrationInfo, migrationBtn, migrationStatus);
 
   // Footer
   const footer = document.createElement('div');
@@ -92,7 +129,7 @@ export function openSettingsModal() {
   close.onclick = () => overlay.remove();
   footer.append(close);
 
-  modal.append(h, colsWrap, fcWrap, resetWrap, footer);
+  modal.append(h, colsWrap, fcWrap, resetWrap, migrationWrap, footer);
   overlay.appendChild(modal);
   document.body.appendChild(overlay);
 }

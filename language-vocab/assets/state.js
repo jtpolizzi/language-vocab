@@ -11,7 +11,7 @@ const subs = new Set();
 // ---- safe default filters (merge with any old stored object) ----
 const DEFAULT_FILTERS = {
   starred: false,
-  weight: [0, 1, 2, 3, 4],
+  weight: [1, 2, 3, 4, 5],
   search: "",
   pos: [],
   cefr: [],
@@ -20,6 +20,14 @@ const DEFAULT_FILTERS = {
 
 const DEFAULT_WEIGHT = [...DEFAULT_FILTERS.weight];
 const DEFAULT_UI = { showTranslation: false, currentWordId: '' };
+
+function toNewWeight(raw) {
+  const n = Number(raw);
+  if (!Number.isFinite(n)) return null;
+  if (n >= 1 && n <= 5) return n;
+  if (n >= 0 && n <= 4) return n + 1;
+  return null;
+}
 
 function normalizeList(list = []) {
   const out = [];
@@ -39,9 +47,8 @@ function normalizeWeight(list = []) {
   const seen = new Set();
   const out = [];
   (Array.isArray(list) ? list : []).forEach(item => {
-    const n = Number(item);
-    if (!Number.isFinite(n)) return;
-    if (n < 0 || n > 4) return;
+    const n = toNewWeight(item);
+    if (n == null) return;
     if (seen.has(n)) return;
     seen.add(n);
     out.push(n);
@@ -131,17 +138,23 @@ export const State = {
 };
 
 export function subscribe(fn) { subs.add(fn); return () => subs.delete(fn); }
+export function forceStateUpdate() { subs.forEach(fn => fn()); }
 
 export const Prog = {
   star(id) { return LS.get('v23:star:' + id, false); },
   setStar(id, v) { LS.set('v23:star:' + id, !!v); subs.forEach(fn => fn()); },
   weight(id) {
-    const v = LS.get('v23:wt:' + id, 0);
-    return (v >= 0 && v <= 4) ? v : 0;
+    const raw = LS.get('v23:wt:' + id, null);
+    if (raw == null) return 3;
+    const converted = toNewWeight(raw);
+    return converted == null ? 3 : converted;
   },
-  setWeight(id, v) {
-    LS.set('v23:wt:' + id, Math.max(0, Math.min(4, v | 0)));
-    subs.forEach(fn => fn());
+  setWeight(id, v, options = {}) {
+    const num = Number(v);
+    const safe = Number.isFinite(num) ? num : 3;
+    const clamped = Math.min(5, Math.max(1, safe));
+    LS.set('v23:wt:' + id, clamped);
+    if (!options?.silent) subs.forEach(fn => fn());
   }
 };
 
@@ -179,7 +192,7 @@ export function applyFilters(list) {
   if (State.filters.starred) out = out.filter(w => Prog.star(w.id));
 
   // Weight chips (W0–W4)
-  const allowed = new Set((State.filters.weight || [0, 1, 2, 3, 4]));
+  const allowed = new Set((State.filters.weight || [1, 2, 3, 4, 5]));
   out = out.filter(w => allowed.has(Prog.weight(w.id)));
 
   // Text search

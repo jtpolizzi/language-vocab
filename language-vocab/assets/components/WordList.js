@@ -1,5 +1,6 @@
 // assets/components/WordList.js
 import { applyFilters, Prog, setCurrentWordId, sortWords, State, subscribe } from '../state.js';
+import { createWeightControl, createSparkIcon } from './WeightControl.js';
 
 export function mountWordList(container) {
   container.innerHTML = '';
@@ -32,7 +33,11 @@ export function mountWordList(container) {
     th.dataset.key = c.key;
 
     const label = document.createElement('span');
-    label.textContent = c.label;
+    if (c.key === 'weight') {
+      label.appendChild(createSparkIcon('weight-header-icon'));
+    } else {
+      label.textContent = c.label;
+    }
 
     const arrow = document.createElement('span');
     arrow.className = 'sort-arrow';
@@ -231,45 +236,23 @@ function tdStar(id) {
 
 function tdWeight(id) {
   const td = document.createElement('td');
-  const wrap = document.createElement('span');
-  wrap.className = 'dots';
-  const v = Prog.weight(id);
-
-  for (let i = 0; i < 5; i++) {
-    const d = document.createElement('button');
-    d.className = 'dot' + (i <= v ? ' active' : '');
-    d.title = 'Weight ' + i;
-    d.addEventListener('pointerdown', (e) => { e.preventDefault(); e.stopImmediatePropagation(); });
-    d.addEventListener('click', (e) => {
-      e.preventDefault();
-      e.stopImmediatePropagation();
-      Prog.setWeight(id, i);
-      for (let j = 0; j < wrap.children.length; j++) {
-        const ch = wrap.children[j];
-        if (ch.classList) ch.classList.toggle('active', j <= i);
-      }
-      lab.textContent = ['New', 'Shaky', 'OK', 'Strong', 'Mastered'][Prog.weight(id)] || 'New';
-    });
-    wrap.appendChild(d);
-  }
-
-  const lab = document.createElement('span');
-  lab.className = 'weight-label';
-  lab.textContent = ['New', 'Shaky', 'OK', 'Strong', 'Mastered'][v] || 'New';
-  wrap.appendChild(lab);
-
-  td.appendChild(wrap);
+  const control = createWeightControl({
+    value: Prog.weight(id),
+    onChange: (next) => Prog.setWeight(id, next),
+    ariaLabel: 'Adjust weight',
+    compact: true
+  });
+  td.appendChild(control);
   return td;
 }
 
 /* --- column visibility per Settings --- */
 function applyColumnVisibility(table) {
-  const map = { star: '★', weight: 'weight', spanish: 'spanish', english: 'english', pos: 'pos', cefr: 'cefr', tags: 'tags' };
-  const headers = Array.from(table.querySelectorAll('thead th')).map(th => th.textContent.replace(/[▲▼]/g, '').trim().toLowerCase());
-  Object.entries(map).forEach(([k, needle]) => {
-    const idx = headers.findIndex(h => h.includes(needle));
-    if (idx < 0) return;
-    const show = !!State.columns[k];
+  const headers = Array.from(table.querySelectorAll('thead th'));
+  Object.keys(State.columns).forEach((key) => {
+    const idx = headers.findIndex(th => th.dataset.key === key);
+    if (idx === -1) return;
+    const show = !!State.columns[key];
     table.querySelectorAll(`thead th:nth-child(${idx + 1}), tbody td:nth-child(${idx + 1})`)
       .forEach(el => el.classList.toggle('hide', !show));
   });
@@ -311,7 +294,7 @@ function handleRowKeydown(e) {
     setCurrentWordId(wordId);
     return;
   }
-  if (/^[0-4]$/.test(e.key)) {
+  if (/^[1-5]$/.test(e.key)) {
     e.preventDefault();
     Prog.setWeight(wordId, Number(e.key));
     setCurrentWordId(wordId);

@@ -1,5 +1,6 @@
 // assets/components/Flashcards.js
 import { applyFilters, Prog, setCurrentWordId, sortWords, State, subscribe } from '../state.js';
+import { createWeightControl } from './WeightControl.js';
 
 export function mountFlashcards(container) {
   container.innerHTML = '';
@@ -160,28 +161,16 @@ export function mountFlashcards(container) {
     });
     topr.appendChild(star);
 
-    // Weight dots
-    const dots = document.createElement('span');
-    dots.className = 'dots';
-    const v = Prog.weight(w.id);
-    for (let i = 0; i < 5; i++) {
-      const d = document.createElement('button');
-      d.className = 'dot' + (i <= v ? ' active' : '');
-      d.title = 'Weight ' + i;
-      d.addEventListener('pointerdown', swallow);
-      d.addEventListener('click', (e) => {
-        swallow(e);
-        Prog.setWeight(w.id, i);
+    const weightControl = createWeightControl({
+      value: Prog.weight(w.id),
+      onChange: (next) => {
+        Prog.setWeight(w.id, next);
         render();
-      });
-      dots.appendChild(d);
-    }
-    const lab = document.createElement('span');
-    lab.className = 'weight-label';
-    lab.textContent =
-      ['New', 'Shaky', 'OK', 'Strong', 'Mastered'][v] || 'New';
-    dots.appendChild(lab);
-    topr.appendChild(dots);
+      },
+      ariaLabel: 'Adjust weight'
+    });
+    weightControl.querySelectorAll('button').forEach(btn => btn.addEventListener('pointerdown', swallow));
+    topr.appendChild(weightControl);
 
     // Also block stray bubbling from the topr container
     topr.addEventListener('click', (e) => e.stopPropagation());
@@ -436,7 +425,7 @@ export function mountFlashcards(container) {
     } else if (e.key === 's' || e.key === 'S') {
       e.preventDefault();
       toggleStarForCurrent();
-    } else if (/^[0-4]$/.test(e.key)) {
+    } else if (/^[1-5]$/.test(e.key)) {
       e.preventDefault();
       setWeightForCurrent(Number(e.key));
     }
