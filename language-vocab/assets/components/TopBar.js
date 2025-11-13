@@ -1,9 +1,9 @@
 // assets/components/TopBar.js
-import { applyFilters, shuffledIds, sortWords, State, subscribe, sanitizeFilters } from '../state.js';
+import { applyFilters, shuffledIds, sortWords, State, subscribe, sanitizeFilters, filtersEqual } from '../state.js';
 import { createSparkIcon, WEIGHT_DESCRIPTIONS, WEIGHT_SHORT_LABELS } from './WeightControl.js';
+import { openSettingsModal } from './SettingsModal.js';
 
 let lastSelectedFilterSetId = '';
-import { openSettingsModal } from './SettingsModal.js';
 
 export function mountTopBar(container) {
   container.innerHTML = '';
@@ -15,12 +15,6 @@ export function mountTopBar(container) {
 
   const row = document.createElement('div');
   row.className = 'row';
-
-  // Only ★
-  const only = chip('Only ★', !!State.filters.starred, () => {
-    State.set('filters', { ...State.filters, starred: !State.filters.starred });
-  });
-  row.appendChild(only);
 
   // Shuffle (stay on current view) + clear sort indicators
   const sh = chip('Shuffle', false, () => {
@@ -77,14 +71,13 @@ export function mountTopBar(container) {
   panel.appendChild(row);
   container.appendChild(panel);
 
-  // ---- Filters popover (unchanged from your working version) ----
+  // ---- Filters popover ----
   let pop = null;
   function toggleFilters(e) {
     e?.stopPropagation();
     if (pop) { closePop(); return; }
     pop = buildFiltersPopover();
     panel.appendChild(pop);
-    positionPopover(pop, filtersChip);
     setTimeout(() => window.addEventListener('click', onDocClick), 0);
   }
   function onDocClick(ev) {
@@ -102,10 +95,14 @@ export function mountTopBar(container) {
     const el = document.createElement('div');
     el.className = 'popover';
     Object.assign(el.style, {
-      position: 'absolute', right: '12px', top: '24px',
-      border: '1px solid var(--line)', borderRadius: '12px',
-      padding: '12px', boxShadow: '0 8px 24px rgba(0,0,0,.35)', zIndex: '1000',
-      width: 'min(720px, 96vw)', overflowY: 'auto'
+      border: '1px solid var(--line)',
+      borderRadius: '12px',
+      padding: '16px',
+      boxShadow: '0 8px 24px rgba(0,0,0,.35)',
+      marginTop: '12px',
+      width: '100%',
+      maxWidth: '100%',
+      boxSizing: 'border-box'
     });
     el.addEventListener('click', (e) => e.stopPropagation());
 
@@ -123,6 +120,26 @@ export function mountTopBar(container) {
 
     const savedSection = buildSavedSetsSection();
     el.appendChild(savedSection.wrap);
+
+    const quickRow = document.createElement('div');
+    Object.assign(quickRow.style, {
+      display: 'flex',
+      flexWrap: 'wrap',
+      alignItems: 'center',
+      gap: '12px',
+      marginBottom: '12px'
+    });
+    const quickLabel = document.createElement('div');
+    quickLabel.textContent = 'Quick filters';
+    quickLabel.style.fontWeight = '700';
+    const starToggle = chip('Only ★', !!State.filters.starred, () => {
+      State.set('filters', { ...State.filters, starred: !State.filters.starred });
+    });
+    const refreshStarToggle = () => {
+      starToggle.setAttribute('aria-pressed', String(!!State.filters.starred));
+    };
+    quickRow.append(quickLabel, starToggle);
+    el.appendChild(quickRow);
 
     const facetSections = [];
     const refreshFacetSections = () => facetSections.forEach(sec => sec.refresh());
@@ -221,10 +238,12 @@ export function mountTopBar(container) {
     el.appendChild(footer);
 
     el._unsub = subscribe(() => {
+      refreshStarToggle();
       refreshWeightBtns();
       savedSection.refresh();
       refreshFacetSections();
     });
+    refreshStarToggle();
     refreshWeightBtns();
     savedSection.refresh();
     refreshFacetSections();
@@ -480,44 +499,12 @@ export function mountTopBar(container) {
     return { wrap, refresh };
   }
 
-    function filtersEqual(a, b) {
-      return canonicalizeFilters(a) === canonicalizeFilters(b);
-    }
-
-    function canonicalizeFilters(f) {
-      const clean = sanitizeFilters(f || {});
-      const normList = (list = []) => [...(list || [])].map(v => v.toLowerCase()).sort();
-      const normWeight = (list = []) => [...(list || [])].map(n => Number(n)).sort((x, y) => x - y);
-      return JSON.stringify({
-        starred: !!clean.starred,
-        search: typeof clean.search === 'string' ? clean.search : '',
-        weight: normWeight(clean.weight),
-        pos: normList(clean.pos),
-        cefr: normList(clean.cefr),
-        tags: normList(clean.tags)
-      });
-    }
-
     function newFilterSetId() {
       if (typeof crypto !== 'undefined' && typeof crypto.randomUUID === 'function') {
         return crypto.randomUUID();
       }
       return 'fs_' + Math.random().toString(36).slice(2, 10);
     }
-  }
-
-  function positionPopover(popover, anchor) {
-    const parentRect = popover.parentElement?.getBoundingClientRect?.();
-    const anchorRect = anchor.getBoundingClientRect();
-    let top = anchor.offsetTop + anchor.offsetHeight + 8;
-    const viewportLimit = Math.max(320, Math.min(window.innerHeight - 32, 720));
-    if (parentRect) {
-      const desiredTop = Math.max(12, anchorRect.top - parentRect.top - 24);
-      top = desiredTop;
-    }
-    popover.style.maxHeight = viewportLimit + 'px';
-    popover.style.top = top + 'px';
-    popover.style.right = '12px';
   }
 
   function collectFacetValues(words = []) {
@@ -545,7 +532,6 @@ export function mountTopBar(container) {
 
   // Subscribe to keep UI in sync
   const unsub = subscribe(() => {
-    only.setAttribute('aria-pressed', String(!!State.filters.starred));
     if (document.activeElement !== search) search.value = State.filters.search || '';
 
     const f = State.filters || {};

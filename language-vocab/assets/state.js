@@ -67,6 +67,34 @@ export function sanitizeFilters(filters = {}) {
   return base;
 }
 
+function canonicalFiltersShape(filters = {}) {
+  const clean = sanitizeFilters(filters || {});
+  const normList = (list = []) => [...(list || [])]
+    .map((v) => typeof v === 'string' ? v.toLowerCase() : '')
+    .filter(Boolean)
+    .sort();
+  const normWeight = (list = []) => [...(list || [])]
+    .map((n) => Number(n))
+    .filter((n) => Number.isFinite(n))
+    .sort((a, b) => a - b);
+  return {
+    starred: !!clean.starred,
+    search: typeof clean.search === 'string' ? clean.search : '',
+    weight: normWeight(clean.weight),
+    pos: normList(clean.pos),
+    cefr: normList(clean.cefr),
+    tags: normList(clean.tags)
+  };
+}
+
+export function filtersKey(filters = {}) {
+  return JSON.stringify(canonicalFiltersShape(filters));
+}
+
+export function filtersEqual(a, b) {
+  return filtersKey(a) === filtersKey(b);
+}
+
 function sanitizeFilterSets(list = []) {
   if (!Array.isArray(list)) return [];
   const usedIds = new Set();
@@ -118,9 +146,12 @@ export const State = {
   set(k, v) {
     // ensure we never lose default keys when updating filters
     if (k === 'filters') {
+      const prevFilters = this.filters;
       const merged = sanitizeFilters(v || {});
+      const changed = !filtersEqual(prevFilters, merged);
       this.filters = merged;
       LS.set('v23:filters', merged);
+      if (changed) setCurrentWordId('');
     } else if (k === 'filterSets') {
       const next = sanitizeFilterSets(v || []);
       this.filterSets = next;
