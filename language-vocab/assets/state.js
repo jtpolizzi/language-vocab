@@ -20,6 +20,8 @@ const DEFAULT_FILTERS = {
 
 const DEFAULT_WEIGHT = [...DEFAULT_FILTERS.weight];
 const DEFAULT_UI = { showTranslation: false, currentWordId: '' };
+const DEFAULT_SORT = { key: 'word', dir: 'asc' };
+const DEFAULT_COLUMNS = { star: true, weight: true, word: true, definition: true, pos: true, cefr: true, tags: true };
 
 function toNewWeight(raw) {
   const n = Number(raw);
@@ -134,12 +136,41 @@ function loadUI() {
   return sanitizeUI(stored || DEFAULT_UI);
 }
 
+function migrateSort(sort = DEFAULT_SORT) {
+  const keyMap = { spanish: 'word', english: 'definition' };
+  const next = typeof sort === 'object' && sort ? { ...sort } : { ...DEFAULT_SORT };
+  const rawKey = next.key || DEFAULT_SORT.key;
+  const mappedKey = keyMap[rawKey] || rawKey;
+  const allowedKeys = new Set(['star', 'weight', 'word', 'definition', 'pos', 'cefr', 'tags']);
+  const key = allowedKeys.has(mappedKey) ? mappedKey : DEFAULT_SORT.key;
+  const dir = next.dir === 'desc' ? 'desc' : 'asc';
+  return { key, dir };
+}
+
+function migrateColumns(columns = DEFAULT_COLUMNS) {
+  const next = { ...DEFAULT_COLUMNS };
+  if (!columns || typeof columns !== 'object') return next;
+  Object.entries(columns).forEach(([key, value]) => {
+    const mapped = key === 'spanish' ? 'word' : key === 'english' ? 'definition' : key;
+    if (mapped in next) next[mapped] = !!value;
+  });
+  return next;
+}
+
+function loadSort() {
+  return migrateSort(LS.get('v23:sort', DEFAULT_SORT));
+}
+
+function loadColumns() {
+  return migrateColumns(LS.get('v23:columns', DEFAULT_COLUMNS));
+}
+
 export const State = {
   words: [],
   filters: loadFilters(),
   filterSets: loadFilterSets(),
-  sort: LS.get('v23:sort', { key: 'spanish', dir: 'asc' }),
-  columns: LS.get('v23:columns', { star: true, weight: true, spanish: true, english: true, pos: true, cefr: true, tags: true }),
+  sort: loadSort(),
+  columns: loadColumns(),
   order: LS.get('v23:order', []),
   ui: loadUI(),
 
@@ -156,13 +187,21 @@ export const State = {
       const next = sanitizeFilterSets(v || []);
       this.filterSets = next;
       LS.set('v23:filterSets', next);
+    } else if (k === 'sort') {
+      const next = migrateSort(v);
+      this.sort = next;
+      LS.set('v23:sort', next);
+    } else if (k === 'columns') {
+      const next = migrateColumns(v);
+      this.columns = next;
+      LS.set('v23:columns', next);
     } else if (k === 'ui') {
       const next = sanitizeUI(v || {});
       this.ui = next;
       LS.set('v23:ui', next);
     } else {
       this[k] = v;
-      if (['sort', 'columns', 'order', 'words', 'ui'].includes(k)) LS.set('v23:' + k, v);
+      if (['order', 'words', 'ui'].includes(k)) LS.set('v23:' + k, v);
     }
     subs.forEach(fn => fn());
   }
@@ -259,8 +298,8 @@ export function sortWords(list) {
   const get = (w) => {
     if (key === 'star') return Prog.star(w.id) ? 1 : 0;
     if (key === 'weight') return Prog.weight(w.id);
-    if (key === 'spanish') return (w.es || '').toLowerCase();
-    if (key === 'english') return (w.en || '').toLowerCase();
+    if (key === 'word') return (w.es || '').toLowerCase();
+    if (key === 'definition') return (w.en || '').toLowerCase();
     return (w[key] || '').toLowerCase();
   };
   return [...list].sort((a, b) => get(a) > get(b) ? m : get(a) < get(b) ? -m : 0);

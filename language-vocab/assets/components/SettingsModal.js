@@ -31,7 +31,7 @@ export function openSettingsModal() {
   const colsBox = document.createElement('div');
   Object.assign(colsBox.style, { display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '8px' });
 
-  const colKeys = ['star', 'weight', 'spanish', 'english', 'pos', 'cefr', 'tags'];
+  const colKeys = ['star', 'weight', 'word', 'definition', 'pos', 'cefr', 'tags'];
   colKeys.forEach(k => {
     const lab = document.createElement('label');
     lab.style.display = 'flex'; lab.style.alignItems = 'center'; lab.style.gap = '8px';
@@ -79,7 +79,7 @@ export function openSettingsModal() {
   resetBtn.onclick = () => {
     State.set('filters', { starred: false, weight: [1, 2, 3, 4, 5], search: '', pos: [], cefr: [], tags: [] });
     State.set('order', []);
-    State.set('sort', { key: 'spanish', dir: 'asc' });
+    State.set('sort', { key: 'word', dir: 'asc' });
   };
   resetWrap.append(resetBtn);
 

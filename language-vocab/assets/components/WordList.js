@@ -18,8 +18,8 @@ export function mountWordList(container) {
   const cols = [
     { key: 'star', label: '★' },
     { key: 'weight', label: 'Weight' },
-    { key: 'spanish', label: 'Spanish' },
-    { key: 'english', label: 'English' },
+    { key: 'word', label: 'Word' },
+    { key: 'definition', label: 'Definition' },
     { key: 'pos', label: 'POS' },
     { key: 'cefr', label: 'CEFR' },
     { key: 'tags', label: 'Tags' },

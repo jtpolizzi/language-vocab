@@ -52,8 +52,8 @@ function parseTSV(text) {
     if (lines.length === 0) return [];
     const headers = lines[0].split('\t').map(h => h.trim());
     const idx = {
-        Spanish: headers.findIndex(h => /^spanish$/i.test(h)),
-        English: headers.findIndex(h => /^english$/i.test(h)),
+        Spanish: headers.findIndex(h => /^(spanish|word)$/i.test(h)),
+        English: headers.findIndex(h => /^(english|definition)$/i.test(h)),
         POS: headers.findIndex(h => /^pos$/i.test(h)),
         CEFR: headers.findIndex(h => /^cefr$/i.test(h)),
         Tags: headers.findIndex(h => /^tags?$/i.test(h)),
