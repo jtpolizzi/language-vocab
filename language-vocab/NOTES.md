@@ -1,4 +1,4 @@
-# Vocab Mini-App Notes (v2.11.3)
+# Vocab Mini-App Notes (v2.12.1)
 
 ## Snapshot
 - SPA written in vanilla HTML/CSS/JS; routes driven via hash (`#/list`, `#/cards`, `#/match`, `#/choice`).
@@ -44,6 +44,11 @@
 3. Flashcards regained their full-width sizing inside the new layout (`width: min(100%, 720px)`), preventing narrow cards when the body switches flex modes.
 4. Body scroll locking now activates only while the list view is mounted, so Flashcards, Word Match, and Multiple Choice retain their original column/flow layouts.
 5. Word List row selection moved into an explicit long-press mode: only when enabled do rows highlight and sync with flashcards, and a long-press on the selected row exits the mode.
+
+## v2.12.x Cleanup Roadmap
+1. Phase 1 (v2.12.2): remove the legacy weight-migration UI/logic and reset the localStorage prefix so upcoming changes start from a clean slate.
+2. Phase 2 (v2.12.3): introduce canonical term keys (word + POS) for persisted progress, letting overlapping data files share stars/weights.
+3. Phase 3 (v2.12.4+): deep architectural/code review with targeted refactors for state management, shared utilities, and event handling.
 
 ## Next Targets / Ideas
 1. Progress export/import (JSON) for stars + weights.
