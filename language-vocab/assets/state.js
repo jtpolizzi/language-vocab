@@ -237,22 +237,33 @@ export function subscribe(fn) { subs.add(fn); return () => subs.delete(fn); }
 export function forceStateUpdate() { subs.forEach(fn => fn()); }
 
 export const Prog = {
-  star(id) { return LS.get('star:' + id, false); },
-  setStar(id, v) { LS.set('star:' + id, !!v); subs.forEach(fn => fn()); },
-  weight(id) {
-    const raw = LS.get('wt:' + id, null);
+  star(key) { return LS.get('star:' + key, false); },
+  setStar(key, v) { LS.set('star:' + key, !!v); subs.forEach(fn => fn()); },
+  weight(key) {
+    const raw = LS.get('wt:' + key, null);
     if (raw == null) return 3;
     const converted = toNewWeight(raw);
     return converted == null ? 3 : converted;
   },
-  setWeight(id, v, options = {}) {
+  setWeight(key, v, options = {}) {
     const num = Number(v);
     const safe = Number.isFinite(num) ? num : 3;
     const clamped = Math.min(5, Math.max(1, safe));
-    LS.set('wt:' + id, clamped);
+    LS.set('wt:' + key, clamped);
     if (!options?.silent) subs.forEach(fn => fn());
   }
 };
+
+function normalizeTermPart(value, fallback) {
+  const norm = String(value || '').trim().toLowerCase();
+  return norm || fallback;
+}
+
+export function termKey(word, pos) {
+  const baseWord = normalizeTermPart(word, 'unknown');
+  const basePos = normalizeTermPart(pos, 'unknown');
+  return baseWord + '|' + basePos;
+}
 
 export function stableId(es, en) {
   const s = (es || '') + '|' + (en || '');
@@ -262,14 +273,22 @@ export function stableId(es, en) {
 }
 
 export function mapRaw(raw) {
-  return raw.map(w => ({
-    id: stableId(w.Spanish || w.es || w.word, w.English || w.en || w.gloss),
-    es: (w.Spanish || w.es || w.word || '').trim(),
-    en: (w.English || w.en || w.gloss || '').trim(),
-    pos: (w.POS || w.pos || '').trim(),
-    cefr: (w.CEFR || w.cefr || '').trim(),
-    tags: (w.Tags || w.tags || '').trim()
-  }));
+  return raw.map(w => {
+    const es = (w.Spanish || w.es || w.word || '').trim();
+    const en = (w.English || w.en || w.gloss || '').trim();
+    const pos = (w.POS || w.pos || '').trim();
+    const cefr = (w.CEFR || w.cefr || '').trim();
+    const tags = (w.Tags || w.tags || '').trim();
+    return {
+      id: stableId(es, en),
+      termKey: termKey(es, pos),
+      es,
+      en,
+      pos,
+      cefr,
+      tags
+    };
+  });
 }
 
 function normTags(s) {
@@ -285,11 +304,11 @@ export function applyFilters(list) {
   let out = [...list];
 
   // Only starred
-  if (State.filters.starred) out = out.filter(w => Prog.star(w.id));
+  if (State.filters.starred) out = out.filter(w => Prog.star(w.termKey));
 
   // Weight chips (W0–W4)
   const allowed = new Set((State.filters.weight || [1, 2, 3, 4, 5]));
-  out = out.filter(w => allowed.has(Prog.weight(w.id)));
+  out = out.filter(w => allowed.has(Prog.weight(w.termKey)));
 
   // Text search
   const q = (State.filters.search || "").trim().toLowerCase();
@@ -332,8 +351,8 @@ export function sortWords(list) {
   const { key, dir } = State.sort;
   const m = dir === 'asc' ? 1 : -1;
   const get = (w) => {
-    if (key === 'star') return Prog.star(w.id) ? 1 : 0;
-    if (key === 'weight') return Prog.weight(w.id);
+    if (key === 'star') return Prog.star(w.termKey) ? 1 : 0;
+    if (key === 'weight') return Prog.weight(w.termKey);
     if (key === 'word') return (w.es || '').toLowerCase();
     if (key === 'definition') return (w.en || '').toLowerCase();
     return (w[key] || '').toLowerCase();

@@ -202,8 +202,9 @@ export function mountWordList(container) {
       const tr = document.createElement('tr');
       tr.tabIndex = 0;
       tr.dataset.wordId = w.id;
-      tr.appendChild(tdStar(w.id));
-      tr.appendChild(tdWeight(w.id));
+      tr.dataset.termKey = w.termKey || '';
+      tr.appendChild(tdStar(w.termKey));
+      tr.appendChild(tdWeight(w.termKey));
       tr.appendChild(tdText(w.es));
       tr.appendChild(tdText(w.en));
       tr.appendChild(tdText(w.pos));
@@ -271,7 +272,7 @@ function tdTags(tags) {
   }
 }
 
-function tdStar(id) {
+function tdStar(termKey) {
   const td = document.createElement('td');
   const b = document.createElement('button');
   b.className = 'iconbtn';
@@ -281,7 +282,7 @@ function tdStar(id) {
   b.style.padding = '4px 8px';
 
   const setIcon = () => {
-    const on = Prog.star(id);
+    const on = Prog.star(termKey);
     b.textContent = on ? '★' : '☆';
     b.setAttribute('aria-pressed', String(on));
     b.style.color = on ? 'var(--accent)' : 'var(--fg-dim)';
@@ -294,7 +295,7 @@ function tdStar(id) {
   b.addEventListener('click', (e) => {
     e.preventDefault();
     e.stopImmediatePropagation();
-    Prog.setStar(id, !Prog.star(id));
+    Prog.setStar(termKey, !Prog.star(termKey));
     setIcon();
   });
 
@@ -302,11 +303,11 @@ function tdStar(id) {
   return td;
 }
 
-function tdWeight(id) {
+function tdWeight(termKey) {
   const td = document.createElement('td');
   const control = createWeightControl({
-    value: Prog.weight(id),
-    onChange: (next) => Prog.setWeight(id, next),
+    value: Prog.weight(termKey),
+    onChange: (next) => Prog.setWeight(termKey, next),
     ariaLabel: 'Adjust weight',
     compact: true
   });
@@ -331,6 +332,7 @@ function handleRowKeydown(e) {
   const row = target.closest('tr');
   if (!row) return;
   const wordId = row.dataset.wordId;
+  const termKey = row.dataset.termKey || '';
   if (!wordId) return;
   if (target.closest('button')) {
     return;
@@ -358,13 +360,15 @@ function handleRowKeydown(e) {
   }
   if (e.key === 's' || e.key === 'S') {
     e.preventDefault();
-    Prog.setStar(wordId, !Prog.star(wordId));
+    if (!termKey) return;
+    Prog.setStar(termKey, !Prog.star(termKey));
     syncSelectionIfEnabled(wordId);
     return;
   }
   if (/^[1-5]$/.test(e.key)) {
     e.preventDefault();
-    Prog.setWeight(wordId, Number(e.key));
+    if (!termKey) return;
+    Prog.setWeight(termKey, Number(e.key));
     syncSelectionIfEnabled(wordId);
   }
 }

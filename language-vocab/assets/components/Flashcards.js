@@ -138,7 +138,7 @@ export function mountFlashcards(container) {
     star.style.padding = '4px 8px';
 
     const setStar = () => {
-      const on = Prog.star(w.id);
+      const on = Prog.star(w.termKey);
       star.textContent = on ? '★' : '☆';
       star.setAttribute('aria-pressed', String(on));
       star.style.color = on ? 'var(--accent)' : 'var(--fg-dim)';
@@ -155,16 +155,16 @@ export function mountFlashcards(container) {
     star.addEventListener('pointerdown', swallow);
     star.addEventListener('click', (e) => {
       swallow(e);
-      Prog.setStar(w.id, !Prog.star(w.id));
+      Prog.setStar(w.termKey, !Prog.star(w.termKey));
       // if Only★ is ON, current card may exit the view; render to update counter & position
       render();
     });
     topr.appendChild(star);
 
     const weightControl = createWeightControl({
-      value: Prog.weight(w.id),
+      value: Prog.weight(w.termKey),
       onChange: (next) => {
-        Prog.setWeight(w.id, next);
+        Prog.setWeight(w.termKey, next);
         render();
       },
       ariaLabel: 'Adjust weight'
@@ -250,13 +250,13 @@ export function mountFlashcards(container) {
 
   function toggleStarForCurrent() {
     if (!currentWord) return;
-    Prog.setStar(currentWord.id, !Prog.star(currentWord.id));
+    Prog.setStar(currentWord.termKey, !Prog.star(currentWord.termKey));
     render();
   }
 
   function setWeightForCurrent(weight) {
     if (!currentWord) return;
-    Prog.setWeight(currentWord.id, weight);
+    Prog.setWeight(currentWord.termKey, weight);
     render();
   }
 

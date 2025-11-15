@@ -1,4 +1,4 @@
-# Vocab Mini-App Notes (v2.12.2)
+# Vocab Mini-App Notes (v2.12.3)
 
 ## Snapshot
 - SPA written in vanilla HTML/CSS/JS; routes driven via hash (`#/list`, `#/cards`, `#/match`, `#/choice`).
@@ -53,6 +53,10 @@
 ### Phase 1 (v2.12.2)
 - Removed the one-time “weight migration” helper from Settings now that every install picked it up.
 - Swapped all `localStorage` keys to the new `lv:` prefix and aggressively purge the old `v23:` entries on load so future term-key changes start clean.
+
+### Phase 2 (v2.12.3)
+- Added canonical `termKey`s (normalized word + POS) to every word so multiple source files recognize the same vocab entry.
+- Stars/weights now persist against the `termKey`, letting overlapping rows share user progress while table rows keep their original hashes for UI focus/shuffle.
 
 ## Next Targets / Ideas
 1. Progress export/import (JSON) for stars + weights.
