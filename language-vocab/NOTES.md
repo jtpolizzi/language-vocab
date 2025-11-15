@@ -1,4 +1,4 @@
-# Vocab Mini-App Notes (v2.12.3)
+# Vocab Mini-App Notes (v2.12.4)
 
 ## Snapshot
 - SPA written in vanilla HTML/CSS/JS; routes driven via hash (`#/list`, `#/cards`, `#/match`, `#/choice`).
@@ -59,6 +59,7 @@
 - Stars/weights now persist against the `termKey`, letting overlapping rows share user progress while table rows keep their original hashes for UI focus/shuffle.
 
 ### Phase 3 (v2.12.4+)
+- v2.12.4: finalized the store split by introducing a namespace-wide “Clear all saved data” action, dropped the JSON data fallback, and removed legacy sort/column migrations now that every device uses the modern schema.
 - Architectural/code review in progress; see `ARCHITECTURE_PLAN.md` for the modernization roadmap (TypeScript build → Svelte evaluation → potential migration).
 
 ## Next Targets / Ideas

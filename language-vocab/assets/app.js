@@ -46,7 +46,7 @@ function setActiveNav(hash) {
     });
 }
 
-// --- TSV loader (preferred) with JSON fallback ---
+// --- TSV loader ---
 function parseTSV(text) {
     const lines = text.split(/\r?\n/).filter(l => l.trim().length > 0);
     if (lines.length === 0) return [];
@@ -73,38 +73,16 @@ function parseTSV(text) {
     return out;
 }
 
-async function tryLoadTSV() {
+async function loadData() {
     try {
         const res = await fetch('data/words.tsv', { cache: 'no-store' });
         if (!res.ok) throw new Error('TSV not found');
         const txt = await res.text();
         const raw = parseTSV(txt);
-        return raw;
+        hydrateWords(raw || [], { source: 'tsv', loadedAt: Date.now() });
     } catch (e) {
-        return null;
+        hydrateWords([], { source: 'none', loadedAt: Date.now() });
     }
-}
-
-// TODO: remove JSON loader - not needed.
-async function tryLoadJSON() {
-    try {
-        const res = await fetch('data/words.json', { cache: 'no-store' });
-        if (!res.ok) throw new Error('JSON not found');
-        return await res.json();
-    } catch (e) {
-        return null;
-    }
-}
-
-async function loadData() {
-    let raw = await tryLoadTSV();
-    let source = 'tsv';
-    if (!raw) {
-        raw = await tryLoadJSON();
-        source = raw ? 'json' : 'none';
-    }
-    if (!raw) raw = [];
-    hydrateWords(raw, { source, loadedAt: Date.now() });
     renderRoute();
 }
 

@@ -164,23 +164,20 @@ export function sanitizeUI(ui = {}) {
   };
 }
 
-export function migrateSort(sort = DEFAULT_SORT) {
-  const keyMap = { spanish: 'word', english: 'definition' };
-  const next = typeof sort === 'object' && sort ? { ...sort } : { ...DEFAULT_SORT };
-  const rawKey = next.key || DEFAULT_SORT.key;
-  const mappedKey = keyMap[rawKey] || rawKey;
-  const allowedKeys = new Set(['star', 'weight', 'word', 'definition', 'pos', 'cefr', 'tags']);
-  const key = allowedKeys.has(mappedKey) ? mappedKey : DEFAULT_SORT.key;
-  const dir = next.dir === 'desc' ? 'desc' : 'asc';
-  return { key, dir };
+const SORT_KEYS = new Set(['star', 'weight', 'word', 'definition', 'pos', 'cefr', 'tags']);
+
+export function sanitizeSort(sort = DEFAULT_SORT) {
+  const next = typeof sort === 'object' && sort ? { ...DEFAULT_SORT, ...sort } : { ...DEFAULT_SORT };
+  if (!SORT_KEYS.has(next.key)) next.key = DEFAULT_SORT.key;
+  next.dir = next.dir === 'desc' ? 'desc' : 'asc';
+  return next;
 }
 
-export function migrateColumns(columns = DEFAULT_COLUMNS) {
+export function sanitizeColumns(columns = DEFAULT_COLUMNS) {
   const next = { ...DEFAULT_COLUMNS };
   if (!columns || typeof columns !== 'object') return next;
   Object.entries(columns).forEach(([key, value]) => {
-    const mapped = key === 'spanish' ? 'word' : key === 'english' ? 'definition' : key;
-    if (mapped in next) next[mapped] = !!value;
+    if (key in next) next[key] = !!value;
   });
   return next;
 }
@@ -201,11 +198,13 @@ export function loadUI() {
 }
 
 export function loadSort() {
-  return migrateSort(LS.get('sort', DEFAULT_SORT));
+  const stored = LS.get('sort', DEFAULT_SORT);
+  return sanitizeSort(stored);
 }
 
 export function loadColumns() {
-  return migrateColumns(LS.get('columns', DEFAULT_COLUMNS));
+  const stored = LS.get('columns', DEFAULT_COLUMNS);
+  return sanitizeColumns(stored);
 }
 
 export function loadOrder() {

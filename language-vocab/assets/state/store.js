@@ -5,8 +5,8 @@ import {
   filtersEqual,
   sanitizeFilterSets,
   sanitizeUI,
-  migrateSort,
-  migrateColumns,
+  sanitizeSort,
+  sanitizeColumns,
   loadFilters,
   loadFilterSets,
   loadSort,
@@ -162,7 +162,7 @@ function updateFilterSets(nextSets) {
 }
 
 function updateSort(nextSort) {
-  const clean = migrateSort(nextSort);
+  const clean = sanitizeSort(nextSort);
   if (State.sort.key === clean.key && State.sort.dir === clean.dir) return;
   State.sort = clean;
   LS.set('sort', clean);
@@ -170,7 +170,7 @@ function updateSort(nextSort) {
 }
 
 function updateColumns(nextColumns) {
-  const clean = migrateColumns(nextColumns);
+  const clean = sanitizeColumns(nextColumns);
   if (serialize(State.columns) === serialize(clean)) return;
   State.columns = clean;
   LS.set('columns', clean);
