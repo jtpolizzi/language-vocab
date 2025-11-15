@@ -1,9 +1,34 @@
 // assets/state.js
+const STORAGE_PREFIX = 'lv:';
+const LEGACY_PREFIX = 'v23:';
+const LEGACY_PURGE_FLAG = `${STORAGE_PREFIX}purged-v23`;
+
+function purgeLegacyStorage() {
+  try {
+    if (localStorage.getItem(LEGACY_PURGE_FLAG) === '1') return;
+    const doomed = [];
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      if (key && key.startsWith(LEGACY_PREFIX)) doomed.push(key);
+    }
+    doomed.forEach((key) => localStorage.removeItem(key));
+    localStorage.setItem(LEGACY_PURGE_FLAG, '1');
+  } catch {
+    // ignore storage issues; app will fall back to defaults
+  }
+}
+purgeLegacyStorage();
+
+function withPrefix(key) {
+  return STORAGE_PREFIX + key;
+}
+
 export const LS = {
   get(k, d) {
-    try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch { return d; }
+    try { return JSON.parse(localStorage.getItem(withPrefix(k))) ?? d; } catch { return d; }
   },
-  set(k, v) { localStorage.setItem(k, JSON.stringify(v)); }
+  set(k, v) { localStorage.setItem(withPrefix(k), JSON.stringify(v)); },
+  remove(k) { localStorage.removeItem(withPrefix(k)); }
 };
 
 const subs = new Set();
@@ -115,12 +140,12 @@ function sanitizeFilterSets(list = []) {
 }
 
 function loadFilters() {
-  const stored = LS.get('v23:filters', {});
+  const stored = LS.get('filters', {});
   return sanitizeFilters(stored || {});
 }
 
 function loadFilterSets() {
-  const stored = LS.get('v23:filterSets', []);
+  const stored = LS.get('filterSets', []);
   return sanitizeFilterSets(stored || []);
 }
 
@@ -133,7 +158,7 @@ function sanitizeUI(ui = {}) {
 }
 
 function loadUI() {
-  const stored = LS.get('v23:ui', DEFAULT_UI);
+  const stored = LS.get('ui', DEFAULT_UI);
   return sanitizeUI(stored || DEFAULT_UI);
 }
 
@@ -159,11 +184,11 @@ function migrateColumns(columns = DEFAULT_COLUMNS) {
 }
 
 function loadSort() {
-  return migrateSort(LS.get('v23:sort', DEFAULT_SORT));
+  return migrateSort(LS.get('sort', DEFAULT_SORT));
 }
 
 function loadColumns() {
-  return migrateColumns(LS.get('v23:columns', DEFAULT_COLUMNS));
+  return migrateColumns(LS.get('columns', DEFAULT_COLUMNS));
 }
 
 export const State = {
@@ -172,7 +197,7 @@ export const State = {
   filterSets: loadFilterSets(),
   sort: loadSort(),
   columns: loadColumns(),
-  order: LS.get('v23:order', []),
+  order: LS.get('order', []),
   ui: loadUI(),
 
   set(k, v) {
@@ -182,27 +207,27 @@ export const State = {
       const merged = sanitizeFilters(v || {});
       const changed = !filtersEqual(prevFilters, merged);
       this.filters = merged;
-      LS.set('v23:filters', merged);
+      LS.set('filters', merged);
       if (changed) setCurrentWordId('');
     } else if (k === 'filterSets') {
       const next = sanitizeFilterSets(v || []);
       this.filterSets = next;
-      LS.set('v23:filterSets', next);
+      LS.set('filterSets', next);
     } else if (k === 'sort') {
       const next = migrateSort(v);
       this.sort = next;
-      LS.set('v23:sort', next);
+      LS.set('sort', next);
     } else if (k === 'columns') {
       const next = migrateColumns(v);
       this.columns = next;
-      LS.set('v23:columns', next);
+      LS.set('columns', next);
     } else if (k === 'ui') {
       const next = sanitizeUI(v || {});
       this.ui = next;
-      LS.set('v23:ui', next);
+      LS.set('ui', next);
     } else {
       this[k] = v;
-      if (['order', 'words', 'ui'].includes(k)) LS.set('v23:' + k, v);
+      if (['order', 'words', 'ui'].includes(k)) LS.set(k, v);
     }
     subs.forEach(fn => fn());
   }
@@ -212,10 +237,10 @@ export function subscribe(fn) { subs.add(fn); return () => subs.delete(fn); }
 export function forceStateUpdate() { subs.forEach(fn => fn()); }
 
 export const Prog = {
-  star(id) { return LS.get('v23:star:' + id, false); },
-  setStar(id, v) { LS.set('v23:star:' + id, !!v); subs.forEach(fn => fn()); },
+  star(id) { return LS.get('star:' + id, false); },
+  setStar(id, v) { LS.set('star:' + id, !!v); subs.forEach(fn => fn()); },
   weight(id) {
-    const raw = LS.get('v23:wt:' + id, null);
+    const raw = LS.get('wt:' + id, null);
     if (raw == null) return 3;
     const converted = toNewWeight(raw);
     return converted == null ? 3 : converted;
@@ -224,7 +249,7 @@ export const Prog = {
     const num = Number(v);
     const safe = Number.isFinite(num) ? num : 3;
     const clamped = Math.min(5, Math.max(1, safe));
-    LS.set('v23:wt:' + id, clamped);
+    LS.set('wt:' + id, clamped);
     if (!options?.silent) subs.forEach(fn => fn());
   }
 };

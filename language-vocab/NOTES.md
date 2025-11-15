@@ -1,4 +1,4 @@
-# Vocab Mini-App Notes (v2.12.1)
+# Vocab Mini-App Notes (v2.12.2)
 
 ## Snapshot
 - SPA written in vanilla HTML/CSS/JS; routes driven via hash (`#/list`, `#/cards`, `#/match`, `#/choice`).
@@ -49,6 +49,10 @@
 1. Phase 1 (v2.12.2): remove the legacy weight-migration UI/logic and reset the localStorage prefix so upcoming changes start from a clean slate.
 2. Phase 2 (v2.12.3): introduce canonical term keys (word + POS) for persisted progress, letting overlapping data files share stars/weights.
 3. Phase 3 (v2.12.4+): deep architectural/code review with targeted refactors for state management, shared utilities, and event handling.
+
+### Phase 1 (v2.12.2)
+- Removed the one-time “weight migration” helper from Settings now that every install picked it up.
+- Swapped all `localStorage` keys to the new `lv:` prefix and aggressively purge the old `v23:` entries on load so future term-key changes start clean.
 
 ## Next Targets / Ideas
 1. Progress export/import (JSON) for stars + weights.
