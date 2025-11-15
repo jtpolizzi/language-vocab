@@ -1,5 +1,5 @@
 // assets/components/Flashcards.js
-import { applyFilters, Prog, setCurrentWordId, sortWords, State, subscribe } from '../state.js';
+import { applyFilters, Prog, setCurrentWordId, sortWords, State, onStateEvent } from '../state.js';
 import { createWeightControl } from './WeightControl.js';
 
 export function mountFlashcards(container) {
@@ -449,9 +449,16 @@ export function mountFlashcards(container) {
   container.appendChild(progress);
   container.appendChild(card);
   render();
-  const unsubscribe = subscribe(() => render());
+  const eventUnsubs = [
+    onStateEvent('wordsChanged', render),
+    onStateEvent('filtersChanged', render),
+    onStateEvent('sortChanged', render),
+    onStateEvent('orderChanged', render),
+    onStateEvent('uiChanged', render),
+    onStateEvent('progressChanged', render)
+  ];
   return () => {
     cleanup();
-    unsubscribe();
+    eventUnsubs.forEach(unsub => unsub());
   };
 }

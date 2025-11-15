@@ -1,5 +1,5 @@
 // assets/components/MultipleChoice.js
-import { applyFilters, LS, State, subscribe } from '../state.js';
+import { applyFilters, LS, State, onStateEvent } from '../state.js';
 
 const PREF_KEY = 'v24:choicePrefs';
 const DEFAULT_PREFS = { size: 10, direction: 'word-definition', answers: 4 };
@@ -91,7 +91,10 @@ export function mountMultipleChoice(container) {
   startRound();
   updateStatusText();
 
-  const unsubscribe = subscribe(() => handleStateChange());
+  const eventUnsubs = [
+    onStateEvent('wordsChanged', handleStateChange),
+    onStateEvent('filtersChanged', handleStateChange)
+  ];
   const keyHandler = (e) => handleKey(e);
   window.addEventListener('keydown', keyHandler);
   continueBtn.addEventListener('click', () => {
@@ -100,7 +103,7 @@ export function mountMultipleChoice(container) {
   });
 
   return () => {
-    unsubscribe();
+    eventUnsubs.forEach(unsub => unsub());
     window.removeEventListener('keydown', keyHandler);
     clearTimeout(feedbackTimer);
     controls.destroy?.();

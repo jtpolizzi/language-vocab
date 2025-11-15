@@ -1,5 +1,5 @@
 // assets/components/WordMatch.js
-import { applyFilters, LS, State, subscribe } from '../state.js';
+import { applyFilters, LS, State, onStateEvent } from '../state.js';
 
 const PREF_KEY = 'v24:matchPrefs';
 const DEFAULT_PREFS = { size: 10, direction: 'word-definition', collapseMatches: false };
@@ -516,10 +516,13 @@ export function mountWordMatch(container) {
   updateCompactMode();
   startRound();
 
-  const unsubscribe = subscribe(() => handleStateChange());
+  const eventUnsubs = [
+    onStateEvent('wordsChanged', handleStateChange),
+    onStateEvent('filtersChanged', handleStateChange)
+  ];
   return () => {
     controls.destroy?.();
-    unsubscribe();
+    eventUnsubs.forEach(unsub => unsub());
   };
 
   function findTopLeftCandidate() {
