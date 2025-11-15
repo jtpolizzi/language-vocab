@@ -1,5 +1,6 @@
 // assets/components/MultipleChoice.js
 import { applyFilters, LS, State, onStateEvent } from '../state.js';
+import { createChip, createIconChip } from './ui/elements.js';
 
 const PREF_KEY = 'v24:choicePrefs';
 const DEFAULT_PREFS = { size: 10, direction: 'word-definition', answers: 4 };
@@ -394,20 +395,15 @@ export function mountMultipleChoice(container) {
     const actions = document.createElement('div');
     actions.className = 'match-toolbar-actions';
 
-    const playAgainBtn = document.createElement('button');
-    playAgainBtn.type = 'button';
-    playAgainBtn.className = 'match-play-again';
-    playAgainBtn.textContent = 'Play Again';
-    playAgainBtn.addEventListener('click', () => onPlayAgain());
+    const playAgainBtn = createChip('Play Again', {
+      className: 'match-play-again',
+      onClick: () => onPlayAgain()
+    });
 
     const optionsAnchor = document.createElement('div');
     optionsAnchor.className = 'options-anchor';
-    const optionsBtn = document.createElement('button');
-    optionsBtn.type = 'button';
-    optionsBtn.className = 'chip chip--icon match-options-btn';
-    optionsBtn.setAttribute('aria-label', 'Choice options');
+    const optionsBtn = createIconChip('⚙︎', 'Choice options', { className: 'match-options-btn' });
     optionsBtn.setAttribute('aria-expanded', 'false');
-    optionsBtn.textContent = '⚙︎';
 
     actions.append(playAgainBtn, optionsAnchor);
     optionsAnchor.appendChild(optionsBtn);

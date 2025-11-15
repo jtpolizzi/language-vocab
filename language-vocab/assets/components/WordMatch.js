@@ -1,5 +1,6 @@
 // assets/components/WordMatch.js
 import { applyFilters, LS, State, onStateEvent } from '../state.js';
+import { createChip, createIconChip } from './ui/elements.js';
 
 const PREF_KEY = 'v24:matchPrefs';
 const DEFAULT_PREFS = { size: 10, direction: 'word-definition', collapseMatches: false };
@@ -333,19 +334,14 @@ export function mountWordMatch(container) {
     const actions = document.createElement('div');
     actions.className = 'match-toolbar-actions';
 
-    const playAgainBtn = document.createElement('button');
-    playAgainBtn.type = 'button';
-    playAgainBtn.className = 'match-play-again';
-    playAgainBtn.textContent = 'Play Again';
-    playAgainBtn.addEventListener('click', () => startRound());
+    const playAgainBtn = createChip('Play Again', {
+      className: 'match-play-again',
+      onClick: () => startRound()
+    });
 
     const optionsAnchor = document.createElement('div');
     optionsAnchor.className = 'options-anchor';
-    const optionsBtn = document.createElement('button');
-    optionsBtn.type = 'button';
-    optionsBtn.className = 'chip chip--icon match-options-btn';
-    optionsBtn.setAttribute('aria-label', 'Match options');
-    optionsBtn.textContent = '⚙︎';
+    const optionsBtn = createIconChip('⚙︎', 'Match options', { className: 'match-options-btn' });
     optionsBtn.setAttribute('aria-expanded', 'false');
     optionsBtn.addEventListener('click', (e) => {
       e.stopPropagation();

@@ -4,7 +4,7 @@ import { mountTopBar } from './components/TopBar.js';
 import { mountWordList } from './components/WordList.js';
 import { mountWordMatch } from './components/WordMatch.js';
 import { mountMultipleChoice } from './components/MultipleChoice.js';
-import { State, hydrateWords, setLoaderStatus } from './state.js';
+import { State, hydrateWords, setLoaderStatus, onStateEvent } from './state.js';
 import { loadWords, onDataEvent, getLoaderStatus } from './data/loader.js';
 
 const topbar = document.getElementById('topbar');
@@ -21,6 +21,7 @@ const VIEW_REGISTRY = {
 };
 
 let cleanupView = () => {};
+let cleanupDebugPanel = () => {};
 
 normalizeDestroy(mountTopBar(topbar));
 mountSettings();
@@ -59,6 +60,11 @@ function renderRoute() {
 }
 
 window.addEventListener('hashchange', renderRoute);
+cleanupDebugPanel = normalizeDestroy(mountDebugPanel());
+const offDebugToggle = onStateEvent('uiChanged', () => {
+    cleanupDebugPanel();
+    cleanupDebugPanel = normalizeDestroy(mountDebugPanel());
+});
 
 function setActiveNav(hash) {
     const links = document.querySelectorAll('.app-header nav a');
@@ -131,3 +137,44 @@ async function loadData() {
 }
 
 loadData();
+
+function mountDebugPanel() {
+    const debug = window.__LV_DEBUG__;
+    if (!debug || !State.ui?.debugPanel) return () => {};
+    const panel = document.createElement('div');
+    panel.className = 'debug-panel';
+    Object.assign(panel.style, {
+        position: 'fixed',
+        bottom: '12px',
+        right: '12px',
+        background: 'rgba(0,0,0,0.75)',
+        color: '#fff',
+        fontSize: '12px',
+        padding: '8px 12px',
+        borderRadius: '8px',
+        zIndex: '4000',
+        lineHeight: '1.4',
+        maxWidth: '240px'
+    });
+
+    const statusLine = document.createElement('div');
+    const eventsLine = document.createElement('div');
+    panel.append(statusLine, eventsLine);
+    document.body.appendChild(panel);
+
+    const refresh = () => {
+        const meta = debug.State.meta || {};
+        const counts = debug.eventCounts;
+        const entries = Array.from(counts.entries());
+        entries.sort((a, b) => b[1] - a[1]);
+        statusLine.textContent = `Loader: ${meta.loaderStatus || 'idle'} • Source: ${meta.wordsSource || 'n/a'}`;
+        const eventsText = entries.length ? entries.map(([k, v]) => `${k}:${v}`).join(', ') : 'none';
+        eventsLine.textContent = `Events: ${eventsText}`;
+    };
+    refresh();
+    const interval = setInterval(refresh, 1000);
+    return () => {
+        clearInterval(interval);
+        panel.remove();
+    };
+}

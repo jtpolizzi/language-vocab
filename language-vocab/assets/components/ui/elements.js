@@ -1,10 +1,20 @@
 // assets/components/ui/elements.js
 
-export function createChip(label, { pressed = false, onClick, className = '', title } = {}) {
+export function createChip(label, { pressed = false, onClick, className = '', title, icon } = {}) {
   const btn = document.createElement('button');
   btn.type = 'button';
   btn.className = ['chip', className].filter(Boolean).join(' ');
-  btn.textContent = label;
+  if (icon) {
+    const span = document.createElement('span');
+    span.textContent = icon;
+    span.setAttribute('aria-hidden', 'true');
+    btn.appendChild(span);
+  }
+  if (label) {
+    const textNode = document.createElement('span');
+    textNode.textContent = label;
+    btn.appendChild(textNode);
+  }
   btn.setAttribute('aria-pressed', String(!!pressed));
   if (title) btn.title = title;
   if (typeof onClick === 'function') btn.onclick = onClick;
@@ -12,12 +22,8 @@ export function createChip(label, { pressed = false, onClick, className = '', ti
 }
 
 export function createIconChip(symbol, label, { disabled = false, onClick, title } = {}) {
-  const btn = createChip('', { className: 'chip--icon', onClick, title: title || label });
+  const btn = createChip('', { className: 'chip--icon', onClick, title: title || label, icon: symbol });
   btn.setAttribute('aria-label', label);
-  const icon = document.createElement('span');
-  icon.textContent = symbol;
-  icon.setAttribute('aria-hidden', 'true');
-  btn.appendChild(icon);
   btn.disabled = !!disabled;
   return btn;
 }

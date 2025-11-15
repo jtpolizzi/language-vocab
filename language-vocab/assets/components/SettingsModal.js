@@ -1,5 +1,6 @@
 // assets/components/SettingsModal.js
-import { State, resetPersistentState } from '../state.js';
+import { State, resetPersistentState, setFilters, setOrder, setSort } from '../state.js';
+import { createChip } from './ui/elements.js';
 
 export function openSettingsModal() {
   const overlay = document.createElement('div');
@@ -70,6 +71,19 @@ export function openSettingsModal() {
   fcRow.append(fcCb, fcSpan);
   fcWrap.append(fcH, fcRow);
 
+  const debugRow = document.createElement('label');
+  debugRow.style.display = 'flex'; debugRow.style.alignItems = 'center'; debugRow.style.gap = '8px';
+  const debugCb = document.createElement('input');
+  debugCb.type = 'checkbox';
+  debugCb.checked = !!State.ui.debugPanel;
+  debugCb.onchange = () => {
+    const ui = { ...State.ui, debugPanel: !!debugCb.checked };
+    State.set('ui', ui);
+  };
+  const debugSpan = document.createElement('span'); debugSpan.textContent = 'Show debug panel';
+  debugRow.append(debugCb, debugSpan);
+  fcWrap.appendChild(debugRow);
+
   // Reset
   const resetWrap = document.createElement('div');
   resetWrap.style.marginTop = '12px';
@@ -78,20 +92,17 @@ export function openSettingsModal() {
   resetWrap.style.gap = '8px';
 
   const resetRow = document.createElement('div');
-  const resetBtn = document.createElement('button');
-  resetBtn.className = 'chip';
-  resetBtn.textContent = 'Reset filters & order';
-  resetBtn.onclick = () => {
-    State.set('filters', { starred: false, weight: [1, 2, 3, 4, 5], search: '', pos: [], cefr: [], tags: [] });
-    State.set('order', []);
-    State.set('sort', { key: 'word', dir: 'asc' });
-  };
+  const resetBtn = createChip('Reset filters & order', {
+    onClick: () => {
+      setFilters({ starred: false, weight: [1, 2, 3, 4, 5], search: '', pos: [], cefr: [], tags: [] });
+      setOrder([]);
+      setSort({ key: 'word', dir: 'asc' });
+    }
+  });
   resetRow.append(resetBtn);
 
   const clearRow = document.createElement('div');
-  const clearBtn = document.createElement('button');
-  clearBtn.className = 'chip';
-  clearBtn.textContent = 'Clear all saved data';
+  const clearBtn = createChip('Clear all saved data');
   clearBtn.style.background = '#6b192c';
   clearBtn.style.borderColor = '#ff4d7d';
   clearBtn.style.color = '#fff';
@@ -108,10 +119,7 @@ export function openSettingsModal() {
   // Footer
   const footer = document.createElement('div');
   Object.assign(footer.style, { display: 'flex', justifyContent: 'flex-end', gap: '8px', marginTop: '16px' });
-  const close = document.createElement('button');
-  close.className = 'chip';
-  close.textContent = 'Close';
-  close.onclick = () => overlay.remove();
+  const close = createChip('Close', { onClick: () => overlay.remove() });
   footer.append(close);
 
   modal.append(h, colsWrap, fcWrap, resetWrap, footer);

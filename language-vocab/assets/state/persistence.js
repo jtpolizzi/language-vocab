@@ -53,7 +53,7 @@ export const DEFAULT_FILTERS = {
 };
 
 export const DEFAULT_WEIGHT = [...DEFAULT_FILTERS.weight];
-export const DEFAULT_UI = { showTranslation: false, currentWordId: '', rowSelectionMode: false };
+export const DEFAULT_UI = { showTranslation: false, currentWordId: '', rowSelectionMode: false, debugPanel: false };
 export const DEFAULT_SORT = { key: 'word', dir: 'asc' };
 export const DEFAULT_COLUMNS = {
   star: true,
@@ -160,7 +160,8 @@ export function sanitizeUI(ui = {}) {
   return {
     showTranslation: !!ui.showTranslation,
     currentWordId: typeof ui.currentWordId === 'string' ? ui.currentWordId : '',
-    rowSelectionMode: !!ui.rowSelectionMode
+    rowSelectionMode: !!ui.rowSelectionMode,
+    debugPanel: !!ui.debugPanel
   };
 }
 

@@ -44,11 +44,7 @@ export function mountTopBar(container) {
   row.appendChild(resultCount);
 
   // Gear (Settings)
-  const gear = document.createElement('button');
-  gear.className = 'chip';
-  gear.title = 'Settings';
-  gear.textContent = '⚙︎';
-  gear.onclick = () => openSettingsModal();
+  const gear = createChip('', { icon: '⚙︎', title: 'Settings', onClick: () => openSettingsModal() });
   row.appendChild(gear);
 
   // Search
