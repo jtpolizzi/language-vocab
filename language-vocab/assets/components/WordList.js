@@ -1,6 +1,12 @@
 // assets/components/WordList.js
-import { applyFilters, Prog, setCurrentWordId, sortWords, State, subscribe } from '../state.js';
+import { applyFilters, Prog, setCurrentWordId, setRowSelectionMode, isRowSelectionModeEnabled, sortWords, State, subscribe } from '../state.js';
 import { createWeightControl, createSparkIcon } from './WeightControl.js';
+
+function syncSelectionIfEnabled(wordId) {
+  if (!wordId) return;
+  if (!isRowSelectionModeEnabled()) return;
+  setCurrentWordId(wordId);
+}
 
 export function mountWordList(container) {
   container.innerHTML = '';
@@ -14,6 +20,9 @@ export function mountWordList(container) {
   const thead = document.createElement('thead');
   const tbody = document.createElement('tbody');
   let cleaned = false;
+  const LONG_PRESS_DELAY = 600;
+  const LONG_PRESS_TOLERANCE = 12;
+  let longPressInfo = null;
 
   const cols = [
     { key: 'star', label: '★' },
@@ -77,8 +86,63 @@ export function mountWordList(container) {
     if (!row) return;
     const wordId = row.dataset.wordId;
     if (!wordId) return;
-    setCurrentWordId(wordId);
+    syncSelectionIfEnabled(wordId);
+    startLongPressWatch(e, row, wordId);
   }, true);
+  tbody.addEventListener('pointermove', (e) => {
+    if (!longPressInfo) return;
+    if (longPressInfo.pointerId != null && e.pointerId != null && e.pointerId !== longPressInfo.pointerId) return;
+    const dx = e.clientX - longPressInfo.startX;
+    const dy = e.clientY - longPressInfo.startY;
+    if (Math.abs(dx) > LONG_PRESS_TOLERANCE || Math.abs(dy) > LONG_PRESS_TOLERANCE) {
+      cancelLongPressWatch();
+    }
+  }, true);
+  ['pointerup', 'pointercancel', 'pointerleave'].forEach((evt) => {
+    tbody.addEventListener(evt, cancelLongPressWatch, true);
+  });
+
+  function startLongPressWatch(e, row, wordId) {
+    cancelLongPressWatch();
+    if (!row) return;
+    if (!wordId) return;
+    if (typeof e.button === 'number' && e.button !== 0) return;
+    const timer = setTimeout(() => {
+      const pendingWordId = longPressInfo?.wordId;
+      longPressInfo = null;
+      if (pendingWordId) handleRowLongPress(pendingWordId);
+    }, LONG_PRESS_DELAY);
+    longPressInfo = {
+      pointerId: e.pointerId,
+      startX: e.clientX,
+      startY: e.clientY,
+      wordId,
+      timer
+    };
+  }
+
+  function cancelLongPressWatch(e) {
+    if (!longPressInfo) return;
+    if (e && longPressInfo.pointerId != null && e.pointerId != null && e.pointerId !== longPressInfo.pointerId) return;
+    clearTimeout(longPressInfo.timer);
+    longPressInfo = null;
+  }
+
+  function handleRowLongPress(wordId) {
+    if (!wordId) return;
+    if (!isRowSelectionModeEnabled()) {
+      setRowSelectionMode(true);
+      setCurrentWordId(wordId);
+      return;
+    }
+    const currentId = State.ui?.currentWordId || '';
+    if (currentId === wordId) {
+      setRowSelectionMode(false);
+      setCurrentWordId('');
+      return;
+    }
+    setCurrentWordId(wordId);
+  }
 
   function fmtTagsComma(s) {
     if (!s) return '';
@@ -105,7 +169,8 @@ export function mountWordList(container) {
   function render() {
     const filtered = applyFilters(State.words);
     let rows = sortWords(filtered);
-    const currentId = State.ui?.currentWordId || '';
+    const selectionEnabled = isRowSelectionModeEnabled();
+    const currentId = selectionEnabled ? (State.ui?.currentWordId || '') : '';
 
     // Respect State.order for Shuffle but never drop matching rows
     if (State.order && State.order.length) {
@@ -144,19 +209,20 @@ export function mountWordList(container) {
       tr.appendChild(tdText(w.pos));
       tr.appendChild(tdText(w.cefr));
       tr.appendChild(tdTags(w.tags));
-      tr.addEventListener('focus', () => setCurrentWordId(w.id));
-      if (currentId && currentId === w.id) {
+      tr.addEventListener('focus', () => syncSelectionIfEnabled(w.id));
+      if (selectionEnabled && currentId && currentId === w.id) {
         tr.classList.add('is-current');
         tr.setAttribute('aria-current', 'true');
         focusedRow = tr;
       } else {
+        tr.classList.remove('is-current');
         tr.removeAttribute('aria-current');
       }
-      tr.addEventListener('click', () => setCurrentWordId(w.id));
+      tr.addEventListener('click', () => syncSelectionIfEnabled(w.id));
       tr.addEventListener('keydown', (e) => {
         if (e.key === 'Enter' || e.key === ' ') {
           e.preventDefault();
-          setCurrentWordId(w.id);
+          syncSelectionIfEnabled(w.id);
         }
       });
       tbody.appendChild(tr);
@@ -275,7 +341,7 @@ function handleRowKeydown(e) {
     const next = row.nextElementSibling;
     if (next) {
       next.focus();
-      setCurrentWordId(next.dataset.wordId || '');
+      syncSelectionIfEnabled(next.dataset.wordId || '');
       next.scrollIntoView({ block: 'nearest' });
     }
     return;
@@ -285,7 +351,7 @@ function handleRowKeydown(e) {
     const prev = row.previousElementSibling;
     if (prev) {
       prev.focus();
-      setCurrentWordId(prev.dataset.wordId || '');
+      syncSelectionIfEnabled(prev.dataset.wordId || '');
       prev.scrollIntoView({ block: 'nearest' });
     }
     return;
@@ -293,12 +359,12 @@ function handleRowKeydown(e) {
   if (e.key === 's' || e.key === 'S') {
     e.preventDefault();
     Prog.setStar(wordId, !Prog.star(wordId));
-    setCurrentWordId(wordId);
+    syncSelectionIfEnabled(wordId);
     return;
   }
   if (/^[1-5]$/.test(e.key)) {
     e.preventDefault();
     Prog.setWeight(wordId, Number(e.key));
-    setCurrentWordId(wordId);
+    syncSelectionIfEnabled(wordId);
   }
 }

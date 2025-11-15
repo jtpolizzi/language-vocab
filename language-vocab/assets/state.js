@@ -19,7 +19,7 @@ const DEFAULT_FILTERS = {
 };
 
 const DEFAULT_WEIGHT = [...DEFAULT_FILTERS.weight];
-const DEFAULT_UI = { showTranslation: false, currentWordId: '' };
+const DEFAULT_UI = { showTranslation: false, currentWordId: '', rowSelectionMode: false };
 const DEFAULT_SORT = { key: 'word', dir: 'asc' };
 const DEFAULT_COLUMNS = { star: true, weight: true, word: true, definition: true, pos: true, cefr: true, tags: true };
 
@@ -127,7 +127,8 @@ function loadFilterSets() {
 function sanitizeUI(ui = {}) {
   return {
     showTranslation: !!ui.showTranslation,
-    currentWordId: typeof ui.currentWordId === 'string' ? ui.currentWordId : ''
+    currentWordId: typeof ui.currentWordId === 'string' ? ui.currentWordId : '',
+    rowSelectionMode: !!ui.rowSelectionMode
   };
 }
 
@@ -290,6 +291,16 @@ export function setCurrentWordId(wordId) {
   const next = typeof wordId === 'string' ? wordId : '';
   if ((State.ui.currentWordId || '') === next) return;
   State.set('ui', { ...State.ui, currentWordId: next });
+}
+
+export function setRowSelectionMode(enabled) {
+  const want = !!enabled;
+  if (!!State.ui?.rowSelectionMode === want) return;
+  State.set('ui', { ...State.ui, rowSelectionMode: want });
+}
+
+export function isRowSelectionModeEnabled() {
+  return !!State.ui?.rowSelectionMode;
 }
 
 export function sortWords(list) {

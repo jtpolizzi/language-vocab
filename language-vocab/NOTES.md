@@ -1,4 +1,4 @@
-# Vocab Mini-App Notes (v2.11.1)
+# Vocab Mini-App Notes (v2.11.3)
 
 ## Snapshot
 - SPA written in vanilla HTML/CSS/JS; routes driven via hash (`#/list`, `#/cards`, `#/match`, `#/choice`).
@@ -43,6 +43,7 @@
 2. Tightened spacing between the top bar, column headers, and list rows to match the Match/Choice views; table rows now slide neatly under the sticky header without “jumping”.
 3. Flashcards regained their full-width sizing inside the new layout (`width: min(100%, 720px)`), preventing narrow cards when the body switches flex modes.
 4. Body scroll locking now activates only while the list view is mounted, so Flashcards, Word Match, and Multiple Choice retain their original column/flow layouts.
+5. Word List row selection moved into an explicit long-press mode: only when enabled do rows highlight and sync with flashcards, and a long-press on the selected row exits the mode.
 
 ## Next Targets / Ideas
 1. Progress export/import (JSON) for stars + weights.

@@ -67,7 +67,7 @@ uno	one	num	A1.1
 vida	life	noun	A1.1	
 acabar	to finish	verb	A1.2	
 agente	agent	noun	A1.2	
-alrededor	around	adv	A1.2	
+alrededor	around	adv	A1.2	glue
 alta	tall	noun	A1.2	
 amable	kind	adj	A1.2	
 ambos	both	adj	A1.2	
@@ -4193,7 +4193,7 @@ manera	way, manner	noun	A1.1
 pensar	to think	verb	A1.1	
 por favor	please	intj	A1.1	
 probablemente	probably	adv	A1.1	
-quizás	perhaps	adv	A1.1	
+quizás	perhaps	adv	A1.1	glue
 razón	reason	noun	A1.1	
 realidad	reality	noun	A1.1	
 realmente	really	adv	A1.1	
@@ -4209,7 +4209,7 @@ vez	time (specific occurrence)	noun	A1.1
 vuelta	return, turn	noun	A1.1	
 a través	through	phrase	A1.2	
 absolutamente	absolutely	adv	A1.2	
-acaso	perhaps	adv	A1.2	
+acaso	perhaps	adv	A1.2	glue
 accidente	accident	noun	A1.2	
 agradable	nice, pleasant	adj	A1.2	
 al lado	next to	phrase	A1.2	
