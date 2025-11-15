@@ -1,6 +1,7 @@
 // assets/components/MultipleChoice.js
 import { applyFilters, LS, State, onStateEvent } from '../state.js';
 import { createChip, createIconChip } from './ui/elements.js';
+import { createPopover } from './ui/popover.js';
 
 const PREF_KEY = 'v24:choicePrefs';
 const DEFAULT_PREFS = { size: 10, direction: 'word-definition', answers: 4 };
@@ -462,9 +463,7 @@ export function mountMultipleChoice(container) {
     let popover = null;
 
     function buildOptionsPopover() {
-      const pop = document.createElement('div');
-      pop.className = 'options-popover';
-
+      const pop = createPopover({ className: 'options-popover' });
       const title = document.createElement('div');
       title.className = 'options-popover-title';
       title.textContent = 'Choice options';
