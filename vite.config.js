@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/mini-apps/language-vocab/',
+  base: '/language-vocab/',
   build: {
     outDir: 'dist',
     emptyOutDir: true
