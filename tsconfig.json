@@ -9,8 +9,8 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "allowSyntheticDefaultImports": true,
-    "types": ["vite/client"]
+    "types": ["vite/client", "svelte"]
   },
-  "include": ["assets/**/*.ts", "assets/**/*.tsx", "assets/**/*.d.ts", "src/**/*.ts", "tests/**/*.ts"],
+  "include": ["assets/**/*.ts", "assets/**/*.tsx", "assets/**/*.d.ts", "src/**/*.ts", "src/**/*.d.ts", "tests/**/*.ts"],
   "exclude": ["node_modules", "dist"]
 }

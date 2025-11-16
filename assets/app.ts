@@ -6,6 +6,7 @@ import { mountWordMatch } from './components/WordMatch.ts';
 import { mountMultipleChoice } from './components/MultipleChoice.ts';
 import { State, hydrateWords, setLoaderStatus, onStateEvent } from './state.ts';
 import { loadWords, onDataEvent } from './data/loader.ts';
+import { mountSvelteWordList } from '../src/svelte/mountWordListPrototype.ts';
 
 const topbar = document.getElementById('topbar');
 const view = document.getElementById('view');
@@ -15,6 +16,7 @@ loaderStatus.textContent = 'Loading words...';
 
 const VIEW_REGISTRY = {
     list: mountWordList,
+    'svelte-list': mountSvelteWordList,
     cards: mountFlashcards,
     match: mountWordMatch,
     choice: mountMultipleChoice
@@ -28,6 +30,7 @@ mountSettings();
 
 function resolveRoute(hash) {
     const normalized = (hash || '#/list').toLowerCase();
+    if (normalized.startsWith('#/svelte-list')) return 'svelte-list';
     if (normalized.startsWith('#/cards')) return 'cards';
     if (normalized.startsWith('#/match')) return 'match';
     if (normalized.startsWith('#/choice')) return 'choice';

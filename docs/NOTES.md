@@ -1,4 +1,4 @@
-# Vocab Mini-App Notes (v2.13.0)
+# Vocab Mini-App Notes (v2.14.0)
 
 ## Snapshot
 - SPA written in vanilla HTML/CSS/JS; routes driven via hash (`#/list`, `#/cards`, `#/match`, `#/choice`).
@@ -49,7 +49,7 @@
 1. Phase 1 (v2.12.2): remove the legacy weight-migration UI/logic and reset the localStorage prefix so upcoming changes start from a clean slate.
 2. Phase 2 (v2.12.3): introduce canonical term keys (word + POS) for persisted progress, letting overlapping data files share stars/weights.
 3. Phase 3 (v2.12.4+): deep architectural/code review with targeted refactors for state management, shared utilities, and event handling.
-4. Step A (v2.13.0 in progress): TypeScript + Vite build landed; repo now lives at the root (`language-vocab`). Remaining work: tighten component typings and add linting/prettier.
+4. Step A (v2.13.0 completed): TypeScript + Vite build landed; repo now lives at the root (`language-vocab`). Remaining work: tighten component typings and add linting/prettier.
 
 ### Phase 1 (v2.12.2 ✅ Completed)
 - Removed the one-time “weight migration” helper from Settings now that every install picked it up.
@@ -69,6 +69,11 @@
 - Vitest suites run across state/data plus every UI view (Word List, Flashcards, Word Match, Multiple Choice, TopBar, Settings); linting/formatting handled via ESLint + Prettier.
 - GitHub Pages workflow builds/deploys from `dist/`. Repo root matches the deployed app so local paths map 1:1 to production.
 - All components now run typed (no `@ts-nocheck`) and the tooling is in place for future migrations/tests. Next up is Step B (Svelte prototype) to evaluate a framework migration.
+
+### Step B (v2.14.0 In Progress)
+- Added `svelte` + `@sveltejs/vite-plugin-svelte` to the Vite build and exposed a compatibility bridge (`wordListStore`) so Svelte components consume the existing typed store/actions.
+- Introduced a non-destructive `#/svelte-list` route beside the vanilla list; the prototype currently renders from shared state (filtered count) while we rebuild the table UI.
+- Svelte 5 APIs are the default (using the `mount/unmount` helpers) so the evaluation reflects the latest ergonomics/perf expectations.
 
 ## Next Targets / Ideas
 1. Progress export/import (JSON) for stars + weights.
