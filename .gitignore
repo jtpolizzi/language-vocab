@@ -5,4 +5,3 @@ coverage/
 npm-debug.log*
 deploy/
 dist/
-dist/
