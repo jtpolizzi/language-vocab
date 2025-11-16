@@ -4,6 +4,7 @@
 - ✅ **Phase 1 (v2.12.2)** – Removed the legacy weight-migration helper and switched all `localStorage` keys to the `lv:` prefix while purging the old `v23:` entries.
 - ✅ **Phase 2 (v2.12.3)** – Added canonical `termKey`s (word + POS) so overlapping data files share stars/weights; components now use `termKey` for persistence.
 - ✅ **Phase 3 (v2.12.4)** – Completed the architectural/code review with shared state actions, event-driven components, common chip/popover helpers, loader events + debug panel, and a Vitest + happy-dom test harness.
+- ✅ Repo restructure (v2.13.0) – `language-vocab` now lives at the repo root; Vite/TS build + Pages workflow deploy the app directly from `dist/`.
 
 ### Phase 3 Review Notes (working doc) (✅ Completed)
 **State & persistence**
@@ -28,7 +29,8 @@
 
 **Status (v2.13.0 in progress)**
 - Vite + TypeScript tooling is in place (`npm run dev`, `npm run build`, `npm run preview`). All state modules, shared UI helpers, loader, and tests now compile as `.ts` with shared interfaces.
-- A GitHub Actions workflow builds/deploys `dist/` for Pages once enabled. Remaining work: convert the view modules from `// @ts-nocheck` to typed components and layer in ESLint/Prettier.
+- Repo root == app root, and the GitHub Actions workflow builds/deploys `dist/` to Pages automatically.
+- Remaining work: convert the view modules from `// @ts-nocheck` to typed components, add ESLint/Prettier, and expand Vitest coverage.
 
 **Implementation Plan (remaining work)**
 - Conversion order
