@@ -14,6 +14,8 @@
 - Colocating TS/markup/styles drastically reduced iteration time; the store bridge avoided logic duplication.
 - Duplicating CSS per component is acceptable short term, but we should plan how/when to retire the global rules once the legacy view is gone.
 - Before each new view migration, align on a parity checklist (layout, typography, interactions, keyboard/touch, edge cases) and a store contract to minimize back-and-forth.
+- Word List prototype showed parity without perf regressions; the Svelte rows reuse the existing store data, long-press + weight controls stay in sync with legacy logic, and per-row handlers trimmed the manual event plumbing.
+- Remaining gaps: shared styling story (table styles live in both `assets/styles.css` + `.svelte`), lint/test coverage for `.svelte` files, and a standardized approach for scroll-lock + layout utilities once additional views migrate.
 
 ## 3. Step C – Conditional Svelte Migration (future)
 If Svelte continues to prove out:

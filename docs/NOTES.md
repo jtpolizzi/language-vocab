@@ -76,6 +76,12 @@
 - Rebuilt the Word List UI in Svelte with feature/item parity (sorting, stars/weights, long-press row selection) driven by the existing store, and mirrored the vanilla styling so the two lists are visually interchangeable.
 - Svelte 5 APIs are the default (using the `mount/unmount` helpers), so the evaluation reflects the latest ergonomics/perf expectations and we avoid legacy compatibility flags.
 - Observation: colocating TS/markup/styles made small adjustments faster and easier to reason about; the store bridge kept logic de-duped, but duplicating CSS per component highlighted where we need a plan for shared tokens vs. view-specific rules.
+- **Prototype takeaways (Word List)**
+  - Rendering perf stayed flat (same store + DOM structure) but interaction latency improved because long-press + wheel handlers are scoped to each row instance instead of delegated through manual listeners.
+  - Bridge store kept business logic centralized; all Svelte-specific work was view code + DOM orchestration, so the migration risk stayed low.
+  - DX wins: slotting TS + markup together reduced “jumping between files,” and Svelte’s declarative class toggles made column-visibility + selection states trivial.
+  - DX pain: duplicated CSS is already unwieldy—need a plan to share tokens/mixins or move canonical table styles during the next view migration.
+  - Testing gap: no component-level tests exist; before more Svelte views land we should pick a Vitest + `@testing-library/svelte` story or similar.
 
 ## Next Targets / Ideas
 1. Progress export/import (JSON) for stars + weights.
