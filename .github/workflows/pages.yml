@@ -24,19 +24,21 @@ jobs:
           node-version: 18
           cache: 'npm'
       - run: npm install
+        working-directory: language-vocab
       - run: npm run build
+        working-directory: language-vocab
       - name: Prepare deploy directory
         run: |
           mkdir deploy
           rsync -av \
             --exclude 'deploy' \
-            --exclude 'node_modules' \
-            --exclude 'dist' \
+            --exclude 'language-vocab/node_modules' \
+            --exclude 'language-vocab/dist' \
             --exclude '.git' \
             ./ deploy
           rm -rf deploy/language-vocab
           mkdir -p deploy/language-vocab
-          cp -R dist/. deploy/language-vocab/
+          cp -R language-vocab/dist/. deploy/language-vocab/
       - uses: actions/upload-pages-artifact@v2
         with:
           path: deploy
