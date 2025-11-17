@@ -1,4 +1,4 @@
-# Handover Notes – v2.14.4
+# Handover Notes – v2.14.6
 
 ## Current Status
 - Repository renamed to `language-vocab` and the app now lives at the repo root.
@@ -9,11 +9,12 @@
 - The Svelte Word List is now the sole implementation (`#/list` nav item); the legacy view has been retired.
 - The shared Top Bar now ships as a Svelte component (shuffle, search, filters popover, saved sets, weight/facet toggles, settings modal) while every route still runs on the legacy logic.
 - Flashcards run through Svelte too—the centered card layout, sticky star/weight controls, fixed bottom nav, progress slider, tap zones, swipe gestures, keyboard shortcuts, and `setCurrentWordId` sync all mirror the legacy experience.
+- Word Match moved to Svelte; prefs (set size/direction/collapse), quick-play automation, and match/mismatch animations now live in the component while sharing the same filtered word pool as other routes.
 
 ## Upcoming Step B Items
-1. **Render the Svelte table** – bring the filtered/sorted rows into the prototype, then layer sorting controls, star/weight toggles, and row-selection parity.
-2. **Document findings** – record DX/perf learnings from the prototype in NOTES/ARCHITECTURE to guide the go/no-go decision.
-3. **Tooling follow-ups** – if Svelte becomes permanent, extend ESLint/Prettier/Vitest configs accordingly; otherwise continue vanilla cleanups once the evaluation wraps.
+1. **Migrate remaining views** – continue the Svelte rollout with Multiple Choice, Settings/overlays, then CSS colocation once every view is native.
+2. **Document findings** – record DX/perf learnings from the migrations in NOTES/ARCHITECTURE to guide the go/no-go decision.
+3. **Tooling follow-ups** – extend ESLint/Prettier/Vitest coverage for `.svelte` files once all migrations land, then trim any legacy helpers.
 
 ## Deployment Checklist
 1. `npm install`
@@ -70,8 +71,7 @@
 - Reuse palette tokens (`--line`, accent, background gradients) so the board looks identical during the overlap period.
 
 ## Sequenced Roadmap
-1. **v2.14.5 – Word Match migration**: Move the match board + toolbar into Svelte using the existing store/prefs, then delete the legacy view once parity is confirmed.
-2. **v2.14.6 – Multiple Choice migration**: Rebuild the quiz view in Svelte, reusing the filtered pool + shared actions, and retire the vanilla implementation.
-3. **v2.14.7 – Settings + overlays**: Port the settings modal (and always-mounted helpers like the debug panel/body locks) into Svelte so every surface uses the same stack.
-4. **v2.14.8 – CSS colocation**: After every view is Svelte-native, move view-specific styles from `assets/styles.css` into their `.svelte` files, leaving only tokens/global resets globally.
-5. **v2.14.9 – Tooling/tests polish**: Expand ESLint/Vitest coverage for the Svelte files (component tests, lint rules) and tidy any remaining automation gaps.
+1. **v2.14.6 – Multiple Choice migration**: Rebuild the quiz view in Svelte, reusing the filtered pool + shared actions, and retire the vanilla implementation.
+2. **v2.14.7 – Settings + overlays**: Port the settings modal (and always-mounted helpers like the debug panel/body locks) into Svelte so every surface uses the same stack.
+3. **v2.14.8 – CSS colocation**: After every view is Svelte-native, move view-specific styles from `assets/styles.css` into their `.svelte` files, leaving only tokens/global resets globally.
+4. **v2.14.9 – Tooling/tests polish**: Expand ESLint/Vitest coverage for the Svelte files (component tests, lint rules) and tidy any remaining automation gaps.

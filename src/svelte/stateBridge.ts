@@ -174,3 +174,21 @@ export const flashcardsStore: Readable<FlashcardsSnapshot> = readable(getFlashca
 export const flashcardsActions = {
   setCurrentWordId
 };
+
+export interface WordMatchSnapshot {
+  words: VocabEntry[];
+}
+
+function getWordMatchSnapshot(): WordMatchSnapshot {
+  const filtered = applyFilters(State.words);
+  return {
+    words: filtered
+  };
+}
+
+export const wordMatchStore: Readable<WordMatchSnapshot> = readable(getWordMatchSnapshot(), (set) => {
+  const sync = () => set(getWordMatchSnapshot());
+  sync();
+  const unsubscribe = subscribeToState(sync);
+  return () => unsubscribe();
+});
