@@ -1,4 +1,4 @@
-# Vocab Mini-App Notes (v2.14.7)
+# Vocab Mini-App Notes (v2.14.8)
 
 ## Snapshot
 - SPA written in vanilla HTML/CSS/JS; routes driven via hash (`#/list`, `#/cards`, `#/match`, `#/choice`).
@@ -70,7 +70,7 @@
 - GitHub Pages workflow builds/deploys from `dist/`. Repo root matches the deployed app so local paths map 1:1 to production.
 - All components now run typed (no `@ts-nocheck`) and the tooling is in place for future migrations/tests. Next up is Step B (Svelte prototype) to evaluate a framework migration.
 
-### Step B (v2.14.7 In Progress)
+### Step B (v2.14.8 In Progress)
 - Added `svelte` + `@sveltejs/vite-plugin-svelte` to the Vite build and exposed a compatibility bridge (`wordListStore`) so Svelte components consume the existing typed store/actions.
 - Introduced a dedicated Word List route (`#/list`) that now points to the Svelte implementation; the legacy view has been retired.
 - Rebuilt the Word List UI in Svelte with feature/item parity (sorting, stars/weights, long-press row selection) driven by the existing store, and mirrored the vanilla styling so the two lists are visually interchangeable.
@@ -78,6 +78,7 @@
 - Flashcards now run as a Svelte view: same filtered/shuffled cards, centered layout, sticky top-right star/weight controls, fixed bottom nav (`← Flip →`), progress slider, tap zones, swipe gestures, keyboard shortcuts, and `setCurrentWordId` sync so other views highlight the same word.
 - Word Match now runs in Svelte too—the toolbar/prefs popover, quick-play auto-selection, shake/match animations, and LS-backed settings are identical while the board consumes the shared filtered word list.
 - Multiple Choice migrated to Svelte: progress meter, question/answer rendering, LS prefs (size/direction/answer count), keyboard shortcuts, and feedback states now live in the new component while sharing the filtered word pool.
+- Settings modal + overlays now use Svelte as well, so column toggles, Flashcards defaults, debug toggle, and reset/clear actions all run through the same component + event handling (with hash `#settings` support intact).
 - Svelte 5 APIs are the default (using the `mount/unmount` helpers), so the evaluation reflects the latest ergonomics/perf expectations and we avoid legacy compatibility flags.
 - Observation: colocating TS/markup/styles made small adjustments faster and easier to reason about; the store bridge kept logic de-duped, but duplicating CSS per component highlighted where we need a plan for shared tokens vs. view-specific rules.
 - **Prototype takeaways (Word List)**

@@ -1,4 +1,4 @@
-# Handover Notes – v2.14.7
+# Handover Notes – v2.14.8
 
 ## Current Status
 - Repository renamed to `language-vocab` and the app now lives at the repo root.
@@ -11,6 +11,7 @@
 - Flashcards run through Svelte too—the centered card layout, sticky star/weight controls, fixed bottom nav, progress slider, tap zones, swipe gestures, keyboard shortcuts, and `setCurrentWordId` sync all mirror the legacy experience.
 - Word Match moved to Svelte; prefs (set size/direction/collapse), quick-play automation, and match/mismatch animations now live in the component while sharing the same filtered word pool as other routes.
 - Multiple Choice is now Svelte-based: progress UI, answer feedback, keyboard shortcuts, and the LS-backed size/direction/answers prefs all ride through the shared store/actions.
+- Settings modal and overlays (debug toggle, column selection, reset/clear actions) now run through Svelte, keeping the `#settings` route + Top Bar trigger intact while sharing the same component logic.
 
 ## Upcoming Step B Items
 1. **Migrate remaining views** – continue the Svelte rollout with Settings/overlays next, then CSS colocation once every view is native.

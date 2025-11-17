@@ -3,7 +3,7 @@
 ## 1. Current Modernization Status
 - ✅ **TypeScript/Vite build (v2.13.x)** – repo lives at the root, strict typings + Vitest coverage are in place, and GitHub Pages deploys the Vite `dist/` output automatically (`npm run dev/test/build`).
 - ✅ **Phase 3 review work** – state split, shared UI helpers, loader instrumentation, and the debug overlay are all landed.
-- ✅ **Step B kickoff (v2.14.7)** – Svelte 5 + plugin integrated into Vite, the Word List/Top Bar/Flashcards/Word Match/Multiple Choice now run through Svelte with full parity, and the bridge pattern (stores + actions) keeps every view in sync with the existing state/actions.
+- ✅ **Step B kickoff (v2.14.8)** – Svelte 5 + plugin integrated into Vite, the Word List/Top Bar/Flashcards/Word Match/Multiple Choice/Settings modal now run through Svelte with full parity, and the bridge pattern (stores + actions) keeps every view in sync with the existing state/actions.
 
 ## 2. Step B – Svelte Evaluation (in progress)
 1. Rebuild representative views in Svelte using the existing typed store/actions to gauge DX/perf and bundle impact.

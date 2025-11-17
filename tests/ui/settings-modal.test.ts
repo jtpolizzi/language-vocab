@@ -1,4 +1,5 @@
 import { describe, it, expect, afterEach, beforeEach } from 'vitest';
+import { tick } from 'svelte';
 import { openSettingsModal, mountSettings } from '../../assets/components/SettingsModal.ts';
 import { State } from '../../assets/state.ts';
 
@@ -17,9 +18,10 @@ afterEach(() => {
 });
 
 describe('Settings modal', () => {
-  it('toggles Word List column visibility', () => {
+  it('toggles Word List column visibility', async () => {
     State.set('columns', { ...State.columns, star: true });
     openSettingsModal();
+    await tick();
     const overlay = document.querySelector('.modal-overlay');
     expect(overlay).toBeTruthy();
 
@@ -32,15 +34,17 @@ describe('Settings modal', () => {
     checkbox.dispatchEvent(new Event('change', { bubbles: true }));
     expect(State.columns.star).toBe(false);
 
-    overlay?.remove();
+    const closeBtn = document.querySelector('.modal-footer .chip, .modal button.chip');
+    (closeBtn as HTMLButtonElement | null)?.click();
   });
 
-  it('only mounts when visiting #settings', () => {
+  it('only mounts when visiting #settings', async () => {
     const container = document.createElement('div');
     window.location.hash = '#settings';
     mountSettings(container);
+    await tick();
     expect(document.querySelector('.modal-overlay')).toBeTruthy();
-    document.querySelector('.modal-overlay')?.remove();
+    document.querySelector<HTMLButtonElement>('.modal-footer .chip')?.click();
 
     window.location.hash = '#flashcards';
     mountSettings(container);
