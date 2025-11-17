@@ -21,3 +21,5 @@ This doc is for Codex to read at the beginning of every session - for guidelines
 ## Background info that YOU SHOULD READ (under docs)
   * NOTES.md
   * ARCHITECTURE_PLAN.md
+  * CHANGELOG.md
+  * HANDOVER.md - if one exists
