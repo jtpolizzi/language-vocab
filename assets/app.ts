@@ -27,9 +27,8 @@ normalizeDestroy(mountTopBar(topbar));
 mountSettings();
 
 function resolveRoute(hash) {
-    const normalized = (hash || '#/svelte-list').toLowerCase();
+    const normalized = (hash || '#/list').toLowerCase();
     if (normalized.startsWith('#/list')) return 'list';
-    if (normalized.startsWith('#/svelte-list')) return 'list';
     if (normalized.startsWith('#/cards')) return 'cards';
     if (normalized.startsWith('#/match')) return 'match';
     if (normalized.startsWith('#/choice')) return 'choice';
@@ -48,7 +47,7 @@ function renderRoute() {
 
     const hasWords = Array.isArray(State.words) && State.words.length > 0;
 
-    const hash = location.hash || '#/svelte-list';
+    const hash = location.hash || '#/list';
     setActiveNav(hash);
     const route = resolveRoute(hash);
     const mount = hasWords ? (VIEW_REGISTRY[route] || VIEW_REGISTRY.list) : null;

@@ -5,8 +5,8 @@
 - Build tooling: `npm run dev` (Vite dev server), `npm run test` (Vitest + happy-dom), `npm run build` (Vite production bundle).
 - GitHub Pages workflow (`.github/workflows/pages.yml`) builds with Node 22 and deploys the `dist/` output. Pages URL: https://jtpolizzi.github.io/language-vocab/ (formerly `/mini-apps/language-vocab`).
 - Public assets (e.g., `public/data/words.tsv`) are copied automatically by Vite and included in the build.
-- Step B kicked off: Svelte (+ plugin) is now in the toolchain with a `#/svelte-list` route and a state-bridged Word List prototype that shares the existing store/actions.
-- The Svelte Word List is now the sole implementation (`#/svelte-list` / “Word List” nav item); the legacy view has been retired.
+- Step B kicked off: Svelte (+ plugin) is now in the toolchain with a state-bridged Word List prototype that shares the existing store/actions.
+- The Svelte Word List is now the sole implementation (`#/list` nav item); the legacy view has been retired.
 - The shared Top Bar now ships as a Svelte component (shuffle, search, filters popover, saved sets, weight/facet toggles, settings modal) while every route still runs on the legacy logic.
 - Flashcards run through Svelte too—the centered card layout, sticky star/weight controls, fixed bottom nav, progress slider, tap zones, swipe gestures, keyboard shortcuts, and `setCurrentWordId` sync all mirror the legacy experience.
 

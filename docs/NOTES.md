@@ -72,7 +72,7 @@
 
 ### Step B (v2.14.4 In Progress)
 - Added `svelte` + `@sveltejs/vite-plugin-svelte` to the Vite build and exposed a compatibility bridge (`wordListStore`) so Svelte components consume the existing typed store/actions.
-- Introduced a non-destructive `#/svelte-list` route beside the vanilla list; both routes stay live so parity regressions are easy to spot.
+- Introduced a dedicated Word List route (`#/list`) that now points to the Svelte implementation; the legacy view has been retired.
 - Rebuilt the Word List UI in Svelte with feature/item parity (sorting, stars/weights, long-press row selection) driven by the existing store, and mirrored the vanilla styling so the two lists are visually interchangeable.
 - Rebuilt the shared Top Bar in Svelte so shuffle, search, saved filter sets, weight/Facet toggles, and the settings modal all ride through the same store/actions while the rest of the views stay vanilla.
 - Flashcards now run as a Svelte view: same filtered/shuffled cards, centered layout, sticky top-right star/weight controls, fixed bottom nav (`← Flip →`), progress slider, tap zones, swipe gestures, keyboard shortcuts, and `setCurrentWordId` sync so other views highlight the same word.
