@@ -1,7 +1,7 @@
 import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
 import { tick } from 'svelte';
 import { render } from '@testing-library/svelte';
-import WordListPrototype from '../../src/svelte/WordListPrototype.svelte';
+import WordList from '../../src/svelte/WordList.svelte';
 import { State, setFilters, setOrder, setSort } from '../../src/state/index.ts';
 import { DEFAULT_FILTERS, DEFAULT_SORT } from '../../src/state/persistence.ts';
 import type { VocabEntry } from '../../src/state/data.ts';
@@ -32,7 +32,7 @@ describe('WordList component', () => {
   });
 
   it('sorts when clicking header', async () => {
-    const { container, unmount } = render(WordListPrototype);
+    const { container, unmount } = render(WordList);
     await tick();
     const weightHeader = container.querySelector('th[data-key="word"]')!;
     weightHeader.dispatchEvent(new MouseEvent('click', { bubbles: true }));
@@ -42,7 +42,7 @@ describe('WordList component', () => {
   });
 
   it('enters selection mode after pointer interaction', async () => {
-    const { container, unmount } = render(WordListPrototype);
+    const { container, unmount } = render(WordList);
     await tick();
     const firstRow = container.querySelector<HTMLTableRowElement>('tbody tr')!;
     vi.useFakeTimers();

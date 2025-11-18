@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onDestroy, onMount } from 'svelte';
   import TopBar from './svelte/TopBar.svelte';
-  import WordListPrototype from './svelte/WordListPrototype.svelte';
+  import WordList from './svelte/WordList.svelte';
   import Flashcards from './svelte/Flashcards.svelte';
   import WordMatch from './svelte/WordMatch.svelte';
   import MultipleChoice from './svelte/MultipleChoice.svelte';
@@ -164,7 +164,7 @@
 <section id="view">
   {#if hasWords}
     {#if route === 'list'}
-      <WordListPrototype />
+      <WordList />
     {:else if route === 'cards'}
       <Flashcards />
     {:else if route === 'match'}

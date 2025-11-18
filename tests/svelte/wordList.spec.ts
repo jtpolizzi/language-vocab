@@ -1,6 +1,6 @@
 import { describe, it, beforeEach, afterEach, expect } from 'vitest';
 import { cleanup, fireEvent, render } from '@testing-library/svelte';
-import WordListPrototype from '../../src/svelte/WordListPrototype.svelte';
+import WordList from '../../src/svelte/WordList.svelte';
 import {
   hydrateWords,
   setSort,
@@ -26,7 +26,7 @@ const sampleWords: RawWord[] = [
   }
 ];
 
-describe('WordListPrototype.svelte', () => {
+describe('WordList.svelte', () => {
   beforeEach(() => {
     localStorage.clear();
     hydrateWords(sampleWords, { source: 'test', loaderStatus: 'loaded' });
@@ -40,14 +40,14 @@ describe('WordListPrototype.svelte', () => {
   });
 
   it('renders rows from the shared store snapshot', () => {
-    const { getByText } = render(WordListPrototype);
+    const { getByText } = render(WordList);
     expect(getByText('hola')).toBeTruthy();
     expect(getByText('adios')).toBeTruthy();
     expect(getByText('goodbye')).toBeTruthy();
   });
 
   it('updates the sort header direction when clicked', async () => {
-    const { getAllByRole } = render(WordListPrototype);
+    const { getAllByRole } = render(WordList);
     const headerCells = getAllByRole('columnheader');
     const wordHeader = headerCells.find((cell) => cell.textContent?.includes('Word'));
     expect(wordHeader?.getAttribute('aria-sort')).toBe('ascending');
