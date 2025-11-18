@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { termKey, stableId, mapRaw } from '../../assets/state/data.ts';
+import { termKey, stableId, mapRaw } from '../../src/state/data.ts';
 
 describe('state/data utilities', () => {
   it('builds canonical term keys', () => {

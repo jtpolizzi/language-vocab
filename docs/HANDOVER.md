@@ -1,4 +1,4 @@
-# Handover Notes – v2.14.9
+# Handover Notes – v2.15.0
 
 > **Purpose & scope** – quick-start briefing for whoever picks up the repo next: latest release status, deployment steps, and the immediate priorities for the next session. Technical details live in `ARCHITECTURE_PLAN.md`; full history lives in `CHANGELOG.md`.
 
@@ -7,7 +7,7 @@
 - Build tooling: `npm run dev` (Vite dev server), `npm run test` (Vitest + happy-dom), `npm run build` (Vite production bundle).
 - GitHub Pages workflow (`.github/workflows/pages.yml`) builds with Node 22 and deploys the `dist/` output. Pages URL: https://jtpolizzi.github.io/language-vocab/ (formerly `/mini-apps/language-vocab`).
 - Public assets (e.g., `public/data/words.tsv`) are copied automatically by Vite and included in the build.
-- v2.14 Svelte migration is underway: Svelte (+ plugin) is now part of the Vite toolchain and every surface consumes the shared store/actions via the bridge helpers.
+- v2.14 Svelte migration is complete: Svelte (+ plugin) is now part of the Vite toolchain and every surface consumes the shared store/actions via the shared `src/state` helpers.
 - The Svelte Word List is now the sole implementation (`#/list` nav item); the legacy view has been retired.
 - Global CSS audit finished: `assets/styles.css` now only keeps tokens, app shell styles, and shared primitives while each Svelte view owns its scoped styles.
 - The shared Top Bar ships as a Svelte component (shuffle, search, filters popover, saved sets, weight/facet toggles, settings modal).
@@ -18,8 +18,8 @@
 
 ## Upcoming v2.14 Tasks
 1. **Legacy helper cleanup** – finish wiring the Svelte `WeightSparkControl` everywhere and retire the old `assets/components/WeightControl.ts` helper/tests so only the new component is authoritative.
-2. **State bridge decision** – outline how we’ll replace the temporary `stateBridge` helpers with a first-class Svelte store (or finish migrating the legacy store outright) so components stop depending on DOM-era adapters.
-3. **Tooling follow-ups** – extend ESLint/Prettier/Vitest coverage for `.svelte` files, then trim any remaining vanilla DOM helpers once the shared components are in place.
+2. **Tooling follow-ups** – extend ESLint/Prettier/Vitest coverage for `.svelte` files, then trim any remaining vanilla DOM helpers once the shared components are in place.
+3. **State polish** – now that the state modules live under `src/state`, capture any refactor follow-ups (typed stores, derived helpers) needed before we introduce new features.
 
 ## Deployment Checklist
 1. `npm install`
@@ -28,8 +28,7 @@
 
 ## Next Session
 - Remove the unused `assets/components/WeightControl.ts` + tests after verifying every view uses the Svelte `WeightSparkControl`.
-- Outline the store refactor (Svelte-native state + `stateBridge` replacement) now that the single Svelte App shell is live.
-- Outline the lint/test/tooling updates needed once the CSS audit lands (ESLint plugin for Svelte, Prettier config, Vitest component harness + component tests).
+- Outline the lint/test/tooling updates needed now that the CSS + state cleanup has landed (ESLint plugin for Svelte, Prettier config, Vitest component harness + component tests).
 
 ### Svelte Flashcards – Parity Checklist & Store Contract (reference)
 **Layout / visual**
@@ -47,7 +46,7 @@
 - Suppression flag should prevent the next tap from advancing when pointer/touch events originate in the `.topright` controls.
 
 **Data contract**
-- Inputs from the store bridge: filtered/shuffled card list, current index, flip state, `Prog` star/weight values, and UI prefs (show translation, debug panel).
+- Inputs from the shared store helpers: filtered/shuffled card list, current index, flip state, `Prog` star/weight values, and UI prefs (show translation, debug panel).
 - Events emitted: `setCurrentWordId` (to sync with other views), `Prog.setStar`, `Prog.setWeight`, navigation actions (prev/next), and `State.set('ui', ...)` when settings toggles update.
 - Derived helpers: formatted counter text, disabled states for nav buttons, whether translation text renders, and whether the overlays should show weight chips or spark icons.
 

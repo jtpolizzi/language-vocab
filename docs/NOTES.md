@@ -1,4 +1,4 @@
-# Vocab Mini-App Notes (v2.14.9)
+# Vocab Mini-App Notes (v2.15.0)
 
 > **Purpose & scope** – living snapshot of the product: what features exist today, how they behave, and which improvements we’re considering next. Implementation details and release-by-release histories live in `ARCHITECTURE_PLAN.md` and `CHANGELOG.md` respectively.
 
@@ -25,7 +25,7 @@
 - Multiple Choice generates lightweight quizzes pulling from the filtered word pool.
 
 ## Data & Persistence
-- `State` fields: `words`, `filters`, `order` (shuffle), `ui` prefs, plus derived helpers in `state.js`.
+- `State` fields: `words`, `filters`, `order` (shuffle), `ui` prefs, plus derived helpers in `src/state`.
 - User progress lives under the `Prog` namespace (stars + weights) and syncs across all views.
 - Filters and shuffle order survive reloads; resetting happens via Settings → “Reset filters & order”.
 
@@ -40,5 +40,5 @@
 - **Release history** – see `CHANGELOG.md` for version-by-version bullet points from v2.5 onward.
 
 ## Current Focus
-- Post-migration cleanup: every surface now runs through Svelte 5 with colocated styles, so the next chunk is removing the leftover legacy helpers (WeightControl, mount wrappers) and replacing `stateBridge` with a native Svelte store.
+- Post-migration cleanup: every surface now runs through Svelte 5 with colocated styles, backed by the shared store exports in `src/state`; the remaining cleanup centers on the old DOM helpers (WeightControl, etc.) before we expand lint/tests.
 - Shared UI primitives (`ChipButton`, `WeightSparkControl`) are the baseline; future UI tweaks should extend those components or introduce new primitives instead of reintroducing global CSS or DOM helpers.

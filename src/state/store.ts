@@ -1,4 +1,4 @@
-// assets/state/store.ts
+// src/state/store.ts
 import {
   LS,
   sanitizeFilters,

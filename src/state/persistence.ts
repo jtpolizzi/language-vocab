@@ -1,4 +1,4 @@
-// assets/state/persistence.ts
+// src/state/persistence.ts
 
 export const STORAGE_PREFIX = 'lv:';
 

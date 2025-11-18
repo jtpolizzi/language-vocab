@@ -7,7 +7,7 @@
     setOrder,
     setSort,
     type ColumnsState
-  } from '../../assets/state.ts';
+  } from '../state';
   import ChipButton from './ui/ChipButton.svelte';
 
   type ColumnKey = keyof ColumnsState;

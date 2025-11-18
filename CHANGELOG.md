@@ -2,6 +2,11 @@
 
 All notable changes to this project are documented here. Older entries were consolidated from the historical notes so `docs/NOTES.md` can stay focused on the current product snapshot.
 
+## v2.15.0
+- Replaced the legacy DOM router with `src/App.svelte`, so hash navigation, loader state, and the settings modal now live entirely in Svelte.
+- Deleted the interim `assets/components/*` mount wrappers and ported every test to mount the real Svelte components through Testing Library.
+- Moved the shared state modules into `src/state` (exposing typed Svelte-readable stores) and updated docs to reflect the Svelte-first architecture.
+
 ## v2.14.9
 - Introduced shared Svelte primitives (`ChipButton`, `WeightSparkControl`) so chip and weight controls no longer rely on global CSS.
 - Normalized the Top Bar, Multiple Choice, and Word Match components by moving inline styles into their `<style>` blocks and colocation their view-specific CSS.

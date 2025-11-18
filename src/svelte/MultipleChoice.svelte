@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onDestroy, onMount } from 'svelte';
-  import { LS, type VocabEntry } from '../../assets/state.ts';
-  import { filteredWordsStore } from './stateBridge';
+  import { LS, type VocabEntry } from '../state';
+  import { filteredWordsStore } from '../state/stores';
   import ChipButton from './ui/ChipButton.svelte';
 
   const PREF_KEY = 'v24:choicePrefs';

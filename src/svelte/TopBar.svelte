@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onDestroy, onMount } from 'svelte';
-  import { topBarStore, topBarActions } from './stateBridge';
+  import { topBarStore, topBarActions } from '../state/stores';
   import {
     State,
     applyFilters,
@@ -10,7 +10,7 @@
     filtersEqual,
     type Filters,
     type FilterSet
-  } from '../../assets/state.ts';
+  } from '../state';
   import { openSettingsModal } from './openSettingsModal.ts';
   import { WEIGHT_DESCRIPTIONS, WEIGHT_SHORT_LABELS } from '../../assets/components/WeightControl.ts';
   import ChipButton from './ui/ChipButton.svelte';

@@ -2,10 +2,10 @@ import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
 import { tick } from 'svelte';
 import { render } from '@testing-library/svelte';
 import TopBar from '../../src/svelte/TopBar.svelte';
-import { State, setFilters, setOrder, setSort, setFilterSets } from '../../assets/state.ts';
-import { DEFAULT_FILTERS, DEFAULT_SORT } from '../../assets/state/persistence.ts';
-import type { RawWord } from '../../assets/state/data.ts';
-import { mapRaw } from '../../assets/state/data.ts';
+import { State, setFilters, setOrder, setSort, setFilterSets } from '../../src/state/index.ts';
+import { DEFAULT_FILTERS, DEFAULT_SORT } from '../../src/state/persistence.ts';
+import type { RawWord } from '../../src/state/data.ts';
+import { mapRaw } from '../../src/state/data.ts';
 
 const RAW_WORDS: RawWord[] = [
   { word: 'uno', definition: 'one', POS: 'n', CEFR: 'A1', Tags: 'number' },

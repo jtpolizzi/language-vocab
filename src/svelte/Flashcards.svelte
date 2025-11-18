@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import { flashcardsStore, flashcardsActions } from './stateBridge';
-  import { Prog, type VocabEntry } from '../../assets/state.ts';
+  import { flashcardsStore, flashcardsActions } from '../state/stores';
+  import { Prog, type VocabEntry } from '../state';
   import WeightSparkControl from './ui/WeightSparkControl.svelte';
 
   interface PointerGesture {

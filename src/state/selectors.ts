@@ -1,4 +1,4 @@
-// assets/state/selectors.ts
+// src/state/selectors.ts
 import { State, Prog } from './store.ts';
 import { normalizeTagsList, type VocabEntry } from './data.ts';
 

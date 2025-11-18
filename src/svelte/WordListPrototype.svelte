@@ -1,6 +1,6 @@
 <script lang="ts">
-  import { Prog, type ColumnsState } from '../../assets/state.ts';
-  import { wordListStore, wordListActions } from './stateBridge';
+  import { Prog, type ColumnsState } from '../state';
+  import { wordListStore, wordListActions } from '../state/stores';
   import WeightSparkControl from './ui/WeightSparkControl.svelte';
   import { tick } from 'svelte';
 

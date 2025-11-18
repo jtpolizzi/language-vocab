@@ -2,9 +2,9 @@ import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
 import { tick } from 'svelte';
 import { render } from '@testing-library/svelte';
 import WordMatch from '../../src/svelte/WordMatch.svelte';
-import { State, setFilters, setOrder, setSort } from '../../assets/state.ts';
-import { DEFAULT_FILTERS, DEFAULT_SORT } from '../../assets/state/persistence.ts';
-import type { VocabEntry } from '../../assets/state/data.ts';
+import { State, setFilters, setOrder, setSort } from '../../src/state/index.ts';
+import { DEFAULT_FILTERS, DEFAULT_SORT } from '../../src/state/persistence.ts';
+import type { VocabEntry } from '../../src/state/data.ts';
 
 const SAMPLE_WORDS: VocabEntry[] = [
   { id: 'a', termKey: 'uno|n', word: 'uno', definition: 'one', pos: 'n', cefr: 'A1', tags: '' },

@@ -1,7 +1,7 @@
 import { describe, it, expect, afterEach, beforeEach } from 'vitest';
 import { tick } from 'svelte';
 import { openSettingsModal, openSettingsRouteIfNeeded } from '../../src/svelte/openSettingsModal.ts';
-import { State } from '../../assets/state.ts';
+import { State } from '../../src/state/index.ts';
 
 const originalColumns = { ...State.columns };
 const originalUI = { ...State.ui };

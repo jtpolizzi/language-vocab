@@ -1,4 +1,4 @@
-// assets/state/data.ts
+// src/state/data.ts
 
 const WORD_FIELDS = ['word', 'term', 'lemma'] as const;
 const LEGACY_WORD_FIELDS = ['Spanish', 'es'] as const; // TODO: remove once all data files use word/definition.

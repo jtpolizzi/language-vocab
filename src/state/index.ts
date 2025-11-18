@@ -1,4 +1,4 @@
-// assets/state.ts
+// src/state/index.ts
 export {
   LS,
   sanitizeFilters,
@@ -9,7 +9,7 @@ export {
   type UIState,
   type SortState,
   type ColumnsState
-} from './state/persistence.ts';
+} from './persistence.ts';
 
 export {
   State,
@@ -30,7 +30,7 @@ export {
   clearOrder,
   setLoaderStatus,
   type LoaderStatus
-} from './state/store.ts';
+} from './store.ts';
 
 export {
   termKey,
@@ -39,10 +39,12 @@ export {
   normalizeTagsList,
   type VocabEntry,
   type RawWord
-} from './state/data.ts';
+} from './data.ts';
 
 export {
   applyFilters,
   sortWords,
   shuffledIds
-} from './state/selectors.ts';
+} from './selectors.ts';
+
+export * from './stores.ts';

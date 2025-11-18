@@ -12,7 +12,7 @@
     hydrateWords,
     setLoaderStatus,
     on as onStateEvent
-  } from '../assets/state.ts';
+  } from './state';
   import { loadWords, onDataEvent } from '../assets/data/loader.ts';
 
   type Route = 'list' | 'cards' | 'match' | 'choice';

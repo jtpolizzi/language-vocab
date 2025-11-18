@@ -2,8 +2,6 @@ import { readable, type Readable } from 'svelte/store';
 import {
   State,
   subscribe as subscribeToState,
-  applyFilters,
-  sortWords,
   setSort,
   clearOrder,
   setCurrentWordId,
@@ -12,12 +10,13 @@ import {
   setFilters,
   setFilterSets,
   setOrder,
-  type VocabEntry,
   type SortState,
   type ColumnsState,
   type Filters,
   type FilterSet
-} from '../../assets/state.ts';
+} from './store.ts';
+import { applyFilters, sortWords } from './selectors.ts';
+import type { VocabEntry } from './data.ts';
 
 export interface WordListSnapshot {
   rows: VocabEntry[];

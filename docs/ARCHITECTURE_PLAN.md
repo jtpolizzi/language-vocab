@@ -14,12 +14,12 @@
 4. Capture migration lessons (perf, DX, bundle impact) inside NOTES/HANDOVER to guide future enhancements.
 
 **Key observations**
-- Colocating TS/markup/styles drastically reduced iteration time; the store bridge avoided logic duplication.
+- Colocating TS/markup/styles drastically reduced iteration time; the shared store exports avoided logic duplication.
 - Duplicated CSS used to be the main pain point; now that view-specific rules live beside their components we can keep `assets/styles.css` limited to design tokens, layout chrome, and shared primitives.
 - Before each new view migration, align on a parity checklist (layout, typography, interactions, keyboard/touch, edge cases) and a store contract to minimize back-and-forth.
 - Word List prototype showed parity without perf regressions; the Svelte rows reuse the existing store data, long-press + weight controls stay in sync with legacy logic, and per-row handlers trimmed the manual event plumbing.
 - Remaining gaps: shared styling story (table styles live in both `assets/styles.css` + `.svelte`), lint/test coverage for `.svelte` files, and a standardized approach for scroll-lock + layout utilities once additional views migrate.
-- Top Bar now runs through Svelte as well (shuffle/search/filter popover/saved sets/settings), so every view consumes the same bridge; CSS/shared styles are the only legacy pieces left.
+- Top Bar now runs through Svelte as well (shuffle/search/filter popover/saved sets/settings), so every view consumes the same store helpers; CSS/shared styles are the only legacy pieces left.
 - Once a view is migrated and the legacy counterpart is gone, move its CSS out of `assets/styles.css` and into the `.svelte` file so each component becomes self-contained (Flashcards + Match board CSS are next to extract).
 
 ## 3. Post-migration polish (future)

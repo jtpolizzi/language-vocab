@@ -7,7 +7,7 @@ import {
   clearOrder,
   setRowSelectionMode,
   type RawWord
-} from '../../assets/state.ts';
+} from '../../src/state/index.ts';
 
 const sampleWords: RawWord[] = [
   {
