@@ -771,10 +771,4 @@
       justify-content: space-between;
     }
   }
-
-  @media (max-width: 460px) {
-    .match-board {
-      grid-template-columns: 1fr;
-    }
-  }
 </style>

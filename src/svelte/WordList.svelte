@@ -375,7 +375,7 @@ const LONG_PRESS_DELAY = 350;
 
   .wordlist-view--svelte .wordlist-scroll thead {
     position: sticky;
-    top: var(--topbar-height, 0px);
+    top: calc(var(--app-header-height, 0px) + var(--topbar-height, 0px));
     z-index: 6;
     background: #121631;
     box-shadow: 0 1px 0 0 var(--line) inset;
