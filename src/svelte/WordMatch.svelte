@@ -407,6 +407,7 @@
         data-celebrate={celebrateWin ? 'true' : null}
         on:click={startRound}
         disabled={playAgainDisabled}
+        style="background: var(--accent); color: #050814; border: none; box-shadow: 0 6px 18px rgba(138, 164, 255, 0.35);"
       >
         Play Again
       </ChipButton>

@@ -327,10 +327,10 @@
     {#if currentWord}
       <div class="topright">
         <button
-          class="iconbtn"
+          class="iconbtn flashcards-star"
           aria-pressed={starActive}
           title="Star"
-          style={`font-size:22px; line-height:1; padding:4px 8px; color:${starActive ? 'var(--accent)' : 'var(--fg-dim)'}; border-color:${starActive ? 'var(--accent)' : '#4a5470'};`}
+          style={`font-size:22px; line-height:1; color:${starActive ? 'var(--accent)' : 'var(--fg-dim)'}; border-color:${starActive ? 'var(--accent)' : '#4a5470'};`}
           on:pointerdown={handleTopControlPointerDown}
           on:click={() => {
             toggleStarForCurrent();
@@ -441,6 +441,15 @@
     justify-content: center;
     height: 34px;
     width: 42px;
+    padding: 0;
+  }
+
+  .flashcards-star {
+    width: 44px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     padding: 0;
   }
 

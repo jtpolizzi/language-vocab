@@ -661,7 +661,7 @@ let initialized = false;
     align-items: center;
     gap: 8px;
   }
-
+  
   .choice-select {
     background: rgba(255, 255, 255, 0.04);
     border: 1px solid rgba(255, 255, 255, 0.12);
@@ -797,12 +797,14 @@ let initialized = false;
 
   .choice-answer.is-correct {
     border-color: var(--success);
-    background: rgba(55, 214, 177, 0.16);
+    background: rgba(55, 214, 177, 0.28);
+    box-shadow: 0 0 0 1px rgba(55, 214, 177, 0.45);
   }
 
   .choice-answer.is-wrong {
     border-color: var(--danger);
-    background: rgba(255, 107, 120, 0.18);
+    background: rgba(255, 107, 120, 0.26);
+    box-shadow: 0 0 0 1px rgba(255, 107, 120, 0.4);
   }
 
   .choice-feedback {

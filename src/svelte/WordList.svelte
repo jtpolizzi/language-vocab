@@ -298,21 +298,6 @@ const LONG_PRESS_DELAY = 350;
 </section>
 
 <style>
-  :global(body.wordlist-lock) {
-    overflow: hidden;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-
-  :global(body.wordlist-lock main#app),
-  :global(body.wordlist-lock #view) {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    min-height: 0;
-  }
-
   .wordlist-view,
   .wordlist-view--svelte {
     flex: 1;
