@@ -1,7 +1,7 @@
-// assets/data/loader.ts
+// src/data/loader.ts
 
-type LoaderEventName = 'loading' | 'loaded' | 'error';
-interface LoaderDetail {
+export type LoaderEventName = 'loading' | 'loaded' | 'error';
+export interface LoaderDetail {
   url: string;
   text?: string;
   error?: Error;

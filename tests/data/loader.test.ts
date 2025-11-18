@@ -1,17 +1,25 @@
-import { describe, it, expect, vi, beforeEach } from 'vitest';
-import { loadWords, onDataEvent } from '../../assets/data/loader.ts';
+import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
+import { loadWords, onDataEvent, type LoaderDetail } from '../../src/data/loader.ts';
 
 describe('data/loader', () => {
   beforeEach(() => {
     vi.restoreAllMocks();
+    vi.unstubAllGlobals();
+  });
+
+  afterEach(() => {
+    vi.unstubAllGlobals();
   });
 
   it('emits loading and loaded events', async () => {
-    global.fetch = vi.fn().mockResolvedValue({
-      ok: true,
-      text: () => Promise.resolve('word\tdefinition\nhola\thello')
-    });
-    const events = [];
+    vi.stubGlobal(
+      'fetch',
+      vi.fn().mockResolvedValue({
+        ok: true,
+        text: () => Promise.resolve('word\tdefinition\nhola\thello')
+      })
+    );
+    const events: Array<['loading' | 'loaded', LoaderDetail]> = [];
     const offLoading = onDataEvent('loading', (detail) => events.push(['loading', detail]));
     const offLoaded = onDataEvent('loaded', (detail) => events.push(['loaded', detail]));
     await loadWords({ url: '/mock.tsv' });
@@ -24,8 +32,8 @@ describe('data/loader', () => {
   });
 
   it('emits error when fetch fails', async () => {
-    global.fetch = vi.fn().mockResolvedValue({ ok: false, status: 404 });
-    const events = [];
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({ ok: false, status: 404 }));
+    const events: LoaderDetail[] = [];
     const offError = onDataEvent('error', (detail) => events.push(detail));
     await expect(loadWords({ url: '/missing.tsv' })).rejects.toThrow();
     offError();

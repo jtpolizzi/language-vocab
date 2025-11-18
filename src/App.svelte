@@ -6,8 +6,8 @@
   import WordMatch from './svelte/WordMatch.svelte';
   import MultipleChoice from './svelte/MultipleChoice.svelte';
   import { openSettingsModal, openSettingsRouteIfNeeded } from './svelte/openSettingsModal.ts';
-  import { State, subscribe, hydrateWords, setLoaderStatus, onStateEvent } from './state';
-  import { loadWords, onDataEvent } from '../assets/data/loader.ts';
+  import { State, subscribe, onStateEvent } from './state';
+  import { startWordsLoader } from './data/words.ts';
 
   type Route = 'list' | 'cards' | 'match' | 'choice';
 
@@ -35,7 +35,12 @@
 
     window.addEventListener('hashchange', handleHashChange);
     openSettingsRouteIfNeeded(currentHash);
-    loadData();
+    void startWordsLoader({
+      url: WORDS_URL,
+      onUpdate: ({ message }) => {
+        loaderMessage = message;
+      }
+    });
 
     cleanupDebugPanel = mountDebugPanel();
     offDebugToggle = onStateEvent('uiChanged', () => {
@@ -150,65 +155,6 @@
     };
   }
 
-  function parseTSV(text: string) {
-    const lines = text.split(/\r?\n/).filter((l) => l.trim().length > 0);
-    if (lines.length === 0) return [];
-    const headers = lines[0].split('\t').map((h) => h.trim());
-    const idx = {
-      word: headers.findIndex((h) => /^(word|spanish)$/i.test(h)),
-      definition: headers.findIndex((h) => /^(definition|english)$/i.test(h)),
-      POS: headers.findIndex((h) => /^pos$/i.test(h)),
-      CEFR: headers.findIndex((h) => /^cefr$/i.test(h)),
-      Tags: headers.findIndex((h) => /^tags?$/i.test(h))
-    };
-    const out = [];
-    for (let i = 1; i < lines.length; i++) {
-      const cols = lines[i].split('\t');
-      if (cols.every((c) => !c || !c.trim())) continue;
-      out.push({
-        word: (idx.word >= 0 ? cols[idx.word] : '').trim(),
-        definition: (idx.definition >= 0 ? cols[idx.definition] : '').trim(),
-        POS: (idx.POS >= 0 ? cols[idx.POS] : '').trim(),
-        CEFR: (idx.CEFR >= 0 ? cols[idx.CEFR] : '').trim(),
-        Tags: (idx.Tags >= 0 ? cols[idx.Tags] : '').trim()
-      });
-    }
-    return out;
-  }
-
-  async function loadData() {
-    const offLoading = onDataEvent('loading', () => {
-      setLoaderStatus('loading');
-      loaderMessage = 'Loading words...';
-    });
-    const offLoaded = onDataEvent('loaded', ({ text = '' }) => {
-      const raw = parseTSV(text);
-      setLoaderStatus('loaded');
-      loaderMessage = `Loaded ${raw.length} words.`;
-      hydrateWords(raw || [], {
-        source: 'tsv',
-        loadedAt: Date.now(),
-        loaderStatus: 'loaded'
-      });
-    });
-    const offError = onDataEvent('error', () => {
-      setLoaderStatus('error');
-      loaderMessage = 'Failed to load words. Check console for details.';
-      hydrateWords([], {
-        source: 'none',
-        loadedAt: Date.now(),
-        loaderStatus: 'error'
-      });
-    });
-
-    try {
-      await loadWords({ url: WORDS_URL });
-    } finally {
-      offLoading();
-      offLoaded();
-      offError();
-    }
-  }
 </script>
 
 <div id="topbar">
