@@ -1,7 +1,7 @@
 import { mount, unmount } from 'svelte';
 import SettingsModal from './SettingsModal.svelte';
 
-export function mountSettingsModal() {
+export function openSettingsModal() {
   const host = document.createElement('div');
   document.body.appendChild(host);
   let closed = false;
@@ -20,4 +20,13 @@ export function mountSettingsModal() {
   }
 
   return close;
+}
+
+export function openSettingsRouteIfNeeded(hash = typeof window !== 'undefined' ? window.location.hash : '') {
+  const normalized = (hash || '').toLowerCase();
+  if (normalized === '#settings') {
+    openSettingsModal();
+    return true;
+  }
+  return false;
 }

@@ -1,6 +1,7 @@
 import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
 import { tick } from 'svelte';
-import { mountTopBar } from '../../assets/components/TopBar.ts';
+import { render } from '@testing-library/svelte';
+import TopBar from '../../src/svelte/TopBar.svelte';
 import { State, setFilters, setOrder, setSort, setFilterSets } from '../../assets/state.ts';
 import { DEFAULT_FILTERS, DEFAULT_SORT } from '../../assets/state/persistence.ts';
 import type { RawWord } from '../../assets/state/data.ts';
@@ -35,18 +36,17 @@ describe('TopBar component', () => {
 
   it('triggers shuffle and clears sort', () => {
     setSort({ key: 'word', dir: 'desc' });
-    const container = document.createElement('div');
-    mountTopBar(container);
+    const { container, unmount } = render(TopBar);
     const shuffle = container.querySelector<HTMLButtonElement>('.chip');
     expect(shuffle).toBeTruthy();
     shuffle!.click();
     expect(State.sort.key).toBe('');
     expect(State.order.length).toBe(State.words.length);
+    unmount();
   });
 
   it('saves and loads filter sets', async () => {
-    const container = document.createElement('div');
-    const { destroy } = mountTopBar(container);
+    const { container, unmount } = render(TopBar);
 
     // open popover
     const filtersChip = container.querySelector<HTMLButtonElement>('#filters-chip')!;
@@ -82,6 +82,6 @@ describe('TopBar component', () => {
     updateButton.click();
     expect(State.filters.starred).toBe(false);
 
-    destroy();
+    unmount();
   });
 });

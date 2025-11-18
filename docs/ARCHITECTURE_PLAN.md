@@ -9,13 +9,13 @@
 
 ## 2. v2.14 – Svelte Migration (in progress)
 1. Finish migrating every route (Word List, Top Bar, Flashcards, Word Match, Multiple Choice, Settings) onto Svelte while keeping the shared store contract intact. ✅
-2. Pull view-specific CSS (`wordlist`, `topbar`, `chip`, `popover`, cards, match board, etc.) out of `assets/styles.css` and colocate it with the owning `.svelte` file while leaving tokens/utilities global.
+2. Pull view-specific CSS (`wordlist`, `topbar`, `chip`, `popover`, cards, match board, etc.) out of `assets/styles.css` and colocate it with the owning `.svelte` file while leaving tokens/utilities global. ✅ (global stylesheet now holds only tokens/app chrome/shared primitives.)
 3. Expand lint/test/tooling coverage for `.svelte` files so the new stack is first-class (ESLint/Prettier rules, Vitest + `@testing-library/svelte` harness).
 4. Capture migration lessons (perf, DX, bundle impact) inside NOTES/HANDOVER to guide future enhancements.
 
 **Key observations**
 - Colocating TS/markup/styles drastically reduced iteration time; the store bridge avoided logic duplication.
-- Duplicated CSS is now the main pain point; retiring the global view styles will simplify tweaks and shrink the stylesheet once everything lives beside its component.
+- Duplicated CSS used to be the main pain point; now that view-specific rules live beside their components we can keep `assets/styles.css` limited to design tokens, layout chrome, and shared primitives.
 - Before each new view migration, align on a parity checklist (layout, typography, interactions, keyboard/touch, edge cases) and a store contract to minimize back-and-forth.
 - Word List prototype showed parity without perf regressions; the Svelte rows reuse the existing store data, long-press + weight controls stay in sync with legacy logic, and per-row handlers trimmed the manual event plumbing.
 - Remaining gaps: shared styling story (table styles live in both `assets/styles.css` + `.svelte`), lint/test coverage for `.svelte` files, and a standardized approach for scroll-lock + layout utilities once additional views migrate.

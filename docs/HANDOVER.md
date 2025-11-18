@@ -9,6 +9,7 @@
 - Public assets (e.g., `public/data/words.tsv`) are copied automatically by Vite and included in the build.
 - v2.14 Svelte migration is underway: Svelte (+ plugin) is now part of the Vite toolchain and every surface consumes the shared store/actions via the bridge helpers.
 - The Svelte Word List is now the sole implementation (`#/list` nav item); the legacy view has been retired.
+- Global CSS audit finished: `assets/styles.css` now only keeps tokens, app shell styles, and shared primitives while each Svelte view owns its scoped styles.
 - The shared Top Bar ships as a Svelte component (shuffle, search, filters popover, saved sets, weight/facet toggles, settings modal).
 - Flashcards run through Svelte too—the centered card layout, sticky star/weight controls, fixed bottom nav, progress slider, tap zones, swipe gestures, keyboard shortcuts, and `setCurrentWordId` sync all mirror the legacy experience.
 - Word Match moved to Svelte; prefs (set size/direction/collapse), quick-play automation, and match/mismatch animations now live in the component while sharing the same filtered word pool as other routes.
@@ -17,7 +18,7 @@
 
 ## Upcoming v2.14 Tasks
 1. **Legacy helper cleanup** – finish wiring the Svelte `WeightSparkControl` everywhere and retire the old `assets/components/WeightControl.ts` helper/tests so only the new component is authoritative.
-2. **Global CSS audit** – review what’s left in `assets/styles.css` (modal overlay, icon buttons, app shell) and decide which pieces become shared Svelte primitives versus permanent tokens/utilities.
+2. **State bridge decision** – outline how we’ll replace the temporary `stateBridge` helpers with a first-class Svelte store (or finish migrating the legacy store outright) so components stop depending on DOM-era adapters.
 3. **Tooling follow-ups** – extend ESLint/Prettier/Vitest coverage for `.svelte` files, then trim any remaining vanilla DOM helpers once the shared components are in place.
 
 ## Deployment Checklist
@@ -27,7 +28,7 @@
 
 ## Next Session
 - Remove the unused `assets/components/WeightControl.ts` + tests after verifying every view uses the Svelte `WeightSparkControl`.
-- Audit the remaining global selectors (modal overlay, icon buttons, layout helpers) and propose which should convert into shared Svelte components.
+- Outline the store refactor (Svelte-native state + `stateBridge` replacement) now that the single Svelte App shell is live.
 - Outline the lint/test/tooling updates needed once the CSS audit lands (ESLint plugin for Svelte, Prettier config, Vitest component harness + component tests).
 
 ### Svelte Flashcards – Parity Checklist & Store Contract (reference)

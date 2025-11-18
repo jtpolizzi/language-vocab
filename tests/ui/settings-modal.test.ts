@@ -1,6 +1,6 @@
 import { describe, it, expect, afterEach, beforeEach } from 'vitest';
 import { tick } from 'svelte';
-import { openSettingsModal, mountSettings } from '../../assets/components/SettingsModal.ts';
+import { openSettingsModal, openSettingsRouteIfNeeded } from '../../src/svelte/openSettingsModal.ts';
 import { State } from '../../assets/state.ts';
 
 const originalColumns = { ...State.columns };
@@ -39,15 +39,13 @@ describe('Settings modal', () => {
   });
 
   it('only mounts when visiting #settings', async () => {
-    const container = document.createElement('div');
     window.location.hash = '#settings';
-    mountSettings(container);
+    expect(openSettingsRouteIfNeeded()).toBe(true);
     await tick();
     expect(document.querySelector('.modal-overlay')).toBeTruthy();
     document.querySelector<HTMLButtonElement>('.modal-footer .chip')?.click();
 
     window.location.hash = '#flashcards';
-    mountSettings(container);
-    expect(document.querySelector('.modal-overlay')).toBeNull();
+    expect(openSettingsRouteIfNeeded()).toBe(false);
   });
 });

@@ -11,7 +11,7 @@
     type Filters,
     type FilterSet
   } from '../../assets/state.ts';
-  import { openSettingsModal } from '../../assets/components/SettingsModal.ts';
+  import { openSettingsModal } from './openSettingsModal.ts';
   import { WEIGHT_DESCRIPTIONS, WEIGHT_SHORT_LABELS } from '../../assets/components/WeightControl.ts';
   import ChipButton from './ui/ChipButton.svelte';
 

@@ -1,6 +1,7 @@
 import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
 import { tick } from 'svelte';
-import { mountWordList } from '../../assets/components/WordList.ts';
+import { render } from '@testing-library/svelte';
+import WordListPrototype from '../../src/svelte/WordListPrototype.svelte';
 import { State, setFilters, setOrder, setSort } from '../../assets/state.ts';
 import { DEFAULT_FILTERS, DEFAULT_SORT } from '../../assets/state/persistence.ts';
 import type { VocabEntry } from '../../assets/state/data.ts';
@@ -31,18 +32,17 @@ describe('WordList component', () => {
   });
 
   it('sorts when clicking header', async () => {
-    const container = document.createElement('div');
-    mountWordList(container);
+    const { container, unmount } = render(WordListPrototype);
     await tick();
     const weightHeader = container.querySelector('th[data-key="word"]')!;
     weightHeader.dispatchEvent(new MouseEvent('click', { bubbles: true }));
     expect(State.sort.key).toBe('word');
     expect(State.sort.dir).toBe('desc');
+    unmount();
   });
 
   it('enters selection mode after pointer interaction', async () => {
-    const container = document.createElement('div');
-    const { destroy } = mountWordList(container);
+    const { container, unmount } = render(WordListPrototype);
     await tick();
     const firstRow = container.querySelector<HTMLTableRowElement>('tbody tr')!;
     vi.useFakeTimers();
@@ -50,6 +50,6 @@ describe('WordList component', () => {
     vi.advanceTimersByTime(700);
     expect(State.ui.rowSelectionMode).toBe(true);
     vi.useRealTimers();
-    destroy();
+    unmount();
   });
 });

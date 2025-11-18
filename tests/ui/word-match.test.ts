@@ -1,6 +1,7 @@
 import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
 import { tick } from 'svelte';
-import { mountWordMatch } from '../../assets/components/WordMatch.ts';
+import { render } from '@testing-library/svelte';
+import WordMatch from '../../src/svelte/WordMatch.svelte';
 import { State, setFilters, setOrder, setSort } from '../../assets/state.ts';
 import { DEFAULT_FILTERS, DEFAULT_SORT } from '../../assets/state/persistence.ts';
 import type { VocabEntry } from '../../assets/state/data.ts';
@@ -34,20 +35,18 @@ describe('WordMatch component', () => {
 
   it('shows empty state when not enough words are available', async () => {
     State.set('words', SAMPLE_WORDS.slice(0, 1));
-    const container = document.createElement('div');
-    const { destroy } = mountWordMatch(container);
+    const { container, unmount } = render(WordMatch);
     await tick();
     const empty = container.querySelector('.match-empty');
     expect(empty?.textContent).toContain('Need at least two filtered words');
-    destroy();
+    unmount();
   });
 
   it('clears matched cards after selecting the correct pair', async () => {
     State.set('words', SAMPLE_WORDS);
     vi.useFakeTimers();
     vi.spyOn(Math, 'random').mockReturnValue(0);
-    const container = document.createElement('div');
-    const { destroy } = mountWordMatch(container);
+    const { container, unmount } = render(WordMatch);
     await tick();
 
     const leftCard = container.querySelector<HTMLButtonElement>('.match-column:first-child .match-card');
@@ -65,6 +64,6 @@ describe('WordMatch component', () => {
     expect(leftCard!.classList.contains('is-cleared')).toBe(true);
     expect(rightCard!.classList.contains('is-cleared')).toBe(true);
 
-    destroy();
+    unmount();
   });
 });

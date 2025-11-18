@@ -1,6 +1,7 @@
 import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
 import { tick } from 'svelte';
-import { mountFlashcards } from '../../assets/components/Flashcards.ts';
+import { render } from '@testing-library/svelte';
+import Flashcards from '../../src/svelte/Flashcards.svelte';
 import { State, setFilters, setOrder, setSort } from '../../assets/state.ts';
 import { DEFAULT_FILTERS, DEFAULT_SORT } from '../../assets/state/persistence.ts';
 import type { VocabEntry } from '../../assets/state/data.ts';
@@ -32,8 +33,7 @@ describe('Flashcards component', () => {
   });
 
   it('advances via keyboard shortcuts', async () => {
-    const container = document.createElement('div');
-    const { destroy } = mountFlashcards(container);
+    const { container, unmount } = render(Flashcards);
     await tick();
 
     const progressLabel = container.querySelector('.choice-progress-label')!;
@@ -46,12 +46,11 @@ describe('Flashcards component', () => {
     const card = container.querySelector('.card')!;
     expect(card.textContent?.trim().length).toBeGreaterThan(0);
 
-    destroy();
+    unmount();
   });
 
   it('adjusts progress slider and weight', async () => {
-    const container = document.createElement('div');
-    const { destroy } = mountFlashcards(container);
+    const { container, unmount } = render(Flashcards);
     await tick();
     const slider = container.querySelector<HTMLInputElement>('.flash-progress-slider')!;
     slider.value = '2';
@@ -72,6 +71,6 @@ describe('Flashcards component', () => {
     await tick();
     expect(weightControl.dataset.value).toBe('5');
 
-    destroy();
+    unmount();
   });
 });

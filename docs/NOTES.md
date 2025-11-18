@@ -6,7 +6,7 @@
 - SPA written in vanilla HTML/CSS/JS; routes driven via hash (`#/list`, `#/cards`, `#/match`, `#/choice`).
 - Vocabulary loaded from `data/words.tsv` (preferred) or `data/words.json`, then normalized through `mapRaw()` into `State.words`.
 - Global `State` persists filters, stars, weights, and UI prefs in `localStorage`; `subscribe()` notifies mounted views.
-- Components live in `assets/components/` and mount/unmount via `mount*` helpers; shared top bar + settings modal stay resident.
+- Components live under `src/svelte/` and are mounted by `App.svelte`, so every view (and the shared top bar/settings modal) now runs through the same Svelte entrypoint.
 
 ## Current Views
 ### Word List
@@ -40,5 +40,5 @@
 - **Release history** – see `CHANGELOG.md` for version-by-version bullet points from v2.5 onward.
 
 ## Current Focus
-- Finish the v2.14 Svelte cleanup: all major views run through Svelte 5 + the shared store bridge; remaining work centers on CSS colocation and tooling/tests so we can retire the legacy helpers.
-- Shared UI primitives (`ChipButton`, `WeightSparkControl`) are the baseline; future UI tweaks should either extend those components or introduce new shared primitives instead of reintroducing global CSS.
+- Post-migration cleanup: every surface now runs through Svelte 5 with colocated styles, so the next chunk is removing the leftover legacy helpers (WeightControl, mount wrappers) and replacing `stateBridge` with a native Svelte store.
+- Shared UI primitives (`ChipButton`, `WeightSparkControl`) are the baseline; future UI tweaks should extend those components or introduce new primitives instead of reintroducing global CSS or DOM helpers.
