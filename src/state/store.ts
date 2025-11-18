@@ -49,7 +49,9 @@ interface MetaState {
 
 export type LoaderStatus = 'idle' | 'loading' | 'loaded' | 'error';
 
-export interface AppState {
+type StateUpdatableKey = 'filters' | 'filterSets' | 'sort' | 'columns' | 'order' | 'ui' | 'words';
+
+type WritableState = {
   words: VocabEntry[];
   filters: Filters;
   filterSets: FilterSet[];
@@ -57,8 +59,11 @@ export interface AppState {
   columns: ColumnsState;
   order: string[];
   ui: UIState;
+};
+
+export interface AppState extends WritableState {
   meta: MetaState;
-  set: (key: string, value: unknown) => void;
+  set: <K extends StateUpdatableKey>(key: K, value: WritableState[K]) => void;
   on?: typeof on;
 }
 
@@ -164,28 +169,22 @@ export function resetPersistentState() {
   State.meta = { ...State.meta };
 }
 
-type StateKey = 'filters' | 'filterSets' | 'sort' | 'columns' | 'order' | 'ui' | 'words';
-
-function updateState(key: string, value: unknown) {
-  const typedKey = key as StateKey;
-  switch (typedKey) {
+function updateState<K extends StateUpdatableKey>(key: K, value: WritableState[K]) {
+  switch (key) {
     case 'filters':
-      return updateFilters(value as Filters);
+      return updateFilters(value as WritableState['filters']);
     case 'filterSets':
-      return updateFilterSets(value as FilterSet[]);
+      return updateFilterSets(value as WritableState['filterSets']);
     case 'sort':
-      return updateSort(value as SortState);
+      return updateSort(value as WritableState['sort']);
     case 'columns':
-      return updateColumns(value as ColumnsState);
+      return updateColumns(value as WritableState['columns']);
     case 'order':
-      return updateOrder(value as string[]);
+      return updateOrder(value as WritableState['order']);
     case 'ui':
-      return updateUI(value as UIState);
+      return updateUI(value as WritableState['ui']);
     case 'words':
-      return updateWords(Array.isArray(value) ? (value as VocabEntry[]) : []);
-    default:
-      (State as unknown as Record<string, unknown>)[key] = value;
-      notifySubscribers(key, { value });
+      return updateWords(value as WritableState['words']);
   }
 }
 
