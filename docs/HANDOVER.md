@@ -18,6 +18,7 @@
 - Multiple Choice is now Svelte-based: progress UI, answer feedback, keyboard shortcuts, and the LS-backed size/direction/answers prefs all ride through the shared store/actions.
 - Settings modal and overlays (debug toggle, column selection, reset/clear actions) now run through Svelte, keeping the `#settings` route + Top Bar trigger intact while sharing the same component logic.
 - Legacy DOM helpers under `assets/components/` (mount wrappers, WeightControl, chip/popover factories) have all been removed; only the shared stylesheet/tokens remain under `assets/`.
+- UI formatting cleanup continues post-migration—Word List sticky behavior and layout polish are in progress, so expect follow-up passes for spacing/alignment tweaks.
 
 ## Upcoming v2.15 Tasks
 1. **Tooling follow-ups** – wire `npm run check:svelte` into the regular workflow/CI and plan additional Svelte component tests so ESLint/Vitest coverage stays representative.

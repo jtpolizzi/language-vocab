@@ -40,5 +40,5 @@
 - **Release history** – see `CHANGELOG.md` for version-by-version bullet points from v2.5 onward.
 
 ## Current Focus
-- Tooling polish: now that the shared stores live under `src/state` and the legacy DOM helpers are gone, focus shifts to running `npm run check:svelte` (svelte-check) and broadening Svelte component tests/linting.
+- Tooling polish: now that the shared stores live under `src/state` and the legacy DOM helpers are gone, focus shifts to running `npm run check:svelte` (svelte-check) and broadening Svelte component tests/linting. Layout/formatting follow-ups from the Svelte migration (sticky headers, button alignment) are still underway.
 - Shared UI primitives (`ChipButton`, `WeightSparkControl`, `Popover`) are the baseline; future UI tweaks should extend those components instead of reintroducing global CSS or vanilla DOM helpers.
