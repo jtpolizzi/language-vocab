@@ -1,4 +1,4 @@
-# Vocab Mini-App Notes (v2.15.0)
+# Vocab Mini-App Notes (v2.15.1)
 
 > **Purpose & scope** – living snapshot of the product: what features exist today, how they behave, and which improvements we’re considering next. Implementation details and release-by-release histories live in `ARCHITECTURE_PLAN.md` and `CHANGELOG.md` respectively.
 
@@ -40,5 +40,5 @@
 - **Release history** – see `CHANGELOG.md` for version-by-version bullet points from v2.5 onward.
 
 ## Current Focus
-- Tooling polish: now that the shared stores live under `src/state` and the legacy WeightControl helper is gone, focus shifts to running `npm run check:svelte` (svelte-check) and broadening Svelte component tests/linting.
-- Shared UI primitives (`ChipButton`, `WeightSparkControl`) are the baseline; future UI tweaks should extend those components or introduce new primitives instead of reintroducing global CSS or DOM helpers.
+- Tooling polish: now that the shared stores live under `src/state` and the legacy DOM helpers are gone, focus shifts to running `npm run check:svelte` (svelte-check) and broadening Svelte component tests/linting.
+- Shared UI primitives (`ChipButton`, `WeightSparkControl`, `Popover`) are the baseline; future UI tweaks should extend those components instead of reintroducing global CSS or vanilla DOM helpers.

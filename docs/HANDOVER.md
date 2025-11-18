@@ -1,4 +1,4 @@
-# Handover Notes – v2.15.0
+# Handover Notes – v2.15.1
 
 > **Purpose & scope** – quick-start briefing for whoever picks up the repo next: latest release status, deployment steps, and the immediate priorities for the next session. Technical details live in `ARCHITECTURE_PLAN.md`; full history lives in `CHANGELOG.md`.
 
@@ -17,11 +17,12 @@
 - Word Match moved to Svelte; prefs (set size/direction/collapse), quick-play automation, and match/mismatch animations now live in the component while sharing the same filtered word pool as other routes.
 - Multiple Choice is now Svelte-based: progress UI, answer feedback, keyboard shortcuts, and the LS-backed size/direction/answers prefs all ride through the shared store/actions.
 - Settings modal and overlays (debug toggle, column selection, reset/clear actions) now run through Svelte, keeping the `#settings` route + Top Bar trigger intact while sharing the same component logic.
+- Legacy DOM helpers under `assets/components/` (mount wrappers, WeightControl, chip/popover factories) have all been removed; only the shared stylesheet/tokens remain under `assets/`.
 
 ## Upcoming v2.15 Tasks
 1. **Tooling follow-ups** – wire `npm run check:svelte` into the regular workflow/CI and plan additional Svelte component tests so ESLint/Vitest coverage stays representative.
 2. **State polish** – now that the state modules live under `src/state`, capture any refactor follow-ups (typed stores, derived helpers) needed before we introduce new features.
-3. **UI helper audit** – decide what to do with the remaining DOM helpers in `assets/components/ui/` (chips, popovers) now that WeightControl is gone.
+3. **Data/feature planning** – decide whether TSV loading needs enhancements (error surfacing, alternate sources) before tackling the next product features (export/import, TTS, etc.).
 
 ## Deployment Checklist
 1. `npm install`
@@ -30,7 +31,7 @@
 
 ## Next Session
 - Decide where `npm run check:svelte` should run (local pre-push, CI) and outline which Svelte component tests we should add next.
-- Sketch the plan for replacing the remaining DOM chip/popover helpers with Svelte components (or confirm they can stay as-is).
+- Outline the next feature chunk now that the last DOM helpers are gone (progress export/import? TTS prototype?).
 
 ### Svelte Flashcards – Parity Checklist & Store Contract (reference)
 **Layout / visual**
