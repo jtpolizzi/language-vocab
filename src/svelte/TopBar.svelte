@@ -39,6 +39,8 @@
   let selectedSetId = '';
   let lastSelectedSetId = '';
   let statusMessage = '';
+  let rootEl: HTMLElement | null = null;
+  let topbarObserver: ResizeObserver | null = null;
   let documentClickCleanup: (() => void) | null = null;
   let shortcutCleanup: (() => void) | null = null;
 
@@ -82,6 +84,8 @@
     };
     window.addEventListener('keydown', handler);
     shortcutCleanup = () => window.removeEventListener('keydown', handler);
+    updateTopbarHeight();
+    setupTopbarObserver();
     return () => {
       shortcutCleanup?.();
       shortcutCleanup = null;
@@ -95,6 +99,7 @@
       searchDebounce = null;
     }
     shortcutCleanup?.();
+    teardownTopbarObserver();
   });
 
   function handleShuffle() {
@@ -317,9 +322,30 @@
     selectedSetId = select.value;
     lastSelectedSetId = selectedSetId || '';
   }
+
+  function updateTopbarHeight() {
+    if (typeof document === 'undefined') return;
+    const height = rootEl?.getBoundingClientRect().height ?? 0;
+    document.documentElement.style.setProperty('--topbar-height', `${height}px`);
+  }
+
+  function setupTopbarObserver() {
+    if (typeof ResizeObserver === 'undefined' || !rootEl) {
+      updateTopbarHeight();
+      return;
+    }
+    topbarObserver?.disconnect();
+    topbarObserver = new ResizeObserver(() => updateTopbarHeight());
+    topbarObserver.observe(rootEl);
+  }
+
+  function teardownTopbarObserver() {
+    topbarObserver?.disconnect();
+    topbarObserver = null;
+  }
 </script>
 
-<section class="panel panel--topbar topbar--svelte">
+<section class="panel panel--topbar topbar--svelte" bind:this={rootEl}>
   <div class="row">
     <ChipButton type="button" on:click={handleShuffle}>
       Shuffle
@@ -571,6 +597,8 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+    max-height: min(80vh, 520px);
+    overflow: auto;
   }
 
   .filters-popover-header {

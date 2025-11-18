@@ -24,7 +24,6 @@
   let offStateSubscription: (() => void) | null = null;
   let pagehideHandler: (() => void) | null = null;
 
-  $: syncActiveNav(currentHash);
   $: syncWordListBody(route);
 
   onMount(() => {
@@ -76,11 +75,6 @@
     openSettingsRouteIfNeeded(currentHash);
   }
 
-  function syncActiveNav(hash: string) {
-    if (typeof document === 'undefined') return;
-    setActiveNav(hash || '#/list');
-  }
-
   function syncWordListBody(currentRoute: Route) {
     if (typeof document === 'undefined') return;
     if (currentRoute === 'list') {
@@ -98,20 +92,6 @@
     if (normalized.startsWith('#/match')) return 'match';
     if (normalized.startsWith('#/choice')) return 'choice';
     return 'list';
-  }
-
-  function setActiveNav(hash: string) {
-    const links = document.querySelectorAll('.app-header nav a');
-    links.forEach((link) => {
-      const target = link.getAttribute('href') || '';
-      const isActive = target && hash.startsWith(target);
-      link.classList.toggle('active', !!isActive);
-      if (isActive) {
-        link.setAttribute('aria-current', 'page');
-      } else {
-        link.removeAttribute('aria-current');
-      }
-    });
   }
 
   function mountDebugPanel() {
@@ -159,7 +139,7 @@
 </script>
 
 <div class="stacked-header">
-  <AppHeader />
+  <AppHeader {route} />
   <div id="topbar">
     <TopBar />
   </div>
