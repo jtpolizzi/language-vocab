@@ -42,3 +42,7 @@
 ## Current Focus
 - Tooling polish: now that the shared stores live under `src/state` and the legacy DOM helpers are gone, focus shifts to running `npm run check:svelte` (svelte-check) and broadening Svelte component tests/linting. Layout/formatting follow-ups from the Svelte migration (sticky headers, button alignment) are still underway.
 - Shared UI primitives (`ChipButton`, `WeightSparkControl`, `Popover`) are the baseline; future UI tweaks should extend those components instead of reintroducing global CSS or vanilla DOM helpers.
+- Visual regressions keep sneaking in; verify layout changes with Playwright screenshots before reporting back. Start the dev server (`npm run dev -- --host 127.0.0.1 --port 4173`) and capture both a desktop and a 400×844 “mobile” viewport via:
+  - `npx playwright screenshot http://127.0.0.1:4173/language-vocab/ desktop.png --wait-for-timeout=4000`
+  - `npx playwright screenshot --viewport-size="400,844" http://127.0.0.1:4173/language-vocab/ mobile.png --wait-for-timeout=4000`
+  Review those images locally and only then describe the UI status to the user.

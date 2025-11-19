@@ -322,6 +322,8 @@ const LONG_PRESS_DELAY = 350;
 
   .wordlist-view--svelte {
     padding: 0;
+    margin-top: calc(-1 * var(--stacked-header-height, 0px));
+    padding-top: var(--stacked-header-height, 0px);
   }
 
   .wordlist-scroll {
@@ -375,7 +377,7 @@ const LONG_PRESS_DELAY = 350;
 
   .wordlist-view--svelte .wordlist-scroll thead {
     position: sticky;
-    top: var(--stacked-header-height, 0px);
+    top: 0;
     z-index: 6;
     background: #121631;
     box-shadow: 0 1px 0 0 var(--line) inset;

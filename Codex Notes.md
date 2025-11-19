@@ -23,3 +23,12 @@ This doc is for Codex to read at the beginning of every session - for guidelines
   * ARCHITECTURE_PLAN.md
   * CHANGELOG.md
   * HANDOVER.md - if one exists
+
+## Working Agreements
+
+* Use Playwright to **see** the UI before claiming a visual fix works. Launch the dev server with `npm run dev -- --host 127.0.0.1 --port 4173`, then capture `desktop.png` and `mobile.png`:
+  * `npx playwright screenshot http://127.0.0.1:4173/language-vocab/ desktop.png --wait-for-timeout=4000`
+  * `npx playwright screenshot --viewport-size="400,844" http://127.0.0.1:4173/language-vocab/ mobile.png --wait-for-timeout=4000`
+  Review the screenshots locally; only then describe layout status or call a task complete.
+* If the user shares a screenshot, treat it as ground truth. Use it plus the Playwright captures to triangulate problems—avoid “blind” CSS tweaks.
+* Keep the user involved in planning. Summarize the intended change, wait for acknowledgment, and only then code. When stuck, pause and ask instead of iterating blindly.
