@@ -183,12 +183,16 @@ const LONG_PRESS_DELAY = 350;
     if (row) {
       const isPointer = lastSelectionSource === 'pointer';
       const behavior: ScrollBehavior = isPointer ? 'auto' : 'smooth';
-      const block: ScrollLogicalPosition = isPointer ? 'nearest' : 'center';
-      const topOffset = parseFloat(
-        getComputedStyle(document.documentElement).getPropertyValue('--stacked-header-height') || '0'
-      );
-      const rowTop = row.getBoundingClientRect().top + window.scrollY - topOffset - 6;
-      window.scrollTo({ top: Math.max(0, rowTop), behavior });
+      const scrollContainer = document.querySelector<HTMLElement>('.wordlist-view--svelte .wordlist-scroll');
+      if (scrollContainer) {
+        const topOffset = parseFloat(
+          getComputedStyle(document.documentElement).getPropertyValue('--stacked-header-height') || '0'
+        );
+        const targetTop = Math.max(0, row.offsetTop - topOffset - 4);
+        scrollContainer.scrollTo({ top: targetTop, behavior });
+      } else {
+        row.scrollIntoView({ block: isPointer ? 'nearest' : 'center', behavior });
+      }
     }
   }
 
