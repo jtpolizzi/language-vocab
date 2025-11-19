@@ -322,15 +322,13 @@ const LONG_PRESS_DELAY = 350;
 
   .wordlist-view--svelte {
     padding: 0;
-    margin-top: calc(-1 * var(--stacked-header-height, 0px));
-    padding-top: var(--stacked-header-height, 0px);
   }
 
   .wordlist-scroll {
     flex: 1;
     overflow: auto;
     padding: 6px 0 24px;
-    scroll-padding-top: 0;
+    scroll-padding-top: var(--stacked-header-height, 0px);
   }
 
   .wordlist-view--svelte table {
@@ -442,5 +440,14 @@ const LONG_PRESS_DELAY = 350;
   :global(body.wordlist-lock) {
     overflow: hidden;
     height: 100vh;
+  }
+
+  :global(body.wordlist-lock #view) {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    margin-top: calc(-1 * var(--stacked-header-height, 0px));
+    padding-top: var(--stacked-header-height, 0px);
   }
 </style>
