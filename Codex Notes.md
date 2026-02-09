@@ -1,4 +1,4 @@
-# These are notes for Codex
+# These are notes for Codex & Gemini
 
 ## Purpose of this doc
 
